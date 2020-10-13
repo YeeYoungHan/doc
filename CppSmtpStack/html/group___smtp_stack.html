@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SMTP Stack: SmtpStack</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SMTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">SmtpStack</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SMTP 클라이언트 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_smtp_client.html">CSmtpClient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 클라이언트 - SMTP 서버로 메일을 전송한다.  <a href="class_c_smtp_client.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_smtp_response.html">CSmtpResponse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 응답 메시지를 파싱하여서 저장하는 클래스  <a href="class_c_smtp_response.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:gac2b5f622ac1f6f93e8920b831c72a278"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#gac2b5f622ac1f6f93e8920b831c72a278">CSmtpClient::SetServer</a> (const char *pszServerIp, int iServerPort, bool bUseTls=false)</td></tr>
+<tr class="memdesc:gac2b5f622ac1f6f93e8920b831c72a278"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 서버 정보를 설정한다.  <a href="#gac2b5f622ac1f6f93e8920b831c72a278"></a><br/></td></tr>
+<tr class="memitem:ga38eeb5c5a46a346c290ecacd016ea251"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#ga38eeb5c5a46a346c290ecacd016ea251">CSmtpClient::SetUser</a> (const char *pszUserId, const char *pszPassWord)</td></tr>
+<tr class="memdesc:ga38eeb5c5a46a346c290ecacd016ea251"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 서버에 로그인할 사용자 정보를 설정한다.  <a href="#ga38eeb5c5a46a346c290ecacd016ea251"></a><br/></td></tr>
+<tr class="memitem:gafe58723442b2c3aaad8c606f8b02b812"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#gafe58723442b2c3aaad8c606f8b02b812">CSmtpClient::SetFrom</a> (const char *pszEmailFrom)</td></tr>
+<tr class="memdesc:gafe58723442b2c3aaad8c606f8b02b812"><td class="mdescLeft">&#160;</td><td class="mdescRight">발신자 이메일 주소를 설정한다.  <a href="#gafe58723442b2c3aaad8c606f8b02b812"></a><br/></td></tr>
+<tr class="memitem:ga5cc20b2565e10c2a7283cc2bec49b0e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#ga5cc20b2565e10c2a7283cc2bec49b0e0">CSmtpClient::SetTo</a> (const char *pszEmailTo)</td></tr>
+<tr class="memdesc:ga5cc20b2565e10c2a7283cc2bec49b0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">수신자 이메일 주소를 설정한다.  <a href="#ga5cc20b2565e10c2a7283cc2bec49b0e0"></a><br/></td></tr>
+<tr class="memitem:ga91b871b618bf4929f97a780cc867449d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#ga91b871b618bf4929f97a780cc867449d">CSmtpClient::SetSubject</a> (const char *pszSubject)</td></tr>
+<tr class="memdesc:ga91b871b618bf4929f97a780cc867449d"><td class="mdescLeft">&#160;</td><td class="mdescRight">이메일 주제를 설정한다.  <a href="#ga91b871b618bf4929f97a780cc867449d"></a><br/></td></tr>
+<tr class="memitem:ga43ab9ea9831b6749fe768bc22a960121"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#ga43ab9ea9831b6749fe768bc22a960121">CSmtpClient::SetContent</a> (const char *pszContent)</td></tr>
+<tr class="memdesc:ga43ab9ea9831b6749fe768bc22a960121"><td class="mdescLeft">&#160;</td><td class="mdescRight">이메일 내용을 설정한다.  <a href="#ga43ab9ea9831b6749fe768bc22a960121"></a><br/></td></tr>
+<tr class="memitem:gaf0a309dfac81610d4be444974e6bb922"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#gaf0a309dfac81610d4be444974e6bb922">CSmtpClient::SetAttachFile</a> (const char *pszFileName)</td></tr>
+<tr class="memdesc:gaf0a309dfac81610d4be444974e6bb922"><td class="mdescLeft">&#160;</td><td class="mdescRight">이메일 첨부파일을 설정한다.  <a href="#gaf0a309dfac81610d4be444974e6bb922"></a><br/></td></tr>
+<tr class="memitem:gac2cfd70d73f25df9aeb9447e76fcf17a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#gac2cfd70d73f25df9aeb9447e76fcf17a">CSmtpClient::SetLang</a> (ESmtpLang eLang)</td></tr>
+<tr class="memdesc:gac2cfd70d73f25df9aeb9447e76fcf17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">이메일 언어를 설정한다.  <a href="#gac2cfd70d73f25df9aeb9447e76fcf17a"></a><br/></td></tr>
+<tr class="memitem:ga08cd4a42a11a0ab4f15a5328bb93051c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#ga08cd4a42a11a0ab4f15a5328bb93051c">CSmtpClient::ClearEmail</a> ()</td></tr>
+<tr class="memdesc:ga08cd4a42a11a0ab4f15a5328bb93051c"><td class="mdescLeft">&#160;</td><td class="mdescRight">이메일 정보를 초기화시킨다.  <a href="#ga08cd4a42a11a0ab4f15a5328bb93051c"></a><br/></td></tr>
+<tr class="memitem:ga94bb5cbcb9fead1e4fea332313fea4bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#ga94bb5cbcb9fead1e4fea332313fea4bc">CSmtpClient::Connect</a> ()</td></tr>
+<tr class="memdesc:ga94bb5cbcb9fead1e4fea332313fea4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 서버에 TCP/TLS 세션을 연결한 후, SMTP 로그인을 수행한다.  <a href="#ga94bb5cbcb9fead1e4fea332313fea4bc"></a><br/></td></tr>
+<tr class="memitem:gaa4e5b2e3ca0ee89d0004a2a77b425d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#gaa4e5b2e3ca0ee89d0004a2a77b425d8e">CSmtpClient::Close</a> ()</td></tr>
+<tr class="memdesc:gaa4e5b2e3ca0ee89d0004a2a77b425d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 세션을 종료한다.  <a href="#gaa4e5b2e3ca0ee89d0004a2a77b425d8e"></a><br/></td></tr>
+<tr class="memitem:ga5a04f6520a87613b86a8466e7761f8e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#ga5a04f6520a87613b86a8466e7761f8e7">CSmtpClient::Send</a> ()</td></tr>
+<tr class="memdesc:ga5a04f6520a87613b86a8466e7761f8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 메일을 전송한다.  <a href="#ga5a04f6520a87613b86a8466e7761f8e7"></a><br/></td></tr>
+<tr class="memitem:ga6c944866afbea1cf6618cfd2ea7ad634"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#ga6c944866afbea1cf6618cfd2ea7ad634">CSmtpResponse::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga6c944866afbea1cf6618cfd2ea7ad634"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 응답 메시지를 파싱하여서 내부 자료구조에 저장한다.  <a href="#ga6c944866afbea1cf6618cfd2ea7ad634"></a><br/></td></tr>
+<tr class="memitem:gacd53e723a40a098e244b877748689e9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___smtp_stack.html#gacd53e723a40a098e244b877748689e9d">CSmtpResponse::ParseLine</a> (const char *pszText, int iTextLen, bool &amp;bLastLine)</td></tr>
+<tr class="memdesc:gacd53e723a40a098e244b877748689e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMTP 응답 메시지의 1라인을 파싱하여서 내부 자료구조에 저장한다.  <a href="#gacd53e723a40a098e244b877748689e9d"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>SMTP 클라이언트 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga08cd4a42a11a0ab4f15a5328bb93051c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSmtpClient::ClearEmail </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>이메일 정보를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaa4e5b2e3ca0ee89d0004a2a77b425d8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSmtpClient::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMTP 세션을 종료한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga94bb5cbcb9fead1e4fea332313fea4bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::Connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMTP 서버에 TCP/TLS 세션을 연결한 후, SMTP 로그인을 수행한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6c944866afbea1cf6618cfd2ea7ad634"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSmtpResponse::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMTP 응답 메시지를 파싱하여서 내부 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SMTP 응답 메시지 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>SMTP 응답 메시지 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱된 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacd53e723a40a098e244b877748689e9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSmtpResponse::ParseLine </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bLastLine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMTP 응답 메시지의 1라인을 파싱하여서 내부 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SMTP 응답 메시지 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>SMTP 응답 메시지 길이 </td></tr>
+    <tr><td class="paramname">bLastLine</td><td>[out] 마지막 라인이면 본 메소드 호출후, true 가 저장되고 그렇지 않으면 false 가 저장된다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱된 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5a04f6520a87613b86a8466e7761f8e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::Send </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMTP 메일을 전송한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf0a309dfac81610d4be444974e6bb922"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::SetAttachFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>이메일 첨부파일을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFileName</td><td>이메일 첨부파일 (full path) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga43ab9ea9831b6749fe768bc22a960121"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::SetContent </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszContent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>이메일 내용을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszContent</td><td>이메일 내용 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafe58723442b2c3aaad8c606f8b02b812"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::SetFrom </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszEmailFrom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>발신자 이메일 주소를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszEmailFrom</td><td>발신자 이메일 주소 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac2cfd70d73f25df9aeb9447e76fcf17a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::SetLang </td>
+          <td>(</td>
+          <td class="paramtype">ESmtpLang&#160;</td>
+          <td class="paramname"><em>eLang</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>이메일 언어를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eLang</td><td>이메일 언어 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac2b5f622ac1f6f93e8920b831c72a278"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::SetServer </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszServerIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iServerPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseTls</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMTP 서버 정보를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszServerIp</td><td>SMTP 서버 도메인 이름 또는 IP 주소 </td></tr>
+    <tr><td class="paramname">iServerPort</td><td>SMTP 서버 포트 번호 </td></tr>
+    <tr><td class="paramname">bUseTls</td><td>TLS 사용 유무 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga91b871b618bf4929f97a780cc867449d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::SetSubject </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSubject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>이메일 주제를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSubject</td><td>이메일 주제 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5cc20b2565e10c2a7283cc2bec49b0e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::SetTo </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszEmailTo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>수신자 이메일 주소를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszEmailTo</td><td>수신자 이메일 주소 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga38eeb5c5a46a346c290ecacd016ea251"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSmtpClient::SetUser </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMTP 서버에 로그인할 사용자 정보를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUserId</td><td>아이디 </td></tr>
+    <tr><td class="paramname">pszPassWord</td><td>비밀번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 18:16:35, 프로젝트명 : C++ SMTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

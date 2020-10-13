@@ -1,0 +1,2627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SIP Stack: XmlParser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SIP Stack
+   &#160;<span id="projectnumber">0.31</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#typedef-members">타입정의</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">XmlParser</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Xml 파싱/생성 라이브러리 Xml 파싱/생성 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_xml_element.html">CXmlElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 정보 저장 클래스  <a href="class_c_xml_element.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_xml_search.html">CXmlSearch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 의 모든 하위 element 까지 재귀적으로 검색하는 기능을 수행하는 클래스  <a href="class_c_xml_search.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
+타입정의</h2></td></tr>
+<tr class="memitem:gac05e431dc5fb75cd0fc3b6c8e3459152"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gac05e431dc5fb75cd0fc3b6c8e3459152">XML_ATTRIBUTE_MAP</a></td></tr>
+<tr class="memdesc:gac05e431dc5fb75cd0fc3b6c8e3459152"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML attribute map.  <a href="#gac05e431dc5fb75cd0fc3b6c8e3459152"></a><br/></td></tr>
+<tr class="memitem:ga297cf094267fe1442eecec8b6de78dc8"><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="class_c_xml_element.html">CXmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga297cf094267fe1442eecec8b6de78dc8">XML_ELEMENT_LIST</a></td></tr>
+<tr class="memdesc:ga297cf094267fe1442eecec8b6de78dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_xml_element.html" title="XML 정보 저장 클래스">CXmlElement</a> 객체 리스트  <a href="#ga297cf094267fe1442eecec8b6de78dc8"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:gab999dc8771dcccea609308043d89f2b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gab999dc8771dcccea609308043d89f2b9">CXmlElement::CXmlElement</a> (const char *pszName=NULL)</td></tr>
+<tr class="memdesc:gab999dc8771dcccea609308043d89f2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">생성자  <a href="#gab999dc8771dcccea609308043d89f2b9"></a><br/></td></tr>
+<tr class="memitem:gaeee29f6f7169fc35f7624f5a71e571f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaeee29f6f7169fc35f7624f5a71e571f3">CXmlElement::~CXmlElement</a> ()</td></tr>
+<tr class="memdesc:gaeee29f6f7169fc35f7624f5a71e571f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">소멸자  <a href="#gaeee29f6f7169fc35f7624f5a71e571f3"></a><br/></td></tr>
+<tr class="memitem:gaa1910ac3d878d43b95d27e8065cba03b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaa1910ac3d878d43b95d27e8065cba03b">CXmlElement::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gaa1910ac3d878d43b95d27e8065cba03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 문자열을 파싱하여서 멤버 변수에 저장한다.  <a href="#gaa1910ac3d878d43b95d27e8065cba03b"></a><br/></td></tr>
+<tr class="memitem:ga1b65cb73db5198bbf38f223e26205c49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga1b65cb73db5198bbf38f223e26205c49">CXmlElement::Parse</a> (std::string &amp;strText)</td></tr>
+<tr class="memdesc:ga1b65cb73db5198bbf38f223e26205c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 문자열을 파싱하여서 멤버 변수에 저장한다.  <a href="#ga1b65cb73db5198bbf38f223e26205c49"></a><br/></td></tr>
+<tr class="memitem:ga9fe4e028d1dce5981e86c0a325905782"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga9fe4e028d1dce5981e86c0a325905782">CXmlElement::ToString</a> (char *pszText, int iTextSize, bool bUseTab=false, int iDepth=0)</td></tr>
+<tr class="memdesc:ga9fe4e028d1dce5981e86c0a325905782"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수에 저장된 값을 이용하여서 XML 문자열을 생성한다.  <a href="#ga9fe4e028d1dce5981e86c0a325905782"></a><br/></td></tr>
+<tr class="memitem:gad8fe589d3dccc23203c1899681e4d77a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gad8fe589d3dccc23203c1899681e4d77a">CXmlElement::ToString</a> (std::string &amp;strText, bool bUseTab=false, int iDepth=0)</td></tr>
+<tr class="memdesc:gad8fe589d3dccc23203c1899681e4d77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수에 저장된 값을 이용하여서 XML 문자열을 생성한다.  <a href="#gad8fe589d3dccc23203c1899681e4d77a"></a><br/></td></tr>
+<tr class="memitem:ga17a6c99677dbcaa9d5c68af10bd3a409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga17a6c99677dbcaa9d5c68af10bd3a409">CXmlElement::Clear</a> ()</td></tr>
+<tr class="memdesc:ga17a6c99677dbcaa9d5c68af10bd3a409"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga17a6c99677dbcaa9d5c68af10bd3a409"></a><br/></td></tr>
+<tr class="memitem:gaee7e962bcb678572c19fb7061299f15b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaee7e962bcb678572c19fb7061299f15b">CXmlElement::ParseFile</a> (const char *pszFileName)</td></tr>
+<tr class="memdesc:gaee7e962bcb678572c19fb7061299f15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 파일을 읽어서 멤버 변수에 저장한다.  <a href="#gaee7e962bcb678572c19fb7061299f15b"></a><br/></td></tr>
+<tr class="memitem:gaf06de13abc9605f1c64ca029c5707ce5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaf06de13abc9605f1c64ca029c5707ce5">CXmlElement::WriteFile</a> (const char *pszFileName, bool bUseTab)</td></tr>
+<tr class="memdesc:gaf06de13abc9605f1c64ca029c5707ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 을 파일에 저장한다.  <a href="#gaf06de13abc9605f1c64ca029c5707ce5"></a><br/></td></tr>
+<tr class="memitem:gacb1dccd3625e75cf7831631d2811a490"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gacb1dccd3625e75cf7831631d2811a490">CXmlElement::SelectAttribute</a> (const char *pszName)</td></tr>
+<tr class="memdesc:gacb1dccd3625e75cf7831631d2811a490"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#gacb1dccd3625e75cf7831631d2811a490"></a><br/></td></tr>
+<tr class="memitem:ga2fadff0021c5e811f97cbefe07b19af9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga2fadff0021c5e811f97cbefe07b19af9">CXmlElement::SelectAttributeTrim</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga2fadff0021c5e811f97cbefe07b19af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#ga2fadff0021c5e811f97cbefe07b19af9"></a><br/></td></tr>
+<tr class="memitem:ga86f6baeb593722770427199f0996d217"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga86f6baeb593722770427199f0996d217">CXmlElement::SelectAttribute</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga86f6baeb593722770427199f0996d217"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#ga86f6baeb593722770427199f0996d217"></a><br/></td></tr>
+<tr class="memitem:ga1d48008ef38ae87c81205c28eb20660a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga1d48008ef38ae87c81205c28eb20660a">CXmlElement::SelectAttributeTrim</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga1d48008ef38ae87c81205c28eb20660a"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#ga1d48008ef38ae87c81205c28eb20660a"></a><br/></td></tr>
+<tr class="memitem:ga058c11b5a8c5170c555265fcfb97c3d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga058c11b5a8c5170c555265fcfb97c3d8">CXmlElement::SelectAttribute</a> (const char *pszName, int &amp;iValue)</td></tr>
+<tr class="memdesc:ga058c11b5a8c5170c555265fcfb97c3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색하여 int 변수에 저장한다.  <a href="#ga058c11b5a8c5170c555265fcfb97c3d8"></a><br/></td></tr>
+<tr class="memitem:gaca7122c0aee008af49d7fb4a90196be2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaca7122c0aee008af49d7fb4a90196be2">CXmlElement::SelectAttribute</a> (const char *pszName, int64_t &amp;iValue)</td></tr>
+<tr class="memdesc:gaca7122c0aee008af49d7fb4a90196be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색하여 int64_t 변수에 저장한다.  <a href="#gaca7122c0aee008af49d7fb4a90196be2"></a><br/></td></tr>
+<tr class="memitem:ga97f8c870720cd1009da796c5a0f6e764"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga97f8c870720cd1009da796c5a0f6e764">CXmlElement::SelectAttribute</a> (const char *pszName, bool &amp;bValue)</td></tr>
+<tr class="memdesc:ga97f8c870720cd1009da796c5a0f6e764"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색하여 bool 변수에 저장한다.  <a href="#ga97f8c870720cd1009da796c5a0f6e764"></a><br/></td></tr>
+<tr class="memitem:gaf3714350d466253d6515767910cc3f68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaf3714350d466253d6515767910cc3f68">CXmlElement::SelectAttribute</a> (const char *pszName, double &amp;dbValue)</td></tr>
+<tr class="memdesc:gaf3714350d466253d6515767910cc3f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색하여 double 변수에 저장한다.  <a href="#gaf3714350d466253d6515767910cc3f68"></a><br/></td></tr>
+<tr class="memitem:ga083ba9a0a533011f8e3dc83955064405"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_xml_element.html">CXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga083ba9a0a533011f8e3dc83955064405">CXmlElement::SelectElement</a> (const char *pszName, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga083ba9a0a533011f8e3dc83955064405"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색한다.  <a href="#ga083ba9a0a533011f8e3dc83955064405"></a><br/></td></tr>
+<tr class="memitem:gaea39ff667823a0fb6057d7a5ef5ecf68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_xml_element.html">CXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaea39ff667823a0fb6057d7a5ef5ecf68">CXmlElement::SelectElement</a> (const int iIndex)</td></tr>
+<tr class="memdesc:gaea39ff667823a0fb6057d7a5ef5ecf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색한다.  <a href="#gaea39ff667823a0fb6057d7a5ef5ecf68"></a><br/></td></tr>
+<tr class="memitem:ga8f10d9d7193c8339bb4fe374548b6d25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga8f10d9d7193c8339bb4fe374548b6d25">CXmlElement::SelectElementList</a> (const char *pszName, <a class="el" href="group___xml_parser.html#ga297cf094267fe1442eecec8b6de78dc8">XML_ELEMENT_LIST</a> &amp;clsList)</td></tr>
+<tr class="memdesc:ga8f10d9d7193c8339bb4fe374548b6d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 Element 리스트에 저장한다.  <a href="#ga8f10d9d7193c8339bb4fe374548b6d25"></a><br/></td></tr>
+<tr class="memitem:ga51e084ad80ff48251621791403d848ec"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga51e084ad80ff48251621791403d848ec">CXmlElement::GetElementData</a> (const char *pszName, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga51e084ad80ff48251621791403d848ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 의 값 문자열의 포인터를 리턴한다.  <a href="#ga51e084ad80ff48251621791403d848ec"></a><br/></td></tr>
+<tr class="memitem:gaec1df4ab3517eb5363724c0bc1a1c15e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaec1df4ab3517eb5363724c0bc1a1c15e">CXmlElement::GetElementDataTrim</a> (const char *pszName, const int iIndex=0)</td></tr>
+<tr class="memdesc:gaec1df4ab3517eb5363724c0bc1a1c15e"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 의 값 문자열의 포인터를 리턴한다.  <a href="#gaec1df4ab3517eb5363724c0bc1a1c15e"></a><br/></td></tr>
+<tr class="memitem:gadd448aab6c6b3bd269956ad2c2c6a341"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gadd448aab6c6b3bd269956ad2c2c6a341">CXmlElement::SelectElementData</a> (const char *pszName, std::string &amp;strData, const int iIndex=0)</td></tr>
+<tr class="memdesc:gadd448aab6c6b3bd269956ad2c2c6a341"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 내용을 저장한다.  <a href="#gadd448aab6c6b3bd269956ad2c2c6a341"></a><br/></td></tr>
+<tr class="memitem:ga03ffd92dc478735582189cede19e1502"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga03ffd92dc478735582189cede19e1502">CXmlElement::SelectElementTrimData</a> (const char *pszName, std::string &amp;strData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga03ffd92dc478735582189cede19e1502"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 내용을 저장한다.  <a href="#ga03ffd92dc478735582189cede19e1502"></a><br/></td></tr>
+<tr class="memitem:ga946bf249939d8978d3c0098ce08487d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga946bf249939d8978d3c0098ce08487d3">CXmlElement::SelectElementData</a> (const char *pszName, int &amp;iData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga946bf249939d8978d3c0098ce08487d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 정수 내용을 가져온다.  <a href="#ga946bf249939d8978d3c0098ce08487d3"></a><br/></td></tr>
+<tr class="memitem:ga81375ba67baec381d9a0d3117fc5a20c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga81375ba67baec381d9a0d3117fc5a20c">CXmlElement::SelectElementData</a> (const char *pszName, int64_t &amp;iData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga81375ba67baec381d9a0d3117fc5a20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 64bit 정수 내용을 가져온다.  <a href="#ga81375ba67baec381d9a0d3117fc5a20c"></a><br/></td></tr>
+<tr class="memitem:ga15ec97e9be88cf1baedeacb1f350a004"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga15ec97e9be88cf1baedeacb1f350a004">CXmlElement::SelectElementData</a> (const char *pszName, bool &amp;bData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga15ec97e9be88cf1baedeacb1f350a004"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 bool 내용을 가져온다.  <a href="#ga15ec97e9be88cf1baedeacb1f350a004"></a><br/></td></tr>
+<tr class="memitem:gab58619ca368b2b655977c641458cf1fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gab58619ca368b2b655977c641458cf1fb">CXmlElement::SelectElementData</a> (const char *pszName, double &amp;dbData, const int iIndex=0)</td></tr>
+<tr class="memdesc:gab58619ca368b2b655977c641458cf1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 double 내용을 가져온다.  <a href="#gab58619ca368b2b655977c641458cf1fb"></a><br/></td></tr>
+<tr class="memitem:gace3c8bceda3f5818dedbdcb724da7f2f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gace3c8bceda3f5818dedbdcb724da7f2f">CXmlElement::GetName</a> ()</td></tr>
+<tr class="memdesc:gace3c8bceda3f5818dedbdcb724da7f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element 이름을 리턴한다.  <a href="#gace3c8bceda3f5818dedbdcb724da7f2f"></a><br/></td></tr>
+<tr class="memitem:ga335ef8df42cfbd75cd07f5b14515dcab"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga335ef8df42cfbd75cd07f5b14515dcab">CXmlElement::GetData</a> ()</td></tr>
+<tr class="memdesc:ga335ef8df42cfbd75cd07f5b14515dcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element 내용을 리턴한다.  <a href="#ga335ef8df42cfbd75cd07f5b14515dcab"></a><br/></td></tr>
+<tr class="memitem:gac12da5d74add80ff246452e4df4817ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gac12da5d74add80ff246452e4df4817ce">CXmlElement::IsDataEmpty</a> ()</td></tr>
+<tr class="memdesc:gac12da5d74add80ff246452e4df4817ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element 내용이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다.  <a href="#gac12da5d74add80ff246452e4df4817ce"></a><br/></td></tr>
+<tr class="memitem:ga05ecf9e42a9c296ae7f50d26b8446e8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga05ecf9e42a9c296ae7f50d26b8446e8f">CXmlElement::SetName</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga05ecf9e42a9c296ae7f50d26b8446e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element 이름을 설정한다.  <a href="#ga05ecf9e42a9c296ae7f50d26b8446e8f"></a><br/></td></tr>
+<tr class="memitem:gaf62f760f43f758b75de24c694d0b5b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaf62f760f43f758b75de24c694d0b5b5e">CXmlElement::SetData</a> (const char *pszData)</td></tr>
+<tr class="memdesc:gaf62f760f43f758b75de24c694d0b5b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element 내용을 저장한다.  <a href="#gaf62f760f43f758b75de24c694d0b5b5e"></a><br/></td></tr>
+<tr class="memitem:ga37646fa6aaf4af8c6a9f7219755b3eb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga37646fa6aaf4af8c6a9f7219755b3eb2">CXmlElement::InsertElementData</a> (const char *pszName, <a class="el" href="class_c_xml_element.html">CXmlElement</a> *pclsElement)</td></tr>
+<tr class="memdesc:ga37646fa6aaf4af8c6a9f7219755b3eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 추가한다.  <a href="#ga37646fa6aaf4af8c6a9f7219755b3eb2"></a><br/></td></tr>
+<tr class="memitem:ga2ff1de99c85a45863718dcc30f3dea3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga2ff1de99c85a45863718dcc30f3dea3f">CXmlElement::InsertElementData</a> (const char *pszName, const char *pszData)</td></tr>
+<tr class="memdesc:ga2ff1de99c85a45863718dcc30f3dea3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 추가한다.  <a href="#ga2ff1de99c85a45863718dcc30f3dea3f"></a><br/></td></tr>
+<tr class="memitem:ga5b0eff96f9a4b63b42ec1b26ae9dbd15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga5b0eff96f9a4b63b42ec1b26ae9dbd15">CXmlElement::InsertElementData</a> (const char *pszName, std::string &amp;strData)</td></tr>
+<tr class="memdesc:ga5b0eff96f9a4b63b42ec1b26ae9dbd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 추가한다.  <a href="#ga5b0eff96f9a4b63b42ec1b26ae9dbd15"></a><br/></td></tr>
+<tr class="memitem:ga55b5b5c400902b3ff6f42b4504f2939b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga55b5b5c400902b3ff6f42b4504f2939b">CXmlElement::InsertElementData</a> (const char *pszName, int iData)</td></tr>
+<tr class="memdesc:ga55b5b5c400902b3ff6f42b4504f2939b"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 추가한다.  <a href="#ga55b5b5c400902b3ff6f42b4504f2939b"></a><br/></td></tr>
+<tr class="memitem:gace1313b7216a2d771275f67e57b3b163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gace1313b7216a2d771275f67e57b3b163">CXmlElement::InsertElementData</a> (const char *pszName, int64_t iData)</td></tr>
+<tr class="memdesc:gace1313b7216a2d771275f67e57b3b163"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 추가한다.  <a href="#gace1313b7216a2d771275f67e57b3b163"></a><br/></td></tr>
+<tr class="memitem:ga9cf2a59ee936dbbffc2e261e39f01ea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga9cf2a59ee936dbbffc2e261e39f01ea0">CXmlElement::InsertElementData</a> (const char *pszName, bool bData)</td></tr>
+<tr class="memdesc:ga9cf2a59ee936dbbffc2e261e39f01ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 추가한다.  <a href="#ga9cf2a59ee936dbbffc2e261e39f01ea0"></a><br/></td></tr>
+<tr class="memitem:ga730add90e7b871b566497e7d5ea9c306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga730add90e7b871b566497e7d5ea9c306">CXmlElement::InsertElementData</a> (const char *pszName, double dbData)</td></tr>
+<tr class="memdesc:ga730add90e7b871b566497e7d5ea9c306"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 추가한다.  <a href="#ga730add90e7b871b566497e7d5ea9c306"></a><br/></td></tr>
+<tr class="memitem:ga7914e781647b8b9f919460df2fb96359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga7914e781647b8b9f919460df2fb96359">CXmlElement::InsertElement</a> (<a class="el" href="class_c_xml_element.html">CXmlElement</a> *pclsElement)</td></tr>
+<tr class="memdesc:ga7914e781647b8b9f919460df2fb96359"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 추가한다.  <a href="#ga7914e781647b8b9f919460df2fb96359"></a><br/></td></tr>
+<tr class="memitem:ga84f2ef74594e69a6141a4309f5404365"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga84f2ef74594e69a6141a4309f5404365">CXmlElement::UpdateElementData</a> (const char *pszName, const char *pszData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga84f2ef74594e69a6141a4309f5404365"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다.  <a href="#ga84f2ef74594e69a6141a4309f5404365"></a><br/></td></tr>
+<tr class="memitem:gac3ce81152db1f6df0368cd7e63f69ffe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gac3ce81152db1f6df0368cd7e63f69ffe">CXmlElement::UpdateElementData</a> (const char *pszName, std::string &amp;strData, const int iIndex=0)</td></tr>
+<tr class="memdesc:gac3ce81152db1f6df0368cd7e63f69ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다.  <a href="#gac3ce81152db1f6df0368cd7e63f69ffe"></a><br/></td></tr>
+<tr class="memitem:gae1fcc02cc507f775261c44adade001db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gae1fcc02cc507f775261c44adade001db">CXmlElement::UpdateElementData</a> (const char *pszName, int iData, const int iIndex=0)</td></tr>
+<tr class="memdesc:gae1fcc02cc507f775261c44adade001db"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다.  <a href="#gae1fcc02cc507f775261c44adade001db"></a><br/></td></tr>
+<tr class="memitem:ga84276605337fb60f474e10c2a622580b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga84276605337fb60f474e10c2a622580b">CXmlElement::UpdateElementData</a> (const char *pszName, int64_t iData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga84276605337fb60f474e10c2a622580b"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다.  <a href="#ga84276605337fb60f474e10c2a622580b"></a><br/></td></tr>
+<tr class="memitem:ga32b3b50e78ad7e746a8d641afcb834d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga32b3b50e78ad7e746a8d641afcb834d1">CXmlElement::UpdateElementData</a> (const char *pszName, bool bData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga32b3b50e78ad7e746a8d641afcb834d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다.  <a href="#ga32b3b50e78ad7e746a8d641afcb834d1"></a><br/></td></tr>
+<tr class="memitem:ga6c58a88a20cbceaf72217aa39397757c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga6c58a88a20cbceaf72217aa39397757c">CXmlElement::UpdateElementData</a> (const char *pszName, double dbData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga6c58a88a20cbceaf72217aa39397757c"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다.  <a href="#ga6c58a88a20cbceaf72217aa39397757c"></a><br/></td></tr>
+<tr class="memitem:ga1954756e49da7deb808b40ffc4e3b470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga1954756e49da7deb808b40ffc4e3b470">CXmlElement::InsertAttribute</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga1954756e49da7deb808b40ffc4e3b470"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트 이름이 존재하지 않으면 애트리뷰트를 추가하고 애트리뷰트 이름이 존재하면 해당 값을 수정한다.  <a href="#ga1954756e49da7deb808b40ffc4e3b470"></a><br/></td></tr>
+<tr class="memitem:ga55e6eb1f16d22c92eef1e2ece1467a3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga55e6eb1f16d22c92eef1e2ece1467a3a">CXmlElement::InsertAttribute</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga55e6eb1f16d22c92eef1e2ece1467a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트를 추가한다.  <a href="#ga55e6eb1f16d22c92eef1e2ece1467a3a"></a><br/></td></tr>
+<tr class="memitem:ga03929ff06b688fb4e88794823e531f6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga03929ff06b688fb4e88794823e531f6b">CXmlElement::InsertAttribute</a> (const char *pszName, int iValue)</td></tr>
+<tr class="memdesc:ga03929ff06b688fb4e88794823e531f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트를 추가한다.  <a href="#ga03929ff06b688fb4e88794823e531f6b"></a><br/></td></tr>
+<tr class="memitem:gaf326076c28c3407a71a36b50f4358928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaf326076c28c3407a71a36b50f4358928">CXmlElement::InsertAttribute</a> (const char *pszName, int64_t iValue)</td></tr>
+<tr class="memdesc:gaf326076c28c3407a71a36b50f4358928"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트를 추가한다.  <a href="#gaf326076c28c3407a71a36b50f4358928"></a><br/></td></tr>
+<tr class="memitem:ga7c01d1b307ce6d7b99e1dfb063341697"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga7c01d1b307ce6d7b99e1dfb063341697">CXmlElement::InsertAttribute</a> (const char *pszName, bool bValue)</td></tr>
+<tr class="memdesc:ga7c01d1b307ce6d7b99e1dfb063341697"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트를 추가한다.  <a href="#ga7c01d1b307ce6d7b99e1dfb063341697"></a><br/></td></tr>
+<tr class="memitem:gab9ccba379bab4359c624db5aa032a32c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gab9ccba379bab4359c624db5aa032a32c">CXmlElement::InsertAttribute</a> (const char *pszName, double dbValue)</td></tr>
+<tr class="memdesc:gab9ccba379bab4359c624db5aa032a32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트를 추가한다.  <a href="#gab9ccba379bab4359c624db5aa032a32c"></a><br/></td></tr>
+<tr class="memitem:ga0b4bbc934f0f64908d5b9fc2258280da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___xml_parser.html#ga297cf094267fe1442eecec8b6de78dc8">XML_ELEMENT_LIST</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga0b4bbc934f0f64908d5b9fc2258280da">CXmlElement::GetElementList</a> ()</td></tr>
+<tr class="memdesc:ga0b4bbc934f0f64908d5b9fc2258280da"><td class="mdescLeft">&#160;</td><td class="mdescRight">element list 의 포인터를 리턴한다.  <a href="#ga0b4bbc934f0f64908d5b9fc2258280da"></a><br/></td></tr>
+<tr class="memitem:gaf97768b006ee54638c9491d0d5c9bd5f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gaf97768b006ee54638c9491d0d5c9bd5f">CXmlSearch::SelectAttribute</a> (const char *pszName, const char *pszAttrName, const int iIndex=0)</td></tr>
+<tr class="memdesc:gaf97768b006ee54638c9491d0d5c9bd5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#gaf97768b006ee54638c9491d0d5c9bd5f"></a><br/></td></tr>
+<tr class="memitem:ga5023bddd4920540af47a69eea67080a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga5023bddd4920540af47a69eea67080a1">CXmlSearch::SelectAttribute</a> (const char *pszName, const char *pszAttrName, std::string &amp;strValue, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga5023bddd4920540af47a69eea67080a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#ga5023bddd4920540af47a69eea67080a1"></a><br/></td></tr>
+<tr class="memitem:ga56b1a8c216b1667241073d7d962a68c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga56b1a8c216b1667241073d7d962a68c2">CXmlSearch::SelectAttribute</a> (const char *pszName, const char *pszAttrName, int &amp;iValue, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga56b1a8c216b1667241073d7d962a68c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색하여 int 변수에 저장한다.  <a href="#ga56b1a8c216b1667241073d7d962a68c2"></a><br/></td></tr>
+<tr class="memitem:ga622cc76aa9a8bd3903b78e119f7f2fef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga622cc76aa9a8bd3903b78e119f7f2fef">CXmlSearch::SelectAttribute</a> (const char *pszName, const char *pszAttrName, bool &amp;bValue, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga622cc76aa9a8bd3903b78e119f7f2fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색하여 bool 변수에 저장한다.  <a href="#ga622cc76aa9a8bd3903b78e119f7f2fef"></a><br/></td></tr>
+<tr class="memitem:gac9e4179c3e7ffaa606ea1ba78efff6e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gac9e4179c3e7ffaa606ea1ba78efff6e6">CXmlSearch::SelectElementData</a> (const char *pszName, std::string &amp;strData, const int iIndex=0)</td></tr>
+<tr class="memdesc:gac9e4179c3e7ffaa606ea1ba78efff6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 하위 Element 를 검색하여서 내용을 저장한다.  <a href="#gac9e4179c3e7ffaa606ea1ba78efff6e6"></a><br/></td></tr>
+<tr class="memitem:gab4c0bba6a1605de6c5e157f78e2300da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gab4c0bba6a1605de6c5e157f78e2300da">CXmlSearch::SelectElementData</a> (const char *pszName, int &amp;iData, const int iIndex=0)</td></tr>
+<tr class="memdesc:gab4c0bba6a1605de6c5e157f78e2300da"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 하위 Element 를 검색하여서 정수 내용을 가져온다.  <a href="#gab4c0bba6a1605de6c5e157f78e2300da"></a><br/></td></tr>
+<tr class="memitem:ga94c604bd764a1b3125d7e00f7664f2fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga94c604bd764a1b3125d7e00f7664f2fb">CXmlSearch::SelectElementData</a> (const char *pszName, bool &amp;bData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga94c604bd764a1b3125d7e00f7664f2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 하위 Element 를 검색하여서 bool 내용을 가져온다.  <a href="#ga94c604bd764a1b3125d7e00f7664f2fb"></a><br/></td></tr>
+<tr class="memitem:ga8c84cec5324092ba14cde9fc114ec046"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga8c84cec5324092ba14cde9fc114ec046">CXmlSearch::SelectElementData</a> (const char *pszName, const char *pszChildName, std::string &amp;strData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga8c84cec5324092ba14cde9fc114ec046"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 하위 Element 를 검색하여서 내용을 저장한다.  <a href="#ga8c84cec5324092ba14cde9fc114ec046"></a><br/></td></tr>
+<tr class="memitem:ga336f75e5bfd2533ca2f6d4ff78c7c3a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga336f75e5bfd2533ca2f6d4ff78c7c3a8">CXmlSearch::SelectElementData</a> (const char *pszName, const char *pszChildName, int &amp;iData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga336f75e5bfd2533ca2f6d4ff78c7c3a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 하위 Element 를 검색하여서 정수 내용을 가져온다.  <a href="#ga336f75e5bfd2533ca2f6d4ff78c7c3a8"></a><br/></td></tr>
+<tr class="memitem:ga4b1bca3d468f20b3a94770db817c1e22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga4b1bca3d468f20b3a94770db817c1e22">CXmlSearch::SelectElementData</a> (const char *pszName, const char *pszChildName, bool &amp;bData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga4b1bca3d468f20b3a94770db817c1e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 하위 Element 를 검색하여서 bool 내용을 가져온다.  <a href="#ga4b1bca3d468f20b3a94770db817c1e22"></a><br/></td></tr>
+<tr class="memitem:ga2ff811985e71e4910029fed75228a776"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_xml_element.html">CXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#ga2ff811985e71e4910029fed75228a776">CXmlSearch::SelectElement</a> (const char *pszName, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga2ff811985e71e4910029fed75228a776"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 의 모든 하위 element 중에서 입력된 이름과 일치하는 element 를 검색한다.  <a href="#ga2ff811985e71e4910029fed75228a776"></a><br/></td></tr>
+<tr class="memitem:gace88206f24af659bbe88a4b0cf9998dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_xml_element.html">CXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xml_parser.html#gace88206f24af659bbe88a4b0cf9998dd">CXmlSearch::SelectElement</a> (const char *pszName, const char *pszChildName, const int iIndex=0)</td></tr>
+<tr class="memdesc:gace88206f24af659bbe88a4b0cf9998dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 의 모든 하위 element 중에서 입력된 이름과 일치하는 element 를 검색한다.  <a href="#gace88206f24af659bbe88a4b0cf9998dd"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>Xml 파싱/생성 라이브러리 Xml 파싱/생성 라이브러리 </p>
+<h2>타입정의 문서화</h2>
+<a class="anchor" id="gac05e431dc5fb75cd0fc3b6c8e3459152"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt; std::string, std::string &gt; <a class="el" href="group___xml_parser.html#gac05e431dc5fb75cd0fc3b6c8e3459152">XML_ATTRIBUTE_MAP</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML attribute map. </p>
+<p>key 는 attribute 이름이고 value 는 attribute 값이다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga297cf094267fe1442eecec8b6de78dc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt; <a class="el" href="class_c_xml_element.html">CXmlElement</a> &gt; <a class="el" href="group___xml_parser.html#ga297cf094267fe1442eecec8b6de78dc8">XML_ELEMENT_LIST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_xml_element.html" title="XML 정보 저장 클래스">CXmlElement</a> 객체 리스트 </p>
+
+</div>
+</div>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga17a6c99677dbcaa9d5c68af10bd3a409"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gab999dc8771dcccea609308043d89f2b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CXmlElement::CXmlElement </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>생성자 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga335ef8df42cfbd75cd07f5b14515dcab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CXmlElement::GetData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element 내용을 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>Element 내용을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga51e084ad80ff48251621791403d848ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CXmlElement::GetElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 의 값 문자열의 포인터를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 이름이 존재하면 해당 Element 의 값 문자열의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaec1df4ab3517eb5363724c0bc1a1c15e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CXmlElement::GetElementDataTrim </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 의 값 문자열의 포인터를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 이름이 존재하면 해당 Element 의 값 문자열의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0b4bbc934f0f64908d5b9fc2258280da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___xml_parser.html#ga297cf094267fe1442eecec8b6de78dc8">XML_ELEMENT_LIST</a> * CXmlElement::GetElementList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>element list 의 포인터를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>element list 의 포인터를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gace3c8bceda3f5818dedbdcb724da7f2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CXmlElement::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element 이름을 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>Element 이름을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1954756e49da7deb808b40ffc4e3b470"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트 이름이 존재하지 않으면 애트리뷰트를 추가하고 애트리뷰트 이름이 존재하면 해당 값을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga55e6eb1f16d22c92eef1e2ece1467a3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga03929ff06b688fb4e88794823e531f6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf326076c28c3407a71a36b50f4358928"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7c01d1b307ce6d7b99e1dfb063341697"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">bValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gab9ccba379bab4359c624db5aa032a32c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dbValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">dbValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7914e781647b8b9f919460df2fb96359"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_xml_element.html">CXmlElement</a> *&#160;</td>
+          <td class="paramname"><em>pclsElement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsElement</td><td>하위 Element </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga37646fa6aaf4af8c6a9f7219755b3eb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_xml_element.html">CXmlElement</a> *&#160;</td>
+          <td class="paramname"><em>pclsElement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">pclsElement</td><td>하위 Element 의 element; </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2ff1de99c85a45863718dcc30f3dea3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">pszData</td><td>하위 Element 의 data 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5b0eff96f9a4b63b42ec1b26ae9dbd15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">strData</td><td>하위 Element 의 data 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga55b5b5c400902b3ff6f42b4504f2939b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iData</td><td>하위 Element 의 data 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gace1313b7216a2d771275f67e57b3b163"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iData</td><td>하위 Element 의 data 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9cf2a59ee936dbbffc2e261e39f01ea0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">bData</td><td>하위 Element 의 data 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga730add90e7b871b566497e7d5ea9c306"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::InsertElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dbData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">dbData</td><td>하위 Element 의 data 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gac12da5d74add80ff246452e4df4817ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::IsDataEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element 내용이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa1910ac3d878d43b95d27e8065cba03b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CXmlElement::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML 문자열을 파싱하여서 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>XML 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>XML 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 XML 문자열의 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1b65cb73db5198bbf38f223e26205c49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CXmlElement::Parse </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML 문자열을 파싱하여서 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>XML 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 XML 문자열의 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaee7e962bcb678572c19fb7061299f15b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::ParseFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML 파일을 읽어서 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFileName</td><td>XML 파일 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf97768b006ee54638c9491d0d5c9bd5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CXmlSearch::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszAttrName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">pszAttrName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 애트리뷰트의 값을 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5023bddd4920540af47a69eea67080a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszAttrName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">pszAttrName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>애트리뷰트 값 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga56b1a8c216b1667241073d7d962a68c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszAttrName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색하여 int 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">pszAttrName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>애트리뷰트 값 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga622cc76aa9a8bd3903b78e119f7f2fef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszAttrName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색하여 bool 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">pszAttrName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">bValue</td><td>애트리뷰트 값 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacb1dccd3625e75cf7831631d2811a490"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CXmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 애트리뷰트의 값을 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga86f6baeb593722770427199f0996d217"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga058c11b5a8c5170c555265fcfb97c3d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색하여 int 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaca7122c0aee008af49d7fb4a90196be2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색하여 int64_t 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga97f8c870720cd1009da796c5a0f6e764"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색하여 bool 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">bValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf3714350d466253d6515767910cc3f68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dbValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색하여 double 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">dbValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2fadff0021c5e811f97cbefe07b19af9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CXmlElement::SelectAttributeTrim </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<p>값의 앞, 뒤 공백을 제거한 문자열의 포인터를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 애트리뷰트의 값을 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1d48008ef38ae87c81205c28eb20660a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectAttributeTrim </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<p>검색에 성공하면 값의 왼쪽, 오른쪽 공백을 제거한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2ff811985e71e4910029fed75228a776"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_xml_element.html">CXmlElement</a> * CXmlSearch::SelectElement </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML 의 모든 하위 element 중에서 입력된 이름과 일치하는 element 를 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>순번. 0 을 입력하면 첫번째 검색된 element 를 검색한다. 2 를 입력하면 세번째 검색된 element 를 검색한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색되면 해당 element 의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___xml_parser.html#ga083ba9a0a533011f8e3dc83955064405">CXmlElement</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gace88206f24af659bbe88a4b0cf9998dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_xml_element.html">CXmlElement</a> * CXmlSearch::SelectElement </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszChildName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML 의 모든 하위 element 중에서 입력된 이름과 일치하는 element 를 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">pszChildName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>순번. 0 을 입력하면 첫번째 검색된 element 를 검색한다. 2 를 입력하면 세번째 검색된 element 를 검색한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색되면 해당 element 의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga083ba9a0a533011f8e3dc83955064405"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_xml_element.html">CXmlElement</a> * CXmlElement::SelectElement </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 하위 Element 객체의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___xml_parser.html#ga2ff811985e71e4910029fed75228a776">CXmlSearch</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaea39ff667823a0fb6057d7a5ef5ecf68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_xml_element.html">CXmlElement</a> * CXmlElement::SelectElement </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 하위 Element 객체의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac9e4179c3e7ffaa606ea1ba78efff6e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 하위 Element 를 검색하여서 내용을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">strData</td><td>Elemnet 의 내용을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___xml_parser.html#gadd448aab6c6b3bd269956ad2c2c6a341">CXmlElement</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab4c0bba6a1605de6c5e157f78e2300da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 하위 Element 를 검색하여서 정수 내용을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">iData</td><td>Element 의 값을 저장하는 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___xml_parser.html#ga946bf249939d8978d3c0098ce08487d3">CXmlElement</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga94c604bd764a1b3125d7e00f7664f2fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 하위 Element 를 검색하여서 bool 내용을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">bData</td><td>Element 의 값을 저장하는 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___xml_parser.html#ga15ec97e9be88cf1baedeacb1f350a004">CXmlElement</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8c84cec5324092ba14cde9fc114ec046"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszChildName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 하위 Element 를 검색하여서 내용을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">pszChildName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">strData</td><td>Elemnet 의 내용을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga336f75e5bfd2533ca2f6d4ff78c7c3a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszChildName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 하위 Element 를 검색하여서 정수 내용을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">pszChildName</td><td>하위 element 이름 </td></tr>
+    <tr><td class="paramname">iData</td><td>하위 Element 의 값을 저장하는 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4b1bca3d468f20b3a94770db817c1e22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlSearch::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszChildName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 하위 Element 를 검색하여서 bool 내용을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+    <tr><td class="paramname">pszChildName</td><td>하위 element 이름 </td></tr>
+    <tr><td class="paramname">bData</td><td>하위 Element 의 값을 저장하는 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadd448aab6c6b3bd269956ad2c2c6a341"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 내용을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">strData</td><td>하위 Elemnet 의 내용을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___xml_parser.html#gac9e4179c3e7ffaa606ea1ba78efff6e6">CXmlSearch</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga946bf249939d8978d3c0098ce08487d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 정수 내용을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iData</td><td>하위 Element 의 값을 저장하는 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___xml_parser.html#gab4c0bba6a1605de6c5e157f78e2300da">CXmlSearch</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga81375ba67baec381d9a0d3117fc5a20c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 64bit 정수 내용을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iData</td><td>하위 Element 의 값을 저장하는 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga15ec97e9be88cf1baedeacb1f350a004"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 bool 내용을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">bData</td><td>하위 Element 의 값을 저장하는 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___xml_parser.html#ga94c604bd764a1b3125d7e00f7664f2fb">CXmlSearch</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab58619ca368b2b655977c641458cf1fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dbData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 double 내용을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">dbData</td><td>하위 Element 의 값을 저장하는 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8f10d9d7193c8339bb4fe374548b6d25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectElementList </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___xml_parser.html#ga297cf094267fe1442eecec8b6de78dc8">XML_ELEMENT_LIST</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 Element 리스트에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">clsList</td><td>하위 Element 를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga03ffd92dc478735582189cede19e1502"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::SelectElementTrimData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 내용을 저장한다. </p>
+<p>검색에 성공하면 내용의 왼쪽, 오른쪽 공백을 제거한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">strData</td><td>하위 Elemnet 의 내용을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf62f760f43f758b75de24c694d0b5b5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::SetData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element 내용을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszData</td><td>Element 내용 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga05ecf9e42a9c296ae7f50d26b8446e8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::SetName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element 이름을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>Element 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9fe4e028d1dce5981e86c0a325905782"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CXmlElement::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseTab</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수에 저장된 값을 이용하여서 XML 문자열을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>XML 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>XML 문자열을 저장할 변수의 크기 </td></tr>
+    <tr><td class="paramname">bUseTab</td><td>TAB 문자를 사용하는가? 하위 element 시작시 TAB 문자를 넣어주고 싶으면 true 를 입력하고 그렇지 않으면 false 를 입력한다. </td></tr>
+    <tr><td class="paramname">iDepth</td><td>XML 하위 element 깊이. 맨 위의 XML element 는 0 이고 그 하위 element 는 1 이다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>생성된 XML 문자열의 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad8fe589d3dccc23203c1899681e4d77a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CXmlElement::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseTab</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수에 저장된 값을 이용하여서 XML 문자열을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>XML 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">bUseTab</td><td>TAB 문자를 사용하는가? 하위 element 시작시 TAB 문자를 넣어주고 싶으면 true 를 입력하고 그렇지 않으면 false 를 입력한다. </td></tr>
+    <tr><td class="paramname">iDepth</td><td>XML 하위 element 깊이. 맨 위의 XML element 는 0 이고 그 하위 element 는 1 이다. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga84f2ef74594e69a6141a4309f5404365"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::UpdateElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">pszData</td><td>하위 Element 의 data 값 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 수정하고 1 을 입력하면 두번째 검색된 하위 Element 를 수정한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 내용 수정에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac3ce81152db1f6df0368cd7e63f69ffe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::UpdateElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">strData</td><td>하위 Element 의 data 값 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 수정하고 1 을 입력하면 두번째 검색된 하위 Element 를 수정한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 내용 수정에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae1fcc02cc507f775261c44adade001db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::UpdateElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iData</td><td></td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 수정하고 1 을 입력하면 두번째 검색된 하위 Element 를 수정한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 내용 수정에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga84276605337fb60f474e10c2a622580b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::UpdateElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iData</td><td>하위 Element 의 data 값 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 수정하고 1 을 입력하면 두번째 검색된 하위 Element 를 수정한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 내용 수정에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga32b3b50e78ad7e746a8d641afcb834d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::UpdateElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">bData</td><td>하위 Element 의 data 값 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 수정하고 1 을 입력하면 두번째 검색된 하위 Element 를 수정한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 내용 수정에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6c58a88a20cbceaf72217aa39397757c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::UpdateElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dbData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 에서 입력된 이름과 동일한 Element 의 내용을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">dbData</td><td>하위 Element 의 data 값 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 수정하고 1 을 입력하면 두번째 검색된 하위 Element 를 수정한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 내용 수정에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf06de13abc9605f1c64ca029c5707ce5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CXmlElement::WriteFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseTab</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML 을 파일에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFileName</td><td>XML 파일 이름 </td></tr>
+    <tr><td class="paramname">bUseTab</td><td>TAB 문자를 사용하는가? 하위 element 시작시 TAB 문자를 넣어주고 싶으면 true 를 입력하고 그렇지 않으면 false 를 입력한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeee29f6f7169fc35f7624f5a71e571f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CXmlElement::~CXmlElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소멸자 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 월 10월 12 2020 11:21:10, 프로젝트명 : C++ SIP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

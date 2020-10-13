@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SIP Stack: ISipStackCallBack 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SIP Stack
+   &#160;<span id="projectnumber">0.31</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="hierarchy.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="class_i_sip_stack_call_back-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">ISipStackCallBack 클래스 참조<div class="ingroups"><a class="el" href="group___sip_stack.html">SipStack</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SIP stack callback 인터페이스  
+ <a href="class_i_sip_stack_call_back.html#details">더 자세히 ...</a></p>
+<div class="dynheader">
+ISipStackCallBack에 대한 상속 다이어그램 : </div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_i_sip_stack_call_back.png" usemap="#ISipStackCallBack_map" alt=""/>
+  <map id="ISipStackCallBack_map" name="ISipStackCallBack_map">
+<area href="class_c_sip_user_agent.html" title="SIP UserAgent 클래스" alt="CSipUserAgent" shape="rect" coords="0,56,126,80"/>
+<area href="class_c_sip_user_agent_m_f_c.html" title="SipUserAgent callback 이벤트를 윈도우 이벤트로 전달하여서 MFC 클래스에서 SipUserAgent callback 을 편리하게 사용할 수 있는 클래스 SipUser..." alt="CSipUserAgentMFC" shape="rect" coords="136,56,262,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:ac476c9e5e60e76f2ca42d319de06ba23"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_sip_stack_call_back.html#ac476c9e5e60e76f2ca42d319de06ba23">~ISipStackCallBack</a> ()</td></tr>
+<tr class="memitem:ga42f718105b1b919c58806f8c5c144f0a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#ga42f718105b1b919c58806f8c5c144f0a">RecvRequest</a> (int iThreadId, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)=0</td></tr>
+<tr class="memdesc:ga42f718105b1b919c58806f8c5c144f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 요청 메시지 수신 이벤트 핸들러  <a href="group___sip_stack.html#ga42f718105b1b919c58806f8c5c144f0a"></a><br/></td></tr>
+<tr class="memitem:ga2736fe7202b40d1ae9f70677ecdac653"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#ga2736fe7202b40d1ae9f70677ecdac653">RecvResponse</a> (int iThreadId, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)=0</td></tr>
+<tr class="memdesc:ga2736fe7202b40d1ae9f70677ecdac653"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 응답 메시지 수신 이벤트 핸들러  <a href="group___sip_stack.html#ga2736fe7202b40d1ae9f70677ecdac653"></a><br/></td></tr>
+<tr class="memitem:ga13e3821cf4f38bb9fad68770303a842d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#ga13e3821cf4f38bb9fad68770303a842d">SendTimeout</a> (int iThreadId, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)=0</td></tr>
+<tr class="memdesc:ga13e3821cf4f38bb9fad68770303a842d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지 전송 timeout 이벤트 핸들러  <a href="group___sip_stack.html#ga13e3821cf4f38bb9fad68770303a842d"></a><br/></td></tr>
+<tr class="memitem:gaac5644495aaa5d67452ebfb95a84b5e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#gaac5644495aaa5d67452ebfb95a84b5e0">TcpSessionEnd</a> (const char *pszIp, int iPort, ESipTransport eTransport)</td></tr>
+<tr class="memdesc:gaac5644495aaa5d67452ebfb95a84b5e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP/TLS 세션 종료 이벤트 핸들러  <a href="group___sip_stack.html#gaac5644495aaa5d67452ebfb95a84b5e0"></a><br/></td></tr>
+<tr class="memitem:gaea2eef6bdc1b4eb55c50e3e5879d7df9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#gaea2eef6bdc1b4eb55c50e3e5879d7df9">ThreadEnd</a> (int iThreadId)</td></tr>
+<tr class="memdesc:gaea2eef6bdc1b4eb55c50e3e5879d7df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지 수신 쓰레드가 종료됨을 알려주는 이벤트 핸들러  <a href="group___sip_stack.html#gaea2eef6bdc1b4eb55c50e3e5879d7df9"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<div class="textblock"><p>SIP stack callback 인터페이스 </p>
+</div><h2>생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="ac476c9e5e60e76f2ca42d319de06ba23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ISipStackCallBack::~ISipStackCallBack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 월 10월 12 2020 11:21:10, 프로젝트명 : C++ SIP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

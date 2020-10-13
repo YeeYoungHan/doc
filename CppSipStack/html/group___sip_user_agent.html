@@ -1,0 +1,3468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SIP Stack: SipUserAgent</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SIP Stack
+   &#160;<span id="projectnumber">0.31</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#enum-members">열거형 타입</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">SipUserAgent</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SIP User Agent 라이브러리 SIP 로그인/통화 관리 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_cdr.html">CSipCdr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP CDR 정보를 저장하는 클래스  <a href="class_c_sip_cdr.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_dialog.html">CSipDialog</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Dialog 정보를 저장하는 클래스  <a href="class_c_sip_dialog.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 로그인 정보를 저장하는 클래스  <a href="class_c_sip_server_info.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지 목적지 주소 저장 클래스  <a href="class_c_sip_call_route.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_user_agent.html">CSipUserAgent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP UserAgent 클래스  <a href="class_c_sip_user_agent.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RTP 정보 저장 클래스  <a href="class_c_sip_call_rtp.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_sip_user_agent_call_back.html">ISipUserAgentCallBack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_sip_user_agent.html" title="SIP UserAgent 클래스">CSipUserAgent</a> 의 이벤트를 응용 프로그램으로 전달하는 callback 인터페이스  <a href="class_i_sip_user_agent_call_back.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+열거형 타입</h2></td></tr>
+<tr class="memitem:gaeb7020b0f33375738829ba03bc4bc1d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a> { <br/>
+&#160;&#160;<a class="el" href="group___sip_user_agent.html#ggaeb7020b0f33375738829ba03bc4bc1d3a875c089b2c7abb3967c463c0c28da9f5">E_RTP_SEND_RECV</a> =  0, 
+<a class="el" href="group___sip_user_agent.html#ggaeb7020b0f33375738829ba03bc4bc1d3ad951e8c3c8278e9f617f4225cf1aa75c">E_RTP_SEND</a>, 
+<a class="el" href="group___sip_user_agent.html#ggaeb7020b0f33375738829ba03bc4bc1d3abc5c65bd80ba2ea624285c1e9ed28bcc">E_RTP_RECV</a>, 
+<a class="el" href="group___sip_user_agent.html#ggaeb7020b0f33375738829ba03bc4bc1d3ae23226b589f6dda5b19fb55701814788">E_RTP_INACTIVE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___sip_user_agent.html#ggaeb7020b0f33375738829ba03bc4bc1d3a747df0d34658024b4143d38374eb63a9">E_RTP_NULL</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:gaeb7020b0f33375738829ba03bc4bc1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">RTP 전송/수신  <a href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ga920b2177c8220e10b2576739aef78ee1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga920b2177c8220e10b2576739aef78ee1">GetRtpDirectionString</a> (<a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a> eDirection)</td></tr>
+<tr class="memdesc:ga920b2177c8220e10b2576739aef78ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum direction 을 문자열로 리턴한다.  <a href="#ga920b2177c8220e10b2576739aef78ee1"></a><br/></td></tr>
+<tr class="memitem:gaab1d564cd6441e91c27a1255aa4d2091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaab1d564cd6441e91c27a1255aa4d2091">GetRtpDirectionEnum</a> (const char *pszDirection)</td></tr>
+<tr class="memdesc:gaab1d564cd6441e91c27a1255aa4d2091"><td class="mdescLeft">&#160;</td><td class="mdescRight">문자열 direction 을 enum direction 으로 리턴한다.  <a href="#gaab1d564cd6441e91c27a1255aa4d2091"></a><br/></td></tr>
+<tr class="memitem:gae3416ff08e8ad8e3c6a541799dec8658"><td class="memItemLeft" align="right" valign="top">THREAD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gae3416ff08e8ad8e3c6a541799dec8658">SipRegisterThread</a> (LPVOID lpParameter)</td></tr>
+<tr class="memdesc:gae3416ff08e8ad8e3c6a541799dec8658"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 서버에 주기적으로 REGISTER 메시지를 전송하는 쓰레드  <a href="#gae3416ff08e8ad8e3c6a541799dec8658"></a><br/></td></tr>
+<tr class="memitem:gaaf7d6eae7743c5534d50978bbc88f30b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaaf7d6eae7743c5534d50978bbc88f30b">StartSipRegisterThread</a> (<a class="el" href="class_c_sip_user_agent.html">CSipUserAgent</a> *pclsSipUserAgent)</td></tr>
+<tr class="memdesc:gaaf7d6eae7743c5534d50978bbc88f30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 서버에 주기적으로 REGISTER 메시지를 전송하는 쓰레드를 시작한다.  <a href="#gaaf7d6eae7743c5534d50978bbc88f30b"></a><br/></td></tr>
+<tr class="memitem:ga186ebc44ff7513bd10dd526e740331cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga186ebc44ff7513bd10dd526e740331cd">ISipUserAgentCallBack::EventRegister</a> (<a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> *pclsInfo, int iStatus)=0</td></tr>
+<tr class="memdesc:ga186ebc44ff7513bd10dd526e740331cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP REGISTER 응답 메시지 수신 이벤트 핸들러  <a href="#ga186ebc44ff7513bd10dd526e740331cd"></a><br/></td></tr>
+<tr class="memitem:ga4838c9cd1479005177548e59c3683ff2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga4838c9cd1479005177548e59c3683ff2">ISipUserAgentCallBack::EventIncomingRequestAuth</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:ga4838c9cd1479005177548e59c3683ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 통화 요청 수신에 대한 인증 확인 이벤트 핸들러  <a href="#ga4838c9cd1479005177548e59c3683ff2"></a><br/></td></tr>
+<tr class="memitem:ga2a6f7d6f3984cae09e49ce5dc300cff8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga2a6f7d6f3984cae09e49ce5dc300cff8">ISipUserAgentCallBack::EventIncomingCall</a> (const char *pszCallId, const char *pszFrom, const char *pszTo, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)=0</td></tr>
+<tr class="memdesc:ga2a6f7d6f3984cae09e49ce5dc300cff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 통화 요청 수신 이벤트 핸들러  <a href="#ga2a6f7d6f3984cae09e49ce5dc300cff8"></a><br/></td></tr>
+<tr class="memitem:ga84de097696bbf6d53cdc05f898a6898f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga84de097696bbf6d53cdc05f898a6898f">ISipUserAgentCallBack::EventCallRing</a> (const char *pszCallId, int iSipStatus, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)=0</td></tr>
+<tr class="memdesc:ga84de097696bbf6d53cdc05f898a6898f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Ring / Session Progress 수신 이벤트 핸들러  <a href="#ga84de097696bbf6d53cdc05f898a6898f"></a><br/></td></tr>
+<tr class="memitem:gaafcccb2f7269b5224823b02c3da038d1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaafcccb2f7269b5224823b02c3da038d1">ISipUserAgentCallBack::EventCallStart</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)=0</td></tr>
+<tr class="memdesc:gaafcccb2f7269b5224823b02c3da038d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 통화 연결 이벤트 핸들러  <a href="#gaafcccb2f7269b5224823b02c3da038d1"></a><br/></td></tr>
+<tr class="memitem:gab39ea7f9ff84e7d34b4f4720b987d0dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gab39ea7f9ff84e7d34b4f4720b987d0dc">ISipUserAgentCallBack::EventCallEnd</a> (const char *pszCallId, int iSipStatus)=0</td></tr>
+<tr class="memdesc:gab39ea7f9ff84e7d34b4f4720b987d0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 통화 종료 이벤트 핸들러  <a href="#gab39ea7f9ff84e7d34b4f4720b987d0dc"></a><br/></td></tr>
+<tr class="memitem:ga756b11e1afd4188c9ef35503aa18edad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga756b11e1afd4188c9ef35503aa18edad">ISipUserAgentCallBack::EventReInvite</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRemoteRtp, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsLocalRtp)</td></tr>
+<tr class="memdesc:ga756b11e1afd4188c9ef35503aa18edad"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP ReINVITE 수신 이벤트 핸들러  <a href="#ga756b11e1afd4188c9ef35503aa18edad"></a><br/></td></tr>
+<tr class="memitem:gaa421d647ecfac702dae63e120a596b42"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaa421d647ecfac702dae63e120a596b42">ISipUserAgentCallBack::EventReInviteResponse</a> (const char *pszCallId, int iSipStatus, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRemoteRtp)</td></tr>
+<tr class="memdesc:gaa421d647ecfac702dae63e120a596b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP ReINVITE 응답 메시지 수신 이벤트 핸들러  <a href="#gaa421d647ecfac702dae63e120a596b42"></a><br/></td></tr>
+<tr class="memitem:ga282ffccf1de63981055bb3cad5ac5c8d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga282ffccf1de63981055bb3cad5ac5c8d">ISipUserAgentCallBack::EventPrack</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga282ffccf1de63981055bb3cad5ac5c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP PRACK 수신 이벤트 핸들러  <a href="#ga282ffccf1de63981055bb3cad5ac5c8d"></a><br/></td></tr>
+<tr class="memitem:ga695ace665effd882dd13c8caee0d9749"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga695ace665effd882dd13c8caee0d9749">ISipUserAgentCallBack::EventTransfer</a> (const char *pszCallId, const char *pszReferToCallId, bool bScreenedTransfer)</td></tr>
+<tr class="memdesc:ga695ace665effd882dd13c8caee0d9749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screened / Unscreened Transfer 요청 수신 이벤트 핸들러  <a href="#ga695ace665effd882dd13c8caee0d9749"></a><br/></td></tr>
+<tr class="memitem:ga491359df07628cdc205df3262b14b569"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga491359df07628cdc205df3262b14b569">ISipUserAgentCallBack::EventBlindTransfer</a> (const char *pszCallId, const char *pszReferToId)</td></tr>
+<tr class="memdesc:ga491359df07628cdc205df3262b14b569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blind Transfer 요청 수신 이벤트 핸들러  <a href="#ga491359df07628cdc205df3262b14b569"></a><br/></td></tr>
+<tr class="memitem:ga78fe62f5ec15fddf7c5b4d1f3e510d11"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga78fe62f5ec15fddf7c5b4d1f3e510d11">ISipUserAgentCallBack::EventTransferResponse</a> (const char *pszCallId, int iSipStatus)</td></tr>
+<tr class="memdesc:ga78fe62f5ec15fddf7c5b4d1f3e510d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 통화 전달 응답 수신 이벤트 핸들러  <a href="#ga78fe62f5ec15fddf7c5b4d1f3e510d11"></a><br/></td></tr>
+<tr class="memitem:ga6b7a5d6e49d448942f6de8a76600ab39"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga6b7a5d6e49d448942f6de8a76600ab39">ISipUserAgentCallBack::EventMessage</a> (const char *pszFrom, const char *pszTo, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:ga6b7a5d6e49d448942f6de8a76600ab39"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP MESSAGE 수신 이벤트 핸들러  <a href="#ga6b7a5d6e49d448942f6de8a76600ab39"></a><br/></td></tr>
+<tr class="memitem:gaf8b3bd73049880b03a8ebcbc573e6d41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaf8b3bd73049880b03a8ebcbc573e6d41">ISipUserAgentCallBack::EventThreadEnd</a> (int iThreadId)</td></tr>
+<tr class="memdesc:gaf8b3bd73049880b03a8ebcbc573e6d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지 수신 쓰레드가 종료됨을 알려주는 이벤트 핸들러  <a href="#gaf8b3bd73049880b03a8ebcbc573e6d41"></a><br/></td></tr>
+<tr class="memitem:gad1b39ef7d7356a94c7d7b7518c9eb8e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gad1b39ef7d7356a94c7d7b7518c9eb8e7">GetCallIdFromReferTo</a> (const char *pszValue, std::string &amp;strReferToCallId)</td></tr>
+<tr class="memdesc:gad1b39ef7d7356a94c7d7b7518c9eb8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces 를 포함한 문자열에서 SIP Call-ID 를 가져온다.  <a href="#gad1b39ef7d7356a94c7d7b7518c9eb8e7"></a><br/></td></tr>
+<tr class="memitem:gaeab071147dd6c73a98f9c64494638ddc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaeab071147dd6c73a98f9c64494638ddc">CSipDialog::CSipDialog</a> (<a class="el" href="class_c_sip_stack.html">CSipStack</a> *pclsSipStack)</td></tr>
+<tr class="memdesc:gaeab071147dd6c73a98f9c64494638ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">생성자  <a href="#gaeab071147dd6c73a98f9c64494638ddc"></a><br/></td></tr>
+<tr class="memitem:gad3c91e09c7046b21d9156686f84f0b4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gad3c91e09c7046b21d9156686f84f0b4f">CSipDialog::~CSipDialog</a> ()</td></tr>
+<tr class="memdesc:gad3c91e09c7046b21d9156686f84f0b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">소멸자.  <a href="#gad3c91e09c7046b21d9156686f84f0b4f"></a><br/></td></tr>
+<tr class="memitem:ga738d00d57479cc879da2f9b18118c43b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga738d00d57479cc879da2f9b18118c43b">CSipDialog::CreateInvite</a> ()</td></tr>
+<tr class="memdesc:ga738d00d57479cc879da2f9b18118c43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">INVITE 메시지를 생성한다.  <a href="#ga738d00d57479cc879da2f9b18118c43b"></a><br/></td></tr>
+<tr class="memitem:ga19d00325a8e32179dacbc7725c761bbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga19d00325a8e32179dacbc7725c761bbd">CSipDialog::CreateAck</a> (int iStatusCode)</td></tr>
+<tr class="memdesc:ga19d00325a8e32179dacbc7725c761bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACK 메시지를 생성한다.  <a href="#ga19d00325a8e32179dacbc7725c761bbd"></a><br/></td></tr>
+<tr class="memitem:gad5e971d91730525a2d43f6da149fefa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gad5e971d91730525a2d43f6da149fefa7">CSipDialog::CreateCancel</a> ()</td></tr>
+<tr class="memdesc:gad5e971d91730525a2d43f6da149fefa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANCEL 메시지를 생성한다.  <a href="#gad5e971d91730525a2d43f6da149fefa7"></a><br/></td></tr>
+<tr class="memitem:ga5077ded634a3ccb26b65c23d560a7c4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga5077ded634a3ccb26b65c23d560a7c4f">CSipDialog::CreateBye</a> ()</td></tr>
+<tr class="memdesc:ga5077ded634a3ccb26b65c23d560a7c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">BYE 메시지를 생성한다.  <a href="#ga5077ded634a3ccb26b65c23d560a7c4f"></a><br/></td></tr>
+<tr class="memitem:ga31e72ea0ffdb06f0db71a8b6e211bdcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga31e72ea0ffdb06f0db71a8b6e211bdcb">CSipDialog::CreateNotify</a> ()</td></tr>
+<tr class="memdesc:ga31e72ea0ffdb06f0db71a8b6e211bdcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">NOTIFY 메시지를 생성한다.  <a href="#ga31e72ea0ffdb06f0db71a8b6e211bdcb"></a><br/></td></tr>
+<tr class="memitem:ga002c4b2cfc18ced056ba416393aa93cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga002c4b2cfc18ced056ba416393aa93cf">CSipDialog::CreateRefer</a> ()</td></tr>
+<tr class="memdesc:ga002c4b2cfc18ced056ba416393aa93cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">REFER 메시지를 생성한다.  <a href="#ga002c4b2cfc18ced056ba416393aa93cf"></a><br/></td></tr>
+<tr class="memitem:ga802b73e420cb91d8b094550a152dee22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga802b73e420cb91d8b094550a152dee22">CSipDialog::CreatePrack</a> ()</td></tr>
+<tr class="memdesc:ga802b73e420cb91d8b094550a152dee22"><td class="mdescLeft">&#160;</td><td class="mdescRight">PRACK 메시지를 생성한다.  <a href="#ga802b73e420cb91d8b094550a152dee22"></a><br/></td></tr>
+<tr class="memitem:ga91c0e0eee73de0b1b021108fc413f179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga91c0e0eee73de0b1b021108fc413f179">CSipDialog::CreateInfo</a> ()</td></tr>
+<tr class="memdesc:ga91c0e0eee73de0b1b021108fc413f179"><td class="mdescLeft">&#160;</td><td class="mdescRight">INFO 메시지를 생성한다.  <a href="#ga91c0e0eee73de0b1b021108fc413f179"></a><br/></td></tr>
+<tr class="memitem:ga5f1b669f93b21d4420ad04e5db33d2e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga5f1b669f93b21d4420ad04e5db33d2e6">CSipDialog::AddSdp</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:ga5f1b669f93b21d4420ad04e5db33d2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 SDP 메시지를 추가한다.  <a href="#ga5f1b669f93b21d4420ad04e5db33d2e6"></a><br/></td></tr>
+<tr class="memitem:ga3943f67f450d94be0da827ebfb81bc66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga3943f67f450d94be0da827ebfb81bc66">CSipDialog::SetLocalRtp</a> (<a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga3943f67f450d94be0da827ebfb81bc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">local RTP 정보를 저장한다.  <a href="#ga3943f67f450d94be0da827ebfb81bc66"></a><br/></td></tr>
+<tr class="memitem:ga7c4d4f21d3b1e5a267683766030aaac9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga7c4d4f21d3b1e5a267683766030aaac9">CSipDialog::SetRemoteRtp</a> (<a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga7c4d4f21d3b1e5a267683766030aaac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">remote RTP 정보를 저장한다.  <a href="#ga7c4d4f21d3b1e5a267683766030aaac9"></a><br/></td></tr>
+<tr class="memitem:gaf23f5ca36346e53269256340fea58477"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaf23f5ca36346e53269256340fea58477">CSipDialog::SelectLocalRtp</a> (<a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:gaf23f5ca36346e53269256340fea58477"><td class="mdescLeft">&#160;</td><td class="mdescRight">my SIP 클라이언트의 RTP 정보를 가져온다.  <a href="#gaf23f5ca36346e53269256340fea58477"></a><br/></td></tr>
+<tr class="memitem:ga2be103afff2d13525acfdbcd991c714d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga2be103afff2d13525acfdbcd991c714d">CSipDialog::SelectRemoteRtp</a> (<a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga2be103afff2d13525acfdbcd991c714d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 클라이언트의 RTP 정보를 가져온다.  <a href="#ga2be103afff2d13525acfdbcd991c714d"></a><br/></td></tr>
+<tr class="memitem:ga549b7b98e14df7175d3f60d4b3fee560"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga549b7b98e14df7175d3f60d4b3fee560">CSipDialog::GetCdr</a> (<a class="el" href="class_c_sip_cdr.html">CSipCdr</a> *pclsCdr)</td></tr>
+<tr class="memdesc:ga549b7b98e14df7175d3f60d4b3fee560"><td class="mdescLeft">&#160;</td><td class="mdescRight">CDR 정보 객체에 데이터를 저장한다.  <a href="#ga549b7b98e14df7175d3f60d4b3fee560"></a><br/></td></tr>
+<tr class="memitem:ga999e4f8db0063aac8036b2fab5507d6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga999e4f8db0063aac8036b2fab5507d6a">CSipDialog::IsConnected</a> ()</td></tr>
+<tr class="memdesc:ga999e4f8db0063aac8036b2fab5507d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">통화 연결된 Dialog 인가?  <a href="#ga999e4f8db0063aac8036b2fab5507d6a"></a><br/></td></tr>
+<tr class="memitem:gaf0613a58e1e697f38e84456c5518328f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaf0613a58e1e697f38e84456c5518328f">CSipDialog::IsUseCodec</a> (int iCodec)</td></tr>
+<tr class="memdesc:gaf0613a58e1e697f38e84456c5518328f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialog 에서 사용하는 코덱인지 검사한다.  <a href="#gaf0613a58e1e697f38e84456c5518328f"></a><br/></td></tr>
+<tr class="memitem:ga43591436aedbf73fb3e9f494b9092494"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga43591436aedbf73fb3e9f494b9092494">CSipServerInfo::CSipServerInfo</a> ()</td></tr>
+<tr class="memdesc:ga43591436aedbf73fb3e9f494b9092494"><td class="mdescLeft">&#160;</td><td class="mdescRight">생성자  <a href="#ga43591436aedbf73fb3e9f494b9092494"></a><br/></td></tr>
+<tr class="memitem:gae60659b6ce034e7d875ed039f2ff64da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gae60659b6ce034e7d875ed039f2ff64da">CSipServerInfo::~CSipServerInfo</a> ()</td></tr>
+<tr class="memdesc:gae60659b6ce034e7d875ed039f2ff64da"><td class="mdescLeft">&#160;</td><td class="mdescRight">소멸자  <a href="#gae60659b6ce034e7d875ed039f2ff64da"></a><br/></td></tr>
+<tr class="memitem:ga4956351d01883ef3eba58455c4f9749c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga4956351d01883ef3eba58455c4f9749c">CSipServerInfo::Equal</a> (<a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;clsInfo)</td></tr>
+<tr class="memdesc:ga4956351d01883ef3eba58455c4f9749c"><td class="mdescLeft">&#160;</td><td class="mdescRight">동일한 IP-PBX 정보인지 검사한다.  <a href="#ga4956351d01883ef3eba58455c4f9749c"></a><br/></td></tr>
+<tr class="memitem:gaf79ca9ae4c7ae9895d53bc2e23916c4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaf79ca9ae4c7ae9895d53bc2e23916c4d">CSipServerInfo::Update</a> (<a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;clsInfo)</td></tr>
+<tr class="memdesc:gaf79ca9ae4c7ae9895d53bc2e23916c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP-PBX 정보를 수정한다.  <a href="#gaf79ca9ae4c7ae9895d53bc2e23916c4d"></a><br/></td></tr>
+<tr class="memitem:ga6049a83ca2f31f1805358f0306736fda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga6049a83ca2f31f1805358f0306736fda">CSipServerInfo::ClearLogin</a> ()</td></tr>
+<tr class="memdesc:ga6049a83ca2f31f1805358f0306736fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">로그인된 정보를 초기화시킨다.  <a href="#ga6049a83ca2f31f1805358f0306736fda"></a><br/></td></tr>
+<tr class="memitem:ga0122acee4d38c6b1db03247784927f86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga0122acee4d38c6b1db03247784927f86">CSipServerInfo::CreateRegister</a> (<a class="el" href="class_c_sip_stack.html">CSipStack</a> *pclsSipStack, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsResponse)</td></tr>
+<tr class="memdesc:ga0122acee4d38c6b1db03247784927f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP REGISTER 메시지를 생성한다.  <a href="#ga0122acee4d38c6b1db03247784927f86"></a><br/></td></tr>
+<tr class="memitem:gaf368dbb5031d87d7c587e69bbe4a4487"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaf368dbb5031d87d7c587e69bbe4a4487">CSipServerInfo::SetChallenge</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsResponse)</td></tr>
+<tr class="memdesc:gaf368dbb5031d87d7c587e69bbe4a4487"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP REGISTER 요청에 대한 응답 메시지에서 Chanllenge 를 저장한다.  <a href="#gaf368dbb5031d87d7c587e69bbe4a4487"></a><br/></td></tr>
+<tr class="memitem:ga997749a7e4103ef6aa05a0db8ff0af2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga997749a7e4103ef6aa05a0db8ff0af2a">CSipServerInfo::AddAuth</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsRequest, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsResponse)</td></tr>
+<tr class="memdesc:ga997749a7e4103ef6aa05a0db8ff0af2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 요청 메시지에 인증 정보를 추가한다.  <a href="#ga997749a7e4103ef6aa05a0db8ff0af2a"></a><br/></td></tr>
+<tr class="memitem:gad7c701e91ccedbbb48e101ca958ce69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gad7c701e91ccedbbb48e101ca958ce69e">CSipServerInfo::AddAuth</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsRequest, const <a class="el" href="class_c_sip_challenge.html">CSipChallenge</a> *pclsChallenge, int iStatusCode, int iNonceCount)</td></tr>
+<tr class="memdesc:gad7c701e91ccedbbb48e101ca958ce69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 요청 메시지에 인증 정보를 추가한다.  <a href="#gad7c701e91ccedbbb48e101ca958ce69e"></a><br/></td></tr>
+<tr class="memitem:ga76c75a49d30af14c7e26815e7a39c133"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga76c75a49d30af14c7e26815e7a39c133">CSipUserAgent::CSipUserAgent</a> ()</td></tr>
+<tr class="memdesc:ga76c75a49d30af14c7e26815e7a39c133"><td class="mdescLeft">&#160;</td><td class="mdescRight">생성자  <a href="#ga76c75a49d30af14c7e26815e7a39c133"></a><br/></td></tr>
+<tr class="memitem:gacefded3f23c4fee4176a0c15a45f0051"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gacefded3f23c4fee4176a0c15a45f0051">CSipUserAgent::~CSipUserAgent</a> ()</td></tr>
+<tr class="memdesc:gacefded3f23c4fee4176a0c15a45f0051"><td class="mdescLeft">&#160;</td><td class="mdescRight">소멸자  <a href="#gacefded3f23c4fee4176a0c15a45f0051"></a><br/></td></tr>
+<tr class="memitem:ga0727314e792ebad0f65ea9022dfd134c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga0727314e792ebad0f65ea9022dfd134c">CSipUserAgent::Start</a> (<a class="el" href="class_c_sip_stack_setup.html">CSipStackSetup</a> &amp;clsSetup, <a class="el" href="class_i_sip_user_agent_call_back.html">ISipUserAgentCallBack</a> *pclsCallBack, <a class="el" href="class_i_sip_stack_security_call_back.html">ISipStackSecurityCallBack</a> *pclsSecurityCallBack=NULL)</td></tr>
+<tr class="memdesc:ga0727314e792ebad0f65ea9022dfd134c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP stack 을 시작하고 SIP 로그인 쓰레드를 시작한다.  <a href="#ga0727314e792ebad0f65ea9022dfd134c"></a><br/></td></tr>
+<tr class="memitem:ga408430c1ea6fcbaa50cab9d0d11f18bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga408430c1ea6fcbaa50cab9d0d11f18bf">CSipUserAgent::Stop</a> ()</td></tr>
+<tr class="memdesc:ga408430c1ea6fcbaa50cab9d0d11f18bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP stack 을 종료하고 SIP 로그인 쓰레드를 종료한다.  <a href="#ga408430c1ea6fcbaa50cab9d0d11f18bf"></a><br/></td></tr>
+<tr class="memitem:ga35dc92b880d29fdf411ef10462ad3265"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga35dc92b880d29fdf411ef10462ad3265">CSipUserAgent::Delete</a> (const char *pszCallId)</td></tr>
+<tr class="memdesc:ga35dc92b880d29fdf411ef10462ad3265"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Dialog 를 삭제한다.  <a href="#ga35dc92b880d29fdf411ef10462ad3265"></a><br/></td></tr>
+<tr class="memitem:ga56faec8a1b26adcd940d92fceec7f5f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga56faec8a1b26adcd940d92fceec7f5f0">CSipUserAgent::Final</a> ()</td></tr>
+<tr class="memdesc:ga56faec8a1b26adcd940d92fceec7f5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">프로세스가 종료될 때에 최종적으로 실행하여서 openssl 메모리 누수를 출력하지 않는다.  <a href="#ga56faec8a1b26adcd940d92fceec7f5f0"></a><br/></td></tr>
+<tr class="memitem:gae149375fc9738daa9868764d29b3f4dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gae149375fc9738daa9868764d29b3f4dc">CSipUserAgent::StartCall</a> (const char *pszFrom, const char *pszTo, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp, <a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a> *pclsRoute, std::string &amp;strCallId)</td></tr>
+<tr class="memdesc:gae149375fc9738daa9868764d29b3f4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 통화 요청 메시지를 전송한다.  <a href="#gae149375fc9738daa9868764d29b3f4dc"></a><br/></td></tr>
+<tr class="memitem:ga3e7980a83fed6ea8e256d493c0860aa4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga3e7980a83fed6ea8e256d493c0860aa4">CSipUserAgent::StopCall</a> (const char *pszCallId, int iSipCode=0)</td></tr>
+<tr class="memdesc:ga3e7980a83fed6ea8e256d493c0860aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">통화를 종료한다.  <a href="#ga3e7980a83fed6ea8e256d493c0860aa4"></a><br/></td></tr>
+<tr class="memitem:gad7e946da6634a8ee7376c456bd1d25ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gad7e946da6634a8ee7376c456bd1d25ea">CSipUserAgent::StopCall</a> (const char *pszCallId, const char *pszForward)</td></tr>
+<tr class="memdesc:gad7e946da6634a8ee7376c456bd1d25ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">착신 전환한다.  <a href="#gad7e946da6634a8ee7376c456bd1d25ea"></a><br/></td></tr>
+<tr class="memitem:ga6bc8756e8e135365f4ff9148dc2d214b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga6bc8756e8e135365f4ff9148dc2d214b">CSipUserAgent::RingCall</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga6bc8756e8e135365f4ff9148dc2d214b"><td class="mdescLeft">&#160;</td><td class="mdescRight">183 응답 메시지를 전송한다.  <a href="#ga6bc8756e8e135365f4ff9148dc2d214b"></a><br/></td></tr>
+<tr class="memitem:ga31b7c65bdcf438507e91f9e19aa17a18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga31b7c65bdcf438507e91f9e19aa17a18">CSipUserAgent::RingCall</a> (const char *pszCallId, int iSipStatus, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga31b7c65bdcf438507e91f9e19aa17a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 통화 요청에 대한 Ring / Session Progress 응답 메시지를 전송한다.  <a href="#ga31b7c65bdcf438507e91f9e19aa17a18"></a><br/></td></tr>
+<tr class="memitem:ga4631e333b71b20e3f0aeef4bb7763690"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga4631e333b71b20e3f0aeef4bb7763690">CSipUserAgent::AcceptCall</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga4631e333b71b20e3f0aeef4bb7763690"><td class="mdescLeft">&#160;</td><td class="mdescRight">수신된 통화를 수락한다.  <a href="#ga4631e333b71b20e3f0aeef4bb7763690"></a><br/></td></tr>
+<tr class="memitem:gac5df448d4bc7e1816975e6541796a32a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gac5df448d4bc7e1816975e6541796a32a">CSipUserAgent::HoldCall</a> (const char *pszCallId, <a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a> eDirection=<a class="el" href="group___sip_user_agent.html#ggaeb7020b0f33375738829ba03bc4bc1d3ad951e8c3c8278e9f617f4225cf1aa75c">E_RTP_SEND</a>)</td></tr>
+<tr class="memdesc:gac5df448d4bc7e1816975e6541796a32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">통화 hold 요청 메시지를 전송한다.  <a href="#gac5df448d4bc7e1816975e6541796a32a"></a><br/></td></tr>
+<tr class="memitem:gacad85a9c22b8ac4d736655df8cc813a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gacad85a9c22b8ac4d736655df8cc813a8">CSipUserAgent::ResumeCall</a> (const char *pszCallId)</td></tr>
+<tr class="memdesc:gacad85a9c22b8ac4d736655df8cc813a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">통화 resume 요청 메시지를 전송한다.  <a href="#gacad85a9c22b8ac4d736655df8cc813a8"></a><br/></td></tr>
+<tr class="memitem:ga9be10d9f70dc80f42261d4bedbb11778"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga9be10d9f70dc80f42261d4bedbb11778">CSipUserAgent::GetCallCount</a> ()</td></tr>
+<tr class="memdesc:ga9be10d9f70dc80f42261d4bedbb11778"><td class="mdescLeft">&#160;</td><td class="mdescRight">통화 개수를 리턴한다.  <a href="#ga9be10d9f70dc80f42261d4bedbb11778"></a><br/></td></tr>
+<tr class="memitem:gadd39896c9d92a9691e0e44a2bd9e1511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gadd39896c9d92a9691e0e44a2bd9e1511">CSipUserAgent::GetCallIdList</a> (SIP_CALL_ID_LIST &amp;clsList)</td></tr>
+<tr class="memdesc:gadd39896c9d92a9691e0e44a2bd9e1511"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 통화의 SIP Call-ID 를 리스트에 저장한다.  <a href="#gadd39896c9d92a9691e0e44a2bd9e1511"></a><br/></td></tr>
+<tr class="memitem:ga731205324e5cd10201cecd6985d7e56c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga731205324e5cd10201cecd6985d7e56c">CSipUserAgent::StopCallAll</a> ()</td></tr>
+<tr class="memdesc:ga731205324e5cd10201cecd6985d7e56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 통화를 종료시킨다.  <a href="#ga731205324e5cd10201cecd6985d7e56c"></a><br/></td></tr>
+<tr class="memitem:ga5815ca79109e35fdb601ff2ae35adc6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga5815ca79109e35fdb601ff2ae35adc6b">CSipUserAgent::CreateCall</a> (const char *pszFrom, const char *pszTo, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp, <a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a> *pclsRoute, std::string &amp;strCallId, <a class="el" href="class_c_sip_message.html">CSipMessage</a> **ppclsInvite)</td></tr>
+<tr class="memdesc:ga5815ca79109e35fdb601ff2ae35adc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP INVITE 메시지를 생성하고 Dialog 에 저장한다.  <a href="#ga5815ca79109e35fdb601ff2ae35adc6b"></a><br/></td></tr>
+<tr class="memitem:ga938d39b520ee62db8abc3a3d532d9d46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga938d39b520ee62db8abc3a3d532d9d46">CSipUserAgent::StartCall</a> (const char *pszCallId, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsInvite)</td></tr>
+<tr class="memdesc:ga938d39b520ee62db8abc3a3d532d9d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateCall 메소드로 생성된 INVITE 메시지를 전송한다.  <a href="#ga938d39b520ee62db8abc3a3d532d9d46"></a><br/></td></tr>
+<tr class="memitem:gadce8ed4722b552023bab3242e3bf922e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gadce8ed4722b552023bab3242e3bf922e">CSipUserAgent::TransferCallBlind</a> (const char *pszCallId, const char *pszTo)</td></tr>
+<tr class="memdesc:gadce8ed4722b552023bab3242e3bf922e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blind transfer 를 실행한다.  <a href="#gadce8ed4722b552023bab3242e3bf922e"></a><br/></td></tr>
+<tr class="memitem:ga36c78e1fab7de4ca601c07bd05073b06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga36c78e1fab7de4ca601c07bd05073b06">CSipUserAgent::TransferCall</a> (const char *pszCallId, const char *pszToCallId)</td></tr>
+<tr class="memdesc:ga36c78e1fab7de4ca601c07bd05073b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screened / Unscreened transfer 를 실행한다.  <a href="#ga36c78e1fab7de4ca601c07bd05073b06"></a><br/></td></tr>
+<tr class="memitem:ga431ab1192234c94198fdad49aacd2f03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga431ab1192234c94198fdad49aacd2f03">CSipCallRtp::SetIpPort</a> (const char *pszIp, int iPort, int iSocketCountPerMedia)</td></tr>
+<tr class="memdesc:ga431ab1192234c94198fdad49aacd2f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">RTP IP/Port 를 수정한다.  <a href="#ga431ab1192234c94198fdad49aacd2f03"></a><br/></td></tr>
+<tr class="memitem:ga4881e0f3cabc1d955b31f45f60857238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga4881e0f3cabc1d955b31f45f60857238">CSipCallRtp::SetDirection</a> (<a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a> eDirection)</td></tr>
+<tr class="memdesc:ga4881e0f3cabc1d955b31f45f60857238"><td class="mdescLeft">&#160;</td><td class="mdescRight">RTP 전송/수신 방향을 설정한다.  <a href="#ga4881e0f3cabc1d955b31f45f60857238"></a><br/></td></tr>
+<tr class="memitem:gaecef5dcd4004cbde48a24f55d8b84a12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaecef5dcd4004cbde48a24f55d8b84a12">CSipCallRtp::GetMediaCount</a> ()</td></tr>
+<tr class="memdesc:gaecef5dcd4004cbde48a24f55d8b84a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">미디어 개수를 리턴한다.  <a href="#gaecef5dcd4004cbde48a24f55d8b84a12"></a><br/></td></tr>
+<tr class="memitem:ga584fdd5943cf3195fde1998c4028c32f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga584fdd5943cf3195fde1998c4028c32f">CSipCallRtp::GetAudioPort</a> ()</td></tr>
+<tr class="memdesc:ga584fdd5943cf3195fde1998c4028c32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">미디어 리스트에서 audio media 를 검색한 후, audio media 에 대한 포트 번호를 리턴한다.  <a href="#ga584fdd5943cf3195fde1998c4028c32f"></a><br/></td></tr>
+<tr class="memitem:ga4c39e60945608ae61ec397ebc8e4436f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga4c39e60945608ae61ec397ebc8e4436f">CSipCallRtp::GetVideoPort</a> ()</td></tr>
+<tr class="memdesc:ga4c39e60945608ae61ec397ebc8e4436f"><td class="mdescLeft">&#160;</td><td class="mdescRight">미디어 리스트에서 video media 를 검색한 후, video media 에 대한 포트 번호를 리턴한다.  <a href="#ga4c39e60945608ae61ec397ebc8e4436f"></a><br/></td></tr>
+<tr class="memitem:ga0925dae11a22a943027f056325646fee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga0925dae11a22a943027f056325646fee">CSipUserAgent::InsertRegisterInfo</a> (<a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;clsInfo)</td></tr>
+<tr class="memdesc:ga0925dae11a22a943027f056325646fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 로그인 정보를 추가한다.  <a href="#ga0925dae11a22a943027f056325646fee"></a><br/></td></tr>
+<tr class="memitem:gab669ec782b69eaf16f8560025d87d7bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gab669ec782b69eaf16f8560025d87d7bb">CSipUserAgent::UpdateRegisterInfo</a> (<a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;clsInfo)</td></tr>
+<tr class="memdesc:gab669ec782b69eaf16f8560025d87d7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 로그인 정보를 수정한다.  <a href="#gab669ec782b69eaf16f8560025d87d7bb"></a><br/></td></tr>
+<tr class="memitem:gaa5be2c753f0fb209d8d25051fce6ef9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaa5be2c753f0fb209d8d25051fce6ef9d">CSipUserAgent::DeleteRegisterInfo</a> (<a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;clsInfo)</td></tr>
+<tr class="memdesc:gaa5be2c753f0fb209d8d25051fce6ef9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 로그인 정보를 삭제한다.  <a href="#gaa5be2c753f0fb209d8d25051fce6ef9d"></a><br/></td></tr>
+<tr class="memitem:ga6e842725f33e285e6e1ea55f153c9714"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga6e842725f33e285e6e1ea55f153c9714">CSipUserAgent::GetDialogString</a> (<a class="el" href="class_c_monitor_string.html">CMonitorString</a> &amp;strBuf)</td></tr>
+<tr class="memdesc:ga6e842725f33e285e6e1ea55f153c9714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialog 자료구조 모니터링을 위한 문자열을 저장한다.  <a href="#ga6e842725f33e285e6e1ea55f153c9714"></a><br/></td></tr>
+<tr class="memitem:ga27451a18db2abbea4d8cfdd05904ef8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga27451a18db2abbea4d8cfdd05904ef8a">CSipUserAgent::GetServerString</a> (<a class="el" href="class_c_monitor_string.html">CMonitorString</a> &amp;strBuf)</td></tr>
+<tr class="memdesc:ga27451a18db2abbea4d8cfdd05904ef8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP-PBX 로그인 자료구조 모니터링을 위한 문자열을 저장한다.  <a href="#ga27451a18db2abbea4d8cfdd05904ef8a"></a><br/></td></tr>
+<tr class="memitem:gaf5814ea937f5f2bc862fbe936a723f76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaf5814ea937f5f2bc862fbe936a723f76">CSipUserAgent::SendReInvite</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:gaf5814ea937f5f2bc862fbe936a723f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReINVITE 메시지를 전송한다.  <a href="#gaf5814ea937f5f2bc862fbe936a723f76"></a><br/></td></tr>
+<tr class="memitem:gaa2a9fd75d2314d2bc4fa40552c7cb1fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaa2a9fd75d2314d2bc4fa40552c7cb1fe">CSipUserAgent::SendNotify</a> (const char *pszCallId, int iSipCode)</td></tr>
+<tr class="memdesc:gaa2a9fd75d2314d2bc4fa40552c7cb1fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blind Transfer 에서 사용되는 NOTIFY 메시지를 전송한다.  <a href="#gaa2a9fd75d2314d2bc4fa40552c7cb1fe"></a><br/></td></tr>
+<tr class="memitem:ga798c21efa6ff4f8b890e45241e7c8ac2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga798c21efa6ff4f8b890e45241e7c8ac2">CSipUserAgent::SendDtmf</a> (const char *pszCallId, char cDtmf)</td></tr>
+<tr class="memdesc:ga798c21efa6ff4f8b890e45241e7c8ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">INFO 메시지로 DTMF 를 전송한다.  <a href="#ga798c21efa6ff4f8b890e45241e7c8ac2"></a><br/></td></tr>
+<tr class="memitem:ga766a6745e03eb794682f9e50732aa695"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga766a6745e03eb794682f9e50732aa695">CSipUserAgent::SendPrack</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga766a6745e03eb794682f9e50732aa695"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP PRACK 메시지를 전송한다.  <a href="#ga766a6745e03eb794682f9e50732aa695"></a><br/></td></tr>
+<tr class="memitem:gae7b6c31ee64094003e1424ccaa935d15"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gae7b6c31ee64094003e1424ccaa935d15">CSipUserAgent::RecvRequest</a> (int iThreadId, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:gae7b6c31ee64094003e1424ccaa935d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 요청 메시지 수신 callback method.  <a href="#gae7b6c31ee64094003e1424ccaa935d15"></a><br/></td></tr>
+<tr class="memitem:ga23984b9e902b02619c8cfc3d897cc4e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga23984b9e902b02619c8cfc3d897cc4e9">CSipUserAgent::RecvResponse</a> (int iThreadId, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:ga23984b9e902b02619c8cfc3d897cc4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 응답 메시지 수신 callback method.  <a href="#ga23984b9e902b02619c8cfc3d897cc4e9"></a><br/></td></tr>
+<tr class="memitem:ga9444897484812c4ce817456014102bf0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga9444897484812c4ce817456014102bf0">CSipUserAgent::SendTimeout</a> (int iThreadId, <a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:ga9444897484812c4ce817456014102bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지 전송 timeout callback method.  <a href="#ga9444897484812c4ce817456014102bf0"></a><br/></td></tr>
+<tr class="memitem:ga35a1416e3f43b6ffa5e7145d9a16e744"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga35a1416e3f43b6ffa5e7145d9a16e744">CSipUserAgent::TcpSessionEnd</a> (const char *pszIp, int iPort, ESipTransport eTransport)</td></tr>
+<tr class="memdesc:ga35a1416e3f43b6ffa5e7145d9a16e744"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP/TLS 세션 종료 이벤트 핸들러  <a href="#ga35a1416e3f43b6ffa5e7145d9a16e744"></a><br/></td></tr>
+<tr class="memitem:gad06b6e66e0d205ea7a5e26e79aff6bc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gad06b6e66e0d205ea7a5e26e79aff6bc0">CSipUserAgent::ThreadEnd</a> (int iThreadId)</td></tr>
+<tr class="memdesc:gad06b6e66e0d205ea7a5e26e79aff6bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 쓰레드 종료 이벤트 핸들러  <a href="#gad06b6e66e0d205ea7a5e26e79aff6bc0"></a><br/></td></tr>
+<tr class="memitem:ga10c3b4c3ef92448f268015094f2f300d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga10c3b4c3ef92448f268015094f2f300d">CSipUserAgent::SendSms</a> (const char *pszFrom, const char *pszTo, const char *pszText, <a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a> *pclsRoute)</td></tr>
+<tr class="memdesc:ga10c3b4c3ef92448f268015094f2f300d"><td class="mdescLeft">&#160;</td><td class="mdescRight">text 기반 SMS 메시지를 전송한다.  <a href="#ga10c3b4c3ef92448f268015094f2f300d"></a><br/></td></tr>
+<tr class="memitem:ga62fdaa6329255d038e2d259e997af058"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga62fdaa6329255d038e2d259e997af058">CSipUserAgent::GetRemoteCallRtp</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *pclsRtp)</td></tr>
+<tr class="memdesc:ga62fdaa6329255d038e2d259e997af058"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Call-ID 로 통화를 검색한 후, 검색된 결과로 peer RTP 정보를 저장한다.  <a href="#ga62fdaa6329255d038e2d259e997af058"></a><br/></td></tr>
+<tr class="memitem:gaf21a2867bd7cfbfcc5cc1f589ed35a8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaf21a2867bd7cfbfcc5cc1f589ed35a8c">CSipUserAgent::GetToId</a> (const char *pszCallId, std::string &amp;strToId)</td></tr>
+<tr class="memdesc:gaf21a2867bd7cfbfcc5cc1f589ed35a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Call-ID 로 통화를 검색한 후, 검색된 결과로 peer 아이디를 저장한다.  <a href="#gaf21a2867bd7cfbfcc5cc1f589ed35a8c"></a><br/></td></tr>
+<tr class="memitem:ga00452970ed27609a5188c4d4dfe71d98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga00452970ed27609a5188c4d4dfe71d98">CSipUserAgent::GetFromId</a> (const char *pszCallId, std::string &amp;strFromId)</td></tr>
+<tr class="memdesc:ga00452970ed27609a5188c4d4dfe71d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Call-ID 로 통화를 검색한 후, 검색된 결과로 my 아이디를 저장한다.  <a href="#ga00452970ed27609a5188c4d4dfe71d98"></a><br/></td></tr>
+<tr class="memitem:ga377952068f696717605d53639ac26371"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga377952068f696717605d53639ac26371">CSipUserAgent::GetContact</a> (const char *pszCallId, <a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a> *pclsRoute)</td></tr>
+<tr class="memdesc:ga377952068f696717605d53639ac26371"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Call-ID 로 통화를 검색한 후, 검색된 결과로 전화 상대방의 Contact 정보를 <a class="el" href="class_c_sip_call_route.html" title="SIP 메시지 목적지 주소 저장 클래스">CSipCallRoute</a> 객체에 저장한다.  <a href="#ga377952068f696717605d53639ac26371"></a><br/></td></tr>
+<tr class="memitem:gac9c1d47e09cd6edcb1563d3d374d03aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gac9c1d47e09cd6edcb1563d3d374d03aa">CSipUserAgent::GetCdr</a> (const char *pszCallId, <a class="el" href="class_c_sip_cdr.html">CSipCdr</a> *pclsCdr)</td></tr>
+<tr class="memdesc:gac9c1d47e09cd6edcb1563d3d374d03aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Call-ID 로 통화를 검색한 후, 검색된 결과의 CDR 정보를 저장한다.  <a href="#gac9c1d47e09cd6edcb1563d3d374d03aa"></a><br/></td></tr>
+<tr class="memitem:ga86828fec837bf29ceb9bb50f1be2decb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga86828fec837bf29ceb9bb50f1be2decb">CSipUserAgent::GetInviteHeaderValue</a> (const char *pszCallId, const char *pszHeaderName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga86828fec837bf29ceb9bb50f1be2decb"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP INVITE 메시지를 수신한 경우, 해당 SIP INVITE 메시지에서 헤더 이름을 검색하여서 이에 대한 값을 리턴한다.  <a href="#ga86828fec837bf29ceb9bb50f1be2decb"></a><br/></td></tr>
+<tr class="memitem:gaaa6d1ab319702c3885fa70b415190e15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaaa6d1ab319702c3885fa70b415190e15">CSipUserAgent::GetRSeq</a> (const char *pszCallId)</td></tr>
+<tr class="memdesc:gaaa6d1ab319702c3885fa70b415190e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialog 의 RSeq 값을 리턴한다.  <a href="#gaaa6d1ab319702c3885fa70b415190e15"></a><br/></td></tr>
+<tr class="memitem:gaee8be8f53314092bdd16b6e90dd142ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gaee8be8f53314092bdd16b6e90dd142ff">CSipUserAgent::SetRSeq</a> (const char *pszCallId, int iRSeq)</td></tr>
+<tr class="memdesc:gaee8be8f53314092bdd16b6e90dd142ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialog 의 RSeq 값을 설정한다.  <a href="#gaee8be8f53314092bdd16b6e90dd142ff"></a><br/></td></tr>
+<tr class="memitem:ga56e8a34aa345f2d6c3dd9371840b1769"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga56e8a34aa345f2d6c3dd9371840b1769">CSipUserAgent::Is100rel</a> (const char *pszCallId)</td></tr>
+<tr class="memdesc:ga56e8a34aa345f2d6c3dd9371840b1769"><td class="mdescLeft">&#160;</td><td class="mdescRight">100rel 기능이 활성화 유무를 검색한다.  <a href="#ga56e8a34aa345f2d6c3dd9371840b1769"></a><br/></td></tr>
+<tr class="memitem:ga34d7f59cb3bbf359bd4a0d1a55f61cca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga34d7f59cb3bbf359bd4a0d1a55f61cca">CSipUserAgent::IsHold</a> (const char *pszCallId)</td></tr>
+<tr class="memdesc:ga34d7f59cb3bbf359bd4a0d1a55f61cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">hold 인지 검사한다.  <a href="#ga34d7f59cb3bbf359bd4a0d1a55f61cca"></a><br/></td></tr>
+<tr class="memitem:ga72385ca12f038fdf3dee1d56c0c02166"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#ga72385ca12f038fdf3dee1d56c0c02166">CSipUserAgent::IsConnected</a> (const char *pszCallId)</td></tr>
+<tr class="memdesc:ga72385ca12f038fdf3dee1d56c0c02166"><td class="mdescLeft">&#160;</td><td class="mdescRight">통화 연결되었는지 검사한다.  <a href="#ga72385ca12f038fdf3dee1d56c0c02166"></a><br/></td></tr>
+<tr class="memitem:gad532654c0c004ba4682b9994171caeed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_user_agent.html#gad532654c0c004ba4682b9994171caeed">CSipUserAgent::DeleteIncomingCall</a> (const char *pszCallId)</td></tr>
+<tr class="memdesc:gad532654c0c004ba4682b9994171caeed"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 통화 요청 INVITE 메시지를 검색한다.  <a href="#gad532654c0c004ba4682b9994171caeed"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>SIP User Agent 라이브러리 SIP 로그인/통화 관리 라이브러리 </p>
+<h2>열거형 타입 문서화</h2>
+<a class="anchor" id="gaeb7020b0f33375738829ba03bc4bc1d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RTP 전송/수신 </p>
+<dl><dt><b>열거형 멤버: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ggaeb7020b0f33375738829ba03bc4bc1d3a875c089b2c7abb3967c463c0c28da9f5"></a>E_RTP_SEND_RECV</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ggaeb7020b0f33375738829ba03bc4bc1d3ad951e8c3c8278e9f617f4225cf1aa75c"></a>E_RTP_SEND</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ggaeb7020b0f33375738829ba03bc4bc1d3abc5c65bd80ba2ea624285c1e9ed28bcc"></a>E_RTP_RECV</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ggaeb7020b0f33375738829ba03bc4bc1d3ae23226b589f6dda5b19fb55701814788"></a>E_RTP_INACTIVE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ggaeb7020b0f33375738829ba03bc4bc1d3a747df0d34658024b4143d38374eb63a9"></a>E_RTP_NULL</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga4631e333b71b20e3f0aeef4bb7763690"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::AcceptCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>수신된 통화를 수락한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>local RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga997749a7e4103ef6aa05a0db8ff0af2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipServerInfo::AddAuth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsResponse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 요청 메시지에 인증 정보를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsRequest</td><td>SIP 요청 메시지 </td></tr>
+    <tr><td class="paramname">pclsResponse</td><td>SIP 응답 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad7c701e91ccedbbb48e101ca958ce69e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipServerInfo::AddAuth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_sip_challenge.html">CSipChallenge</a> *&#160;</td>
+          <td class="paramname"><em>pclsChallenge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStatusCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iNonceCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 요청 메시지에 인증 정보를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsRequest</td><td>SIP 요청 메시지 </td></tr>
+    <tr><td class="paramname">pclsChallenge</td><td>SIP 응답 메시지에 저장된 Challenge 정보 저장 객체 </td></tr>
+    <tr><td class="paramname">iStatusCode</td><td>SIP 응답 메시지의 Status Code </td></tr>
+    <tr><td class="paramname">iNonceCount</td><td>nonce count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5f1b669f93b21d4420ad04e5db33d2e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipDialog::AddSdp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 SDP 메시지를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsMessage</td><td>SDP 메시지를 추가할 SIP 메시지 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6049a83ca2f31f1805358f0306736fda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipServerInfo::ClearLogin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>로그인된 정보를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga19d00325a8e32179dacbc7725c761bbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipDialog::CreateAck </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStatusCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ACK 메시지를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iStatusCode</td><td>SIP INVITE 응답 코드 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 ACK 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5077ded634a3ccb26b65c23d560a7c4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipDialog::CreateBye </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BYE 메시지를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 BYE 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5815ca79109e35fdb601ff2ae35adc6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::CreateCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a> *&#160;</td>
+          <td class="paramname"><em>pclsRoute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> **&#160;</td>
+          <td class="paramname"><em>ppclsInvite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP INVITE 메시지를 생성하고 Dialog 에 저장한다. </p>
+<p>본 메소드는 SIP INVITE 메시지를 전송하지는 않는다. 본 메소드로 생성된 SIP INVITE 메시지를 전송하려면 <a class="el" href="group___sip_user_agent.html#ga938d39b520ee62db8abc3a3d532d9d46" title="CreateCall 메소드로 생성된 INVITE 메시지를 전송한다.">StartCall( const char * pszCallId, CSipMessage * pclsInvite )</a> 메소드를 실행해야 한다. 본 메소드가 개발된 이유는 <a class="el" href="group___sip_user_agent.html#gae149375fc9738daa9868764d29b3f4dc" title="SIP 통화 요청 메시지를 전송한다.">StartCall( const char * pszFrom, const char * pszTo, CSipCallRtp * pclsRtp, CSipCallRoute * pclsRoute, std::string &amp; strCallId )</a> 을 호출한 후, 응용 프로그램에서 생성된 SIP Call-ID 를 자료구조에 저장하기 전에 SIP INVITE 응답 메시지를 수신하면 응용 프로그램에서 해당 통화 정보가 자료구조에 없어서 정상적으로 처리하지 못 하기 때문에 이를 방지하기 위해서 SIP INVITE 메시지와 SIP Dialog 를 생성하여서 SIP Call-ID 를 응용 프로그램에 전달하여 응용 프로그램 자료구조에 저장한 후, SIP INVITE 메시지를 전송하기 위함이다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFrom</td><td>발신자 아이디 </td></tr>
+    <tr><td class="paramname">pszTo</td><td>수신자 아이디 </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>local RTP 정보 저장 객체 </td></tr>
+    <tr><td class="paramname">pclsRoute</td><td>SIP 메시지 목적지 주소 저장 객체 </td></tr>
+    <tr><td class="paramname">strCallId</td><td>생성된 INVITE 메시지의 Call-ID 가 저장될 변수 </td></tr>
+    <tr><td class="paramname">ppclsInvite</td><td>생성된 SIP INVITE 메시지가 저장될 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad5e971d91730525a2d43f6da149fefa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipDialog::CreateCancel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CANCEL 메시지를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 CANCEL 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga91c0e0eee73de0b1b021108fc413f179"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipDialog::CreateInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INFO 메시지를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 PRACK 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga738d00d57479cc879da2f9b18118c43b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipDialog::CreateInvite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INVITE 메시지를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 INVITE 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga31e72ea0ffdb06f0db71a8b6e211bdcb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipDialog::CreateNotify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NOTIFY 메시지를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 NOTIFY 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga802b73e420cb91d8b094550a152dee22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipDialog::CreatePrack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PRACK 메시지를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 PRACK 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga002c4b2cfc18ced056ba416393aa93cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipDialog::CreateRefer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>REFER 메시지를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 REFER 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0122acee4d38c6b1db03247784927f86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipServerInfo::CreateRegister </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_stack.html">CSipStack</a> *&#160;</td>
+          <td class="paramname"><em>pclsSipStack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsResponse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP REGISTER 메시지를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSipStack</td><td>SIP stack </td></tr>
+    <tr><td class="paramname">pclsResponse</td><td>SIP REGISTER 요청에 대한 응답 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 REGISTER 메시지를 리턴하고 실패하면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeab071147dd6c73a98f9c64494638ddc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSipDialog::CSipDialog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_stack.html">CSipStack</a> *&#160;</td>
+          <td class="paramname"><em>pclsSipStack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>생성자 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga43591436aedbf73fb3e9f494b9092494"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSipServerInfo::CSipServerInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>생성자 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga76c75a49d30af14c7e26815e7a39c133"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSipUserAgent::CSipUserAgent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>생성자 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga35dc92b880d29fdf411ef10462ad3265"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::Delete </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Dialog 를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad532654c0c004ba4682b9994171caeed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipUserAgent::DeleteIncomingCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 통화 요청 INVITE 메시지를 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 SIP 통화 요청 INVITE 메시지를 리턴하고 실패하면 NULL 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa5be2c753f0fb209d8d25051fce6ef9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::DeleteRegisterInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 로그인 정보를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsInfo</td><td>clsInfo SIP 로그인 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4956351d01883ef3eba58455c4f9749c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipServerInfo::Equal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>동일한 IP-PBX 정보인지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsInfo</td><td>IP-PBX 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>동일한 IP-PBX 정보이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga491359df07628cdc205df3262b14b569"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ISipUserAgentCallBack::EventBlindTransfer </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszReferToId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Blind Transfer 요청 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pszReferToId</td><td>전화가 전달될 사용자 아이디 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>요청을 수락하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#ga5d16e5bec54595640941aa0f9aa25f83">CSipUserAgentMFC</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab39ea7f9ff84e7d34b4f4720b987d0dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventCallEnd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 통화 종료 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">iSipStatus</td><td>SIP 응답 코드. INVITE 에 대한 오류 응답으로 전화가 종료된 경우, INVITE 의 응답 코드를 저장한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#gaf7860c524dd0a8849e8c699aab32eb23">CSipUserAgentMFC</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga84de097696bbf6d53cdc05f898a6898f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventCallRing </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP Ring / Session Progress 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">iSipStatus</td><td>SIP 응답 코드 </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#ga9bbb642ca09198d5fb57b60bad88f7de">CSipUserAgentMFC</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaafcccb2f7269b5224823b02c3da038d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventCallStart </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 통화 연결 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#ga6be99820d85d15026f10b81ee6b1c280">CSipUserAgentMFC</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2a6f7d6f3984cae09e49ce5dc300cff8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventIncomingCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 통화 요청 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pszFrom</td><td>SIP From 사용자 아이디 </td></tr>
+    <tr><td class="paramname">pszTo</td><td>SIP To 사용자 아이디 </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#gaca8d88a46236b67adb2d11feca15db12">CSipUserAgentMFC</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4838c9cd1479005177548e59c3683ff2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ISipUserAgentCallBack::EventIncomingRequestAuth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 통화 요청 수신에 대한 인증 확인 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsMessage</td><td>SIP INVITE 요청 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>인증에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6b7a5d6e49d448942f6de8a76600ab39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ISipUserAgentCallBack::EventMessage </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP MESSAGE 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFrom</td><td>SIP From 사용자 아이디 </td></tr>
+    <tr><td class="paramname">pszTo</td><td>SIP To 사용자 아이디 </td></tr>
+    <tr><td class="paramname">pclsMessage</td><td>SIP 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#ga73ff6e14c66b00e69e9dbd882c540d11">CSipUserAgentMFC</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga282ffccf1de63981055bb3cad5ac5c8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventPrack </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP PRACK 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#gad106a5a01c954ffd8e669ac515ba1ce6">CSipUserAgentMFC</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga186ebc44ff7513bd10dd526e740331cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventRegister </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP REGISTER 응답 메시지 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsInfo</td><td>SIP REGISTER 응답 메시지를 전송한 IP-PBX 정보 저장 객체 </td></tr>
+    <tr><td class="paramname">iStatus</td><td>SIP REGISTER 응답 코드 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#ga544944c74a96cb5af5e601eece2434dd">CSipUserAgentMFC</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga756b11e1afd4188c9ef35503aa18edad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventReInvite </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRemoteRtp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsLocalRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP ReINVITE 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRemoteRtp</td><td>상대방 RTP 정보 저장 객체 </td></tr>
+    <tr><td class="paramname">pclsLocalRtp</td><td>내 RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#gadf17f48f78d282577e3c05511194ac41">CSipUserAgentMFC</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa421d647ecfac702dae63e120a596b42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventReInviteResponse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRemoteRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP ReINVITE 응답 메시지 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">iSipStatus</td><td>SIP 응답 코드 </td></tr>
+    <tr><td class="paramname">pclsRemoteRtp</td><td>상대방 RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf8b3bd73049880b03a8ebcbc573e6d41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventThreadEnd </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 메시지 수신 쓰레드가 종료됨을 알려주는 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadId</td><td>UDP 쓰레드 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga695ace665effd882dd13c8caee0d9749"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ISipUserAgentCallBack::EventTransfer </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszReferToCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bScreenedTransfer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Screened / Unscreened Transfer 요청 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pszReferToCallId</td><td>전화가 전달될 SIP Call-ID </td></tr>
+    <tr><td class="paramname">bScreenedTransfer</td><td>Screened Transfer 이면 true 가 입력되고 Unscreened Transfer 이면 false 가 입력된다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>요청을 수락하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#ga80612dcfedcf195ef368b0a6deda680d">CSipUserAgentMFC</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga78fe62f5ec15fddf7c5b4d1f3e510d11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISipUserAgentCallBack::EventTransferResponse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 통화 전달 응답 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">iSipStatus</td><td>SIP 응답 코드. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_user_agent_m_f_c.html#ga59f3a486f8a641372d9cc24b4e1831d1">CSipUserAgentMFC</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga56faec8a1b26adcd940d92fceec7f5f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUserAgent::Final </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>프로세스가 종료될 때에 최종적으로 실행하여서 openssl 메모리 누수를 출력하지 않는다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga584fdd5943cf3195fde1998c4028c32f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCallRtp::GetAudioPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>미디어 리스트에서 audio media 를 검색한 후, audio media 에 대한 포트 번호를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 audio media 에 대한 포트 번호를 리턴하고 실패하면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9be10d9f70dc80f42261d4bedbb11778"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipUserAgent::GetCallCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>통화 개수를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>통화 개수를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad1b39ef7d7356a94c7d7b7518c9eb8e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GetCallIdFromReferTo </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strReferToCallId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replaces 를 포함한 문자열에서 SIP Call-ID 를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszValue</td><td>Replaces 를 포함한 문자열 </td></tr>
+    <tr><td class="paramname">strReferToCallId</td><td>SIP Call-ID 를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadd39896c9d92a9691e0e44a2bd9e1511"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUserAgent::GetCallIdList </td>
+          <td>(</td>
+          <td class="paramtype">SIP_CALL_ID_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 통화의 SIP Call-ID 를 리스트에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>SIP Call-ID 를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gac9c1d47e09cd6edcb1563d3d374d03aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::GetCdr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_cdr.html">CSipCdr</a> *&#160;</td>
+          <td class="paramname"><em>pclsCdr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Call-ID 로 통화를 검색한 후, 검색된 결과의 CDR 정보를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsCdr</td><td>CDR 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga549b7b98e14df7175d3f60d4b3fee560"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipDialog::GetCdr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_cdr.html">CSipCdr</a> *&#160;</td>
+          <td class="paramname"><em>pclsCdr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CDR 정보 객체에 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsCdr</td><td>CDR 정보 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga377952068f696717605d53639ac26371"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::GetContact </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a> *&#160;</td>
+          <td class="paramname"><em>pclsRoute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Call-ID 로 통화를 검색한 후, 검색된 결과로 전화 상대방의 Contact 정보를 <a class="el" href="class_c_sip_call_route.html" title="SIP 메시지 목적지 주소 저장 클래스">CSipCallRoute</a> 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRoute</td><td>전화 상대방의 Contact 정보를 저장할 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6e842725f33e285e6e1ea55f153c9714"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUserAgent::GetDialogString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_monitor_string.html">CMonitorString</a> &amp;&#160;</td>
+          <td class="paramname"><em>strBuf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dialog 자료구조 모니터링을 위한 문자열을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strBuf</td><td>자료구조 모니터링을 위한 문자열 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga00452970ed27609a5188c4d4dfe71d98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::GetFromId </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strFromId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Call-ID 로 통화를 검색한 후, 검색된 결과로 my 아이디를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">strFromId</td><td>my 아이디를 저장할 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga86828fec837bf29ceb9bb50f1be2decb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::GetInviteHeaderValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszHeaderName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP INVITE 메시지를 수신한 경우, 해당 SIP INVITE 메시지에서 헤더 이름을 검색하여서 이에 대한 값을 리턴한다. </p>
+<pre class="fragment">                    모든 헤더를 검색하는 것은 아니고 CSipMessage 의 m_clsHeaderList 에 저장된 헤더만 검색한다.
+</pre> <dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pszHeaderName</td><td>헤더 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>헤더의 값을 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaecef5dcd4004cbde48a24f55d8b84a12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCallRtp::GetMediaCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>미디어 개수를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>미디어 개수를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga62fdaa6329255d038e2d259e997af058"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::GetRemoteCallRtp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Call-ID 로 통화를 검색한 후, 검색된 결과로 peer RTP 정보를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>peer RTP 정보를 저장할 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaaa6d1ab319702c3885fa70b415190e15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipUserAgent::GetRSeq </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dialog 의 RSeq 값을 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>Dialog 에 RSeq 가 존재하면 RSeq 값을 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaab1d564cd6441e91c27a1255aa4d2091"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a> GetRtpDirectionEnum </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszDirection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>문자열 direction 을 enum direction 으로 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszDirection</td><td>문자열 direction </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>문자열 direction 을 enum direction 으로 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga920b2177c8220e10b2576739aef78ee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* GetRtpDirectionString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a>&#160;</td>
+          <td class="paramname"><em>eDirection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enum direction 을 문자열로 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eDirection</td><td>enum direction </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>enum direction 을 문자열로 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga27451a18db2abbea4d8cfdd05904ef8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUserAgent::GetServerString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_monitor_string.html">CMonitorString</a> &amp;&#160;</td>
+          <td class="paramname"><em>strBuf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IP-PBX 로그인 자료구조 모니터링을 위한 문자열을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strBuf</td><td>자료구조 모니터링을 위한 문자열 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf21a2867bd7cfbfcc5cc1f589ed35a8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::GetToId </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strToId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Call-ID 로 통화를 검색한 후, 검색된 결과로 peer 아이디를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">strToId</td><td>peer 아이디를 저장할 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4c39e60945608ae61ec397ebc8e4436f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCallRtp::GetVideoPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>미디어 리스트에서 video media 를 검색한 후, video media 에 대한 포트 번호를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 video media 에 대한 포트 번호를 리턴하고 실패하면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac5df448d4bc7e1816975e6541796a32a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::HoldCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a>&#160;</td>
+          <td class="paramname"><em>eDirection</em> = <code><a class="el" href="group___sip_user_agent.html#ggaeb7020b0f33375738829ba03bc4bc1d3ad951e8c3c8278e9f617f4225cf1aa75c">E_RTP_SEND</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>통화 hold 요청 메시지를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">eDirection</td><td>미디어 direction </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0925dae11a22a943027f056325646fee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::InsertRegisterInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 로그인 정보를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsInfo</td><td>SIP 로그인 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga56e8a34aa345f2d6c3dd9371840b1769"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::Is100rel </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>100rel 기능이 활성화 유무를 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>100rel 기능이 활성화되어 있으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga72385ca12f038fdf3dee1d56c0c02166"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::IsConnected </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>통화 연결되었는지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>통화 연결되었으면 true 로 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga999e4f8db0063aac8036b2fab5507d6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipDialog::IsConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>통화 연결된 Dialog 인가? </p>
+<dl class="section return"><dt>반환값</dt><dd>통화 연결된 Dialog 이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga34d7f59cb3bbf359bd4a0d1a55f61cca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::IsHold </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>hold 인지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>hold 이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf0613a58e1e697f38e84456c5518328f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipDialog::IsUseCodec </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCodec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dialog 에서 사용하는 코덱인지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iCodec</td><td>코덱 payload type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>Dialog 에서 사용하는 코덱이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae7b6c31ee64094003e1424ccaa935d15"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::RecvRequest </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 요청 메시지 수신 callback method. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadId</td><td>SIP stack 의 UDP 쓰레드 아이디 </td></tr>
+    <tr><td class="paramname">pclsMessage</td><td>수신된 SIP 요청 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SIP 요청 메시지를 처리한 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___sip_stack.html#ga42f718105b1b919c58806f8c5c144f0a">ISipStackCallBack</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga23984b9e902b02619c8cfc3d897cc4e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::RecvResponse </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 응답 메시지 수신 callback method. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadId</td><td>SIP stack 의 UDP 쓰레드 아이디 </td></tr>
+    <tr><td class="paramname">pclsMessage</td><td>수신된 SIP 응답 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SIP 응답 메시지를 처리한 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___sip_stack.html#ga2736fe7202b40d1ae9f70677ecdac653">ISipStackCallBack</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacad85a9c22b8ac4d736655df8cc813a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::ResumeCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>통화 resume 요청 메시지를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6bc8756e8e135365f4ff9148dc2d214b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::RingCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>183 응답 메시지를 전송한다. </p>
+<p>SIP 클라이언트에서 183 응답 메시지를 전송할 때에 사용된다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>local RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga31b7c65bdcf438507e91f9e19aa17a18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::RingCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 통화 요청에 대한 Ring / Session Progress 응답 메시지를 전송한다. </p>
+<p>IP-PBX 에서 Ring / Session Progress 메시지를 전달할 때에 사용된다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">iSipStatus</td><td>SIP 응답 코드 </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>local RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf23f5ca36346e53269256340fea58477"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipDialog::SelectLocalRtp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>my SIP 클라이언트의 RTP 정보를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsRtp</td><td>SIP 클라이언트의 RTP 정보를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2be103afff2d13525acfdbcd991c714d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipDialog::SelectRemoteRtp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 클라이언트의 RTP 정보를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsRtp</td><td>SIP 클라이언트의 RTP 정보를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga798c21efa6ff4f8b890e45241e7c8ac2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::SendDtmf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>cDtmf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INFO 메시지로 DTMF 를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">cDtmf</td><td>DTMF 문자. '0' ~ '9' 및 '*', '#' </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa2a9fd75d2314d2bc4fa40552c7cb1fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::SendNotify </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blind Transfer 에서 사용되는 NOTIFY 메시지를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">iSipCode</td><td>INVITE 응답 메시지의 SIP status code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga766a6745e03eb794682f9e50732aa695"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::SendPrack </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP PRACK 메시지를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>local RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf5814ea937f5f2bc862fbe936a723f76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::SendReInvite </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ReINVITE 메시지를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>local RTP 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga10c3b4c3ef92448f268015094f2f300d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::SendSms </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a> *&#160;</td>
+          <td class="paramname"><em>pclsRoute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>text 기반 SMS 메시지를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFrom</td><td>발신자 아이디 </td></tr>
+    <tr><td class="paramname">pszTo</td><td>수신자 아이디 </td></tr>
+    <tr><td class="paramname">pszText</td><td>SMS 메시지 </td></tr>
+    <tr><td class="paramname">pclsRoute</td><td>SIP 메시지 목적지 주소 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9444897484812c4ce817456014102bf0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::SendTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 메시지 전송 timeout callback method. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadId</td><td>SIP stack 의 UDP 쓰레드 아이디 </td></tr>
+    <tr><td class="paramname">pclsMessage</td><td>수신된 SIP 응답 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SIP 응답 메시지를 처리한 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___sip_stack.html#ga13e3821cf4f38bb9fad68770303a842d">ISipStackCallBack</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf368dbb5031d87d7c587e69bbe4a4487"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipServerInfo::SetChallenge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsResponse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP REGISTER 요청에 대한 응답 메시지에서 Chanllenge 를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsResponse</td><td>SIP REGISTER 요청에 대한 응답 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4881e0f3cabc1d955b31f45f60857238"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipCallRtp::SetDirection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___sip_user_agent.html#gaeb7020b0f33375738829ba03bc4bc1d3">ERtpDirection</a>&#160;</td>
+          <td class="paramname"><em>eDirection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RTP 전송/수신 방향을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eDirection</td><td>RTP 전송/수신 방향 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga431ab1192234c94198fdad49aacd2f03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipCallRtp::SetIpPort </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSocketCountPerMedia</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RTP IP/Port 를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>Port 번호 </td></tr>
+    <tr><td class="paramname">iSocketCountPerMedia</td><td>미디어마다 생성하는 소켓 개수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3943f67f450d94be0da827ebfb81bc66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipDialog::SetLocalRtp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>local RTP 정보를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsRtp</td><td>RTP 정보를 저장한 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7c4d4f21d3b1e5a267683766030aaac9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipDialog::SetRemoteRtp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remote RTP 정보를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsRtp</td><td>RTP 정보를 저장한 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaee8be8f53314092bdd16b6e90dd142ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUserAgent::SetRSeq </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iRSeq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dialog 의 RSeq 값을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">iRSeq</td><td>RSeq 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gae3416ff08e8ad8e3c6a541799dec8658"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_API SipRegisterThread </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 서버에 주기적으로 REGISTER 메시지를 전송하는 쓰레드 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpParameter</td><td><a class="el" href="class_c_sip_user_agent.html" title="SIP UserAgent 클래스">CSipUserAgent</a> 객체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0727314e792ebad0f65ea9022dfd134c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::Start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_stack_setup.html">CSipStackSetup</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsSetup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_sip_user_agent_call_back.html">ISipUserAgentCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_sip_stack_security_call_back.html">ISipStackSecurityCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsSecurityCallBack</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP stack 을 시작하고 SIP 로그인 쓰레드를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsSetup</td><td>SIP stack 설정 객체 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>SIP UserAgent callback 객체 </td></tr>
+    <tr><td class="paramname">pclsSecurityCallBack</td><td>SIP stack 보안 callback 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae149375fc9738daa9868764d29b3f4dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::StartCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_rtp.html">CSipCallRtp</a> *&#160;</td>
+          <td class="paramname"><em>pclsRtp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_route.html">CSipCallRoute</a> *&#160;</td>
+          <td class="paramname"><em>pclsRoute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strCallId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 통화 요청 메시지를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFrom</td><td>발신자 아이디 </td></tr>
+    <tr><td class="paramname">pszTo</td><td>수신자 아이디 </td></tr>
+    <tr><td class="paramname">pclsRtp</td><td>local RTP 정보 저장 객체 </td></tr>
+    <tr><td class="paramname">pclsRoute</td><td>SIP 메시지 목적지 주소 저장 객체 </td></tr>
+    <tr><td class="paramname">strCallId</td><td>생성된 INVITE 메시지의 Call-ID 가 저장될 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga938d39b520ee62db8abc3a3d532d9d46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::StartCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsInvite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CreateCall 메소드로 생성된 INVITE 메시지를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pclsInvite</td><td>SIP INVITE 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaaf7d6eae7743c5534d50978bbc88f30b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StartSipRegisterThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_user_agent.html">CSipUserAgent</a> *&#160;</td>
+          <td class="paramname"><em>pclsSipUserAgent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 서버에 주기적으로 REGISTER 메시지를 전송하는 쓰레드를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSipUserAgent</td><td><a class="el" href="class_c_sip_user_agent.html" title="SIP UserAgent 클래스">CSipUserAgent</a> 객체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga408430c1ea6fcbaa50cab9d0d11f18bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP stack 을 종료하고 SIP 로그인 쓰레드를 종료한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3e7980a83fed6ea8e256d493c0860aa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::StopCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipCode</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>통화를 종료한다. </p>
+<pre class="fragment">                    통화 요청을 보내고 연결되지 않으면 통화 취소 메시지를 전송한다.
+                    통화 연결되었으면 통화 종료 메시지를 전송한다.
+                    통화 수락인 경우 통화 거절 응답 메시지를 전송한다.
+</pre> <dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">iSipCode</td><td>통화 요청을 거절할 때에 전송할 SIP status code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad7e946da6634a8ee7376c456bd1d25ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::StopCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszForward</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>착신 전환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pszForward</td><td>착신 전환 전화번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>착신 전환에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga731205324e5cd10201cecd6985d7e56c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUserAgent::StopCallAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 통화를 종료시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga35a1416e3f43b6ffa5e7145d9a16e744"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUserAgent::TcpSessionEnd </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TCP/TLS 세션 종료 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>포트 번호 </td></tr>
+    <tr><td class="paramname">eTransport</td><td>프로토콜 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_stack.html#gaac5644495aaa5d67452ebfb95a84b5e0">ISipStackCallBack</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad06b6e66e0d205ea7a5e26e79aff6bc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUserAgent::ThreadEnd </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP 쓰레드 종료 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadId</td><td>쓰레드 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___sip_stack.html#gaea2eef6bdc1b4eb55c50e3e5879d7df9">ISipStackCallBack</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga36c78e1fab7de4ca601c07bd05073b06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::TransferCall </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszToCallId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Screened / Unscreened transfer 를 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pszToCallId</td><td>통화 전달을 받을 SIP Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadce8ed4722b552023bab3242e3bf922e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::TransferCallBlind </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blind transfer 를 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID </td></tr>
+    <tr><td class="paramname">pszTo</td><td>통화 전달을 받을 아이디 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf79ca9ae4c7ae9895d53bc2e23916c4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipServerInfo::Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IP-PBX 정보를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsInfo</td><td>IP-PBX 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gab669ec782b69eaf16f8560025d87d7bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUserAgent::UpdateRegisterInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_server_info.html">CSipServerInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 로그인 정보를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsInfo</td><td>SIP 로그인 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad3c91e09c7046b21d9156686f84f0b4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSipDialog::~CSipDialog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소멸자. </p>
+
+</div>
+</div>
+<a class="anchor" id="gae60659b6ce034e7d875ed039f2ff64da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSipServerInfo::~CSipServerInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소멸자 </p>
+
+</div>
+</div>
+<a class="anchor" id="gacefded3f23c4fee4176a0c15a45f0051"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSipUserAgent::~CSipUserAgent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소멸자 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 월 10월 12 2020 11:21:10, 프로젝트명 : C++ SIP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SIP Stack: IMonitorCallBack 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SIP Stack
+   &#160;<span id="projectnumber">0.31</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="hierarchy.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-attribs">Public 속성</a> &#124;
+<a href="class_i_monitor_call_back-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">IMonitorCallBack 클래스 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>서버 모니터링 요청 이벤트 callback 인터페이스  
+ <a href="class_i_monitor_call_back.html#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:ade1fe5181a35bb18dba5eab8739e14f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_monitor_call_back.html#ade1fe5181a35bb18dba5eab8739e14f7">IMonitorCallBack</a> ()</td></tr>
+<tr class="memitem:ae9b17c33ac7100f27fdee7dc10518063"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_monitor_call_back.html#ae9b17c33ac7100f27fdee7dc10518063">~IMonitorCallBack</a> ()</td></tr>
+<tr class="memitem:a61a2843766e1c1f6e596dfb4c4468faf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_monitor_call_back.html#a61a2843766e1c1f6e596dfb4c4468faf">RecvRequest</a> (const char *pszRequest, <a class="el" href="class_c_monitor_string.html">CMonitorString</a> &amp;strResponse)=0</td></tr>
+<tr class="memdesc:a61a2843766e1c1f6e596dfb4c4468faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버 모니터링 요청 명령 수신 이벤트 핸들러  <a href="#a61a2843766e1c1f6e596dfb4c4468faf"></a><br/></td></tr>
+<tr class="memitem:a10c779babbb81a583884d01816df5d1c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_monitor_call_back.html#a10c779babbb81a583884d01816df5d1c">IsMonitorIp</a> (const char *pszIp)=0</td></tr>
+<tr class="memdesc:a10c779babbb81a583884d01816df5d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">허용된 클라이언트인가?  <a href="#a10c779babbb81a583884d01816df5d1c"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Public 속성</h2></td></tr>
+<tr class="memitem:ab7ff16e65d5e91768cb552aa71335436"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_monitor_call_back.html#ab7ff16e65d5e91768cb552aa71335436">m_iMonitorPort</a></td></tr>
+<tr class="memitem:a8641d6acd99056c55fffbc91498a6ca8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_monitor_call_back.html#a8641d6acd99056c55fffbc91498a6ca8">m_bIpv6</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<div class="textblock"><p>서버 모니터링 요청 이벤트 callback 인터페이스 </p>
+</div><h2>생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="ade1fe5181a35bb18dba5eab8739e14f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMonitorCallBack::IMonitorCallBack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9b17c33ac7100f27fdee7dc10518063"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IMonitorCallBack::~IMonitorCallBack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>멤버 함수 문서화</h2>
+<a class="anchor" id="a10c779babbb81a583884d01816df5d1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IMonitorCallBack::IsMonitorIp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>허용된 클라이언트인가? </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>클라이언트 IP 주소 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>허용된 클라이언트이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a61a2843766e1c1f6e596dfb4c4468faf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IMonitorCallBack::RecvRequest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_monitor_string.html">CMonitorString</a> &amp;&#160;</td>
+          <td class="paramname"><em>strResponse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>서버 모니터링 요청 명령 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszRequest</td><td>요청 명령 문자열 </td></tr>
+    <tr><td class="paramname">strResponse</td><td>응답 문자열 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<h2>멤버 데이타 문서화</h2>
+<a class="anchor" id="a8641d6acd99056c55fffbc91498a6ca8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IMonitorCallBack::m_bIpv6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab7ff16e65d5e91768cb552aa71335436"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMonitorCallBack::m_iMonitorPort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 월 10월 12 2020 11:21:10, 프로젝트명 : C++ SIP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

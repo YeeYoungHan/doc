@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SIP Stack: CTcpSessionList 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SIP Stack
+   &#160;<span id="projectnumber">0.31</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="hierarchy.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-attribs">Public 속성</a> &#124;
+<a href="class_c_tcp_session_list-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">CTcpSessionList 클래스 참조<div class="ingroups"><a class="el" href="group___sip_stack.html">SipStack</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TCP 쓰레드 별로 관리하는 TCP 세션 정보를 저장하는 클래스  
+ <a href="class_c_tcp_session_list.html#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a3cdff0d5f92201f13a032bf31ec423da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_list.html#a3cdff0d5f92201f13a032bf31ec423da">CTcpSessionList</a> (<a class="el" href="class_c_sip_stack.html">CSipStack</a> *pclsSipStack, ESipTransport eTransport)</td></tr>
+<tr class="memitem:ac49ad540bd8dac2d6d30df3030c60367"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_list.html#ac49ad540bd8dac2d6d30df3030c60367">~CTcpSessionList</a> ()</td></tr>
+<tr class="memitem:gaef9e043aeffe4cbdb3f11bca37c85de8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#gaef9e043aeffe4cbdb3f11bca37c85de8">Init</a> (int iPollFdMax)</td></tr>
+<tr class="memdesc:gaef9e043aeffe4cbdb3f11bca37c85de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 초기화시킨다.  <a href="group___sip_stack.html#gaef9e043aeffe4cbdb3f11bca37c85de8"></a><br/></td></tr>
+<tr class="memitem:ga3931936db883c45edbc05930f96f9dcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#ga3931936db883c45edbc05930f96f9dcd">Insert</a> (Socket hSocket)</td></tr>
+<tr class="memdesc:ga3931936db883c45edbc05930f96f9dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 소켓을 추가한다.  <a href="group___sip_stack.html#ga3931936db883c45edbc05930f96f9dcd"></a><br/></td></tr>
+<tr class="memitem:ga6f553406e5f727436a5f972a4b94e9ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#ga6f553406e5f727436a5f972a4b94e9ac">Insert</a> (<a class="el" href="class_c_tcp_comm.html">CTcpComm</a> &amp;clsTcpComm, SSL *psttSsl=NULL)</td></tr>
+<tr class="memdesc:ga6f553406e5f727436a5f972a4b94e9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 추가한다.  <a href="group___sip_stack.html#ga6f553406e5f727436a5f972a4b94e9ac"></a><br/></td></tr>
+<tr class="memitem:gaa3ef82d3a89de7eb83d71c7fdf278488"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#gaa3ef82d3a89de7eb83d71c7fdf278488">Delete</a> (int iIndex, <a class="el" href="class_c_thread_list_entry.html">CThreadListEntry</a> *pclsEntry)</td></tr>
+<tr class="memdesc:gaa3ef82d3a89de7eb83d71c7fdf278488"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 삭제한다.  <a href="group___sip_stack.html#gaa3ef82d3a89de7eb83d71c7fdf278488"></a><br/></td></tr>
+<tr class="memitem:ga6a6a8b5ab71742a88dae89414843724f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#ga6a6a8b5ab71742a88dae89414843724f">DeleteAll</a> (<a class="el" href="class_c_thread_list_entry.html">CThreadListEntry</a> *pclsEntry)</td></tr>
+<tr class="memdesc:ga6a6a8b5ab71742a88dae89414843724f"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 TCP 세션 정보를 삭제한다.  <a href="group___sip_stack.html#ga6a6a8b5ab71742a88dae89414843724f"></a><br/></td></tr>
+<tr class="memitem:gaf1b887340409d5630542f22035a8b532"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_stack.html#gaf1b887340409d5630542f22035a8b532">DeleteTimeout</a> (int iTimeout, <a class="el" href="class_c_thread_list_entry.html">CThreadListEntry</a> *pclsEntry)</td></tr>
+<tr class="memdesc:gaf1b887340409d5630542f22035a8b532"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 수신 timeout 이 발생한 TCP 세션을 종료시킨다.  <a href="group___sip_stack.html#gaf1b887340409d5630542f22035a8b532"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Public 속성</h2></td></tr>
+<tr class="memitem:a2e6cfe2731e4613f9499637f03b269a3"><td class="memItemLeft" align="right" valign="top">struct pollfd *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_list.html#a2e6cfe2731e4613f9499637f03b269a3">m_psttPollFd</a></td></tr>
+<tr class="memitem:ae84afe54c3dcc91aceeab247e907dacf"><td class="memItemLeft" align="right" valign="top">SESSION_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_list.html#ae84afe54c3dcc91aceeab247e907dacf">m_clsList</a></td></tr>
+<tr class="memitem:afb47f4e0bc76f059a55558fb5584674b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_list.html#afb47f4e0bc76f059a55558fb5584674b">m_iPollFdMax</a></td></tr>
+<tr class="memitem:acc33c0caecc75ee909b6442fe45fa8e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_list.html#acc33c0caecc75ee909b6442fe45fa8e2">m_iPoolFdCount</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<div class="textblock"><p>TCP 쓰레드 별로 관리하는 TCP 세션 정보를 저장하는 클래스 </p>
+</div><h2>생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="a3cdff0d5f92201f13a032bf31ec423da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTcpSessionList::CTcpSessionList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_stack.html">CSipStack</a> *&#160;</td>
+          <td class="paramname"><em>pclsSipStack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac49ad540bd8dac2d6d30df3030c60367"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTcpSessionList::~CTcpSessionList </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>멤버 데이타 문서화</h2>
+<a class="anchor" id="ae84afe54c3dcc91aceeab247e907dacf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SESSION_LIST CTcpSessionList::m_clsList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb47f4e0bc76f059a55558fb5584674b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CTcpSessionList::m_iPollFdMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc33c0caecc75ee909b6442fe45fa8e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CTcpSessionList::m_iPoolFdCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e6cfe2731e4613f9499637f03b269a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct pollfd* CTcpSessionList::m_psttPollFd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 월 10월 12 2020 11:21:10, 프로젝트명 : C++ SIP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

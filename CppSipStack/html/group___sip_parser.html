@@ -1,0 +1,3572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SIP Stack: SipParser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SIP Stack
+   &#160;<span id="projectnumber">0.31</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">SipParser</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SIP 메시지 파서/생성 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_accept_data.html">CSipAcceptData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Accept-Encoding, Accept-Language 헤더를 저장하는 클래스  <a href="class_c_sip_accept_data.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_call_id.html">CSipCallId</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Call-ID 헤더를 저장하는 클래스  <a href="class_c_sip_call_id.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_challenge.html">CSipChallenge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WWW-Authenticate, Proxy-Authenticate 헤더를 저장하는 클래스  <a href="class_c_sip_challenge.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_content_type.html">CSipContentType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content-Type 을 저장하는 클래스  <a href="class_c_sip_content_type.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_credential.html">CSipCredential</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authorization, Proxy-Authorization 헤더를 저장하는 클래스  <a href="class_c_sip_credential.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_c_seq.html">CSipCSeq</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSeq 헤더를 저장하는 클래스  <a href="class_c_sip_c_seq.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_from.html">CSipFrom</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP From/To/Contact/Route/Record-Route 헤더 정보 저장 클래스  <a href="class_c_sip_from.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_header.html">CSipHeader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 정보를 저장하는 클래스  <a href="class_c_sip_header.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html">CSipMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지 정보를 저장하는 클래스  <a href="class_c_sip_message.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_parameter.html">CSipParameter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 정보를 저장하는 클래스  <a href="class_c_sip_parameter.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_parameter_list.html">CSipParameterList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP parameter 리스트 저장 클래스  <a href="class_c_sip_parameter_list.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_reason.html">CSipReason</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Reason 헤더를 파싱하고 생성하는 클래스  <a href="class_c_sip_reason.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_uri.html">CSipUri</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP URI 정보를 저장하는 클래스  <a href="class_c_sip_uri.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_via.html">CSipVia</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Via 헤더 저장 클래스  <a href="class_c_sip_via.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ga258ffb5f10b486e294deba9f29a58426"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga258ffb5f10b486e294deba9f29a58426">ParseSipChallenge</a> (SIP_CHALLENGE_LIST &amp;clsList, const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga258ffb5f10b486e294deba9f29a58426"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP challenge 문자열을 파싱하여서 challenge 리스트에 저장한다.  <a href="#ga258ffb5f10b486e294deba9f29a58426"></a><br/></td></tr>
+<tr class="memitem:ga49d4cf7f7d57ee1854eeccb3daebdc29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga49d4cf7f7d57ee1854eeccb3daebdc29">ParseSipFrom</a> (SIP_FROM_LIST &amp;clsList, const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga49d4cf7f7d57ee1854eeccb3daebdc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_from.html" title="SIP From/To/Contact/Route/Record-Route 헤더 정보 저장 클래스">CSipFrom</a> 객체 리스트에 저장한다.  <a href="#ga49d4cf7f7d57ee1854eeccb3daebdc29"></a><br/></td></tr>
+<tr class="memitem:gab9953eefee1f2573dfe92d5832f22691"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab9953eefee1f2573dfe92d5832f22691">ParseSipParameter</a> (SIP_PARAMETER_LIST &amp;clsList, const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gab9953eefee1f2573dfe92d5832f22691"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#gab9953eefee1f2573dfe92d5832f22691"></a><br/></td></tr>
+<tr class="memitem:gaa3e74d13f20de627085882a4d7cd929e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaa3e74d13f20de627085882a4d7cd929e">SearchSipParameter</a> (SIP_PARAMETER_LIST &amp;clsList, const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gaa3e74d13f20de627085882a4d7cd929e"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트에서 parameter 이름에 대한 값을 검색한다.  <a href="#gaa3e74d13f20de627085882a4d7cd929e"></a><br/></td></tr>
+<tr class="memitem:ga37d3ee93e67d9df94145b8c64f0d4b32"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga37d3ee93e67d9df94145b8c64f0d4b32">SearchSipParameter</a> (SIP_PARAMETER_LIST &amp;clsList, const char *pszName)</td></tr>
+<tr class="memdesc:ga37d3ee93e67d9df94145b8c64f0d4b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트에서 parameter 이름에 대한 값을 검색한다.  <a href="#ga37d3ee93e67d9df94145b8c64f0d4b32"></a><br/></td></tr>
+<tr class="memitem:gac81c73f24db6109530e5b45ed27e0ff3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gac81c73f24db6109530e5b45ed27e0ff3">InsertSipParameter</a> (SIP_PARAMETER_LIST &amp;clsList, const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:gac81c73f24db6109530e5b45ed27e0ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트에 paramter 를 추가한다.  <a href="#gac81c73f24db6109530e5b45ed27e0ff3"></a><br/></td></tr>
+<tr class="memitem:ga545498ea740c2645f9623eaccf95ec8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga545498ea740c2645f9623eaccf95ec8d">UpdateSipParameter</a> (SIP_PARAMETER_LIST &amp;clsList, const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga545498ea740c2645f9623eaccf95ec8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트에 paramter 를 수정한다.  <a href="#ga545498ea740c2645f9623eaccf95ec8d"></a><br/></td></tr>
+<tr class="memitem:gac4b762c039ace15e08baaaa280b9d489"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gac4b762c039ace15e08baaaa280b9d489">MakeSipParameterString</a> (SIP_PARAMETER_LIST &amp;clsList, char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:gac4b762c039ace15e08baaaa280b9d489"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 객체를 parameter 리스트 문자열로 제작한다.  <a href="#gac4b762c039ace15e08baaaa280b9d489"></a><br/></td></tr>
+<tr class="memitem:ga8d1f0c6fbfac47e460a073e4d1fd58ed"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga8d1f0c6fbfac47e460a073e4d1fd58ed">GetReasonPhrase</a> (int iSipCode)</td></tr>
+<tr class="memdesc:ga8d1f0c6fbfac47e460a073e4d1fd58ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP status code 에 해당하는 문자열을 리턴한다.  <a href="#ga8d1f0c6fbfac47e460a073e4d1fd58ed"></a><br/></td></tr>
+<tr class="memitem:gab479038299b260dcc2535b25c1c58932"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab479038299b260dcc2535b25c1c58932">SipGetTransport</a> (ESipTransport eTransport)</td></tr>
+<tr class="memdesc:gab479038299b260dcc2535b25c1c58932"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP transport 프로토콜에 대한 문자열을 리턴한다.  <a href="#gab479038299b260dcc2535b25c1c58932"></a><br/></td></tr>
+<tr class="memitem:ga30eea524c8e1750dc3e15a8e1c602017"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga30eea524c8e1750dc3e15a8e1c602017">SipGetProtocol</a> (ESipTransport eTransport)</td></tr>
+<tr class="memdesc:ga30eea524c8e1750dc3e15a8e1c602017"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 프로토콜에 대한 문자열을 리턴한다.  <a href="#ga30eea524c8e1750dc3e15a8e1c602017"></a><br/></td></tr>
+<tr class="memitem:ga132a8342b829da02ebc617bc9659a4b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga132a8342b829da02ebc617bc9659a4b7">SipSetSystemId</a> (const char *pszId)</td></tr>
+<tr class="memdesc:ga132a8342b829da02ebc617bc9659a4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">다른 시스템과 구분되는 현재 시스템의 유일한 값을 설정한다.  <a href="#ga132a8342b829da02ebc617bc9659a4b7"></a><br/></td></tr>
+<tr class="memitem:ga64030ad81a09564851f71f5ee1ae11e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga64030ad81a09564851f71f5ee1ae11e0">SipMakeTag</a> (char *pszTag, int iTagSize)</td></tr>
+<tr class="memdesc:ga64030ad81a09564851f71f5ee1ae11e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP From/To tag 에 사용할 문자열을 작성한다.  <a href="#ga64030ad81a09564851f71f5ee1ae11e0"></a><br/></td></tr>
+<tr class="memitem:ga6829be14c64b4047ac141a8dd800a441"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga6829be14c64b4047ac141a8dd800a441">SipMakeBranch</a> (char *pszBranch, int iBranchSize)</td></tr>
+<tr class="memdesc:ga6829be14c64b4047ac141a8dd800a441"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Via branch 에 사용할 문자열을 작성한다.  <a href="#ga6829be14c64b4047ac141a8dd800a441"></a><br/></td></tr>
+<tr class="memitem:gac7a8b92661d31d20a1057eb900c84af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gac7a8b92661d31d20a1057eb900c84af2">SipMakeCallIdName</a> (char *pszCallId, int iCallIdSize)</td></tr>
+<tr class="memdesc:gac7a8b92661d31d20a1057eb900c84af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Call-ID 에 사용할 name 문자열을 작성한다.  <a href="#gac7a8b92661d31d20a1057eb900c84af2"></a><br/></td></tr>
+<tr class="memitem:ga8948f848044b2f645c72ba5cd0be8f83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga8948f848044b2f645c72ba5cd0be8f83">SipMakePrintString</a> (const unsigned char *pszInput, int iInputSize, char *pszOutput, int iOutputSize)</td></tr>
+<tr class="memdesc:ga8948f848044b2f645c72ba5cd0be8f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">입력 문자열을 출력할 수 있는 64개의 문자들로 변환하여서 출력 문자열에 저장한다.  <a href="#ga8948f848044b2f645c72ba5cd0be8f83"></a><br/></td></tr>
+<tr class="memitem:ga01374cc917cc3692acd8c97212736ea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga01374cc917cc3692acd8c97212736ea0">SipMd5String21</a> (char *pszInput, char szResult[22])</td></tr>
+<tr class="memdesc:ga01374cc917cc3692acd8c97212736ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">평문을 MD5 문자열로 변환한다.  <a href="#ga01374cc917cc3692acd8c97212736ea0"></a><br/></td></tr>
+<tr class="memitem:gaeacc2e55751008053b95339f1301b010"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaeacc2e55751008053b95339f1301b010">SipIpv6Parse</a> (std::string &amp;strHost)</td></tr>
+<tr class="memdesc:gaeacc2e55751008053b95339f1301b010"><td class="mdescLeft">&#160;</td><td class="mdescRight">[] 로 둘러쌓인 IPv6 주소에서 [] 를 제거한다.  <a href="#gaeacc2e55751008053b95339f1301b010"></a><br/></td></tr>
+<tr class="memitem:ga3635c2c0edffa21cb9396d575fb09878"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga3635c2c0edffa21cb9396d575fb09878">ParseSipVia</a> (SIP_VIA_LIST &amp;clsList, const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga3635c2c0edffa21cb9396d575fb09878"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_via.html" title="SIP Via 헤더 저장 클래스">CSipVia</a> 객체 리스트에 저장한다.  <a href="#ga3635c2c0edffa21cb9396d575fb09878"></a><br/></td></tr>
+<tr class="memitem:ga91d246c6721cea3ed8968c0393f2fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga91d246c6721cea3ed8968c0393f2fa97">CSipAcceptData::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga91d246c6721cea3ed8968c0393f2fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_accept_data.html" title="SIP Accept-Encoding, Accept-Language 헤더를 저장하는 클래스">CSipAcceptData</a> 클래스의 멤버 변수에 저장한다.  <a href="#ga91d246c6721cea3ed8968c0393f2fa97"></a><br/></td></tr>
+<tr class="memitem:gaa9dcf568a6e8a16b57e2319fa7606259"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaa9dcf568a6e8a16b57e2319fa7606259">CSipAcceptData::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:gaa9dcf568a6e8a16b57e2319fa7606259"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#gaa9dcf568a6e8a16b57e2319fa7606259"></a><br/></td></tr>
+<tr class="memitem:gaccd43f4a9f6e164011cc7a235cc7c181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaccd43f4a9f6e164011cc7a235cc7c181">CSipAcceptData::Clear</a> ()</td></tr>
+<tr class="memdesc:gaccd43f4a9f6e164011cc7a235cc7c181"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#gaccd43f4a9f6e164011cc7a235cc7c181"></a><br/></td></tr>
+<tr class="memitem:ga1fdded4da5ad16017a2bd8399471a54a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga1fdded4da5ad16017a2bd8399471a54a">CSipCallId::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga1fdded4da5ad16017a2bd8399471a54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_call_id.html" title="SIP Call-ID 헤더를 저장하는 클래스">CSipCallId</a> 클래스의 멤버 변수에 저장한다.  <a href="#ga1fdded4da5ad16017a2bd8399471a54a"></a><br/></td></tr>
+<tr class="memitem:gaf0939e851274d57ceea5f181072709ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaf0939e851274d57ceea5f181072709ee">CSipCallId::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:gaf0939e851274d57ceea5f181072709ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 문자열을 작성한다.  <a href="#gaf0939e851274d57ceea5f181072709ee"></a><br/></td></tr>
+<tr class="memitem:gabf9ef3f9e5e3e79be14bd1c641949a57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gabf9ef3f9e5e3e79be14bd1c641949a57">CSipCallId::ToString</a> (std::string &amp;strText)</td></tr>
+<tr class="memdesc:gabf9ef3f9e5e3e79be14bd1c641949a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 문자열을 작성한다.  <a href="#gabf9ef3f9e5e3e79be14bd1c641949a57"></a><br/></td></tr>
+<tr class="memitem:ga91de48075df5e3522653b4a51b0e6ee6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga91de48075df5e3522653b4a51b0e6ee6">CSipCallId::Clear</a> ()</td></tr>
+<tr class="memdesc:ga91de48075df5e3522653b4a51b0e6ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga91de48075df5e3522653b4a51b0e6ee6"></a><br/></td></tr>
+<tr class="memitem:ga7610ee47565a4a2544365fd2cc6e8be1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga7610ee47565a4a2544365fd2cc6e8be1">CSipCallId::Empty</a> ()</td></tr>
+<tr class="memdesc:ga7610ee47565a4a2544365fd2cc6e8be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다.  <a href="#ga7610ee47565a4a2544365fd2cc6e8be1"></a><br/></td></tr>
+<tr class="memitem:gac15c80d06e587709afc92295ee409d7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gac15c80d06e587709afc92295ee409d7b">CSipCallId::IsEqual</a> (<a class="el" href="class_c_sip_call_id.html">CSipCallId</a> *pclsCallId)</td></tr>
+<tr class="memdesc:gac15c80d06e587709afc92295ee409d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 가 동일한지 검사한다.  <a href="#gac15c80d06e587709afc92295ee409d7b"></a><br/></td></tr>
+<tr class="memitem:gadab184e0476e7a1427e9a81278747aed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gadab184e0476e7a1427e9a81278747aed">CSipCallId::Make</a> (const char *pszHost)</td></tr>
+<tr class="memdesc:gadab184e0476e7a1427e9a81278747aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">새로운 Call-ID 를 생성한다.  <a href="#gadab184e0476e7a1427e9a81278747aed"></a><br/></td></tr>
+<tr class="memitem:ga876c7141fe0fcc2d73740829e668f4e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga876c7141fe0fcc2d73740829e668f4e6">CSipChallenge::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga876c7141fe0fcc2d73740829e668f4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_challenge.html" title="WWW-Authenticate, Proxy-Authenticate 헤더를 저장하는 클래스">CSipChallenge</a> 클래스의 멤버 변수에 저장한다.  <a href="#ga876c7141fe0fcc2d73740829e668f4e6"></a><br/></td></tr>
+<tr class="memitem:gade2d98e1f7603c038d5762ba55b32fba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gade2d98e1f7603c038d5762ba55b32fba">CSipChallenge::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:gade2d98e1f7603c038d5762ba55b32fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#gade2d98e1f7603c038d5762ba55b32fba"></a><br/></td></tr>
+<tr class="memitem:ga8ce43ddaf7f436a80a6c0d4a741cfbf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga8ce43ddaf7f436a80a6c0d4a741cfbf6">CSipChallenge::Clear</a> ()</td></tr>
+<tr class="memdesc:ga8ce43ddaf7f436a80a6c0d4a741cfbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga8ce43ddaf7f436a80a6c0d4a741cfbf6"></a><br/></td></tr>
+<tr class="memitem:gaa5e92834d7a425e14fa99b87611ade7d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaa5e92834d7a425e14fa99b87611ade7d">CSipChallenge::SetString</a> (char *pszText, int &amp;iTextPos, int iTextSize, const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gaa5e92834d7a425e14fa99b87611ade7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP challenge 문자열에 이름, 값을 저장한다.  <a href="#gaa5e92834d7a425e14fa99b87611ade7d"></a><br/></td></tr>
+<tr class="memitem:ga7f6b935a6ad90d08861b1636044c5383"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga7f6b935a6ad90d08861b1636044c5383">CSipChallenge::SetQuoteString</a> (char *pszText, int &amp;iTextPos, int iTextSize, const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga7f6b935a6ad90d08861b1636044c5383"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP challenge 문자열에 이름, " 가 포함된 값을 저장한다.  <a href="#ga7f6b935a6ad90d08861b1636044c5383"></a><br/></td></tr>
+<tr class="memitem:gadd5a0b1b2698a132db7cb0bc6de11724"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gadd5a0b1b2698a132db7cb0bc6de11724">CSipContentType::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gadd5a0b1b2698a132db7cb0bc6de11724"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_content_type.html" title="Content-Type 을 저장하는 클래스">CSipContentType</a> 클래스의 멤버 변수에 저장한다.  <a href="#gadd5a0b1b2698a132db7cb0bc6de11724"></a><br/></td></tr>
+<tr class="memitem:ga4e54ea53bbe6ac6cade9483e6eb2f893"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga4e54ea53bbe6ac6cade9483e6eb2f893">CSipContentType::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga4e54ea53bbe6ac6cade9483e6eb2f893"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#ga4e54ea53bbe6ac6cade9483e6eb2f893"></a><br/></td></tr>
+<tr class="memitem:gadd81cd140524eba647e497847182cdc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gadd81cd140524eba647e497847182cdc1">CSipContentType::Clear</a> ()</td></tr>
+<tr class="memdesc:gadd81cd140524eba647e497847182cdc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#gadd81cd140524eba647e497847182cdc1"></a><br/></td></tr>
+<tr class="memitem:gad5e742b251dcbaffe035433cb9f78fee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad5e742b251dcbaffe035433cb9f78fee">CSipContentType::Empty</a> ()</td></tr>
+<tr class="memdesc:gad5e742b251dcbaffe035433cb9f78fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다.  <a href="#gad5e742b251dcbaffe035433cb9f78fee"></a><br/></td></tr>
+<tr class="memitem:gad553067112af70f641d7ddeb0341d1ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad553067112af70f641d7ddeb0341d1ce">CSipContentType::Set</a> (const char *pszType, const char *pszSubType)</td></tr>
+<tr class="memdesc:gad553067112af70f641d7ddeb0341d1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content-Type 을 설정한다.  <a href="#gad553067112af70f641d7ddeb0341d1ce"></a><br/></td></tr>
+<tr class="memitem:ga61b19b9a7049cd63abea5874a1f9d1a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga61b19b9a7049cd63abea5874a1f9d1a7">CSipContentType::IsEqual</a> (const char *pszType, const char *pszSubType)</td></tr>
+<tr class="memdesc:ga61b19b9a7049cd63abea5874a1f9d1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content-Type 이 동일한지 검사한다.  <a href="#ga61b19b9a7049cd63abea5874a1f9d1a7"></a><br/></td></tr>
+<tr class="memitem:ga180a2c24c793b422aeaa7cdc21377839"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga180a2c24c793b422aeaa7cdc21377839">CSipCredential::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga180a2c24c793b422aeaa7cdc21377839"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_credential.html" title="Authorization, Proxy-Authorization 헤더를 저장하는 클래스">CSipCredential</a> 클래스의 멤버 변수에 저장한다.  <a href="#ga180a2c24c793b422aeaa7cdc21377839"></a><br/></td></tr>
+<tr class="memitem:ga82eb96e9622b9dc4c0e4c049421d903b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga82eb96e9622b9dc4c0e4c049421d903b">CSipCredential::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga82eb96e9622b9dc4c0e4c049421d903b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#ga82eb96e9622b9dc4c0e4c049421d903b"></a><br/></td></tr>
+<tr class="memitem:ga83ac07100e6ed4669a9b873614c5b2ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga83ac07100e6ed4669a9b873614c5b2ec">CSipCredential::Clear</a> ()</td></tr>
+<tr class="memdesc:ga83ac07100e6ed4669a9b873614c5b2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga83ac07100e6ed4669a9b873614c5b2ec"></a><br/></td></tr>
+<tr class="memitem:ga4ab6348a525f7f4c8874022b1532beba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga4ab6348a525f7f4c8874022b1532beba">CSipCSeq::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga4ab6348a525f7f4c8874022b1532beba"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_c_seq.html" title="CSeq 헤더를 저장하는 클래스">CSipCSeq</a> 클래스의 멤버 변수에 저장한다.  <a href="#ga4ab6348a525f7f4c8874022b1532beba"></a><br/></td></tr>
+<tr class="memitem:ga40e2dc37f23381a1485dd578055e1438"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga40e2dc37f23381a1485dd578055e1438">CSipCSeq::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga40e2dc37f23381a1485dd578055e1438"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#ga40e2dc37f23381a1485dd578055e1438"></a><br/></td></tr>
+<tr class="memitem:ga8e93c220bde7cd416b067a3baeec1122"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga8e93c220bde7cd416b067a3baeec1122">CSipCSeq::Set</a> (int iDigit, const char *pszMethod)</td></tr>
+<tr class="memdesc:ga8e93c220bde7cd416b067a3baeec1122"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP CSeq 헤더 정보를 저장한다.  <a href="#ga8e93c220bde7cd416b067a3baeec1122"></a><br/></td></tr>
+<tr class="memitem:ga5d6c919c420ffa4bc92c6f86947ed5ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga5d6c919c420ffa4bc92c6f86947ed5ff">CSipCSeq::Clear</a> ()</td></tr>
+<tr class="memdesc:ga5d6c919c420ffa4bc92c6f86947ed5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga5d6c919c420ffa4bc92c6f86947ed5ff"></a><br/></td></tr>
+<tr class="memitem:ga0f659d2dbd461fc72c3bf76a327b9995"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga0f659d2dbd461fc72c3bf76a327b9995">CSipCSeq::Empty</a> ()</td></tr>
+<tr class="memdesc:ga0f659d2dbd461fc72c3bf76a327b9995"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다.  <a href="#ga0f659d2dbd461fc72c3bf76a327b9995"></a><br/></td></tr>
+<tr class="memitem:gaea082cb06ba5b55d308c9018551960d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaea082cb06ba5b55d308c9018551960d7">CSipFrom::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gaea082cb06ba5b55d308c9018551960d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_from.html" title="SIP From/To/Contact/Route/Record-Route 헤더 정보 저장 클래스">CSipFrom</a> 클래스의 멤버 변수에 저장한다.  <a href="#gaea082cb06ba5b55d308c9018551960d7"></a><br/></td></tr>
+<tr class="memitem:ga851f885f0c26ba8c1f914807a8a58a0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga851f885f0c26ba8c1f914807a8a58a0c">CSipFrom::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga851f885f0c26ba8c1f914807a8a58a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#ga851f885f0c26ba8c1f914807a8a58a0c"></a><br/></td></tr>
+<tr class="memitem:ga19a38278167cfa53c7f1e0fe8033ffaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga19a38278167cfa53c7f1e0fe8033ffaa">CSipFrom::InsertTag</a> ()</td></tr>
+<tr class="memdesc:ga19a38278167cfa53c7f1e0fe8033ffaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">tag 를 추가한다.  <a href="#ga19a38278167cfa53c7f1e0fe8033ffaa"></a><br/></td></tr>
+<tr class="memitem:gaceebfcdf56761dee146956947f2a3d5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaceebfcdf56761dee146956947f2a3d5a">CSipFrom::Clear</a> ()</td></tr>
+<tr class="memdesc:gaceebfcdf56761dee146956947f2a3d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#gaceebfcdf56761dee146956947f2a3d5a"></a><br/></td></tr>
+<tr class="memitem:ga3bead154cf63eddc7edd4f424d77f9a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga3bead154cf63eddc7edd4f424d77f9a0">CSipFrom::Empty</a> ()</td></tr>
+<tr class="memdesc:ga3bead154cf63eddc7edd4f424d77f9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다.  <a href="#ga3bead154cf63eddc7edd4f424d77f9a0"></a><br/></td></tr>
+<tr class="memitem:gaea205e9e6e622a5bbb3c0ea82658ccef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaea205e9e6e622a5bbb3c0ea82658ccef">CSipHeader::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gaea205e9e6e622a5bbb3c0ea82658ccef"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_header.html" title="SIP 헤더 정보를 저장하는 클래스">CSipHeader</a> 클래스의 멤버 변수에 저장한다.  <a href="#gaea205e9e6e622a5bbb3c0ea82658ccef"></a><br/></td></tr>
+<tr class="memitem:ga3c78c36a2c87ded6c7263bee4705b038"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga3c78c36a2c87ded6c7263bee4705b038">CSipHeader::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga3c78c36a2c87ded6c7263bee4705b038"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#ga3c78c36a2c87ded6c7263bee4705b038"></a><br/></td></tr>
+<tr class="memitem:ga569ad9b152e20321a79bafbb77795b5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga569ad9b152e20321a79bafbb77795b5a">CSipHeader::Clear</a> ()</td></tr>
+<tr class="memdesc:ga569ad9b152e20321a79bafbb77795b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga569ad9b152e20321a79bafbb77795b5a"></a><br/></td></tr>
+<tr class="memitem:ga9c42b8cacf1d02b317f8764b362a8982"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga9c42b8cacf1d02b317f8764b362a8982">CSipMessage::MakePacket</a> ()</td></tr>
+<tr class="memdesc:ga9c42b8cacf1d02b317f8764b362a8982"><td class="mdescLeft">&#160;</td><td class="mdescRight">네트워크로 전송할 수 있는 SIP 메시지 문자열을 작성한다.  <a href="#ga9c42b8cacf1d02b317f8764b362a8982"></a><br/></td></tr>
+<tr class="memitem:ga22f751ea5f4252c48acf607d7e738e98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga22f751ea5f4252c48acf607d7e738e98">CSipMessage::Clear</a> ()</td></tr>
+<tr class="memdesc:ga22f751ea5f4252c48acf607d7e738e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga22f751ea5f4252c48acf607d7e738e98"></a><br/></td></tr>
+<tr class="memitem:ga85d8b01ef047dbb0ce2f65f6fc863573"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga85d8b01ef047dbb0ce2f65f6fc863573">CSipMessage::IsRequest</a> ()</td></tr>
+<tr class="memdesc:ga85d8b01ef047dbb0ce2f65f6fc863573"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 요청 메시지인지 검사한다.  <a href="#ga85d8b01ef047dbb0ce2f65f6fc863573"></a><br/></td></tr>
+<tr class="memitem:ga69f02bc5c15fcf7867754eaadc9f547a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga69f02bc5c15fcf7867754eaadc9f547a">CSipMessage::IsMethod</a> (const char *pszMethod)</td></tr>
+<tr class="memdesc:ga69f02bc5c15fcf7867754eaadc9f547a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메소드가 입력한 메소드와 같은지 검사한다.  <a href="#ga69f02bc5c15fcf7867754eaadc9f547a"></a><br/></td></tr>
+<tr class="memitem:gac17d9597ec41e9904ce215fe445b7024"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gac17d9597ec41e9904ce215fe445b7024">CSipMessage::IsEqualCallId</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:gac17d9597ec41e9904ce215fe445b7024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 가 동일한지 검사한다.  <a href="#gac17d9597ec41e9904ce215fe445b7024"></a><br/></td></tr>
+<tr class="memitem:gadd7c416a8a9dea1e4c9031696de7e650"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gadd7c416a8a9dea1e4c9031696de7e650">CSipMessage::IsEqualCallIdSeq</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:gadd7c416a8a9dea1e4c9031696de7e650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 와 CSeq 의 번호가 동일한지 검사한다.  <a href="#gadd7c416a8a9dea1e4c9031696de7e650"></a><br/></td></tr>
+<tr class="memitem:gab359910d94ba7c46458d30ac5a124f18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab359910d94ba7c46458d30ac5a124f18">CSipMessage::Is100rel</a> ()</td></tr>
+<tr class="memdesc:gab359910d94ba7c46458d30ac5a124f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 100rel 헤더를 포함하고 있는가?  <a href="#gab359910d94ba7c46458d30ac5a124f18"></a><br/></td></tr>
+<tr class="memitem:gad12ebec5b139587df384216f5c0baa14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad12ebec5b139587df384216f5c0baa14">CSipMessage::GetCallId</a> (std::string &amp;strCallId)</td></tr>
+<tr class="memdesc:gad12ebec5b139587df384216f5c0baa14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 문자열을 가져온다.  <a href="#gad12ebec5b139587df384216f5c0baa14"></a><br/></td></tr>
+<tr class="memitem:gad2cd189e9afa8f34fd343a4de7d9c7e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad2cd189e9afa8f34fd343a4de7d9c7e8">CSipMessage::AddIpPortToTopVia</a> (const char *pszIp, int iPort, ESipTransport eTransport=E_SIP_UDP)</td></tr>
+<tr class="memdesc:gad2cd189e9afa8f34fd343a4de7d9c7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Via 헤더에 발신 IP 주소와 포트 번호를 추가한다.  <a href="#gad2cd189e9afa8f34fd343a4de7d9c7e8"></a><br/></td></tr>
+<tr class="memitem:ga418ba2c9fe31a1baeeb986fd4520dda7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga418ba2c9fe31a1baeeb986fd4520dda7">CSipMessage::AddVia</a> (const char *pszIp, int iPort, const char *pszBranch=NULL, ESipTransport eTransport=E_SIP_UDP)</td></tr>
+<tr class="memdesc:ga418ba2c9fe31a1baeeb986fd4520dda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Via 헤더를 추가한다.  <a href="#ga418ba2c9fe31a1baeeb986fd4520dda7"></a><br/></td></tr>
+<tr class="memitem:ga87186b23377e43a3bffa39a878fe8539"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga87186b23377e43a3bffa39a878fe8539">CSipMessage::AddRoute</a> (const char *pszIp, int iPort, ESipTransport eTransport=E_SIP_UDP)</td></tr>
+<tr class="memdesc:ga87186b23377e43a3bffa39a878fe8539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route 헤더를 추가한다.  <a href="#ga87186b23377e43a3bffa39a878fe8539"></a><br/></td></tr>
+<tr class="memitem:ga6ddc3488b2fc1c15db2ddcb4a4954267"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga6ddc3488b2fc1c15db2ddcb4a4954267">CSipMessage::AddRecordRoute</a> (const char *pszIp, int iPort, ESipTransport eTransport=E_SIP_UDP)</td></tr>
+<tr class="memdesc:ga6ddc3488b2fc1c15db2ddcb4a4954267"><td class="mdescLeft">&#160;</td><td class="mdescRight">RecordRoute 헤더를 추가한다.  <a href="#ga6ddc3488b2fc1c15db2ddcb4a4954267"></a><br/></td></tr>
+<tr class="memitem:ga06b3b19a0f19731cf20b31529dacafd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga06b3b19a0f19731cf20b31529dacafd8">CSipMessage::AddHeader</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga06b3b19a0f19731cf20b31529dacafd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 자료구조에 이름과 값을 추가한다.  <a href="#ga06b3b19a0f19731cf20b31529dacafd8"></a><br/></td></tr>
+<tr class="memitem:gab1b75b33f85e4db3572b6bc3e490c45f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab1b75b33f85e4db3572b6bc3e490c45f">CSipMessage::AddHeader</a> (const char *pszName, int iValue)</td></tr>
+<tr class="memdesc:gab1b75b33f85e4db3572b6bc3e490c45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 자료구조에 이름과 값을 추가한다.  <a href="#gab1b75b33f85e4db3572b6bc3e490c45f"></a><br/></td></tr>
+<tr class="memitem:ga865984b498eca45096f685ee291ccfc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga865984b498eca45096f685ee291ccfc2">CSipMessage::CreateResponse</a> (int iStatus, const char *pszToTag=NULL)</td></tr>
+<tr class="memdesc:ga865984b498eca45096f685ee291ccfc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 응답 메시지 객체를 생성한다.  <a href="#ga865984b498eca45096f685ee291ccfc2"></a><br/></td></tr>
+<tr class="memitem:ga06a1fdbf2d2a94dc0d2ac97469acde98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga06a1fdbf2d2a94dc0d2ac97469acde98">CSipMessage::CreateResponseWithToTag</a> (int iStatus)</td></tr>
+<tr class="memdesc:ga06a1fdbf2d2a94dc0d2ac97469acde98"><td class="mdescLeft">&#160;</td><td class="mdescRight">To 헤더의 tag 가 존재하지 않는 경우 tag 를 생성하여서 저장한 SIP 응답 메시지 객체를 생성한다.  <a href="#ga06a1fdbf2d2a94dc0d2ac97469acde98"></a><br/></td></tr>
+<tr class="memitem:ga60e4285ae0caa1fa9e39d17533e0ff4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga60e4285ae0caa1fa9e39d17533e0ff4c">CSipMessage::GetTopViaIpPort</a> (std::string &amp;strIp, int &amp;iPort)</td></tr>
+<tr class="memdesc:ga60e4285ae0caa1fa9e39d17533e0ff4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Via 헤더의 IP 주소와 포트 번호를 가져온다.  <a href="#ga60e4285ae0caa1fa9e39d17533e0ff4c"></a><br/></td></tr>
+<tr class="memitem:ga3d75bf76ebe3973740d63db01c6e3cab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga3d75bf76ebe3973740d63db01c6e3cab">CSipMessage::SetTopViaIpPort</a> (const char *pszIp, int iPort, ESipTransport eTransport)</td></tr>
+<tr class="memdesc:ga3d75bf76ebe3973740d63db01c6e3cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Via 헤더의 IP 주소와 포트 번호를 수정한다.  <a href="#ga3d75bf76ebe3973740d63db01c6e3cab"></a><br/></td></tr>
+<tr class="memitem:gab01220e1af5c5a36e4ea2f3686e082d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab01220e1af5c5a36e4ea2f3686e082d5">CSipMessage::SetTopViaTransPort</a> (ESipTransport eTransport, int iPort)</td></tr>
+<tr class="memdesc:gab01220e1af5c5a36e4ea2f3686e082d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Via 헤더의 transport 문자열을 수정한다.  <a href="#gab01220e1af5c5a36e4ea2f3686e082d5"></a><br/></td></tr>
+<tr class="memitem:gad8dfa22ffa85d7fba38877b6675fac0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad8dfa22ffa85d7fba38877b6675fac0f">CSipMessage::SetTopContactIpPort</a> (const char *pszIp, int iPort, ESipTransport eTransport)</td></tr>
+<tr class="memdesc:gad8dfa22ffa85d7fba38877b6675fac0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Contact 헤더의 IP 주소와 포트 번호를 수정한다.  <a href="#gad8dfa22ffa85d7fba38877b6675fac0f"></a><br/></td></tr>
+<tr class="memitem:gad9c137104fd0e7114c70ca16da82a3d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad9c137104fd0e7114c70ca16da82a3d7">CSipMessage::GetExpires</a> ()</td></tr>
+<tr class="memdesc:gad9c137104fd0e7114c70ca16da82a3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expires 헤더가 존재하면 Expires 헤더 값을 리턴하고 Contact 헤더에 expires 가 존재하면 Contact 헤더의 expires 를 리턴한다.  <a href="#gad9c137104fd0e7114c70ca16da82a3d7"></a><br/></td></tr>
+<tr class="memitem:gad0f7d46b4d91f10ac98a4b607827aac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_header.html">CSipHeader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad0f7d46b4d91f10ac98a4b607827aac3">CSipMessage::GetHeader</a> (const char *pszName)</td></tr>
+<tr class="memdesc:gad0f7d46b4d91f10ac98a4b607827aac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">헤더 리스트를 검색하여서 입력된 이름과 일치하는 헤더를 리턴한다.  <a href="#gad0f7d46b4d91f10ac98a4b607827aac3"></a><br/></td></tr>
+<tr class="memitem:gaa7d827bda2109e05777ec4a9fd13b593"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaa7d827bda2109e05777ec4a9fd13b593">CSipParameter::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gaa7d827bda2109e05777ec4a9fd13b593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter 문자열을 파싱하여 <a class="el" href="class_c_sip_parameter.html" title="parameter 정보를 저장하는 클래스">CSipParameter</a> 클래스의 멤버 변수에 저장한다.  <a href="#gaa7d827bda2109e05777ec4a9fd13b593"></a><br/></td></tr>
+<tr class="memitem:ga9fa34837cba49f0b80a54b65dbe6b748"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga9fa34837cba49f0b80a54b65dbe6b748">CSipParameter::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga9fa34837cba49f0b80a54b65dbe6b748"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#ga9fa34837cba49f0b80a54b65dbe6b748"></a><br/></td></tr>
+<tr class="memitem:ga4a4f43959708ebdf560dd07dbe89a454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga4a4f43959708ebdf560dd07dbe89a454">CSipParameter::Clear</a> ()</td></tr>
+<tr class="memdesc:ga4a4f43959708ebdf560dd07dbe89a454"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga4a4f43959708ebdf560dd07dbe89a454"></a><br/></td></tr>
+<tr class="memitem:ga6e7ebb0d6032d83648a03596bfa6a209"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga6e7ebb0d6032d83648a03596bfa6a209">CSipParameterList::HeaderListParamParse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga6e7ebb0d6032d83648a03596bfa6a209"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Header 가 , 로 구분되어서 N 개 저장되는 SIP Header 의 parameter list 를 파싱한다.  <a href="#ga6e7ebb0d6032d83648a03596bfa6a209"></a><br/></td></tr>
+<tr class="memitem:gabfe68eb324ef099bc23fd9616630bd6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gabfe68eb324ef099bc23fd9616630bd6b">CSipParameterList::ParamParse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gabfe68eb324ef099bc23fd9616630bd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#gabfe68eb324ef099bc23fd9616630bd6b"></a><br/></td></tr>
+<tr class="memitem:gab66b4d184f47aaaef717da2dfae5befa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab66b4d184f47aaaef717da2dfae5befa">CSipParameterList::ParamToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:gab66b4d184f47aaaef717da2dfae5befa"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 객체를 parameter 리스트 문자열로 제작한다.  <a href="#gab66b4d184f47aaaef717da2dfae5befa"></a><br/></td></tr>
+<tr class="memitem:gaa95c6f9ee1ae5daa347b34b9d383fa55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaa95c6f9ee1ae5daa347b34b9d383fa55">CSipParameterList::InsertParam</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:gaa95c6f9ee1ae5daa347b34b9d383fa55"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름과 값을 저장한다.  <a href="#gaa95c6f9ee1ae5daa347b34b9d383fa55"></a><br/></td></tr>
+<tr class="memitem:ga4e9bd91a8502f19ffbd7c98ad60e12bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga4e9bd91a8502f19ffbd7c98ad60e12bc">CSipParameterList::UpdateParam</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga4e9bd91a8502f19ffbd7c98ad60e12bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름에 대한 값을 수정한다.  <a href="#ga4e9bd91a8502f19ffbd7c98ad60e12bc"></a><br/></td></tr>
+<tr class="memitem:gafc27dffee86080ac670ce27dc9dc04d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gafc27dffee86080ac670ce27dc9dc04d1">CSipParameterList::SelectParam</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gafc27dffee86080ac670ce27dc9dc04d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름을 검색한다.  <a href="#gafc27dffee86080ac670ce27dc9dc04d1"></a><br/></td></tr>
+<tr class="memitem:ga99ddd41a22b3446b100261c4e80fadfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga99ddd41a22b3446b100261c4e80fadfb">CSipParameterList::SelectParam</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga99ddd41a22b3446b100261c4e80fadfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름을 검색한다.  <a href="#ga99ddd41a22b3446b100261c4e80fadfb"></a><br/></td></tr>
+<tr class="memitem:ga910f1a71deabde4cad85e6690e631fa9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga910f1a71deabde4cad85e6690e631fa9">CSipParameterList::SelectParamValue</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga910f1a71deabde4cad85e6690e631fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름을 검색한다.  <a href="#ga910f1a71deabde4cad85e6690e631fa9"></a><br/></td></tr>
+<tr class="memitem:gac181132d5af6b4c13d576f1208048a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gac181132d5af6b4c13d576f1208048a72">CSipParameterList::ClearParam</a> ()</td></tr>
+<tr class="memdesc:gac181132d5af6b4c13d576f1208048a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 를 삭제한다.  <a href="#gac181132d5af6b4c13d576f1208048a72"></a><br/></td></tr>
+<tr class="memitem:gac98a71c2d10e5b3fb5529cbdac9171d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gac98a71c2d10e5b3fb5529cbdac9171d9">CSipReason::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gac98a71c2d10e5b3fb5529cbdac9171d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Reason 헤더를 파싱하여서 멤버 변수에 저장한다.  <a href="#gac98a71c2d10e5b3fb5529cbdac9171d9"></a><br/></td></tr>
+<tr class="memitem:gaca1b97963561ecf720ba1ba7c67fe73e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaca1b97963561ecf720ba1ba7c67fe73e">CSipReason::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:gaca1b97963561ecf720ba1ba7c67fe73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#gaca1b97963561ecf720ba1ba7c67fe73e"></a><br/></td></tr>
+<tr class="memitem:ga76d9ed6d73d580a5c4b91c27f998b376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga76d9ed6d73d580a5c4b91c27f998b376">CSipReason::Clear</a> ()</td></tr>
+<tr class="memdesc:ga76d9ed6d73d580a5c4b91c27f998b376"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga76d9ed6d73d580a5c4b91c27f998b376"></a><br/></td></tr>
+<tr class="memitem:ga01a2e9c65b85b470f79f8661e388f249"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga01a2e9c65b85b470f79f8661e388f249">CSipUri::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga01a2e9c65b85b470f79f8661e388f249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uri 문자열을 파싱하여 <a class="el" href="class_c_sip_uri.html" title="SIP URI 정보를 저장하는 클래스">CSipUri</a> 클래스의 멤버 변수에 저장한다.  <a href="#ga01a2e9c65b85b470f79f8661e388f249"></a><br/></td></tr>
+<tr class="memitem:ga4dd1b530db3482e36f7f1356f011d805"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga4dd1b530db3482e36f7f1356f011d805">CSipUri::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga4dd1b530db3482e36f7f1356f011d805"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#ga4dd1b530db3482e36f7f1356f011d805"></a><br/></td></tr>
+<tr class="memitem:ga7e8b7ce095d6b7bd227cca50c03acf23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga7e8b7ce095d6b7bd227cca50c03acf23">CSipUri::Clear</a> ()</td></tr>
+<tr class="memdesc:ga7e8b7ce095d6b7bd227cca50c03acf23"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga7e8b7ce095d6b7bd227cca50c03acf23"></a><br/></td></tr>
+<tr class="memitem:gab5cb2d994f53e74a1b18af7fda11638d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab5cb2d994f53e74a1b18af7fda11638d">CSipUri::Empty</a> ()</td></tr>
+<tr class="memdesc:gab5cb2d994f53e74a1b18af7fda11638d"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다.  <a href="#gab5cb2d994f53e74a1b18af7fda11638d"></a><br/></td></tr>
+<tr class="memitem:ga879a1cbfdecdb98468628f987875a9bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga879a1cbfdecdb98468628f987875a9bc">CSipUri::InsertParam</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga879a1cbfdecdb98468628f987875a9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">uri param 을 추가한다.  <a href="#ga879a1cbfdecdb98468628f987875a9bc"></a><br/></td></tr>
+<tr class="memitem:gad7a86770b295e40298012307d0c9d56c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad7a86770b295e40298012307d0c9d56c">CSipUri::InsertTransport</a> (ESipTransport eTransport)</td></tr>
+<tr class="memdesc:gad7a86770b295e40298012307d0c9d56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP URI 에 transport tag 를 추가한다.  <a href="#gad7a86770b295e40298012307d0c9d56c"></a><br/></td></tr>
+<tr class="memitem:ga3c0fa9a82e23286c01a6f3ab196c952a"><td class="memItemLeft" align="right" valign="top">ESipTransport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga3c0fa9a82e23286c01a6f3ab196c952a">CSipUri::SelectTransport</a> ()</td></tr>
+<tr class="memdesc:ga3c0fa9a82e23286c01a6f3ab196c952a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP URI 에서 전송 프로토콜을 가져온다.  <a href="#ga3c0fa9a82e23286c01a6f3ab196c952a"></a><br/></td></tr>
+<tr class="memitem:gafd5274404b36aef7e9558ad307562e28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gafd5274404b36aef7e9558ad307562e28">CSipUri::Set</a> (const char *pszProtocol, const char *pszUser, const char *pszHost, int iPort=0)</td></tr>
+<tr class="memdesc:gafd5274404b36aef7e9558ad307562e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수에 입력된 데이터를 저장한다.  <a href="#gafd5274404b36aef7e9558ad307562e28"></a><br/></td></tr>
+<tr class="memitem:ga9a7a60da84b346b58d644c71d2a3b797"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga9a7a60da84b346b58d644c71d2a3b797">CSipVia::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga9a7a60da84b346b58d644c71d2a3b797"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_via.html" title="SIP Via 헤더 저장 클래스">CSipVia</a> 클래스의 멤버 변수에 저장한다.  <a href="#ga9a7a60da84b346b58d644c71d2a3b797"></a><br/></td></tr>
+<tr class="memitem:gae817feb985fecc471753f6225920a5de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gae817feb985fecc471753f6225920a5de">CSipVia::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:gae817feb985fecc471753f6225920a5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 포함된 문자열을 작성한다.  <a href="#gae817feb985fecc471753f6225920a5de"></a><br/></td></tr>
+<tr class="memitem:gaa54e6347af7f3a8901dc9a9503202c95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gaa54e6347af7f3a8901dc9a9503202c95">CSipVia::Clear</a> ()</td></tr>
+<tr class="memdesc:gaa54e6347af7f3a8901dc9a9503202c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#gaa54e6347af7f3a8901dc9a9503202c95"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>SIP 메시지 파서/생성 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga06b3b19a0f19731cf20b31529dacafd8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::AddHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 자료구조에 이름과 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>SIP 헤더 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>SIP 헤더 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab1b75b33f85e4db3572b6bc3e490c45f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::AddHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 자료구조에 이름과 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>SIP 헤더 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>SIP 헤더 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad2cd189e9afa8f34fd343a4de7d9c7e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::AddIpPortToTopVia </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em> = <code>E_SIP_UDP</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Top Via 헤더에 발신 IP 주소와 포트 번호를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>SIP 메시지 발신 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>SIP 메시지 발신 포트 번호 </td></tr>
+    <tr><td class="paramname">eTransport</td><td>SIP 메시지를 발신한 transport </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6ddc3488b2fc1c15db2ddcb4a4954267"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::AddRecordRoute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em> = <code>E_SIP_UDP</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RecordRoute 헤더를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>Route 헤더에 저장할 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>Route 헤더에 저장할 포트 번호 </td></tr>
+    <tr><td class="paramname">eTransport</td><td>SIP 메시지를 발신할 transport </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga87186b23377e43a3bffa39a878fe8539"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::AddRoute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em> = <code>E_SIP_UDP</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Route 헤더를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>Route 헤더에 저장할 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>Route 헤더에 저장할 포트 번호 </td></tr>
+    <tr><td class="paramname">eTransport</td><td>SIP 메시지를 발신할 transport </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga418ba2c9fe31a1baeeb986fd4520dda7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::AddVia </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszBranch</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em> = <code>E_SIP_UDP</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Via 헤더를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>Via 헤더에 저장할 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>Via 헤더에 저장할 포트 번호 </td></tr>
+    <tr><td class="paramname">pszBranch</td><td>Via branch tag 문자열 </td></tr>
+    <tr><td class="paramname">eTransport</td><td>SIP 메시지를 발신할 transport </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaccd43f4a9f6e164011cc7a235cc7c181"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipAcceptData::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga76d9ed6d73d580a5c4b91c27f998b376"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipReason::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gadd81cd140524eba647e497847182cdc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipContentType::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga5d6c919c420ffa4bc92c6f86947ed5ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipCSeq::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga569ad9b152e20321a79bafbb77795b5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipHeader::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4a4f43959708ebdf560dd07dbe89a454"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipParameter::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga91de48075df5e3522653b4a51b0e6ee6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipCallId::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaceebfcdf56761dee146956947f2a3d5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipFrom::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaa54e6347af7f3a8901dc9a9503202c95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipVia::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga7e8b7ce095d6b7bd227cca50c03acf23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUri::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga8ce43ddaf7f436a80a6c0d4a741cfbf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipChallenge::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga83ac07100e6ed4669a9b873614c5b2ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipCredential::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga22f751ea5f4252c48acf607d7e738e98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipMessage::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac181132d5af6b4c13d576f1208048a72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipParameterList::ClearParam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 를 삭제한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga865984b498eca45096f685ee291ccfc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipMessage::CreateResponse </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszToTag</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 응답 메시지 객체를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iStatus</td><td>SIP 응답 코드 </td></tr>
+    <tr><td class="paramname">pszToTag</td><td>To 헤더의 tag </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 SIP 응답 메시지 객체의 포인터를 리턴하고 실패하면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga06a1fdbf2d2a94dc0d2ac97469acde98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_message.html">CSipMessage</a> * CSipMessage::CreateResponseWithToTag </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStatus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>To 헤더의 tag 가 존재하지 않는 경우 tag 를 생성하여서 저장한 SIP 응답 메시지 객체를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iStatus</td><td>SIP 응답 코드 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 SIP 응답 메시지 객체의 포인터를 리턴하고 실패하면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad5e742b251dcbaffe035433cb9f78fee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipContentType::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0f659d2dbd461fc72c3bf76a327b9995"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipCSeq::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7610ee47565a4a2544365fd2cc6e8be1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipCallId::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3bead154cf63eddc7edd4f424d77f9a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipFrom::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab5cb2d994f53e74a1b18af7fda11638d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipUri::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>멤버변수가 저장되어 있지 않으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad12ebec5b139587df384216f5c0baa14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::GetCallId </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call-ID 문자열을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strCallId</td><td>Call-ID 문자열을 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad9c137104fd0e7114c70ca16da82a3d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipMessage::GetExpires </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Expires 헤더가 존재하면 Expires 헤더 값을 리턴하고 Contact 헤더에 expires 가 존재하면 Contact 헤더의 expires 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>Expires 헤더가 존재하면 Expires 헤더 값을 리턴하고 Contact 헤더에 expires 가 존재하면 Contact 헤더의 expires 를 리턴한다. 둘 다 없으면 0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad0f7d46b4d91f10ac98a4b607827aac3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_header.html">CSipHeader</a> * CSipMessage::GetHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>헤더 리스트를 검색하여서 입력된 이름과 일치하는 헤더를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>헤더 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>헤더 리스트에 존재하면 헤더 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8d1f0c6fbfac47e460a073e4d1fd58ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* GetReasonPhrase </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP status code 에 해당하는 문자열을 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iSipCode</td><td>SIP status code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SIP status code 에 해당하는 문자열을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga60e4285ae0caa1fa9e39d17533e0ff4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::GetTopViaIpPort </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Top Via 헤더의 IP 주소와 포트 번호를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strIp</td><td>IP 주소를 저장할 변수 </td></tr>
+    <tr><td class="paramname">iPort</td><td>포트 번호를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6e7ebb0d6032d83648a03596bfa6a209"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipParameterList::HeaderListParamParse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Header 가 , 로 구분되어서 N 개 저장되는 SIP Header 의 parameter list 를 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>parameter 리스트 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa95c6f9ee1ae5daa347b34b9d383fa55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipParameterList::InsertParam </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름과 값을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>parameter 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga879a1cbfdecdb98468628f987875a9bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUri::InsertParam </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uri param 을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>param 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>param 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gac81c73f24db6109530e5b45ed27e0ff3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InsertSipParameter </td>
+          <td>(</td>
+          <td class="paramtype">SIP_PARAMETER_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트에 paramter 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>parameter 리스트 객체 </td></tr>
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>parameter 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga19a38278167cfa53c7f1e0fe8033ffaa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipFrom::InsertTag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tag 를 추가한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad7a86770b295e40298012307d0c9d56c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUri::InsertTransport </td>
+          <td>(</td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP URI 에 transport tag 를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eTransport</td><td>프로토콜 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gab359910d94ba7c46458d30ac5a124f18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::Is100rel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 100rel 헤더를 포함하고 있는가? </p>
+<dl class="section return"><dt>반환값</dt><dd>100rel 헤더를 포함하고 있으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac15c80d06e587709afc92295ee409d7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipCallId::IsEqual </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_call_id.html">CSipCallId</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call-ID 가 동일한지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsCallId</td><td>비교할 Call-ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>Call-ID 가 동일하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga61b19b9a7049cd63abea5874a1f9d1a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipContentType::IsEqual </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSubType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Content-Type 이 동일한지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszType</td><td>type </td></tr>
+    <tr><td class="paramname">pszSubType</td><td>subtype </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>Content-Type 이 동일하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac17d9597ec41e9904ce215fe445b7024"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::IsEqualCallId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call-ID 가 동일한지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsMessage</td><td>SIP 메시지 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>Call-ID 가 동일하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadd7c416a8a9dea1e4c9031696de7e650"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::IsEqualCallIdSeq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call-ID 와 CSeq 의 번호가 동일한지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsMessage</td><td>SIP 메시지 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>Call-ID 와 CSeq 의 번호가 동일하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga69f02bc5c15fcf7867754eaadc9f547a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::IsMethod </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszMethod</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메소드가 입력한 메소드와 같은지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszMethod</td><td>SIP 메소드 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SIP 메소드가 입력한 메소드와 같으면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga85d8b01ef047dbb0ce2f65f6fc863573"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::IsRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 요청 메시지인지 검사한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>SIP 요청 메시지이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadab184e0476e7a1427e9a81278747aed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipCallId::Make </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszHost</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>새로운 Call-ID 를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszHost</td><td>호스트 이름 또는 IP 주소 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9c42b8cacf1d02b317f8764b362a8982"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::MakePacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>네트워크로 전송할 수 있는 SIP 메시지 문자열을 작성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac4b762c039ace15e08baaaa280b9d489"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MakeSipParameterString </td>
+          <td>(</td>
+          <td class="paramtype">SIP_PARAMETER_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 객체를 parameter 리스트 문자열로 제작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>parameter 리스트 객체 </td></tr>
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>parameter 리스트 문자열의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 리스트 문자열의 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabfe68eb324ef099bc23fd9616630bd6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipParameterList::ParamParse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>parameter 리스트 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab66b4d184f47aaaef717da2dfae5befa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipParameterList::ParamToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 객체를 parameter 리스트 문자열로 제작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>parameter 리스트 문자열의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 리스트 문자열의 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga91d246c6721cea3ed8968c0393f2fa97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipAcceptData::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_accept_data.html" title="SIP Accept-Encoding, Accept-Language 헤더를 저장하는 클래스">CSipAcceptData</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac98a71c2d10e5b3fb5529cbdac9171d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipReason::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Reason 헤더를 파싱하여서 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadd5a0b1b2698a132db7cb0bc6de11724"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipContentType::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_content_type.html" title="Content-Type 을 저장하는 클래스">CSipContentType</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4ab6348a525f7f4c8874022b1532beba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCSeq::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_c_seq.html" title="CSeq 헤더를 저장하는 클래스">CSipCSeq</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1fdded4da5ad16017a2bd8399471a54a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCallId::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_call_id.html" title="SIP Call-ID 헤더를 저장하는 클래스">CSipCallId</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaea205e9e6e622a5bbb3c0ea82658ccef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipHeader::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_header.html" title="SIP 헤더 정보를 저장하는 클래스">CSipHeader</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaea082cb06ba5b55d308c9018551960d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipFrom::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_from.html" title="SIP From/To/Contact/Route/Record-Route 헤더 정보 저장 클래스">CSipFrom</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa7d827bda2109e05777ec4a9fd13b593"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipParameter::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parameter 문자열을 파싱하여 <a class="el" href="class_c_sip_parameter.html" title="parameter 정보를 저장하는 클래스">CSipParameter</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9a7a60da84b346b58d644c71d2a3b797"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipVia::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_via.html" title="SIP Via 헤더 저장 클래스">CSipVia</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga01a2e9c65b85b470f79f8661e388f249"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipUri::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uri 문자열을 파싱하여 <a class="el" href="class_c_sip_uri.html" title="SIP URI 정보를 저장하는 클래스">CSipUri</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga876c7141fe0fcc2d73740829e668f4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipChallenge::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_challenge.html" title="WWW-Authenticate, Proxy-Authenticate 헤더를 저장하는 클래스">CSipChallenge</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga180a2c24c793b422aeaa7cdc21377839"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCredential::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_credential.html" title="Authorization, Proxy-Authorization 헤더를 저장하는 클래스">CSipCredential</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga258ffb5f10b486e294deba9f29a58426"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ParseSipChallenge </td>
+          <td>(</td>
+          <td class="paramtype">SIP_CHALLENGE_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP challenge 문자열을 파싱하여서 challenge 리스트에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>challenge 리스트 </td></tr>
+    <tr><td class="paramname">pszText</td><td>SIP challenge 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>SIP challenge 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga49d4cf7f7d57ee1854eeccb3daebdc29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ParseSipFrom </td>
+          <td>(</td>
+          <td class="paramtype">SIP_FROM_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_from.html" title="SIP From/To/Contact/Route/Record-Route 헤더 정보 저장 클래스">CSipFrom</a> 객체 리스트에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td><a class="el" href="class_c_sip_from.html" title="SIP From/To/Contact/Route/Record-Route 헤더 정보 저장 클래스">CSipFrom</a> 객체 리스트 </td></tr>
+    <tr><td class="paramname">pszText</td><td>파싱할 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>파싱할 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab9953eefee1f2573dfe92d5832f22691"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ParseSipParameter </td>
+          <td>(</td>
+          <td class="paramtype">SIP_PARAMETER_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>parameter 리스트 객체 </td></tr>
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>parameter 리스트 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3635c2c0edffa21cb9396d575fb09878"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ParseSipVia </td>
+          <td>(</td>
+          <td class="paramtype">SIP_VIA_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_via.html" title="SIP Via 헤더 저장 클래스">CSipVia</a> 객체 리스트에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td><a class="el" href="class_c_sip_via.html" title="SIP Via 헤더 저장 클래스">CSipVia</a> 객체 리스트 </td></tr>
+    <tr><td class="paramname">pszText</td><td>파싱할 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>파싱할 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa3e74d13f20de627085882a4d7cd929e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SearchSipParameter </td>
+          <td>(</td>
+          <td class="paramtype">SIP_PARAMETER_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트에서 parameter 이름에 대한 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>parameter 리스트 객체 </td></tr>
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>parameter 값을 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga37d3ee93e67d9df94145b8c64f0d4b32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SearchSipParameter </td>
+          <td>(</td>
+          <td class="paramtype">SIP_PARAMETER_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트에서 parameter 이름에 대한 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>parameter 리스트 객체 </td></tr>
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 parameter 값을 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafc27dffee86080ac670ce27dc9dc04d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipParameterList::SelectParam </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>parameter 값을 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 이름이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga99ddd41a22b3446b100261c4e80fadfb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipParameterList::SelectParam </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 이름이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga910f1a71deabde4cad85e6690e631fa9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CSipParameterList::SelectParamValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 이름이 존재하면 해당 값을 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3c0fa9a82e23286c01a6f3ab196c952a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ESipTransport CSipUri::SelectTransport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP URI 에서 전송 프로토콜을 가져온다. </p>
+<dl class="section return"><dt>반환값</dt><dd>전송 프로토콜을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8e93c220bde7cd416b067a3baeec1122"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipCSeq::Set </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDigit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszMethod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP CSeq 헤더 정보를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iDigit</td><td>CSeq 숫자 </td></tr>
+    <tr><td class="paramname">pszMethod</td><td>SIP 메소드 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad553067112af70f641d7ddeb0341d1ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipContentType::Set </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSubType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Content-Type 을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszType</td><td>type </td></tr>
+    <tr><td class="paramname">pszSubType</td><td>subtype </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gafd5274404b36aef7e9558ad307562e28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipUri::Set </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszProtocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszHost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수에 입력된 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszProtocol</td><td>프로토콜 </td></tr>
+    <tr><td class="paramname">pszUser</td><td>사용자 아이디 </td></tr>
+    <tr><td class="paramname">pszHost</td><td>도메인 이름 또는 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>포트 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7f6b935a6ad90d08861b1636044c5383"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipChallenge::SetQuoteString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iTextPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP challenge 문자열에 이름, " 가 포함된 값을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP chanllenge 문자열 </td></tr>
+    <tr><td class="paramname">iTextPos</td><td>SIP chanllenge 문자열 변수의 쓰기 위치 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>SIP chanllenge 문자열 변수 크기 </td></tr>
+    <tr><td class="paramname">pszName</td><td>이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa5e92834d7a425e14fa99b87611ade7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipChallenge::SetString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iTextPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SIP challenge 문자열에 이름, 값을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP chanllenge 문자열 </td></tr>
+    <tr><td class="paramname">iTextPos</td><td>SIP chanllenge 문자열 변수의 쓰기 위치 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>SIP chanllenge 문자열 변수 크기 </td></tr>
+    <tr><td class="paramname">pszName</td><td>이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad8dfa22ffa85d7fba38877b6675fac0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::SetTopContactIpPort </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Top Contact 헤더의 IP 주소와 포트 번호를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>포트 번호 </td></tr>
+    <tr><td class="paramname">eTransport</td><td>transport </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. 이미 저장된 값과 동일한 값이면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3d75bf76ebe3973740d63db01c6e3cab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::SetTopViaIpPort </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Top Via 헤더의 IP 주소와 포트 번호를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>포트 번호 </td></tr>
+    <tr><td class="paramname">eTransport</td><td>transport </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. 이미 저장된 값과 동일한 값이면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab01220e1af5c5a36e4ea2f3686e082d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::SetTopViaTransPort </td>
+          <td>(</td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Top Via 헤더의 transport 문자열을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eTransport</td><td>transport </td></tr>
+    <tr><td class="paramname">iPort</td><td>포트 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. 이미 저장된 값과 동일한 값이면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga30eea524c8e1750dc3e15a8e1c602017"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SipGetProtocol </td>
+          <td>(</td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 프로토콜에 대한 문자열을 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eTransport</td><td>SIP transport </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SIP 프로토콜에 대한 문자열을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab479038299b260dcc2535b25c1c58932"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SipGetTransport </td>
+          <td>(</td>
+          <td class="paramtype">ESipTransport&#160;</td>
+          <td class="paramname"><em>eTransport</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP transport 프로토콜에 대한 문자열을 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eTransport</td><td>SIP transport </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SIP transport 프로토콜에 대한 문자열을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeacc2e55751008053b95339f1301b010"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SipIpv6Parse </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strHost</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[] 로 둘러쌓인 IPv6 주소에서 [] 를 제거한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strHost</td><td>IP 주소 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6829be14c64b4047ac141a8dd800a441"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SipMakeBranch </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszBranch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iBranchSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Via branch 에 사용할 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszBranch</td><td>SIP Via branch 에 사용할 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iBranchSize</td><td>pszBranch 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gac7a8b92661d31d20a1057eb900c84af2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SipMakeCallIdName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszCallId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCallIdSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Call-ID 에 사용할 name 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCallId</td><td>SIP Call-ID 에 사용할 name 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iCallIdSize</td><td>pszCallId 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8948f848044b2f645c72ba5cd0be8f83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SipMakePrintString </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>pszInput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iInputSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iOutputSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>입력 문자열을 출력할 수 있는 64개의 문자들로 변환하여서 출력 문자열에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszInput</td><td>입력 문자열 </td></tr>
+    <tr><td class="paramname">iInputSize</td><td>입력 문자열 크기 </td></tr>
+    <tr><td class="paramname">pszOutput</td><td>출력 문자열 </td></tr>
+    <tr><td class="paramname">iOutputSize</td><td>출력 문자열 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga64030ad81a09564851f71f5ee1ae11e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SipMakeTag </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszTag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTagSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP From/To tag 에 사용할 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszTag</td><td>SIP From/To tag 에 사용할 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iTagSize</td><td>pszTag 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga01374cc917cc3692acd8c97212736ea0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SipMd5String21 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszInput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>szResult</em>[22]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>평문을 MD5 문자열로 변환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszInput</td><td>평문 </td></tr>
+    <tr><td class="paramname">szResult</td><td>MD5 문자열 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga132a8342b829da02ebc617bc9659a4b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SipSetSystemId </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>다른 시스템과 구분되는 현재 시스템의 유일한 값을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszId</td><td>현재 시스템의 유일한 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaca1b97963561ecf720ba1ba7c67fe73e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipReason::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa9dcf568a6e8a16b57e2319fa7606259"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipAcceptData::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf0939e851274d57ceea5f181072709ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCallId::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call-ID 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga40e2dc37f23381a1485dd578055e1438"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCSeq::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4e54ea53bbe6ac6cade9483e6eb2f893"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipContentType::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3c78c36a2c87ded6c7263bee4705b038"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipHeader::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga851f885f0c26ba8c1f914807a8a58a0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipFrom::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabf9ef3f9e5e3e79be14bd1c641949a57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSipCallId::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call-ID 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9fa34837cba49f0b80a54b65dbe6b748"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipParameter::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae817feb985fecc471753f6225920a5de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipVia::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4dd1b530db3482e36f7f1356f011d805"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipUri::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gade2d98e1f7603c038d5762ba55b32fba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipChallenge::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga82eb96e9622b9dc4c0e4c049421d903b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipCredential::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4e9bd91a8502f19ffbd7c98ad60e12bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipParameterList::UpdateParam </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름에 대한 값을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>parameter 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 이름이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga545498ea740c2645f9623eaccf95ec8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UpdateSipParameter </td>
+          <td>(</td>
+          <td class="paramtype">SIP_PARAMETER_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트에 paramter 를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>parameter 리스트 객체 </td></tr>
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>parameter 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 월 10월 12 2020 11:21:09, 프로젝트명 : C++ SIP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

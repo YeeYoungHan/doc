@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SIP Stack: ServerPlatform</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SIP Stack
+   &#160;<span id="projectnumber">0.31</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">ServerPlatform</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>서비스 개발 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_monitor_socket.html">CMonitorSocket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버 모니터링 쓰레드를 위한 변수  <a href="class_c_monitor_socket.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_server_service.html">CServerService</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MS 윈도우 서비스 정의 정보 저장 클래스  <a href="class_c_server_service.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ga8ed30c17b5273fcf6c26ce7fd7125b93"><td class="memItemLeft" align="right" valign="top">THREAD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_platform.html#ga8ed30c17b5273fcf6c26ce7fd7125b93">MonitorThread</a> (LPVOID lpParameter)</td></tr>
+<tr class="memdesc:ga8ed30c17b5273fcf6c26ce7fd7125b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">SipLoadBalancer 의 내부 자료구조를 모니터링하기 위한 쓰레드 함수  <a href="#ga8ed30c17b5273fcf6c26ce7fd7125b93"></a><br/></td></tr>
+<tr class="memitem:gacb40d9d3b51774ba2fb1e40ac4d24edf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_platform.html#gacb40d9d3b51774ba2fb1e40ac4d24edf">StartMonitorThread</a> (Socket hSocket, const char *pszIp, int iPort, <a class="el" href="class_i_monitor_call_back.html">IMonitorCallBack</a> *pclsCallBack)</td></tr>
+<tr class="memdesc:gacb40d9d3b51774ba2fb1e40ac4d24edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">모니터링 쓰레드를 시작한다.  <a href="#gacb40d9d3b51774ba2fb1e40ac4d24edf"></a><br/></td></tr>
+<tr class="memitem:gac80cad353950595e6c2878500924e07a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_platform.html#gac80cad353950595e6c2878500924e07a">IsMonitorThreadRun</a> ()</td></tr>
+<tr class="memdesc:gac80cad353950595e6c2878500924e07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">모니터링 쓰레드 실행 유무를 검사한다.  <a href="#gac80cad353950595e6c2878500924e07a"></a><br/></td></tr>
+<tr class="memitem:ga08967c362a0437ad77bacf9c08abf5bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_platform.html#ga08967c362a0437ad77bacf9c08abf5bc">ServerMain</a> (int argc, char *argv[], <a class="el" href="class_c_server_service.html">CServerService</a> &amp;clsService, ServerFunc pFunc)</td></tr>
+<tr class="memdesc:ga08967c362a0437ad77bacf9c08abf5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버 서비스 main function  <a href="#ga08967c362a0437ad77bacf9c08abf5bc"></a><br/></td></tr>
+<tr class="memitem:gab18c182e029edf943a15f3a9115e1fbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_platform.html#gab18c182e029edf943a15f3a9115e1fbb">LastMethod</a> (int sig)</td></tr>
+<tr class="memdesc:gab18c182e029edf943a15f3a9115e1fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">signal function  <a href="#gab18c182e029edf943a15f3a9115e1fbb"></a><br/></td></tr>
+<tr class="memitem:ga76b6bb879969bc20452db246edf8c8bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_platform.html#ga76b6bb879969bc20452db246edf8c8bc">ServerSignal</a> ()</td></tr>
+<tr class="memdesc:ga76b6bb879969bc20452db246edf8c8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버를 위한 signal 함수를 호출한다.  <a href="#ga76b6bb879969bc20452db246edf8c8bc"></a><br/></td></tr>
+<tr class="memitem:ga1be85de7b47b674ec87fcde0c1af2283"><td class="memItemLeft" align="right" valign="top">THREAD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_platform.html#ga1be85de7b47b674ec87fcde0c1af2283">ServerThread</a> (LPVOID lpParameter)</td></tr>
+<tr class="memdesc:ga1be85de7b47b674ec87fcde0c1af2283"><td class="mdescLeft">&#160;</td><td class="mdescRight">SipLoadBalancer 관리를 위한 네트워크 서버 쓰레드 함수  <a href="#ga1be85de7b47b674ec87fcde0c1af2283"></a><br/></td></tr>
+<tr class="memitem:gae81770b565e37fae439a576249527f62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_platform.html#gae81770b565e37fae439a576249527f62">StartMonitorServerThread</a> (<a class="el" href="class_i_monitor_call_back.html">IMonitorCallBack</a> *pclsCallBack)</td></tr>
+<tr class="memdesc:gae81770b565e37fae439a576249527f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">모니터링 서버 쓰레드를 시작한다.  <a href="#gae81770b565e37fae439a576249527f62"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>서비스 개발 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="gac80cad353950595e6c2878500924e07a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsMonitorThreadRun </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모니터링 쓰레드 실행 유무를 검사한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>모니터링 쓰레드가 실행 중이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab18c182e029edf943a15f3a9115e1fbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LastMethod </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>signal function </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sig</td><td>신호 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8ed30c17b5273fcf6c26ce7fd7125b93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_API MonitorThread </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SipLoadBalancer 의 내부 자료구조를 모니터링하기 위한 쓰레드 함수 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpParameter</td><td>의미없음 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga08967c362a0437ad77bacf9c08abf5bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ServerMain </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_server_service.html">CServerService</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ServerFunc&#160;</td>
+          <td class="paramname"><em>pFunc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>서버 서비스 main function </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>터미널 입력 인자 개수 </td></tr>
+    <tr><td class="paramname">argv</td><td>터미널 입력 인자 </td></tr>
+    <tr><td class="paramname">clsService</td><td>서비스 정의 객체 </td></tr>
+    <tr><td class="paramname">pFunc</td><td>서비스 main 함수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>정상 종료하면 0 을 리턴하고 오류가 발생하면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga76b6bb879969bc20452db246edf8c8bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerSignal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>서버를 위한 signal 함수를 호출한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1be85de7b47b674ec87fcde0c1af2283"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_API ServerThread </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SipLoadBalancer 관리를 위한 네트워크 서버 쓰레드 함수 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpParameter</td><td>의미없음 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae81770b565e37fae439a576249527f62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StartMonitorServerThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_monitor_call_back.html">IMonitorCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모니터링 서버 쓰레드를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsCallBack</td><td>모니터링 callback 인터페이스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacb40d9d3b51774ba2fb1e40ac4d24edf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StartMonitorThread </td>
+          <td>(</td>
+          <td class="paramtype">Socket&#160;</td>
+          <td class="paramname"><em>hSocket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_monitor_call_back.html">IMonitorCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모니터링 쓰레드를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hSocket</td><td>연결된 TCP 소켓 </td></tr>
+    <tr><td class="paramname">pszIp</td><td>클라이언트 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>클라이언트 포트 번호 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>모니터링 callback 인터페이스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 월 10월 12 2020 11:21:10, 프로젝트명 : C++ SIP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SIP Stack: CSipMessage 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SIP Stack
+   &#160;<span id="projectnumber">0.31</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="hierarchy.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-attribs">Public 속성</a> &#124;
+<a href="class_c_sip_message-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">CSipMessage 클래스 참조<div class="ingroups"><a class="el" href="group___sip_parser.html">SipParser</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SIP 메시지 정보를 저장하는 클래스  
+ <a href="class_c_sip_message.html#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a08e15222267f53c9e7948b8ae7e25928"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a08e15222267f53c9e7948b8ae7e25928">CSipMessage</a> ()</td></tr>
+<tr class="memitem:ab38121095b989292ce8e7304656af25b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#ab38121095b989292ce8e7304656af25b">~CSipMessage</a> ()</td></tr>
+<tr class="memitem:ab12cdc747d54bf3996d51fa2b4d26165"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#ab12cdc747d54bf3996d51fa2b4d26165">Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ab12cdc747d54bf3996d51fa2b4d26165"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_message.html" title="SIP 메시지 정보를 저장하는 클래스">CSipMessage</a> 클래스의 멤버 변수에 저장한다.  <a href="#ab12cdc747d54bf3996d51fa2b4d26165"></a><br/></td></tr>
+<tr class="memitem:a9eb9a8de74c8be9fb20b68b26c2840cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a9eb9a8de74c8be9fb20b68b26c2840cd">ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:a9eb9a8de74c8be9fb20b68b26c2840cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지 문자열을 작성한다.  <a href="#a9eb9a8de74c8be9fb20b68b26c2840cd"></a><br/></td></tr>
+<tr class="memitem:ga9c42b8cacf1d02b317f8764b362a8982"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga9c42b8cacf1d02b317f8764b362a8982">MakePacket</a> ()</td></tr>
+<tr class="memdesc:ga9c42b8cacf1d02b317f8764b362a8982"><td class="mdescLeft">&#160;</td><td class="mdescRight">네트워크로 전송할 수 있는 SIP 메시지 문자열을 작성한다.  <a href="group___sip_parser.html#ga9c42b8cacf1d02b317f8764b362a8982"></a><br/></td></tr>
+<tr class="memitem:ga22f751ea5f4252c48acf607d7e738e98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga22f751ea5f4252c48acf607d7e738e98">Clear</a> ()</td></tr>
+<tr class="memdesc:ga22f751ea5f4252c48acf607d7e738e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="group___sip_parser.html#ga22f751ea5f4252c48acf607d7e738e98"></a><br/></td></tr>
+<tr class="memitem:ga85d8b01ef047dbb0ce2f65f6fc863573"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga85d8b01ef047dbb0ce2f65f6fc863573">IsRequest</a> ()</td></tr>
+<tr class="memdesc:ga85d8b01ef047dbb0ce2f65f6fc863573"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 요청 메시지인지 검사한다.  <a href="group___sip_parser.html#ga85d8b01ef047dbb0ce2f65f6fc863573"></a><br/></td></tr>
+<tr class="memitem:ga69f02bc5c15fcf7867754eaadc9f547a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga69f02bc5c15fcf7867754eaadc9f547a">IsMethod</a> (const char *pszMethod)</td></tr>
+<tr class="memdesc:ga69f02bc5c15fcf7867754eaadc9f547a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메소드가 입력한 메소드와 같은지 검사한다.  <a href="group___sip_parser.html#ga69f02bc5c15fcf7867754eaadc9f547a"></a><br/></td></tr>
+<tr class="memitem:gac17d9597ec41e9904ce215fe445b7024"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gac17d9597ec41e9904ce215fe445b7024">IsEqualCallId</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:gac17d9597ec41e9904ce215fe445b7024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 가 동일한지 검사한다.  <a href="group___sip_parser.html#gac17d9597ec41e9904ce215fe445b7024"></a><br/></td></tr>
+<tr class="memitem:gadd7c416a8a9dea1e4c9031696de7e650"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gadd7c416a8a9dea1e4c9031696de7e650">IsEqualCallIdSeq</a> (<a class="el" href="class_c_sip_message.html">CSipMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:gadd7c416a8a9dea1e4c9031696de7e650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 와 CSeq 의 번호가 동일한지 검사한다.  <a href="group___sip_parser.html#gadd7c416a8a9dea1e4c9031696de7e650"></a><br/></td></tr>
+<tr class="memitem:gab359910d94ba7c46458d30ac5a124f18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab359910d94ba7c46458d30ac5a124f18">Is100rel</a> ()</td></tr>
+<tr class="memdesc:gab359910d94ba7c46458d30ac5a124f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지에 100rel 헤더를 포함하고 있는가?  <a href="group___sip_parser.html#gab359910d94ba7c46458d30ac5a124f18"></a><br/></td></tr>
+<tr class="memitem:gad12ebec5b139587df384216f5c0baa14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad12ebec5b139587df384216f5c0baa14">GetCallId</a> (std::string &amp;strCallId)</td></tr>
+<tr class="memdesc:gad12ebec5b139587df384216f5c0baa14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call-ID 문자열을 가져온다.  <a href="group___sip_parser.html#gad12ebec5b139587df384216f5c0baa14"></a><br/></td></tr>
+<tr class="memitem:gad2cd189e9afa8f34fd343a4de7d9c7e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad2cd189e9afa8f34fd343a4de7d9c7e8">AddIpPortToTopVia</a> (const char *pszIp, int iPort, ESipTransport eTransport=E_SIP_UDP)</td></tr>
+<tr class="memdesc:gad2cd189e9afa8f34fd343a4de7d9c7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Via 헤더에 발신 IP 주소와 포트 번호를 추가한다.  <a href="group___sip_parser.html#gad2cd189e9afa8f34fd343a4de7d9c7e8"></a><br/></td></tr>
+<tr class="memitem:ga418ba2c9fe31a1baeeb986fd4520dda7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga418ba2c9fe31a1baeeb986fd4520dda7">AddVia</a> (const char *pszIp, int iPort, const char *pszBranch=NULL, ESipTransport eTransport=E_SIP_UDP)</td></tr>
+<tr class="memdesc:ga418ba2c9fe31a1baeeb986fd4520dda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Via 헤더를 추가한다.  <a href="group___sip_parser.html#ga418ba2c9fe31a1baeeb986fd4520dda7"></a><br/></td></tr>
+<tr class="memitem:ga87186b23377e43a3bffa39a878fe8539"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga87186b23377e43a3bffa39a878fe8539">AddRoute</a> (const char *pszIp, int iPort, ESipTransport eTransport=E_SIP_UDP)</td></tr>
+<tr class="memdesc:ga87186b23377e43a3bffa39a878fe8539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Route 헤더를 추가한다.  <a href="group___sip_parser.html#ga87186b23377e43a3bffa39a878fe8539"></a><br/></td></tr>
+<tr class="memitem:ga6ddc3488b2fc1c15db2ddcb4a4954267"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga6ddc3488b2fc1c15db2ddcb4a4954267">AddRecordRoute</a> (const char *pszIp, int iPort, ESipTransport eTransport=E_SIP_UDP)</td></tr>
+<tr class="memdesc:ga6ddc3488b2fc1c15db2ddcb4a4954267"><td class="mdescLeft">&#160;</td><td class="mdescRight">RecordRoute 헤더를 추가한다.  <a href="group___sip_parser.html#ga6ddc3488b2fc1c15db2ddcb4a4954267"></a><br/></td></tr>
+<tr class="memitem:ga06b3b19a0f19731cf20b31529dacafd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga06b3b19a0f19731cf20b31529dacafd8">AddHeader</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga06b3b19a0f19731cf20b31529dacafd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 자료구조에 이름과 값을 추가한다.  <a href="group___sip_parser.html#ga06b3b19a0f19731cf20b31529dacafd8"></a><br/></td></tr>
+<tr class="memitem:gab1b75b33f85e4db3572b6bc3e490c45f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab1b75b33f85e4db3572b6bc3e490c45f">AddHeader</a> (const char *pszName, int iValue)</td></tr>
+<tr class="memdesc:gab1b75b33f85e4db3572b6bc3e490c45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 자료구조에 이름과 값을 추가한다.  <a href="group___sip_parser.html#gab1b75b33f85e4db3572b6bc3e490c45f"></a><br/></td></tr>
+<tr class="memitem:ga60e4285ae0caa1fa9e39d17533e0ff4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga60e4285ae0caa1fa9e39d17533e0ff4c">GetTopViaIpPort</a> (std::string &amp;strIp, int &amp;iPort)</td></tr>
+<tr class="memdesc:ga60e4285ae0caa1fa9e39d17533e0ff4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Via 헤더의 IP 주소와 포트 번호를 가져온다.  <a href="group___sip_parser.html#ga60e4285ae0caa1fa9e39d17533e0ff4c"></a><br/></td></tr>
+<tr class="memitem:ga3d75bf76ebe3973740d63db01c6e3cab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga3d75bf76ebe3973740d63db01c6e3cab">SetTopViaIpPort</a> (const char *pszIp, int iPort, ESipTransport eTransport)</td></tr>
+<tr class="memdesc:ga3d75bf76ebe3973740d63db01c6e3cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Via 헤더의 IP 주소와 포트 번호를 수정한다.  <a href="group___sip_parser.html#ga3d75bf76ebe3973740d63db01c6e3cab"></a><br/></td></tr>
+<tr class="memitem:gab01220e1af5c5a36e4ea2f3686e082d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gab01220e1af5c5a36e4ea2f3686e082d5">SetTopViaTransPort</a> (ESipTransport eTransport, int iPort)</td></tr>
+<tr class="memdesc:gab01220e1af5c5a36e4ea2f3686e082d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Via 헤더의 transport 문자열을 수정한다.  <a href="group___sip_parser.html#gab01220e1af5c5a36e4ea2f3686e082d5"></a><br/></td></tr>
+<tr class="memitem:gad8dfa22ffa85d7fba38877b6675fac0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad8dfa22ffa85d7fba38877b6675fac0f">SetTopContactIpPort</a> (const char *pszIp, int iPort, ESipTransport eTransport)</td></tr>
+<tr class="memdesc:gad8dfa22ffa85d7fba38877b6675fac0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top Contact 헤더의 IP 주소와 포트 번호를 수정한다.  <a href="group___sip_parser.html#gad8dfa22ffa85d7fba38877b6675fac0f"></a><br/></td></tr>
+<tr class="memitem:gad9c137104fd0e7114c70ca16da82a3d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad9c137104fd0e7114c70ca16da82a3d7">GetExpires</a> ()</td></tr>
+<tr class="memdesc:gad9c137104fd0e7114c70ca16da82a3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expires 헤더가 존재하면 Expires 헤더 값을 리턴하고 Contact 헤더에 expires 가 존재하면 Contact 헤더의 expires 를 리턴한다.  <a href="group___sip_parser.html#gad9c137104fd0e7114c70ca16da82a3d7"></a><br/></td></tr>
+<tr class="memitem:gad0f7d46b4d91f10ac98a4b607827aac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_header.html">CSipHeader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#gad0f7d46b4d91f10ac98a4b607827aac3">GetHeader</a> (const char *pszName)</td></tr>
+<tr class="memdesc:gad0f7d46b4d91f10ac98a4b607827aac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">헤더 리스트를 검색하여서 입력된 이름과 일치하는 헤더를 리턴한다.  <a href="group___sip_parser.html#gad0f7d46b4d91f10ac98a4b607827aac3"></a><br/></td></tr>
+<tr class="memitem:ga865984b498eca45096f685ee291ccfc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga865984b498eca45096f685ee291ccfc2">CreateResponse</a> (int iStatus, const char *pszToTag=NULL)</td></tr>
+<tr class="memdesc:ga865984b498eca45096f685ee291ccfc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 응답 메시지 객체를 생성한다.  <a href="group___sip_parser.html#ga865984b498eca45096f685ee291ccfc2"></a><br/></td></tr>
+<tr class="memitem:ga06a1fdbf2d2a94dc0d2ac97469acde98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_message.html">CSipMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___sip_parser.html#ga06a1fdbf2d2a94dc0d2ac97469acde98">CreateResponseWithToTag</a> (int iStatus)</td></tr>
+<tr class="memdesc:ga06a1fdbf2d2a94dc0d2ac97469acde98"><td class="mdescLeft">&#160;</td><td class="mdescRight">To 헤더의 tag 가 존재하지 않는 경우 tag 를 생성하여서 저장한 SIP 응답 메시지 객체를 생성한다.  <a href="group___sip_parser.html#ga06a1fdbf2d2a94dc0d2ac97469acde98"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Public 속성</h2></td></tr>
+<tr class="memitem:af8b103d8a9ed4598e10e4c824bceabb1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#af8b103d8a9ed4598e10e4c824bceabb1">m_strSipMethod</a></td></tr>
+<tr class="memdesc:af8b103d8a9ed4598e10e4c824bceabb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메소드 ( INVITE, CANCEL, ACK, BYE, REFER 등 )  <a href="#af8b103d8a9ed4598e10e4c824bceabb1"></a><br/></td></tr>
+<tr class="memitem:a47b369b9b7dc52aa0a56e45c38a5e4f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_uri.html">CSipUri</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a47b369b9b7dc52aa0a56e45c38a5e4f7">m_clsReqUri</a></td></tr>
+<tr class="memdesc:a47b369b9b7dc52aa0a56e45c38a5e4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP request URI.  <a href="#a47b369b9b7dc52aa0a56e45c38a5e4f7"></a><br/></td></tr>
+<tr class="memitem:a9575f1a03102e4e0912d85193ba92e36"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a9575f1a03102e4e0912d85193ba92e36">m_strSipVersion</a></td></tr>
+<tr class="memdesc:a9575f1a03102e4e0912d85193ba92e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP version ( SIP/2.0 )  <a href="#a9575f1a03102e4e0912d85193ba92e36"></a><br/></td></tr>
+<tr class="memitem:ac32da8a718f468466b39ad5ea540f7e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#ac32da8a718f468466b39ad5ea540f7e0">m_iStatusCode</a></td></tr>
+<tr class="memdesc:ac32da8a718f468466b39ad5ea540f7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 응답 코드.  <a href="#ac32da8a718f468466b39ad5ea540f7e0"></a><br/></td></tr>
+<tr class="memitem:a6856af9113e192cb6dab2028eaff3c8d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a6856af9113e192cb6dab2028eaff3c8d">m_strReasonPhrase</a></td></tr>
+<tr class="memdesc:a6856af9113e192cb6dab2028eaff3c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 응답 메시지  <a href="#a6856af9113e192cb6dab2028eaff3c8d"></a><br/></td></tr>
+<tr class="memitem:affe6a5524586c97026def05582e87ef7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_from.html">CSipFrom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#affe6a5524586c97026def05582e87ef7">m_clsFrom</a></td></tr>
+<tr class="memdesc:affe6a5524586c97026def05582e87ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP From 헤더  <a href="#affe6a5524586c97026def05582e87ef7"></a><br/></td></tr>
+<tr class="memitem:a2800fc25c21138bfc1d50a694ba1278c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_from.html">CSipFrom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a2800fc25c21138bfc1d50a694ba1278c">m_clsTo</a></td></tr>
+<tr class="memdesc:a2800fc25c21138bfc1d50a694ba1278c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP To 헤더  <a href="#a2800fc25c21138bfc1d50a694ba1278c"></a><br/></td></tr>
+<tr class="memitem:a4683985b4b2761c1b618e4b8a17a34a4"><td class="memItemLeft" align="right" valign="top">SIP_VIA_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a4683985b4b2761c1b618e4b8a17a34a4">m_clsViaList</a></td></tr>
+<tr class="memdesc:a4683985b4b2761c1b618e4b8a17a34a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Via 헤더 리스트  <a href="#a4683985b4b2761c1b618e4b8a17a34a4"></a><br/></td></tr>
+<tr class="memitem:abfd20809c06292ab5b3c6fc01302c09f"><td class="memItemLeft" align="right" valign="top">SIP_FROM_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#abfd20809c06292ab5b3c6fc01302c09f">m_clsContactList</a></td></tr>
+<tr class="memdesc:abfd20809c06292ab5b3c6fc01302c09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Contact 헤더 리스트  <a href="#abfd20809c06292ab5b3c6fc01302c09f"></a><br/></td></tr>
+<tr class="memitem:a1957b83f76abcdb1057953ffc8519c19"><td class="memItemLeft" align="right" valign="top">SIP_FROM_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a1957b83f76abcdb1057953ffc8519c19">m_clsRecordRouteList</a></td></tr>
+<tr class="memdesc:a1957b83f76abcdb1057953ffc8519c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Record-Route 헤더 리스트  <a href="#a1957b83f76abcdb1057953ffc8519c19"></a><br/></td></tr>
+<tr class="memitem:a965bb3c01fb7cbb7ed478a1e139a3496"><td class="memItemLeft" align="right" valign="top">SIP_FROM_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a965bb3c01fb7cbb7ed478a1e139a3496">m_clsRouteList</a></td></tr>
+<tr class="memdesc:a965bb3c01fb7cbb7ed478a1e139a3496"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Route 헤더 리스트  <a href="#a965bb3c01fb7cbb7ed478a1e139a3496"></a><br/></td></tr>
+<tr class="memitem:a8734252bdde2a1cb22553bed4e65e9df"><td class="memItemLeft" align="right" valign="top">SIP_CREDENTIAL_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a8734252bdde2a1cb22553bed4e65e9df">m_clsAuthorizationList</a></td></tr>
+<tr class="memdesc:a8734252bdde2a1cb22553bed4e65e9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Authorization 헤더 리스트  <a href="#a8734252bdde2a1cb22553bed4e65e9df"></a><br/></td></tr>
+<tr class="memitem:a18df03d3b8ab82831d16c1b5de023547"><td class="memItemLeft" align="right" valign="top">SIP_CHALLENGE_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a18df03d3b8ab82831d16c1b5de023547">m_clsWwwAuthenticateList</a></td></tr>
+<tr class="memdesc:a18df03d3b8ab82831d16c1b5de023547"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Www-Authenticate 헤더 리스트  <a href="#a18df03d3b8ab82831d16c1b5de023547"></a><br/></td></tr>
+<tr class="memitem:aeda6fef629cb3f0eadfe382dd646ac0f"><td class="memItemLeft" align="right" valign="top">SIP_CREDENTIAL_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#aeda6fef629cb3f0eadfe382dd646ac0f">m_clsProxyAuthorizationList</a></td></tr>
+<tr class="memdesc:aeda6fef629cb3f0eadfe382dd646ac0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Proxy-Authorization 헤더 리스트  <a href="#aeda6fef629cb3f0eadfe382dd646ac0f"></a><br/></td></tr>
+<tr class="memitem:a3886efe460cccefcbc544861469e30b6"><td class="memItemLeft" align="right" valign="top">SIP_CHALLENGE_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a3886efe460cccefcbc544861469e30b6">m_clsProxyAuthenticateList</a></td></tr>
+<tr class="memdesc:a3886efe460cccefcbc544861469e30b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Proxy-Authenticate 헤더 리스트  <a href="#a3886efe460cccefcbc544861469e30b6"></a><br/></td></tr>
+<tr class="memitem:af5161d72e916315df01e5571efe247a7"><td class="memItemLeft" align="right" valign="top">SIP_HEADER_LIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#af5161d72e916315df01e5571efe247a7">m_clsHeaderList</a></td></tr>
+<tr class="memdesc:af5161d72e916315df01e5571efe247a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 리스트.  <a href="#af5161d72e916315df01e5571efe247a7"></a><br/></td></tr>
+<tr class="memitem:a56ca87d40c3584252a91eb7fc6379606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_c_seq.html">CSipCSeq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a56ca87d40c3584252a91eb7fc6379606">m_clsCSeq</a></td></tr>
+<tr class="memdesc:a56ca87d40c3584252a91eb7fc6379606"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP CSeq 헤더  <a href="#a56ca87d40c3584252a91eb7fc6379606"></a><br/></td></tr>
+<tr class="memitem:acce6aad01c2e8414c548632ca7be55cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_call_id.html">CSipCallId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#acce6aad01c2e8414c548632ca7be55cd">m_clsCallId</a></td></tr>
+<tr class="memdesc:acce6aad01c2e8414c548632ca7be55cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Call-ID 헤더  <a href="#acce6aad01c2e8414c548632ca7be55cd"></a><br/></td></tr>
+<tr class="memitem:a48035f4c44b0098acc54b93bf051ea57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_sip_content_type.html">CSipContentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a48035f4c44b0098acc54b93bf051ea57">m_clsContentType</a></td></tr>
+<tr class="memdesc:a48035f4c44b0098acc54b93bf051ea57"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Content-Type 헤더  <a href="#a48035f4c44b0098acc54b93bf051ea57"></a><br/></td></tr>
+<tr class="memitem:ac6e37625dab469b43f61f5d877b3b862"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#ac6e37625dab469b43f61f5d877b3b862">m_iContentLength</a></td></tr>
+<tr class="memdesc:ac6e37625dab469b43f61f5d877b3b862"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Content-Length 헤더의 값  <a href="#ac6e37625dab469b43f61f5d877b3b862"></a><br/></td></tr>
+<tr class="memitem:a63d72fad6a1ba20a18313ff2eeae4e33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a63d72fad6a1ba20a18313ff2eeae4e33">m_iExpires</a></td></tr>
+<tr class="memdesc:a63d72fad6a1ba20a18313ff2eeae4e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Expires 헤더의 값  <a href="#a63d72fad6a1ba20a18313ff2eeae4e33"></a><br/></td></tr>
+<tr class="memitem:a0f923f15ce46db2bb7db63c9804f9b12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a0f923f15ce46db2bb7db63c9804f9b12">m_iMaxForwards</a></td></tr>
+<tr class="memdesc:a0f923f15ce46db2bb7db63c9804f9b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP Max-Forwards 헤더의 값  <a href="#a0f923f15ce46db2bb7db63c9804f9b12"></a><br/></td></tr>
+<tr class="memitem:a2aa95ae9ccb290c2e35e8eb73238e995"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a2aa95ae9ccb290c2e35e8eb73238e995">m_strUserAgent</a></td></tr>
+<tr class="memdesc:a2aa95ae9ccb290c2e35e8eb73238e995"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP User-Agent 헤더  <a href="#a2aa95ae9ccb290c2e35e8eb73238e995"></a><br/></td></tr>
+<tr class="memitem:adf156574cf97f4b9bac2fb0d2ce145ac"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#adf156574cf97f4b9bac2fb0d2ce145ac">m_strBody</a></td></tr>
+<tr class="memdesc:adf156574cf97f4b9bac2fb0d2ce145ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP body 메시지  <a href="#adf156574cf97f4b9bac2fb0d2ce145ac"></a><br/></td></tr>
+<tr class="memitem:ad6e316a9500f193dcd58a2d2bfded2a0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#ad6e316a9500f193dcd58a2d2bfded2a0">m_strPacket</a></td></tr>
+<tr class="memdesc:ad6e316a9500f193dcd58a2d2bfded2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">네트워크로 전송할 SIP 메시지  <a href="#ad6e316a9500f193dcd58a2d2bfded2a0"></a><br/></td></tr>
+<tr class="memitem:a23a49901d2b6aab69f0f26d8ab874386"><td class="memItemLeft" align="right" valign="top">ESipTransport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a23a49901d2b6aab69f0f26d8ab874386">m_eTransport</a></td></tr>
+<tr class="memdesc:a23a49901d2b6aab69f0f26d8ab874386"><td class="mdescLeft">&#160;</td><td class="mdescRight">네트워크로 전송/수신된 SIP 메시지의 transport  <a href="#a23a49901d2b6aab69f0f26d8ab874386"></a><br/></td></tr>
+<tr class="memitem:a4064c8ee03fa4250658d0994f42e6ed7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a4064c8ee03fa4250658d0994f42e6ed7">m_strClientIp</a></td></tr>
+<tr class="memdesc:a4064c8ee03fa4250658d0994f42e6ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지를 전송한 클라이언트의 IP 주소  <a href="#a4064c8ee03fa4250658d0994f42e6ed7"></a><br/></td></tr>
+<tr class="memitem:a9ad66d999db2363e8d19e54f4de0f31c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a9ad66d999db2363e8d19e54f4de0f31c">m_iClientPort</a></td></tr>
+<tr class="memdesc:a9ad66d999db2363e8d19e54f4de0f31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지를 전송한 클라이언트의 포트 번호  <a href="#a9ad66d999db2363e8d19e54f4de0f31c"></a><br/></td></tr>
+<tr class="memitem:a1989cf01cffe0a8de2846a540f6c4a47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a1989cf01cffe0a8de2846a540f6c4a47">m_bUseCompact</a></td></tr>
+<tr class="memdesc:a1989cf01cffe0a8de2846a540f6c4a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 메시지를 compact form 으로 생성하는지 설정  <a href="#a1989cf01cffe0a8de2846a540f6c4a47"></a><br/></td></tr>
+<tr class="memitem:a122f142bf4a9387d81dd2f64e05c19f0"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_sip_message.html#a122f142bf4a9387d81dd2f64e05c19f0">m_iUseCount</a></td></tr>
+<tr class="memdesc:a122f142bf4a9387d81dd2f64e05c19f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">객체 사용 개수  <a href="#a122f142bf4a9387d81dd2f64e05c19f0"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<div class="textblock"><p>SIP 메시지 정보를 저장하는 클래스 </p>
+</div><h2>생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="a08e15222267f53c9e7948b8ae7e25928"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSipMessage::CSipMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab38121095b989292ce8e7304656af25b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSipMessage::~CSipMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>멤버 함수 문서화</h2>
+<a class="anchor" id="ab12cdc747d54bf3996d51fa2b4d26165"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipMessage::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 문자열을 파싱하여 <a class="el" href="class_c_sip_message.html" title="SIP 메시지 정보를 저장하는 클래스">CSipMessage</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9eb9a8de74c8be9fb20b68b26c2840cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipMessage::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>SIP 메시지 문자열을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<h2>멤버 데이타 문서화</h2>
+<a class="anchor" id="a1989cf01cffe0a8de2846a540f6c4a47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSipMessage::m_bUseCompact</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지를 compact form 으로 생성하는지 설정 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8734252bdde2a1cb22553bed4e65e9df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_CREDENTIAL_LIST CSipMessage::m_clsAuthorizationList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Authorization 헤더 리스트 </p>
+
+</div>
+</div>
+<a class="anchor" id="acce6aad01c2e8414c548632ca7be55cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_call_id.html">CSipCallId</a> CSipMessage::m_clsCallId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Call-ID 헤더 </p>
+
+</div>
+</div>
+<a class="anchor" id="abfd20809c06292ab5b3c6fc01302c09f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_FROM_LIST CSipMessage::m_clsContactList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Contact 헤더 리스트 </p>
+
+</div>
+</div>
+<a class="anchor" id="a48035f4c44b0098acc54b93bf051ea57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_content_type.html">CSipContentType</a> CSipMessage::m_clsContentType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Content-Type 헤더 </p>
+
+</div>
+</div>
+<a class="anchor" id="a56ca87d40c3584252a91eb7fc6379606"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_c_seq.html">CSipCSeq</a> CSipMessage::m_clsCSeq</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP CSeq 헤더 </p>
+
+</div>
+</div>
+<a class="anchor" id="affe6a5524586c97026def05582e87ef7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_from.html">CSipFrom</a> CSipMessage::m_clsFrom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP From 헤더 </p>
+
+</div>
+</div>
+<a class="anchor" id="af5161d72e916315df01e5571efe247a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_HEADER_LIST CSipMessage::m_clsHeaderList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 헤더 리스트. </p>
+<p><a class="el" href="class_c_sip_message.html" title="SIP 메시지 정보를 저장하는 클래스">CSipMessage</a> 에서 구분하여서 정의한 헤더에 저장되지 않는 헤더들을 저장한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3886efe460cccefcbc544861469e30b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_CHALLENGE_LIST CSipMessage::m_clsProxyAuthenticateList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Proxy-Authenticate 헤더 리스트 </p>
+
+</div>
+</div>
+<a class="anchor" id="aeda6fef629cb3f0eadfe382dd646ac0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_CREDENTIAL_LIST CSipMessage::m_clsProxyAuthorizationList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Proxy-Authorization 헤더 리스트 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1957b83f76abcdb1057953ffc8519c19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_FROM_LIST CSipMessage::m_clsRecordRouteList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Record-Route 헤더 리스트 </p>
+
+</div>
+</div>
+<a class="anchor" id="a47b369b9b7dc52aa0a56e45c38a5e4f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_uri.html">CSipUri</a> CSipMessage::m_clsReqUri</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP request URI. </p>
+
+</div>
+</div>
+<a class="anchor" id="a965bb3c01fb7cbb7ed478a1e139a3496"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_FROM_LIST CSipMessage::m_clsRouteList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Route 헤더 리스트 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2800fc25c21138bfc1d50a694ba1278c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_sip_from.html">CSipFrom</a> CSipMessage::m_clsTo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP To 헤더 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4683985b4b2761c1b618e4b8a17a34a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_VIA_LIST CSipMessage::m_clsViaList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Via 헤더 리스트 </p>
+
+</div>
+</div>
+<a class="anchor" id="a18df03d3b8ab82831d16c1b5de023547"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIP_CHALLENGE_LIST CSipMessage::m_clsWwwAuthenticateList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Www-Authenticate 헤더 리스트 </p>
+
+</div>
+</div>
+<a class="anchor" id="a23a49901d2b6aab69f0f26d8ab874386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ESipTransport CSipMessage::m_eTransport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>네트워크로 전송/수신된 SIP 메시지의 transport </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ad66d999db2363e8d19e54f4de0f31c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipMessage::m_iClientPort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지를 전송한 클라이언트의 포트 번호 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6e37625dab469b43f61f5d877b3b862"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipMessage::m_iContentLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Content-Length 헤더의 값 </p>
+
+</div>
+</div>
+<a class="anchor" id="a63d72fad6a1ba20a18313ff2eeae4e33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipMessage::m_iExpires</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Expires 헤더의 값 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0f923f15ce46db2bb7db63c9804f9b12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipMessage::m_iMaxForwards</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP Max-Forwards 헤더의 값 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac32da8a718f468466b39ad5ea540f7e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSipMessage::m_iStatusCode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 응답 코드. </p>
+<p>SIP 응답 메시지인 경우에만 0 보다 큰 값을 가지고 있다. </p>
+
+</div>
+</div>
+<a class="anchor" id="a122f142bf4a9387d81dd2f64e05c19f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t CSipMessage::m_iUseCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>객체 사용 개수 </p>
+
+</div>
+</div>
+<a class="anchor" id="adf156574cf97f4b9bac2fb0d2ce145ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CSipMessage::m_strBody</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP body 메시지 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4064c8ee03fa4250658d0994f42e6ed7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CSipMessage::m_strClientIp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메시지를 전송한 클라이언트의 IP 주소 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad6e316a9500f193dcd58a2d2bfded2a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CSipMessage::m_strPacket</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>네트워크로 전송할 SIP 메시지 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6856af9113e192cb6dab2028eaff3c8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CSipMessage::m_strReasonPhrase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 응답 메시지 </p>
+
+</div>
+</div>
+<a class="anchor" id="af8b103d8a9ed4598e10e4c824bceabb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CSipMessage::m_strSipMethod</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP 메소드 ( INVITE, CANCEL, ACK, BYE, REFER 등 ) </p>
+
+</div>
+</div>
+<a class="anchor" id="a9575f1a03102e4e0912d85193ba92e36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CSipMessage::m_strSipVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP version ( SIP/2.0 ) </p>
+
+</div>
+</div>
+<a class="anchor" id="a2aa95ae9ccb290c2e35e8eb73238e995"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CSipMessage::m_strUserAgent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SIP User-Agent 헤더 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 월 10월 12 2020 11:21:10, 프로젝트명 : C++ SIP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

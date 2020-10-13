@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ HTTP Stack: FtpStack</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ HTTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">FtpStack</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>FTP 클라이언트 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ftp_client.html">CFtpClient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 클라이언트 클래스  <a href="class_c_ftp_client.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ftp_file.html">CFtpFile</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버에 존재하는 파일 정보 저장 클래스  <a href="class_c_ftp_file.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ftp_response.html">CFtpResponse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 응답 메시지를 파싱하여서 저장하는 클래스  <a href="class_c_ftp_response.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ga81b576ac22ff996642c16aa2f43e31db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#ga81b576ac22ff996642c16aa2f43e31db">CFtpClient::Connect</a> (const char *pszServerIp, int iServerPort=21, bool bUseUtf8=false)</td></tr>
+<tr class="memdesc:ga81b576ac22ff996642c16aa2f43e31db"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버에 연결한다.  <a href="#ga81b576ac22ff996642c16aa2f43e31db"></a><br/></td></tr>
+<tr class="memitem:gaf4a850e981cb9d67f953566eb72e405a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#gaf4a850e981cb9d67f953566eb72e405a">CFtpClient::Close</a> ()</td></tr>
+<tr class="memdesc:gaf4a850e981cb9d67f953566eb72e405a"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버 연결을 종료한다.  <a href="#gaf4a850e981cb9d67f953566eb72e405a"></a><br/></td></tr>
+<tr class="memitem:ga47f5968b15e4e190c88a1510c9c493f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#ga47f5968b15e4e190c88a1510c9c493f5">CFtpClient::Login</a> (const char *pszUserId, const char *pszPassWord)</td></tr>
+<tr class="memdesc:ga47f5968b15e4e190c88a1510c9c493f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버에 로그인한다.  <a href="#ga47f5968b15e4e190c88a1510c9c493f5"></a><br/></td></tr>
+<tr class="memitem:gaffcd18a6dc81086016fe827b9bc740eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#gaffcd18a6dc81086016fe827b9bc740eb">CFtpClient::ChangeFolder</a> (const char *pszPath)</td></tr>
+<tr class="memdesc:gaffcd18a6dc81086016fe827b9bc740eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버의 디렉토리를 변경한다.  <a href="#gaffcd18a6dc81086016fe827b9bc740eb"></a><br/></td></tr>
+<tr class="memitem:ga46528f77809c725388c2739593f07f1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#ga46528f77809c725388c2739593f07f1f">CFtpClient::GetCurrentFolder</a> (std::string &amp;strPath)</td></tr>
+<tr class="memdesc:ga46528f77809c725388c2739593f07f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버의 현재 디렉토리를 가져온다.  <a href="#ga46528f77809c725388c2739593f07f1f"></a><br/></td></tr>
+<tr class="memitem:ga3b754de8e1062a8d223fc0d76dfa32f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#ga3b754de8e1062a8d223fc0d76dfa32f0">CFtpClient::CreateFolder</a> (const char *pszPath)</td></tr>
+<tr class="memdesc:ga3b754de8e1062a8d223fc0d76dfa32f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버에 새로운 디렉토리를 생성한다.  <a href="#ga3b754de8e1062a8d223fc0d76dfa32f0"></a><br/></td></tr>
+<tr class="memitem:gadfc09aaf8ba5ee145f95f50245212add"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#gadfc09aaf8ba5ee145f95f50245212add">CFtpClient::DeleteFolder</a> (const char *pszPath)</td></tr>
+<tr class="memdesc:gadfc09aaf8ba5ee145f95f50245212add"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버에서 디렉토리를 삭제한다.  <a href="#gadfc09aaf8ba5ee145f95f50245212add"></a><br/></td></tr>
+<tr class="memitem:gaf823fa80dcb1c38f651d62cd79765bb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#gaf823fa80dcb1c38f651d62cd79765bb9">CFtpClient::Upload</a> (const char *pszLocalPath)</td></tr>
+<tr class="memdesc:gaf823fa80dcb1c38f651d62cd79765bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">파일을 FTP 서버로 업로드한다.  <a href="#gaf823fa80dcb1c38f651d62cd79765bb9"></a><br/></td></tr>
+<tr class="memitem:ga506b8c1c8d06c001c4fbf3f59fe210a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#ga506b8c1c8d06c001c4fbf3f59fe210a3">CFtpClient::Download</a> (const char *pszFileName, const char *pszLocalPath)</td></tr>
+<tr class="memdesc:ga506b8c1c8d06c001c4fbf3f59fe210a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버에서 파일을 다운로드한다.  <a href="#ga506b8c1c8d06c001c4fbf3f59fe210a3"></a><br/></td></tr>
+<tr class="memitem:gaa7584a2e6b7f8ca5d16cbcc3ceacfd64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#gaa7584a2e6b7f8ca5d16cbcc3ceacfd64">CFtpClient::List</a> (FTP_FILE_LIST &amp;clsList)</td></tr>
+<tr class="memdesc:gaa7584a2e6b7f8ca5d16cbcc3ceacfd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 서버의 현재 폴더에 존재하는 파일/폴더 리스트를 가져온다.  <a href="#gaa7584a2e6b7f8ca5d16cbcc3ceacfd64"></a><br/></td></tr>
+<tr class="memitem:gadac51f5d8686da9b38cbca8505345321"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#gadac51f5d8686da9b38cbca8505345321">CFtpResponse::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gadac51f5d8686da9b38cbca8505345321"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 응답 메시지를 파싱하여서 내부 자료구조에 저장한다.  <a href="#gadac51f5d8686da9b38cbca8505345321"></a><br/></td></tr>
+<tr class="memitem:gaa9ca83334a1f8df84159f66c82d979df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#gaa9ca83334a1f8df84159f66c82d979df">CFtpResponse::ParseLine</a> (const char *pszText, int iTextLen, bool &amp;bLastLine)</td></tr>
+<tr class="memdesc:gaa9ca83334a1f8df84159f66c82d979df"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP 응답 메시지의 1라인을 파싱하여서 내부 자료구조에 저장한다.  <a href="#gaa9ca83334a1f8df84159f66c82d979df"></a><br/></td></tr>
+<tr class="memitem:ga1b03fe904406835cafe594294d28cb60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___ftp_stack.html#ga1b03fe904406835cafe594294d28cb60">CFtpResponse::GetIpPort</a> (std::string &amp;strIp, int &amp;iPort)</td></tr>
+<tr class="memdesc:ga1b03fe904406835cafe594294d28cb60"><td class="mdescLeft">&#160;</td><td class="mdescRight">응답 메시지에서 IP주소 및 포트 번호를 가져온다.  <a href="#ga1b03fe904406835cafe594294d28cb60"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>FTP 클라이언트 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="gaffcd18a6dc81086016fe827b9bc740eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::ChangeFolder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버의 디렉토리를 변경한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPath</td><td>디렉토리 PATH </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf4a850e981cb9d67f953566eb72e405a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFtpClient::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버 연결을 종료한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga81b576ac22ff996642c16aa2f43e31db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::Connect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszServerIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iServerPort</em> = <code>21</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseUtf8</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버에 연결한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszServerIp</td><td>FTP 서버 IP 주소 </td></tr>
+    <tr><td class="paramname">iServerPort</td><td>FTP 서버 포트 번호 </td></tr>
+    <tr><td class="paramname">bUseUtf8</td><td>파일 이름을 UTF8 로 변환하는가? </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>FTP 서버 연결에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3b754de8e1062a8d223fc0d76dfa32f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::CreateFolder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버에 새로운 디렉토리를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPath</td><td>생성할 디렉토리 PATH </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadfc09aaf8ba5ee145f95f50245212add"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::DeleteFolder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버에서 디렉토리를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPath</td><td>삭제할 디렉토리 PATH </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga506b8c1c8d06c001c4fbf3f59fe210a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::Download </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszLocalPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버에서 파일을 다운로드한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFileName</td><td>FTP 서버의 파일 이름 </td></tr>
+    <tr><td class="paramname">pszLocalPath</td><td>다운로드한 파일을 저장할 파일 PATH </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga46528f77809c725388c2739593f07f1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::GetCurrentFolder </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버의 현재 디렉토리를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strPath</td><td>[out] 현재 디렉토리를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1b03fe904406835cafe594294d28cb60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpResponse::GetIpPort </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>응답 메시지에서 IP주소 및 포트 번호를 가져온다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa7584a2e6b7f8ca5d16cbcc3ceacfd64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::List </td>
+          <td>(</td>
+          <td class="paramtype">FTP_FILE_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버의 현재 폴더에 존재하는 파일/폴더 리스트를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsList</td><td>[out] 파일/폴더 리스트 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga47f5968b15e4e190c88a1510c9c493f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::Login </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 서버에 로그인한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUserId</td><td>아이디 </td></tr>
+    <tr><td class="paramname">pszPassWord</td><td>비밀번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadac51f5d8686da9b38cbca8505345321"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CFtpResponse::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 응답 메시지를 파싱하여서 내부 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>FTP 응답 메시지 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>FTP 응답 메시지 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱된 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa9ca83334a1f8df84159f66c82d979df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CFtpResponse::ParseLine </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bLastLine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FTP 응답 메시지의 1라인을 파싱하여서 내부 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>FTP 응답 메시지 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>FTP 응답 메시지 길이 </td></tr>
+    <tr><td class="paramname">bLastLine</td><td>[out] 마지막 라인이면 본 메소드 호출후, true 가 저장되고 그렇지 않으면 false 가 저장된다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱된 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf823fa80dcb1c38f651d62cd79765bb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFtpClient::Upload </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszLocalPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>파일을 FTP 서버로 업로드한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszLocalPath</td><td>로컬 파일 PATH </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 18:01:22, 프로젝트명 : C++ HTTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

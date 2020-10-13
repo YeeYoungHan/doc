@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SNMP Stack: CAsnType 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SNMP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="hierarchy.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-static-methods">정적 Public 멤버 함수</a> &#124;
+<a href="#pub-attribs">Public 속성</a> &#124;
+<a href="class_c_asn_type-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">CAsnType 클래스 참조<div class="ingroups"><a class="el" href="group___snmp_parser.html">SnmpParser</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ASN 타입 클래스의 root 클래스  
+ <a href="class_c_asn_type.html#details">더 자세히 ...</a></p>
+<div class="dynheader">
+CAsnType에 대한 상속 다이어그램 : </div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_c_asn_type.png" usemap="#CAsnType_map" alt=""/>
+  <map id="CAsnType_map" name="CAsnType_map">
+<area href="class_c_asn_complex.html" title="ASN 복합 타입 클래스" alt="CAsnComplex" shape="rect" coords="0,56,91,80"/>
+<area href="class_c_asn_int.html" title="ASN 정수 타입 클래스" alt="CAsnInt" shape="rect" coords="101,56,192,80"/>
+<area href="class_c_asn_long.html" title="ASN long 타입 클래스" alt="CAsnLong" shape="rect" coords="202,56,293,80"/>
+<area href="class_c_asn_null.html" title="ASN NULL 타입 클래스" alt="CAsnNull" shape="rect" coords="303,56,394,80"/>
+<area href="class_c_asn_oid.html" title="ASN OID 타입 클래스" alt="CAsnOid" shape="rect" coords="404,56,495,80"/>
+<area href="class_c_asn_string.html" title="ASN 문자열 타입 클래스" alt="CAsnString" shape="rect" coords="505,56,596,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a2fc687cd820500bea35dac1747c9ee14"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_type.html#a2fc687cd820500bea35dac1747c9ee14">~CAsnType</a> ()</td></tr>
+<tr class="memitem:a426593743b087414b13ffa628cb06a21"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_type.html#a426593743b087414b13ffa628cb06a21">ParsePacket</a> (const char *pszPacket, int iPacketLen)=0</td></tr>
+<tr class="memitem:ab9a29bdf7f941212266c37e4941e4aef"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_type.html#ab9a29bdf7f941212266c37e4941e4aef">MakePacket</a> (char *pszPacket, int iPacketSize)=0</td></tr>
+<tr class="memitem:ad6b91086d66010c45b0bda2d19e4ff82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_type.html#ad6b91086d66010c45b0bda2d19e4ff82">Copy</a> ()=0</td></tr>
+<tr class="memitem:ga761022ea533ad91024b311f5285eb8a1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga761022ea533ad91024b311f5285eb8a1">GetInt</a> (uint32_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga761022ea533ad91024b311f5285eb8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 변수에 정수가 저장되어 있으면 정수값을 가져온다.  <a href="group___snmp_parser.html#ga761022ea533ad91024b311f5285eb8a1"></a><br/></td></tr>
+<tr class="memitem:ga7c298fbf5f80e5202fd8e916b19e2178"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga7c298fbf5f80e5202fd8e916b19e2178">GetLong</a> (uint64_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga7c298fbf5f80e5202fd8e916b19e2178"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 변수에 정수가 저장되어 있으면 정수값을 가져온다.  <a href="group___snmp_parser.html#ga7c298fbf5f80e5202fd8e916b19e2178"></a><br/></td></tr>
+<tr class="memitem:ga21e352ebe29d08381a738ded0f198b8e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga21e352ebe29d08381a738ded0f198b8e">GetString</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga21e352ebe29d08381a738ded0f198b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 변수에 문자열이 저장되어 있으면 문자열을 가져온다.  <a href="group___snmp_parser.html#ga21e352ebe29d08381a738ded0f198b8e"></a><br/></td></tr>
+<tr class="memitem:ga335cce17c77db01012e0ecebc40e5c8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga335cce17c77db01012e0ecebc40e5c8e">ParseHeader</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga335cce17c77db01012e0ecebc40e5c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 ASN.1 타입 및 body 길이를 저장한다.  <a href="group___snmp_parser.html#ga335cce17c77db01012e0ecebc40e5c8e"></a><br/></td></tr>
+<tr class="memitem:ga6a68ddf224e808464fc97394768e9278"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga6a68ddf224e808464fc97394768e9278">SetHeaderLength</a> (char *pszPacket, int iPacketSize, int iLength)</td></tr>
+<tr class="memdesc:ga6a68ddf224e808464fc97394768e9278"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷에 body 길이를 저장한다.  <a href="group___snmp_parser.html#ga6a68ddf224e808464fc97394768e9278"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+정적 Public 멤버 함수</h2></td></tr>
+<tr class="memitem:ga93397e480a2fda18e990086f350927a2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga93397e480a2fda18e990086f350927a2">ParseInt</a> (const char *pszPacket, int iPacketLen, uint8_t cLength, uint32_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga93397e480a2fda18e990086f350927a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷에서 정수를 파싱한다.  <a href="group___snmp_parser.html#ga93397e480a2fda18e990086f350927a2"></a><br/></td></tr>
+<tr class="memitem:ga262c15f03a2e3885569e8f27dd835d9d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga262c15f03a2e3885569e8f27dd835d9d">SetInt</a> (uint8_t *pszPacket, int iPacketLen, uint32_t iValue)</td></tr>
+<tr class="memdesc:ga262c15f03a2e3885569e8f27dd835d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN.1 header 의 body 길이를 저장한다.  <a href="group___snmp_parser.html#ga262c15f03a2e3885569e8f27dd835d9d"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Public 속성</h2></td></tr>
+<tr class="memitem:a0191cc46c735abf82d54bacf79dea38f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_type.html#a0191cc46c735abf82d54bacf79dea38f">m_cType</a></td></tr>
+<tr class="memdesc:a0191cc46c735abf82d54bacf79dea38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">타입  <a href="#a0191cc46c735abf82d54bacf79dea38f"></a><br/></td></tr>
+<tr class="memitem:a6aa23d7e14ae3e6a466cf8209da55808"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_type.html#a6aa23d7e14ae3e6a466cf8209da55808">m_iLen</a></td></tr>
+<tr class="memdesc:a6aa23d7e14ae3e6a466cf8209da55808"><td class="mdescLeft">&#160;</td><td class="mdescRight">길이  <a href="#a6aa23d7e14ae3e6a466cf8209da55808"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<div class="textblock"><p>ASN 타입 클래스의 root 클래스 </p>
+</div><h2>생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="a2fc687cd820500bea35dac1747c9ee14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual CAsnType::~CAsnType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>멤버 함수 문서화</h2>
+<a class="anchor" id="ad6b91086d66010c45b0bda2d19e4ff82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_c_asn_type.html">CAsnType</a>* CAsnType::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group___snmp_parser.html#ga4e27dd1890f937af0596ad0a3dda3f71">CAsnString</a>, <a class="el" href="group___snmp_parser.html#gafa24f271c39fcbbb307a0783a85ee2c1">CAsnComplex</a>, <a class="el" href="group___snmp_parser.html#ga0300e55c7a5d706ccdcab1bdbb28109a">CAsnInt</a>, <a class="el" href="group___snmp_parser.html#ga7c1646f39a5a63f3ac579dfce009e1f8">CAsnOid</a>, <a class="el" href="group___snmp_parser.html#ga7389e3073a3b12e802abf5194bb3f734">CAsnLong</a>, <a class="el" href="group___snmp_parser.html#ga0c3f678057025ba392b8c8a841180c07">CAsnNull</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9a29bdf7f941212266c37e4941e4aef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CAsnType::MakePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group___snmp_parser.html#ga16ae5dc88e854e371d428165836e1ed0">CAsnString</a>, <a class="el" href="group___snmp_parser.html#gac593dc41cfddf9e6c783f6520d769bc9">CAsnComplex</a>, <a class="el" href="group___snmp_parser.html#gaa935799092e97f8598f40a921131e392">CAsnInt</a>, <a class="el" href="group___snmp_parser.html#ga797c43193c8d93f5c13bba9a3a5479a2">CAsnOid</a>, <a class="el" href="group___snmp_parser.html#ga49e6e694d03f17e74971fef8a28c7112">CAsnLong</a>, <a class="el" href="group___snmp_parser.html#ga2b5eaf2e3cbec89857bc091844360f70">CAsnNull</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a426593743b087414b13ffa628cb06a21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CAsnType::ParsePacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group___snmp_parser.html#ga42f89fbf1dcaa66dc46b596d624064d4">CAsnString</a>, <a class="el" href="group___snmp_parser.html#ga000edfe60549cdb691aaf3994169263e">CAsnComplex</a>, <a class="el" href="group___snmp_parser.html#gabf33df4ced2bd4032a08f6ce3b2a2427">CAsnInt</a>, <a class="el" href="group___snmp_parser.html#ga25998f030fb2df38cd71c07618553f80">CAsnOid</a>, <a class="el" href="group___snmp_parser.html#ga02afabcf54e46cfc48ec89e7169f470a">CAsnLong</a>, <a class="el" href="group___snmp_parser.html#ga30cb5e0c2c020943e56f41eac305446b">CAsnNull</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<h2>멤버 데이타 문서화</h2>
+<a class="anchor" id="a0191cc46c735abf82d54bacf79dea38f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t CAsnType::m_cType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>타입 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6aa23d7e14ae3e6a466cf8209da55808"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CAsnType::m_iLen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>길이 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 18:32:18, 프로젝트명 : C++ SNMP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

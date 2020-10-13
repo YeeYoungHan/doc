@@ -1,0 +1,2898 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SNMP Stack: SnmpParser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SNMP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">SnmpParser</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SNMP 메시지 생성/파서 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_complex.html">CAsnComplex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 복합 타입 클래스  <a href="class_c_asn_complex.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_int.html">CAsnInt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 정수 타입 클래스  <a href="class_c_asn_int.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_long.html">CAsnLong</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN long 타입 클래스  <a href="class_c_asn_long.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_null.html">CAsnNull</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN NULL 타입 클래스  <a href="class_c_asn_null.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_oid.html">CAsnOid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN OID 타입 클래스  <a href="class_c_asn_oid.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_string.html">CAsnString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 문자열 타입 클래스  <a href="class_c_asn_string.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_asn_type.html">CAsnType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 타입 클래스의 root 클래스  <a href="class_c_asn_type.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_snmp_message.html">CSnmpMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP 패킷 생성/파서 클래스  <a href="class_c_snmp_message.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_snmp_oid_value.html">CSnmpOidValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 OID 의 값을 저장하는 클래스  <a href="class_c_snmp_oid_value.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_snmp_oid_value_list.html">CSnmpOidValueList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 OID 의 값들을 리스트에 저장하여서 관리하는 클래스  <a href="class_c_snmp_oid_value_list.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:gafe529a72ba1628d8654118887091549c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gafe529a72ba1628d8654118887091549c">SnmpMakeKey</a> (const char *pszPassWord, uint8_t *pszKey)</td></tr>
+<tr class="memdesc:gafe529a72ba1628d8654118887091549c"><td class="mdescLeft">&#160;</td><td class="mdescRight">비밀번호로 key 를 생성한다.  <a href="#gafe529a72ba1628d8654118887091549c"></a><br/></td></tr>
+<tr class="memitem:ga1601c8d387195de28acd710ca594c08f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga1601c8d387195de28acd710ca594c08f">SnmpMakeAuthKey</a> (const uint8_t *pszKey, const uint8_t *pszEngineId, int iEngineIdLen, uint8_t *pszAuthKey)</td></tr>
+<tr class="memdesc:ga1601c8d387195de28acd710ca594c08f"><td class="mdescLeft">&#160;</td><td class="mdescRight">authentication key 를 생성한다.  <a href="#ga1601c8d387195de28acd710ca594c08f"></a><br/></td></tr>
+<tr class="memitem:ga7ca51a698ec1bbd5a9ee3134fe71041c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga7ca51a698ec1bbd5a9ee3134fe71041c">SnmpMakeHmac</a> (const char *pszPacket, int iPacketLen, const char *pszPassWord, const char *pszEngineId, int iEngineIdLen, std::string &amp;strAuthParams)</td></tr>
+<tr class="memdesc:ga7ca51a698ec1bbd5a9ee3134fe71041c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv3 msgAuthenticationParameters 를 계산한다.  <a href="#ga7ca51a698ec1bbd5a9ee3134fe71041c"></a><br/></td></tr>
+<tr class="memitem:ga79c6f29f47560850deaa0cf1d0113766"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga79c6f29f47560850deaa0cf1d0113766">SnmpEncrypt</a> (const char *pszPacket, int iPacketLen, const char *pszPassWord, const char *pszEngineId, int iEngineIdLen, const char *pszPrivParam, int iPrivParamLen, std::string &amp;strEncrypt)</td></tr>
+<tr class="memdesc:ga79c6f29f47560850deaa0cf1d0113766"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv3 PDU 를 암호화한다.  <a href="#ga79c6f29f47560850deaa0cf1d0113766"></a><br/></td></tr>
+<tr class="memitem:ga6a7bbf3771c746f615cbf729aeddabc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga6a7bbf3771c746f615cbf729aeddabc3">SnmpDecrypt</a> (const char *pszPacket, int iPacketLen, const char *pszPassWord, const char *pszEngineId, int iEngineIdLen, const char *pszPrivParam, int iPrivParamLen, std::string &amp;strPlain)</td></tr>
+<tr class="memdesc:ga6a7bbf3771c746f615cbf729aeddabc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv3 암호화된 PDU 를 복호화한다.  <a href="#ga6a7bbf3771c746f615cbf729aeddabc3"></a><br/></td></tr>
+<tr class="memitem:ga000edfe60549cdb691aaf3994169263e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga000edfe60549cdb691aaf3994169263e">CAsnComplex::ParsePacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga000edfe60549cdb691aaf3994169263e"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다.  <a href="#ga000edfe60549cdb691aaf3994169263e"></a><br/></td></tr>
+<tr class="memitem:gac593dc41cfddf9e6c783f6520d769bc9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gac593dc41cfddf9e6c783f6520d769bc9">CAsnComplex::MakePacket</a> (char *pszPacket, int iPacketSize)</td></tr>
+<tr class="memdesc:gac593dc41cfddf9e6c783f6520d769bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 패킷에 저장한다.  <a href="#gac593dc41cfddf9e6c783f6520d769bc9"></a><br/></td></tr>
+<tr class="memitem:gafa24f271c39fcbbb307a0783a85ee2c1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gafa24f271c39fcbbb307a0783a85ee2c1">CAsnComplex::Copy</a> ()</td></tr>
+<tr class="memdesc:gafa24f271c39fcbbb307a0783a85ee2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">복사한 객체를 리턴한다.  <a href="#gafa24f271c39fcbbb307a0783a85ee2c1"></a><br/></td></tr>
+<tr class="memitem:ga7d02605dc43008e7675c2e283c913bee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga7d02605dc43008e7675c2e283c913bee">CAsnComplex::AddInt</a> (uint32_t iValue)</td></tr>
+<tr class="memdesc:ga7d02605dc43008e7675c2e283c913bee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_asn_int.html" title="ASN 정수 타입 클래스">CAsnInt</a> 변수를 리스트에 추가한다.  <a href="#ga7d02605dc43008e7675c2e283c913bee"></a><br/></td></tr>
+<tr class="memitem:ga5a6260b278730334229fcb25433649d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga5a6260b278730334229fcb25433649d3">CAsnComplex::AddString</a> (const char *pszValue)</td></tr>
+<tr class="memdesc:ga5a6260b278730334229fcb25433649d3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_asn_string.html" title="ASN 문자열 타입 클래스">CAsnString</a> 변수를 리스트에 추가한다.  <a href="#ga5a6260b278730334229fcb25433649d3"></a><br/></td></tr>
+<tr class="memitem:ga7b1ce3e463d162a0f9f16ddba82e9cf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga7b1ce3e463d162a0f9f16ddba82e9cf0">CAsnComplex::AddString</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga7b1ce3e463d162a0f9f16ddba82e9cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_asn_string.html" title="ASN 문자열 타입 클래스">CAsnString</a> 변수를 리스트에 추가한다.  <a href="#ga7b1ce3e463d162a0f9f16ddba82e9cf0"></a><br/></td></tr>
+<tr class="memitem:gadfb97ee672b209ec5ebbe6b7b4acdf35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gadfb97ee672b209ec5ebbe6b7b4acdf35">CAsnComplex::AddString</a> (uint8_t cValue)</td></tr>
+<tr class="memdesc:gadfb97ee672b209ec5ebbe6b7b4acdf35"><td class="mdescLeft">&#160;</td><td class="mdescRight">1 문자로 구성된 <a class="el" href="class_c_asn_string.html" title="ASN 문자열 타입 클래스">CAsnString</a> 변수를 리스트에 추가한다.  <a href="#gadfb97ee672b209ec5ebbe6b7b4acdf35"></a><br/></td></tr>
+<tr class="memitem:ga69743b8c75f605eefa44d4ed8f92d564"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga69743b8c75f605eefa44d4ed8f92d564">CAsnComplex::AddOid</a> (const char *pszValue)</td></tr>
+<tr class="memdesc:ga69743b8c75f605eefa44d4ed8f92d564"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_asn_oid.html" title="ASN OID 타입 클래스">CAsnOid</a> 변수를 리스트에 추가한다.  <a href="#ga69743b8c75f605eefa44d4ed8f92d564"></a><br/></td></tr>
+<tr class="memitem:gacc4afe4abaf98d51149bf8f0f4b8a5ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gacc4afe4abaf98d51149bf8f0f4b8a5ec">CAsnComplex::AddNull</a> ()</td></tr>
+<tr class="memdesc:gacc4afe4abaf98d51149bf8f0f4b8a5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_asn_null.html" title="ASN NULL 타입 클래스">CAsnNull</a> 변수를 리스트에 추가한다.  <a href="#gacc4afe4abaf98d51149bf8f0f4b8a5ec"></a><br/></td></tr>
+<tr class="memitem:ga8e46db072d0d02e462396c9533bc219b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga8e46db072d0d02e462396c9533bc219b">CAsnComplex::AddComplex</a> (<a class="el" href="class_c_asn_complex.html">CAsnComplex</a> *pclsValue)</td></tr>
+<tr class="memdesc:ga8e46db072d0d02e462396c9533bc219b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_asn_complex.html" title="ASN 복합 타입 클래스">CAsnComplex</a> 변수를 리스트에 추가한다.  <a href="#ga8e46db072d0d02e462396c9533bc219b"></a><br/></td></tr>
+<tr class="memitem:ga1b50a825c01bfdf314b82b276693684e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga1b50a825c01bfdf314b82b276693684e">CAsnComplex::AddValue</a> (<a class="el" href="class_c_asn_type.html">CAsnType</a> *pclsValue)</td></tr>
+<tr class="memdesc:ga1b50a825c01bfdf314b82b276693684e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_asn_type.html" title="ASN 타입 클래스의 root 클래스">CAsnType</a> 변수를 리스트에 추가한다.  <a href="#ga1b50a825c01bfdf314b82b276693684e"></a><br/></td></tr>
+<tr class="memitem:gabdf849e9b4402a2dcfb38f8ed12de409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gabdf849e9b4402a2dcfb38f8ed12de409">CAsnComplex::Clear</a> ()</td></tr>
+<tr class="memdesc:gabdf849e9b4402a2dcfb38f8ed12de409"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조에 저장된 데이터를 삭제한다.  <a href="#gabdf849e9b4402a2dcfb38f8ed12de409"></a><br/></td></tr>
+<tr class="memitem:gabf33df4ced2bd4032a08f6ce3b2a2427"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gabf33df4ced2bd4032a08f6ce3b2a2427">CAsnInt::ParsePacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:gabf33df4ced2bd4032a08f6ce3b2a2427"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다.  <a href="#gabf33df4ced2bd4032a08f6ce3b2a2427"></a><br/></td></tr>
+<tr class="memitem:gaa935799092e97f8598f40a921131e392"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gaa935799092e97f8598f40a921131e392">CAsnInt::MakePacket</a> (char *pszPacket, int iPacketSize)</td></tr>
+<tr class="memdesc:gaa935799092e97f8598f40a921131e392"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 패킷에 저장한다.  <a href="#gaa935799092e97f8598f40a921131e392"></a><br/></td></tr>
+<tr class="memitem:ga0300e55c7a5d706ccdcab1bdbb28109a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga0300e55c7a5d706ccdcab1bdbb28109a">CAsnInt::Copy</a> ()</td></tr>
+<tr class="memdesc:ga0300e55c7a5d706ccdcab1bdbb28109a"><td class="mdescLeft">&#160;</td><td class="mdescRight">복사한 객체를 리턴한다.  <a href="#ga0300e55c7a5d706ccdcab1bdbb28109a"></a><br/></td></tr>
+<tr class="memitem:ga064b4a7366eff5cee2039e2e1b29cc9b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga064b4a7366eff5cee2039e2e1b29cc9b">CAsnInt::GetInt</a> (uint32_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga064b4a7366eff5cee2039e2e1b29cc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">정수값을 가져온다.  <a href="#ga064b4a7366eff5cee2039e2e1b29cc9b"></a><br/></td></tr>
+<tr class="memitem:ga02afabcf54e46cfc48ec89e7169f470a"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga02afabcf54e46cfc48ec89e7169f470a">CAsnLong::ParsePacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga02afabcf54e46cfc48ec89e7169f470a"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다.  <a href="#ga02afabcf54e46cfc48ec89e7169f470a"></a><br/></td></tr>
+<tr class="memitem:ga49e6e694d03f17e74971fef8a28c7112"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga49e6e694d03f17e74971fef8a28c7112">CAsnLong::MakePacket</a> (char *pszPacket, int iPacketSize)</td></tr>
+<tr class="memdesc:ga49e6e694d03f17e74971fef8a28c7112"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 패킷에 저장한다.  <a href="#ga49e6e694d03f17e74971fef8a28c7112"></a><br/></td></tr>
+<tr class="memitem:ga7389e3073a3b12e802abf5194bb3f734"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga7389e3073a3b12e802abf5194bb3f734">CAsnLong::Copy</a> ()</td></tr>
+<tr class="memdesc:ga7389e3073a3b12e802abf5194bb3f734"><td class="mdescLeft">&#160;</td><td class="mdescRight">복사한 객체를 리턴한다.  <a href="#ga7389e3073a3b12e802abf5194bb3f734"></a><br/></td></tr>
+<tr class="memitem:ga4d847fc2c4a51d403cc31c937482504e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga4d847fc2c4a51d403cc31c937482504e">CAsnLong::GetLong</a> (uint64_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga4d847fc2c4a51d403cc31c937482504e"><td class="mdescLeft">&#160;</td><td class="mdescRight">정수값을 가져온다.  <a href="#ga4d847fc2c4a51d403cc31c937482504e"></a><br/></td></tr>
+<tr class="memitem:ga9732b60564a56a440f60b5b135c28a1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga9732b60564a56a440f60b5b135c28a1d">CAsnLong::ParseLong</a> (const char *pszPacket, int iPacketLen, uint8_t cLength, uint64_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga9732b60564a56a440f60b5b135c28a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷에서 정수를 파싱한다.  <a href="#ga9732b60564a56a440f60b5b135c28a1d"></a><br/></td></tr>
+<tr class="memitem:ga30cb5e0c2c020943e56f41eac305446b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga30cb5e0c2c020943e56f41eac305446b">CAsnNull::ParsePacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga30cb5e0c2c020943e56f41eac305446b"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다.  <a href="#ga30cb5e0c2c020943e56f41eac305446b"></a><br/></td></tr>
+<tr class="memitem:ga2b5eaf2e3cbec89857bc091844360f70"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga2b5eaf2e3cbec89857bc091844360f70">CAsnNull::MakePacket</a> (char *pszPacket, int iPacketSize)</td></tr>
+<tr class="memdesc:ga2b5eaf2e3cbec89857bc091844360f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 패킷에 저장한다.  <a href="#ga2b5eaf2e3cbec89857bc091844360f70"></a><br/></td></tr>
+<tr class="memitem:ga0c3f678057025ba392b8c8a841180c07"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga0c3f678057025ba392b8c8a841180c07">CAsnNull::Copy</a> ()</td></tr>
+<tr class="memdesc:ga0c3f678057025ba392b8c8a841180c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">복사한 객체를 리턴한다.  <a href="#ga0c3f678057025ba392b8c8a841180c07"></a><br/></td></tr>
+<tr class="memitem:ga25998f030fb2df38cd71c07618553f80"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga25998f030fb2df38cd71c07618553f80">CAsnOid::ParsePacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga25998f030fb2df38cd71c07618553f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다.  <a href="#ga25998f030fb2df38cd71c07618553f80"></a><br/></td></tr>
+<tr class="memitem:ga797c43193c8d93f5c13bba9a3a5479a2"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga797c43193c8d93f5c13bba9a3a5479a2">CAsnOid::MakePacket</a> (char *pszPacket, int iPacketSize)</td></tr>
+<tr class="memdesc:ga797c43193c8d93f5c13bba9a3a5479a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 패킷에 저장한다.  <a href="#ga797c43193c8d93f5c13bba9a3a5479a2"></a><br/></td></tr>
+<tr class="memitem:ga7c1646f39a5a63f3ac579dfce009e1f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga7c1646f39a5a63f3ac579dfce009e1f8">CAsnOid::Copy</a> ()</td></tr>
+<tr class="memdesc:ga7c1646f39a5a63f3ac579dfce009e1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">복사한 객체를 리턴한다.  <a href="#ga7c1646f39a5a63f3ac579dfce009e1f8"></a><br/></td></tr>
+<tr class="memitem:gaeea5296165e5a5f08d053606e9ca3a27"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gaeea5296165e5a5f08d053606e9ca3a27">CAsnOid::GetString</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gaeea5296165e5a5f08d053606e9ca3a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 문자열을 가져온다.  <a href="#gaeea5296165e5a5f08d053606e9ca3a27"></a><br/></td></tr>
+<tr class="memitem:ga42f89fbf1dcaa66dc46b596d624064d4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga42f89fbf1dcaa66dc46b596d624064d4">CAsnString::ParsePacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga42f89fbf1dcaa66dc46b596d624064d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다.  <a href="#ga42f89fbf1dcaa66dc46b596d624064d4"></a><br/></td></tr>
+<tr class="memitem:ga16ae5dc88e854e371d428165836e1ed0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga16ae5dc88e854e371d428165836e1ed0">CAsnString::MakePacket</a> (char *pszPacket, int iPacketSize)</td></tr>
+<tr class="memdesc:ga16ae5dc88e854e371d428165836e1ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 패킷에 저장한다.  <a href="#ga16ae5dc88e854e371d428165836e1ed0"></a><br/></td></tr>
+<tr class="memitem:ga4e27dd1890f937af0596ad0a3dda3f71"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga4e27dd1890f937af0596ad0a3dda3f71">CAsnString::Copy</a> ()</td></tr>
+<tr class="memdesc:ga4e27dd1890f937af0596ad0a3dda3f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">복사한 객체를 리턴한다.  <a href="#ga4e27dd1890f937af0596ad0a3dda3f71"></a><br/></td></tr>
+<tr class="memitem:ga4d0686fee77ed5fabeb0667513a8ceb9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga4d0686fee77ed5fabeb0667513a8ceb9">CAsnString::GetString</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga4d0686fee77ed5fabeb0667513a8ceb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">문자열을 가져온다.  <a href="#ga4d0686fee77ed5fabeb0667513a8ceb9"></a><br/></td></tr>
+<tr class="memitem:ga761022ea533ad91024b311f5285eb8a1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga761022ea533ad91024b311f5285eb8a1">CAsnType::GetInt</a> (uint32_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga761022ea533ad91024b311f5285eb8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 변수에 정수가 저장되어 있으면 정수값을 가져온다.  <a href="#ga761022ea533ad91024b311f5285eb8a1"></a><br/></td></tr>
+<tr class="memitem:ga7c298fbf5f80e5202fd8e916b19e2178"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga7c298fbf5f80e5202fd8e916b19e2178">CAsnType::GetLong</a> (uint64_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga7c298fbf5f80e5202fd8e916b19e2178"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 변수에 정수가 저장되어 있으면 정수값을 가져온다.  <a href="#ga7c298fbf5f80e5202fd8e916b19e2178"></a><br/></td></tr>
+<tr class="memitem:ga21e352ebe29d08381a738ded0f198b8e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga21e352ebe29d08381a738ded0f198b8e">CAsnType::GetString</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga21e352ebe29d08381a738ded0f198b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN 변수에 문자열이 저장되어 있으면 문자열을 가져온다.  <a href="#ga21e352ebe29d08381a738ded0f198b8e"></a><br/></td></tr>
+<tr class="memitem:ga335cce17c77db01012e0ecebc40e5c8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga335cce17c77db01012e0ecebc40e5c8e">CAsnType::ParseHeader</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga335cce17c77db01012e0ecebc40e5c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 ASN.1 타입 및 body 길이를 저장한다.  <a href="#ga335cce17c77db01012e0ecebc40e5c8e"></a><br/></td></tr>
+<tr class="memitem:ga6a68ddf224e808464fc97394768e9278"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga6a68ddf224e808464fc97394768e9278">CAsnType::SetHeaderLength</a> (char *pszPacket, int iPacketSize, int iLength)</td></tr>
+<tr class="memdesc:ga6a68ddf224e808464fc97394768e9278"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷에 body 길이를 저장한다.  <a href="#ga6a68ddf224e808464fc97394768e9278"></a><br/></td></tr>
+<tr class="memitem:ga93397e480a2fda18e990086f350927a2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga93397e480a2fda18e990086f350927a2">CAsnType::ParseInt</a> (const char *pszPacket, int iPacketLen, uint8_t cLength, uint32_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga93397e480a2fda18e990086f350927a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷에서 정수를 파싱한다.  <a href="#ga93397e480a2fda18e990086f350927a2"></a><br/></td></tr>
+<tr class="memitem:ga262c15f03a2e3885569e8f27dd835d9d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga262c15f03a2e3885569e8f27dd835d9d">CAsnType::SetInt</a> (uint8_t *pszPacket, int iPacketLen, uint32_t iValue)</td></tr>
+<tr class="memdesc:ga262c15f03a2e3885569e8f27dd835d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ASN.1 header 의 body 길이를 저장한다.  <a href="#ga262c15f03a2e3885569e8f27dd835d9d"></a><br/></td></tr>
+<tr class="memitem:ga55002c5d5bcb068e96d79d5e6ee15749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga55002c5d5bcb068e96d79d5e6ee15749">CSnmpMessage::Clear</a> ()</td></tr>
+<tr class="memdesc:ga55002c5d5bcb068e96d79d5e6ee15749"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 초기화시킨다.  <a href="#ga55002c5d5bcb068e96d79d5e6ee15749"></a><br/></td></tr>
+<tr class="memitem:gadd6cb5d0513987b0e1942536e2ae7472"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gadd6cb5d0513987b0e1942536e2ae7472">CSnmpMessage::MakeGetRequest</a> (const char *pszCommunity, uint32_t iRequestId, const char *pszOid)</td></tr>
+<tr class="memdesc:gadd6cb5d0513987b0e1942536e2ae7472"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv2 GET 요청 메시지를 생성한다.  <a href="#gadd6cb5d0513987b0e1942536e2ae7472"></a><br/></td></tr>
+<tr class="memitem:ga8cb39af04ef91bc41936df2b53c78a7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga8cb39af04ef91bc41936df2b53c78a7c">CSnmpMessage::MakeGetNextRequest</a> (const char *pszCommunity, uint32_t iRequestId, const char *pszOid)</td></tr>
+<tr class="memdesc:ga8cb39af04ef91bc41936df2b53c78a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv2 GET NEXT 요청 메시지를 생성한다.  <a href="#ga8cb39af04ef91bc41936df2b53c78a7c"></a><br/></td></tr>
+<tr class="memitem:ga3a2a3c1029188b1bb6250226ddb19f38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga3a2a3c1029188b1bb6250226ddb19f38">CSnmpMessage::MakeTrapRequest</a> (const char *pszTrapOid)</td></tr>
+<tr class="memdesc:ga3a2a3c1029188b1bb6250226ddb19f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv2 TRAP 메시지를 생성한다.  <a href="#ga3a2a3c1029188b1bb6250226ddb19f38"></a><br/></td></tr>
+<tr class="memitem:ga7bea13efad3e6c47f1b6e3fb4d62a8aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga7bea13efad3e6c47f1b6e3fb4d62a8aa">CSnmpMessage::MakeGetRequest</a> (const char *pszUserName, const char *pszAuthPassWord, const char *pszPrivPassWord, uint32_t iRequestId, const char *pszOid)</td></tr>
+<tr class="memdesc:ga7bea13efad3e6c47f1b6e3fb4d62a8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv3 GET 요청 메시지를 생성한다.  <a href="#ga7bea13efad3e6c47f1b6e3fb4d62a8aa"></a><br/></td></tr>
+<tr class="memitem:ga251fc695eef8f2218dae4d6e43a56b46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga251fc695eef8f2218dae4d6e43a56b46">CSnmpMessage::MakeGetNextRequest</a> (const char *pszUserName, const char *pszAuthPassWord, const char *pszPrivPassWord, uint32_t iRequestId, const char *pszOid)</td></tr>
+<tr class="memdesc:ga251fc695eef8f2218dae4d6e43a56b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv3 GET 요청 메시지를 생성한다.  <a href="#ga251fc695eef8f2218dae4d6e43a56b46"></a><br/></td></tr>
+<tr class="memitem:gae69f907d7750bf05d2a93e5013ecf5f2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gae69f907d7750bf05d2a93e5013ecf5f2">CSnmpMessage::GetOid</a> ()</td></tr>
+<tr class="memdesc:gae69f907d7750bf05d2a93e5013ecf5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">첫번째 OID 를 가져온다.  <a href="#gae69f907d7750bf05d2a93e5013ecf5f2"></a><br/></td></tr>
+<tr class="memitem:gae73bac4795d71ad136c683cbcc51fd52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gae73bac4795d71ad136c683cbcc51fd52">CSnmpMessage::AddOidValue</a> (const char *pszOid, <a class="el" href="class_c_asn_type.html">CAsnType</a> *pclsValue)</td></tr>
+<tr class="memdesc:gae73bac4795d71ad136c683cbcc51fd52"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 OID 의 값을 저장한다.  <a href="#gae73bac4795d71ad136c683cbcc51fd52"></a><br/></td></tr>
+<tr class="memitem:gab4cc45c026462e5d0e637104bb1368d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gab4cc45c026462e5d0e637104bb1368d7">CSnmpMessage::AddOidValue</a> (const char *pszOid, uint32_t iValue)</td></tr>
+<tr class="memdesc:gab4cc45c026462e5d0e637104bb1368d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 정수를 저장한다.  <a href="#gab4cc45c026462e5d0e637104bb1368d7"></a><br/></td></tr>
+<tr class="memitem:ga6c11b390e361c05a51b5229f4db454d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga6c11b390e361c05a51b5229f4db454d1">CSnmpMessage::AddOidValue</a> (const char *pszOid, int32_t iValue)</td></tr>
+<tr class="memdesc:ga6c11b390e361c05a51b5229f4db454d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 정수를 저장한다.  <a href="#ga6c11b390e361c05a51b5229f4db454d1"></a><br/></td></tr>
+<tr class="memitem:ga463cf1e945b978871c73b7115a85dab9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga463cf1e945b978871c73b7115a85dab9">CSnmpMessage::AddOidValue</a> (const char *pszOid, time_t iValue)</td></tr>
+<tr class="memdesc:ga463cf1e945b978871c73b7115a85dab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 시간을 저장한다.  <a href="#ga463cf1e945b978871c73b7115a85dab9"></a><br/></td></tr>
+<tr class="memitem:gaba1016014da4cfbd89aa936f75528c99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gaba1016014da4cfbd89aa936f75528c99">CSnmpMessage::AddOidValue</a> (const char *pszOid, const char *pszValue)</td></tr>
+<tr class="memdesc:gaba1016014da4cfbd89aa936f75528c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 문자열을 저장한다.  <a href="#gaba1016014da4cfbd89aa936f75528c99"></a><br/></td></tr>
+<tr class="memitem:gaeace1a9dabb7a71e29044d2e295f408f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gaeace1a9dabb7a71e29044d2e295f408f">CSnmpMessage::AddOidValueOid</a> (const char *pszOid, const char *pszValue)</td></tr>
+<tr class="memdesc:gaeace1a9dabb7a71e29044d2e295f408f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 OID 를 저장한다.  <a href="#gaeace1a9dabb7a71e29044d2e295f408f"></a><br/></td></tr>
+<tr class="memitem:gaaa5165f6e896b40fea291dda25ec92c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gaaa5165f6e896b40fea291dda25ec92c1">CSnmpMessage::AddOidValueCounter</a> (const char *pszOid, uint32_t iValue)</td></tr>
+<tr class="memdesc:gaaa5165f6e896b40fea291dda25ec92c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 카운트를 저장한다.  <a href="#gaaa5165f6e896b40fea291dda25ec92c1"></a><br/></td></tr>
+<tr class="memitem:gaa73c3882ab9867aa446738d1f5d91cbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gaa73c3882ab9867aa446738d1f5d91cbb">CSnmpMessage::AddOidValueIpAddress</a> (const char *pszOid, const char *pszIp)</td></tr>
+<tr class="memdesc:gaa73c3882ab9867aa446738d1f5d91cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 IP 주소를 저장한다.  <a href="#gaa73c3882ab9867aa446738d1f5d91cbb"></a><br/></td></tr>
+<tr class="memitem:gac232458ac140e6267bb71e241582e1c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gac232458ac140e6267bb71e241582e1c5">CSnmpMessage::CreateResponse</a> ()</td></tr>
+<tr class="memdesc:gac232458ac140e6267bb71e241582e1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP 응답 메시지를 생성한다.  <a href="#gac232458ac140e6267bb71e241582e1c5"></a><br/></td></tr>
+<tr class="memitem:ga5eb1ef804beaf7eddde38d906c4eb02a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga5eb1ef804beaf7eddde38d906c4eb02a">CSnmpMessage::Create</a> (<a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> *pclsMessage)</td></tr>
+<tr class="memdesc:ga5eb1ef804beaf7eddde38d906c4eb02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP 메시지를 생성한 후, 입력된 SNMP 메시지를 복사한다.  <a href="#ga5eb1ef804beaf7eddde38d906c4eb02a"></a><br/></td></tr>
+<tr class="memitem:ga0821a407901b57ecfe191b820a5f5a2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga0821a407901b57ecfe191b820a5f5a2d">CSnmpMessage::MakePacket</a> (char *pszPacket, int iPacketSize)</td></tr>
+<tr class="memdesc:ga0821a407901b57ecfe191b820a5f5a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 패킷에 저장한다.  <a href="#ga0821a407901b57ecfe191b820a5f5a2d"></a><br/></td></tr>
+<tr class="memitem:ga8c62a7d35bf85c823824302f7381411b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga8c62a7d35bf85c823824302f7381411b">CSnmpMessage::MakePacket</a> ()</td></tr>
+<tr class="memdesc:ga8c62a7d35bf85c823824302f7381411b"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 생성하여서 내부 변수에 저장한다.  <a href="#ga8c62a7d35bf85c823824302f7381411b"></a><br/></td></tr>
+<tr class="memitem:ga0992c20788751153841f03f2d5ab7151"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga0992c20788751153841f03f2d5ab7151">CSnmpMessage::ParsePacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga0992c20788751153841f03f2d5ab7151"><td class="mdescLeft">&#160;</td><td class="mdescRight">패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다.  <a href="#ga0992c20788751153841f03f2d5ab7151"></a><br/></td></tr>
+<tr class="memitem:gaee722c3055325aec3ce35da674b24879"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gaee722c3055325aec3ce35da674b24879">CSnmpMessage::GetPacketLen</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:gaee722c3055325aec3ce35da674b24879"><td class="mdescLeft">&#160;</td><td class="mdescRight">수신해야 하는 패킷 길이를 리턴한다.  <a href="#gaee722c3055325aec3ce35da674b24879"></a><br/></td></tr>
+<tr class="memitem:ga379d68bd4af5b1a632b081bf8a72f40e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga379d68bd4af5b1a632b081bf8a72f40e">CSnmpMessage::SetPrivParams</a> ()</td></tr>
+<tr class="memdesc:ga379d68bd4af5b1a632b081bf8a72f40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">msgPrivacyParameters 값을 설정하고 PDU 를 암호화한다.  <a href="#ga379d68bd4af5b1a632b081bf8a72f40e"></a><br/></td></tr>
+<tr class="memitem:gad9cc4770fa49e46a33a77264c64b78e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#gad9cc4770fa49e46a33a77264c64b78e4">CSnmpMessage::SetAuthParams</a> ()</td></tr>
+<tr class="memdesc:gad9cc4770fa49e46a33a77264c64b78e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">msgAuthenticationParameters 값을 계산한다.  <a href="#gad9cc4770fa49e46a33a77264c64b78e4"></a><br/></td></tr>
+<tr class="memitem:ga74c112c710b5b8bd62bbac9025eb616b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga74c112c710b5b8bd62bbac9025eb616b">CSnmpMessage::ParseEncryptedPdu</a> ()</td></tr>
+<tr class="memdesc:ga74c112c710b5b8bd62bbac9025eb616b"><td class="mdescLeft">&#160;</td><td class="mdescRight">암호화된 PDU 를 복호화하여서 내부 변수에 저장한다.  <a href="#ga74c112c710b5b8bd62bbac9025eb616b"></a><br/></td></tr>
+<tr class="memitem:ga4667689111cfa5c541f47d8b99598db4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga4667689111cfa5c541f47d8b99598db4">CSnmpMessage::CheckAuth</a> ()</td></tr>
+<tr class="memdesc:ga4667689111cfa5c541f47d8b99598db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">인증 정보가 유효한지 검사한다.  <a href="#ga4667689111cfa5c541f47d8b99598db4"></a><br/></td></tr>
+<tr class="memitem:ga4262a96e88e78164f992deaee04d14cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga4262a96e88e78164f992deaee04d14cf">CSnmpOidValue::Clear</a> ()</td></tr>
+<tr class="memdesc:ga4262a96e88e78164f992deaee04d14cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 초기화 시킨다.  <a href="#ga4262a96e88e78164f992deaee04d14cf"></a><br/></td></tr>
+<tr class="memitem:ga3fc39e3cd1fdf7740bb339bef6c47137"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_snmp_oid_value.html">CSnmpOidValue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga3fc39e3cd1fdf7740bb339bef6c47137">CSnmpOidValue::Copy</a> ()</td></tr>
+<tr class="memdesc:ga3fc39e3cd1fdf7740bb339bef6c47137"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신의 내부 변수의 값과 동일한 객체를 복사하여서 리턴한다.  <a href="#ga3fc39e3cd1fdf7740bb339bef6c47137"></a><br/></td></tr>
+<tr class="memitem:ga8dbd4534b5230957faee0bf579e15788"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga8dbd4534b5230957faee0bf579e15788">CSnmpOidValueList::Add</a> (const char *pszOid, <a class="el" href="class_c_asn_type.html">CAsnType</a> *pclsValue)</td></tr>
+<tr class="memdesc:ga8dbd4534b5230957faee0bf579e15788"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 OID 의 값을 저장한다.  <a href="#ga8dbd4534b5230957faee0bf579e15788"></a><br/></td></tr>
+<tr class="memitem:ga2fcff0a86aeb152641d02d58c5e01ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga2fcff0a86aeb152641d02d58c5e01ac4">CSnmpOidValueList::Clear</a> ()</td></tr>
+<tr class="memdesc:ga2fcff0a86aeb152641d02d58c5e01ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 초기화 시킨다.  <a href="#ga2fcff0a86aeb152641d02d58c5e01ac4"></a><br/></td></tr>
+<tr class="memitem:ga18462774174c9de60d39e1f5d0383adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_snmp_oid_value.html">CSnmpOidValue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga18462774174c9de60d39e1f5d0383adf">CSnmpOidValueList::GetFirst</a> ()</td></tr>
+<tr class="memdesc:ga18462774174c9de60d39e1f5d0383adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">리스트의 첫번째 OID 와 OID 값을 저장한 객체를 가져온다.  <a href="#ga18462774174c9de60d39e1f5d0383adf"></a><br/></td></tr>
+<tr class="memitem:ga23c9faa02fcd11047e8c4e96f3cedc4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_snmp_oid_value_list.html">CSnmpOidValueList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga23c9faa02fcd11047e8c4e96f3cedc4a">CSnmpOidValueList::Copy</a> ()</td></tr>
+<tr class="memdesc:ga23c9faa02fcd11047e8c4e96f3cedc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신의 내부 변수의 값과 동일한 객체를 복사하여서 리턴한다.  <a href="#ga23c9faa02fcd11047e8c4e96f3cedc4a"></a><br/></td></tr>
+<tr class="memitem:ga4a957a6bf92d5da0cc08e6f34435a4df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_asn_complex.html">CAsnComplex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_parser.html#ga4a957a6bf92d5da0cc08e6f34435a4df">CSnmpOidValueList::GetComplex</a> ()</td></tr>
+<tr class="memdesc:ga4a957a6bf92d5da0cc08e6f34435a4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">OID 와 OID 의 값을 <a class="el" href="class_c_asn_complex.html" title="ASN 복합 타입 클래스">CAsnComplex</a> 에 저장하여서 리턴한다.  <a href="#ga4a957a6bf92d5da0cc08e6f34435a4df"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>SNMP 메시지 생성/파서 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga8dbd4534b5230957faee0bf579e15788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpOidValueList::Add </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td>
+          <td class="paramname"><em>pclsValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 OID 의 값을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">pclsValue</td><td>OID 의 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8e46db072d0d02e462396c9533bc219b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnComplex::AddComplex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_asn_complex.html">CAsnComplex</a> *&#160;</td>
+          <td class="paramname"><em>pclsValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_asn_complex.html" title="ASN 복합 타입 클래스">CAsnComplex</a> 변수를 리스트에 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsValue</td><td><a class="el" href="class_c_asn_complex.html" title="ASN 복합 타입 클래스">CAsnComplex</a> 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7d02605dc43008e7675c2e283c913bee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnComplex::AddInt </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_asn_int.html" title="ASN 정수 타입 클래스">CAsnInt</a> 변수를 리스트에 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iValue</td><td>정수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacc4afe4abaf98d51149bf8f0f4b8a5ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnComplex::AddNull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_asn_null.html" title="ASN NULL 타입 클래스">CAsnNull</a> 변수를 리스트에 추가한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga69743b8c75f605eefa44d4ed8f92d564"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnComplex::AddOid </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_asn_oid.html" title="ASN OID 타입 클래스">CAsnOid</a> 변수를 리스트에 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszValue</td><td>OID 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae73bac4795d71ad136c683cbcc51fd52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::AddOidValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td>
+          <td class="paramname"><em>pclsValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 OID 의 값을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">pclsValue</td><td>OID 의 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6c11b390e361c05a51b5229f4db454d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::AddOidValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 정수를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">iValue</td><td>정수 ( OID 의 값 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab4cc45c026462e5d0e637104bb1368d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::AddOidValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 정수를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">iValue</td><td>정수 ( OID 의 값 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga463cf1e945b978871c73b7115a85dab9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::AddOidValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 시간을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">iValue</td><td>시간 ( OID 의 값 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaba1016014da4cfbd89aa936f75528c99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::AddOidValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 문자열을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">pszValue</td><td>문자열 ( OID 의 값 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaaa5165f6e896b40fea291dda25ec92c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::AddOidValueCounter </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 카운트를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">iValue</td><td>정수 ( OID 의 값 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa73c3882ab9867aa446738d1f5d91cbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::AddOidValueIpAddress </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 IP 주소를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">pszIp</td><td>IPv4 IP 주소 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeace1a9dabb7a71e29044d2e295f408f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::AddOidValueOid </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 OID 를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszOid</td><td>OID </td></tr>
+    <tr><td class="paramname">pszValue</td><td>OID ( OID 의 값 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5a6260b278730334229fcb25433649d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnComplex::AddString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_asn_string.html" title="ASN 문자열 타입 클래스">CAsnString</a> 변수를 리스트에 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszValue</td><td>문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7b1ce3e463d162a0f9f16ddba82e9cf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnComplex::AddString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_asn_string.html" title="ASN 문자열 타입 클래스">CAsnString</a> 변수를 리스트에 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadfb97ee672b209ec5ebbe6b7b4acdf35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnComplex::AddString </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>1 문자로 구성된 <a class="el" href="class_c_asn_string.html" title="ASN 문자열 타입 클래스">CAsnString</a> 변수를 리스트에 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cValue</td><td>1 문자 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1b50a825c01bfdf314b82b276693684e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnComplex::AddValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_asn_type.html">CAsnType</a> *&#160;</td>
+          <td class="paramname"><em>pclsValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_asn_type.html" title="ASN 타입 클래스의 root 클래스">CAsnType</a> 변수를 리스트에 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsValue</td><td><a class="el" href="class_c_asn_type.html" title="ASN 타입 클래스의 root 클래스">CAsnType</a> 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4667689111cfa5c541f47d8b99598db4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::CheckAuth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>인증 정보가 유효한지 검사한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>인증 정보가 유효하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4262a96e88e78164f992deaee04d14cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSnmpOidValue::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>내부 변수를 초기화 시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga55002c5d5bcb068e96d79d5e6ee15749"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSnmpMessage::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>내부 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gabdf849e9b4402a2dcfb38f8ed12de409"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CAsnComplex::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>자료구조에 저장된 데이터를 삭제한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2fcff0a86aeb152641d02d58c5e01ac4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSnmpOidValueList::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>내부 변수를 초기화 시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga3fc39e3cd1fdf7740bb339bef6c47137"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_snmp_oid_value.html">CSnmpOidValue</a> * CSnmpOidValue::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>자신의 내부 변수의 값과 동일한 객체를 복사하여서 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신의 내부 변수의 값과 동일한 객체를 복사하여서 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7389e3073a3b12e802abf5194bb3f734"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_asn_type.html">CAsnType</a> * CAsnLong::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>복사한 객체를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>복사한 객체를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ad6b91086d66010c45b0bda2d19e4ff82">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0c3f678057025ba392b8c8a841180c07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_asn_type.html">CAsnType</a> * CAsnNull::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>복사한 객체를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>복사한 객체를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ad6b91086d66010c45b0bda2d19e4ff82">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7c1646f39a5a63f3ac579dfce009e1f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_asn_type.html">CAsnType</a> * CAsnOid::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>복사한 객체를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>복사한 객체를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ad6b91086d66010c45b0bda2d19e4ff82">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0300e55c7a5d706ccdcab1bdbb28109a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_asn_type.html">CAsnType</a> * CAsnInt::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>복사한 객체를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>복사한 객체를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ad6b91086d66010c45b0bda2d19e4ff82">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gafa24f271c39fcbbb307a0783a85ee2c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_asn_type.html">CAsnType</a> * CAsnComplex::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>복사한 객체를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>복사한 객체를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ad6b91086d66010c45b0bda2d19e4ff82">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4e27dd1890f937af0596ad0a3dda3f71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_asn_type.html">CAsnType</a> * CAsnString::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>복사한 객체를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>복사한 객체를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ad6b91086d66010c45b0bda2d19e4ff82">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga23c9faa02fcd11047e8c4e96f3cedc4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_snmp_oid_value_list.html">CSnmpOidValueList</a> * CSnmpOidValueList::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>자신의 내부 변수의 값과 동일한 객체를 복사하여서 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신의 내부 변수의 값과 동일한 객체를 복사하여서 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5eb1ef804beaf7eddde38d906c4eb02a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> * CSnmpMessage::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SNMP 메시지를 생성한 후, 입력된 SNMP 메시지를 복사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsMessage</td><td>SNMP 메시지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 복사된 SNMP 메시지를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac232458ac140e6267bb71e241582e1c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> * CSnmpMessage::CreateResponse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMP 응답 메시지를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>SNMP 응답 메시지를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4a957a6bf92d5da0cc08e6f34435a4df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_asn_complex.html">CAsnComplex</a> * CSnmpOidValueList::GetComplex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OID 와 OID 의 값을 <a class="el" href="class_c_asn_complex.html" title="ASN 복합 타입 클래스">CAsnComplex</a> 에 저장하여서 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 OID 와 OID 의 값을 저장한 <a class="el" href="class_c_asn_complex.html" title="ASN 복합 타입 클래스">CAsnComplex</a> 객체를 리턴하고 실패하면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga18462774174c9de60d39e1f5d0383adf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_snmp_oid_value.html">CSnmpOidValue</a> * CSnmpOidValueList::GetFirst </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>리스트의 첫번째 OID 와 OID 값을 저장한 객체를 가져온다. </p>
+<dl class="section return"><dt>반환값</dt><dd>리스트의 첫번째가 존재하면 OID 와 OID 값을 저장한 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga064b4a7366eff5cee2039e2e1b29cc9b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnInt::GetInt </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>정수값을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iValue</td><td>정수를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___snmp_parser.html#ga761022ea533ad91024b311f5285eb8a1">CAsnType</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga761022ea533ad91024b311f5285eb8a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnType::GetInt </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ASN 변수에 정수가 저장되어 있으면 정수값을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iValue</td><td>정수를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___snmp_parser.html#ga064b4a7366eff5cee2039e2e1b29cc9b">CAsnInt</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4d847fc2c4a51d403cc31c937482504e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnLong::GetLong </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>정수값을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iValue</td><td>정수를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___snmp_parser.html#ga7c298fbf5f80e5202fd8e916b19e2178">CAsnType</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7c298fbf5f80e5202fd8e916b19e2178"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnType::GetLong </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ASN 변수에 정수가 저장되어 있으면 정수값을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iValue</td><td>정수를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___snmp_parser.html#ga4d847fc2c4a51d403cc31c937482504e">CAsnLong</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae69f907d7750bf05d2a93e5013ecf5f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CSnmpMessage::GetOid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>첫번째 OID 를 가져온다. </p>
+<dl class="section return"><dt>반환값</dt><dd>첫번째 OID 가 존재하면 첫번째 OID 를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaee722c3055325aec3ce35da674b24879"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSnmpMessage::GetPacketLen </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>수신해야 하는 패킷 길이를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 수신해야 할 패킷 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeea5296165e5a5f08d053606e9ca3a27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnOid::GetString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>OID 문자열을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>OID 문자열을 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___snmp_parser.html#ga21e352ebe29d08381a738ded0f198b8e">CAsnType</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4d0686fee77ed5fabeb0667513a8ceb9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnString::GetString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>문자열을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>문자열을 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___snmp_parser.html#ga21e352ebe29d08381a738ded0f198b8e">CAsnType</a>(으)로부터 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga21e352ebe29d08381a738ded0f198b8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CAsnType::GetString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ASN 변수에 문자열이 저장되어 있으면 문자열을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>문자열을 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___snmp_parser.html#ga4d0686fee77ed5fabeb0667513a8ceb9">CAsnString</a>, <a class="el" href="group___snmp_parser.html#gaeea5296165e5a5f08d053606e9ca3a27">CAsnOid</a>에서 재구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8cb39af04ef91bc41936df2b53c78a7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::MakeGetNextRequest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCommunity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iRequestId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMPv2 GET NEXT 요청 메시지를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCommunity</td><td>community 문자열 </td></tr>
+    <tr><td class="paramname">iRequestId</td><td>요청 아이디 </td></tr>
+    <tr><td class="paramname">pszOid</td><td>OID 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga251fc695eef8f2218dae4d6e43a56b46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::MakeGetNextRequest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszAuthPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPrivPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iRequestId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMPv3 GET 요청 메시지를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUserName</td><td>사용자 아이디 </td></tr>
+    <tr><td class="paramname">pszAuthPassWord</td><td>msgAuthenticationParameters 생성을 위한 비밀번호 </td></tr>
+    <tr><td class="paramname">pszPrivPassWord</td><td>msgPrivacyParameters 생성을 위한 비밀번호 </td></tr>
+    <tr><td class="paramname">iRequestId</td><td>요청 아이디 </td></tr>
+    <tr><td class="paramname">pszOid</td><td>OID 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadd6cb5d0513987b0e1942536e2ae7472"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::MakeGetRequest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCommunity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iRequestId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMPv2 GET 요청 메시지를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszCommunity</td><td>community 문자열 </td></tr>
+    <tr><td class="paramname">iRequestId</td><td>요청 아이디 </td></tr>
+    <tr><td class="paramname">pszOid</td><td>OID 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7bea13efad3e6c47f1b6e3fb4d62a8aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::MakeGetRequest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszAuthPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPrivPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iRequestId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszOid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMPv3 GET 요청 메시지를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUserName</td><td>사용자 아이디 </td></tr>
+    <tr><td class="paramname">pszAuthPassWord</td><td>msgAuthenticationParameters 생성을 위한 비밀번호 </td></tr>
+    <tr><td class="paramname">pszPrivPassWord</td><td>msgPrivacyParameters 생성을 위한 비밀번호 </td></tr>
+    <tr><td class="paramname">iRequestId</td><td>요청 아이디 </td></tr>
+    <tr><td class="paramname">pszOid</td><td>OID 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga49e6e694d03f17e74971fef8a28c7112"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnLong::MakePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>내부 변수를 패킷에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketSize</td><td>패킷 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ab9a29bdf7f941212266c37e4941e4aef">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2b5eaf2e3cbec89857bc091844360f70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnNull::MakePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>내부 변수를 패킷에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketSize</td><td>패킷 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ab9a29bdf7f941212266c37e4941e4aef">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa935799092e97f8598f40a921131e392"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnInt::MakePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>내부 변수를 패킷에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketSize</td><td>패킷 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ab9a29bdf7f941212266c37e4941e4aef">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga797c43193c8d93f5c13bba9a3a5479a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnOid::MakePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>내부 변수를 패킷에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketSize</td><td>패킷 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ab9a29bdf7f941212266c37e4941e4aef">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac593dc41cfddf9e6c783f6520d769bc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnComplex::MakePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>내부 변수를 패킷에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketSize</td><td>패킷 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ab9a29bdf7f941212266c37e4941e4aef">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga16ae5dc88e854e371d428165836e1ed0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnString::MakePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>내부 변수를 패킷에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketSize</td><td>패킷 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#ab9a29bdf7f941212266c37e4941e4aef">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0821a407901b57ecfe191b820a5f5a2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSnmpMessage::MakePacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>내부 변수를 패킷에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketSize</td><td>패킷 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8c62a7d35bf85c823824302f7381411b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::MakePacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>패킷을 생성하여서 내부 변수에 저장한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3a2a3c1029188b1bb6250226ddb19f38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::MakeTrapRequest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTrapOid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMPv2 TRAP 메시지를 생성한다. </p>
+<p>본 메소드를 호출한 후, AddOidValue 메소드를 호출하여서 TRAP 으로 전송할 OID 와 OID 의 값을 저장해야 한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszTrapOid</td><td>TRAP OID 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga74c112c710b5b8bd62bbac9025eb616b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::ParseEncryptedPdu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>암호화된 PDU 를 복호화하여서 내부 변수에 저장한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga335cce17c77db01012e0ecebc40e5c8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnType::ParseHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>패킷을 파싱하여서 ASN.1 타입 및 body 길이를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga93397e480a2fda18e990086f350927a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnType::ParseInt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>패킷에서 정수를 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">cLength</td><td>패킷에 저장된 정수의 길이 </td></tr>
+    <tr><td class="paramname">iValue</td><td>정수값 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9732b60564a56a440f60b5b135c28a1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnLong::ParseLong </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>패킷에서 정수를 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">cLength</td><td>패킷에 저장된 정수의 길이 </td></tr>
+    <tr><td class="paramname">iValue</td><td>정수값 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga30cb5e0c2c020943e56f41eac305446b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnNull::ParsePacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#a426593743b087414b13ffa628cb06a21">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga02afabcf54e46cfc48ec89e7169f470a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnLong::ParsePacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#a426593743b087414b13ffa628cb06a21">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabf33df4ced2bd4032a08f6ce3b2a2427"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnInt::ParsePacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#a426593743b087414b13ffa628cb06a21">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga25998f030fb2df38cd71c07618553f80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnOid::ParsePacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#a426593743b087414b13ffa628cb06a21">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga000edfe60549cdb691aaf3994169263e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnComplex::ParsePacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#a426593743b087414b13ffa628cb06a21">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga42f89fbf1dcaa66dc46b596d624064d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnString::ParsePacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_asn_type.html#a426593743b087414b13ffa628cb06a21">CAsnType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0992c20788751153841f03f2d5ab7151"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSnmpMessage::ParsePacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>패킷을 파싱하여서 내부 변수에 패킷 데이터를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 패킷 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad9cc4770fa49e46a33a77264c64b78e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::SetAuthParams </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>msgAuthenticationParameters 값을 계산한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6a68ddf224e808464fc97394768e9278"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnType::SetHeaderLength </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>패킷에 body 길이를 저장한다. </p>
+<p>body 길이가 127 보다 크다면 패킷을 body 길이를 저장할 만큼 뒤로 복사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷의 body 길이 저장 위치 </td></tr>
+    <tr><td class="paramname">iPacketSize</td><td>패킷 크기 </td></tr>
+    <tr><td class="paramname">iLength</td><td>body 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga262c15f03a2e3885569e8f27dd835d9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CAsnType::SetInt </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ASN.1 header 의 body 길이를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷의 body 길이 위치 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷의 길이 </td></tr>
+    <tr><td class="paramname">iValue</td><td>body 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 패킷 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga379d68bd4af5b1a632b081bf8a72f40e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpMessage::SetPrivParams </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>msgPrivacyParameters 값을 설정하고 PDU 를 암호화한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6a7bbf3771c746f615cbf729aeddabc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SnmpDecrypt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszEngineId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iEngineIdLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPrivParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPrivParamLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strPlain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMPv3 암호화된 PDU 를 복호화한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>암호화된 PDU </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>암호화된 PDU 길이 </td></tr>
+    <tr><td class="paramname">pszPassWord</td><td>private 비밀번호 </td></tr>
+    <tr><td class="paramname">pszEngineId</td><td>SNMPv3 engine ID </td></tr>
+    <tr><td class="paramname">iEngineIdLen</td><td>SNMPv3 engine ID 길이 </td></tr>
+    <tr><td class="paramname">pszPrivParam</td><td>msgPrivacyParameter </td></tr>
+    <tr><td class="paramname">iPrivParamLen</td><td>msgPrivacyParameter 길이 </td></tr>
+    <tr><td class="paramname">strPlain</td><td>평문 PDU 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga79c6f29f47560850deaa0cf1d0113766"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SnmpEncrypt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszEngineId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iEngineIdLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPrivParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPrivParamLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strEncrypt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMPv3 PDU 를 암호화한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>평문 PDU 패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>평문 PDU 패킷 길이 </td></tr>
+    <tr><td class="paramname">pszPassWord</td><td>private 비밀번호 </td></tr>
+    <tr><td class="paramname">pszEngineId</td><td>SNMPv3 engine ID </td></tr>
+    <tr><td class="paramname">iEngineIdLen</td><td>SNMPv3 engine ID 길이 </td></tr>
+    <tr><td class="paramname">pszPrivParam</td><td>msgPrivacyParameter </td></tr>
+    <tr><td class="paramname">iPrivParamLen</td><td>msgPrivacyParameter 길이 </td></tr>
+    <tr><td class="paramname">strEncrypt</td><td>암화화된 PDU 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1601c8d387195de28acd710ca594c08f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SnmpMakeAuthKey </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pszKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pszEngineId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iEngineIdLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pszAuthKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>authentication key 를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszKey</td><td>key </td></tr>
+    <tr><td class="paramname">pszEngineId</td><td>SNMPv3 engine ID </td></tr>
+    <tr><td class="paramname">iEngineIdLen</td><td>SNMPv3 engine ID 길이 </td></tr>
+    <tr><td class="paramname">pszAuthKey</td><td>authentication key 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7ca51a698ec1bbd5a9ee3134fe71041c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SnmpMakeHmac </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszEngineId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iEngineIdLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strAuthParams</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNMPv3 msgAuthenticationParameters 를 계산한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">pszPassWord</td><td>비밀번호 </td></tr>
+    <tr><td class="paramname">pszEngineId</td><td>SNMPv3 engine ID </td></tr>
+    <tr><td class="paramname">iEngineIdLen</td><td>SNMPv3 engine ID 길이 </td></tr>
+    <tr><td class="paramname">strAuthParams</td><td>SNMPv3 msgAuthenticationParameters 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafe529a72ba1628d8654118887091549c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SnmpMakeKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pszKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>비밀번호로 key 를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPassWord</td><td>비밀번호 </td></tr>
+    <tr><td class="paramname">pszKey</td><td>생성된 key 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 18:32:18, 프로젝트명 : C++ SNMP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

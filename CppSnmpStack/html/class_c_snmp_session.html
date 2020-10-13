@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ SNMP Stack: CSnmpSession 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ SNMP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="hierarchy.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-attribs">Public 속성</a> &#124;
+<a href="class_c_snmp_session-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">CSnmpSession 클래스 참조<div class="ingroups"><a class="el" href="group___snmp_stack.html">SnmpStack</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>동기 방식으로 SNMP 통신하는 클래스  
+ <a href="class_c_snmp_session.html#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a95ada7290d7be693fd1b35a8c0cbd245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_snmp_session.html#a95ada7290d7be693fd1b35a8c0cbd245">CSnmpSession</a> ()</td></tr>
+<tr class="memitem:aba106eb5f0d2793fe83933fa6c1678a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_snmp_session.html#aba106eb5f0d2793fe83933fa6c1678a2">~CSnmpSession</a> ()</td></tr>
+<tr class="memitem:gaedb8237f350d75d20cc9b33b676d9cf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#gaedb8237f350d75d20cc9b33b676d9cf7">SetDestination</a> (const char *pszIp, int iPort=161, bool bTcp=false, bool bTrapOnly=false)</td></tr>
+<tr class="memdesc:gaedb8237f350d75d20cc9b33b676d9cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP 요청 메시지를 전송할 SNMP Agent 주소를 설정한다.  <a href="group___snmp_stack.html#gaedb8237f350d75d20cc9b33b676d9cf7"></a><br/></td></tr>
+<tr class="memitem:ga6aceb136057859f2cc9592af9ede4133"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga6aceb136057859f2cc9592af9ede4133">SetSnmpv2</a> (const char *pszCommunity)</td></tr>
+<tr class="memdesc:ga6aceb136057859f2cc9592af9ede4133"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv2 를 위한 SNMP community 문자열을 설정한다.  <a href="group___snmp_stack.html#ga6aceb136057859f2cc9592af9ede4133"></a><br/></td></tr>
+<tr class="memitem:ga34da34a6ceeca3b39a4e4e0d52b5dbe5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga34da34a6ceeca3b39a4e4e0d52b5dbe5">SetSnmpv3</a> (const char *pszUserName, const char *pszAuthPassWord, const char *pszPrivPassWord, const char *pszAuthEngineId=NULL)</td></tr>
+<tr class="memdesc:ga34da34a6ceeca3b39a4e4e0d52b5dbe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv3 를 위한 사용자 아이디 및 비밀번호를 설정한다.  <a href="group___snmp_stack.html#ga34da34a6ceeca3b39a4e4e0d52b5dbe5"></a><br/></td></tr>
+<tr class="memitem:ga40c4c9c2e88262012db9251445a92ffa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga40c4c9c2e88262012db9251445a92ffa">SetTimeout</a> (int iMiliSecond)</td></tr>
+<tr class="memdesc:ga40c4c9c2e88262012db9251445a92ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">재전송을 위한 수신 대기 timeout 시간을 설정한다.  <a href="group___snmp_stack.html#ga40c4c9c2e88262012db9251445a92ffa"></a><br/></td></tr>
+<tr class="memitem:ga9c0877ae4338973176949307fba34715"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga9c0877ae4338973176949307fba34715">SetReSendCount</a> (int iReSendCount)</td></tr>
+<tr class="memdesc:ga9c0877ae4338973176949307fba34715"><td class="mdescLeft">&#160;</td><td class="mdescRight">timeout 되었을 때에 재전송하는 개수를 설정한다.  <a href="group___snmp_stack.html#ga9c0877ae4338973176949307fba34715"></a><br/></td></tr>
+<tr class="memitem:gab2d426797ffda8eca6944e8e6f712811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#gab2d426797ffda8eca6944e8e6f712811">SetDebug</a> (bool bDebug)</td></tr>
+<tr class="memdesc:gab2d426797ffda8eca6944e8e6f712811"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP 통신 디버그 모드를 설정한다.  <a href="group___snmp_stack.html#gab2d426797ffda8eca6944e8e6f712811"></a><br/></td></tr>
+<tr class="memitem:ga7b63c158309dcdb63c128648351c808c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga7b63c158309dcdb63c128648351c808c">Open</a> ()</td></tr>
+<tr class="memdesc:ga7b63c158309dcdb63c128648351c808c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP 통신을 위한 UDP 소켓을 생성한다.  <a href="group___snmp_stack.html#ga7b63c158309dcdb63c128648351c808c"></a><br/></td></tr>
+<tr class="memitem:ga59082e043e450ca88004e52ea852b438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga59082e043e450ca88004e52ea852b438">Close</a> ()</td></tr>
+<tr class="memdesc:ga59082e043e450ca88004e52ea852b438"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP 통신을 위한 UDP 소켓을 종료한다.  <a href="group___snmp_stack.html#ga59082e043e450ca88004e52ea852b438"></a><br/></td></tr>
+<tr class="memitem:gad1fdc781a68a9996ef3d1f00a2f7aff3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#gad1fdc781a68a9996ef3d1f00a2f7aff3">Check</a> ()</td></tr>
+<tr class="memdesc:gad1fdc781a68a9996ef3d1f00a2f7aff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">세션이 유효한지 검사한다.  <a href="group___snmp_stack.html#gad1fdc781a68a9996ef3d1f00a2f7aff3"></a><br/></td></tr>
+<tr class="memitem:ga02e78b203ea264aea1628dc686caaae8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga02e78b203ea264aea1628dc686caaae8">GetIp</a> ()</td></tr>
+<tr class="memdesc:ga02e78b203ea264aea1628dc686caaae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">destination IP 주소를 리턴한다.  <a href="group___snmp_stack.html#ga02e78b203ea264aea1628dc686caaae8"></a><br/></td></tr>
+<tr class="memitem:ga6d25cd3a0cdca46c0ad038ce3a190fe1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga6d25cd3a0cdca46c0ad038ce3a190fe1">SendRequest</a> (<a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> *pclsRequest, <a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> *pclsResponse)</td></tr>
+<tr class="memdesc:ga6d25cd3a0cdca46c0ad038ce3a190fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMPv2 이면 SNMP 요청 메시지를 전송한 후, 이에 대한 응답 메시지를 수신한다.  <a href="group___snmp_stack.html#ga6d25cd3a0cdca46c0ad038ce3a190fe1"></a><br/></td></tr>
+<tr class="memitem:gaf6ce9eb0fd0f19988d03a69643c36124"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#gaf6ce9eb0fd0f19988d03a69643c36124">SendRequest</a> (<a class="el" href="class_c_snmp_message.html">CSnmpMessage</a> *pclsRequest)</td></tr>
+<tr class="memdesc:gaf6ce9eb0fd0f19988d03a69643c36124"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP trap 과 같은 단방향 SNMP 메시지를 전송한다.  <a href="group___snmp_stack.html#gaf6ce9eb0fd0f19988d03a69643c36124"></a><br/></td></tr>
+<tr class="memitem:ga2fbdf0c2f6c1e3d309a523af8476222a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga2fbdf0c2f6c1e3d309a523af8476222a">SendGetRequest</a> (const char *pszOid, <a class="el" href="class_c_asn_type.html">CAsnType</a> **ppclsAsnType)</td></tr>
+<tr class="memdesc:ga2fbdf0c2f6c1e3d309a523af8476222a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP GET 메시지를 전송하여서 이에 대한 응답을 수신한다.  <a href="group___snmp_stack.html#ga2fbdf0c2f6c1e3d309a523af8476222a"></a><br/></td></tr>
+<tr class="memitem:ga836842ed36eef9415635295d6549f9bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga836842ed36eef9415635295d6549f9bc">SendGetNextRequest</a> (const char *pszOid, std::string **ppstrResponseOid, <a class="el" href="class_c_asn_type.html">CAsnType</a> **ppclsAsnType)</td></tr>
+<tr class="memdesc:ga836842ed36eef9415635295d6549f9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP GET NEXT 메시지를 전송하여서 이에 대한 응답을 수신한다.  <a href="group___snmp_stack.html#ga836842ed36eef9415635295d6549f9bc"></a><br/></td></tr>
+<tr class="memitem:ga6f5d5326e1c6164c350454d2b0bbf875"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga6f5d5326e1c6164c350454d2b0bbf875">SendGetRequest</a> (const char *pszOid, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga6f5d5326e1c6164c350454d2b0bbf875"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP GET 메시지를 전송하여서 이에 대한 응답을 수신한다.  <a href="group___snmp_stack.html#ga6f5d5326e1c6164c350454d2b0bbf875"></a><br/></td></tr>
+<tr class="memitem:gaac4089fbb1ff82989837fdacbcf59985"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#gaac4089fbb1ff82989837fdacbcf59985">SendGetRequest</a> (const char *pszOid, uint32_t &amp;iValue)</td></tr>
+<tr class="memdesc:gaac4089fbb1ff82989837fdacbcf59985"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP GET 메시지를 전송하여서 이에 대한 응답을 수신한다.  <a href="group___snmp_stack.html#gaac4089fbb1ff82989837fdacbcf59985"></a><br/></td></tr>
+<tr class="memitem:ga3d95cde83e387a5fee5728af615657a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#ga3d95cde83e387a5fee5728af615657a1">SendGetNextRequest</a> (const char *pszOid, std::string **ppstrResponseOid, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga3d95cde83e387a5fee5728af615657a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP GET NEXT 메시지를 전송하여서 이에 대한 응답을 수신한다.  <a href="group___snmp_stack.html#ga3d95cde83e387a5fee5728af615657a1"></a><br/></td></tr>
+<tr class="memitem:gab4687ce3b57248addda160ba3ea8fb44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___snmp_stack.html#gab4687ce3b57248addda160ba3ea8fb44">SendGetNextRequest</a> (const char *pszOid, std::string **ppstrResponseOid, uint32_t &amp;iValue)</td></tr>
+<tr class="memdesc:gab4687ce3b57248addda160ba3ea8fb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNMP GET NEXT 메시지를 전송하여서 이에 대한 응답을 수신한다.  <a href="group___snmp_stack.html#gab4687ce3b57248addda160ba3ea8fb44"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Public 속성</h2></td></tr>
+<tr class="memitem:aceed0ae2ef724b02ceb831508b16c32f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_snmp_session.html#aceed0ae2ef724b02ceb831508b16c32f">m_bStop</a></td></tr>
+<tr class="memitem:a56dc67eb32a9a3328175d31c2ee540c0"><td class="memItemLeft" align="right" valign="top">Socket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_snmp_session.html#a56dc67eb32a9a3328175d31c2ee540c0">m_hSocket</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<div class="textblock"><p>동기 방식으로 SNMP 통신하는 클래스 </p>
+</div><h2>생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="a95ada7290d7be693fd1b35a8c0cbd245"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSnmpSession::CSnmpSession </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba106eb5f0d2793fe83933fa6c1678a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSnmpSession::~CSnmpSession </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>멤버 데이타 문서화</h2>
+<a class="anchor" id="aceed0ae2ef724b02ceb831508b16c32f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSnmpSession::m_bStop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56dc67eb32a9a3328175d31c2ee540c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Socket CSnmpSession::m_hSocket</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 18:32:18, 프로젝트명 : C++ SNMP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

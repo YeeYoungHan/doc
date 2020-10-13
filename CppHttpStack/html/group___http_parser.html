@@ -1,0 +1,1507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ HTTP Stack: HttpParser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ HTTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#enum-members">열거형 타입</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">HttpParser</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>HTTP 메시지 파서/생성 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_header.html">CHttpHeader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIP 헤더 정보를 저장하는 클래스  <a href="class_c_http_header.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_message.html">CHttpMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 메시지 클래스  <a href="class_c_http_message.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_packet.html">CHttpPacket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">수신된 HTTP 프로토콜 패킷을 저장하고 파싱하는 클래스  <a href="class_c_http_packet.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_parameter.html">CHttpParameter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 정보를 저장하는 클래스  <a href="class_c_http_parameter.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_parameter_list.html">CHttpParameterList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP parameter 리스트 저장 클래스  <a href="class_c_http_parameter_list.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_uri.html">CHttpUri</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP URL 파서 클래스  <a href="class_c_http_uri.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+열거형 타입</h2></td></tr>
+<tr class="memitem:ga78d13f175f76ce862dfec43111cf7fca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga78d13f175f76ce862dfec43111cf7fca">EHttpPacketStatus</a> { <a class="el" href="group___http_parser.html#gga78d13f175f76ce862dfec43111cf7fcaa3f4b708b645fa191b81995688cbeefd6">H_HPS_HEADER</a> =  0, 
+<a class="el" href="group___http_parser.html#gga78d13f175f76ce862dfec43111cf7fcaa06e2cd37b6fc279854a0dabc826f0f7e">H_HPS_BODY</a>, 
+<a class="el" href="group___http_parser.html#gga78d13f175f76ce862dfec43111cf7fcaa927c7453e867a2bb5a23701ab03944c7">H_HPS_BODY_END</a>
+ }</td></tr>
+<tr class="memdesc:ga78d13f175f76ce862dfec43111cf7fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 프로토콜 파싱 단계  <a href="group___http_parser.html#ga78d13f175f76ce862dfec43111cf7fca">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ga8d1f0c6fbfac47e460a073e4d1fd58ed"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga8d1f0c6fbfac47e460a073e4d1fd58ed">GetReasonPhrase</a> (int iSipCode)</td></tr>
+<tr class="memdesc:ga8d1f0c6fbfac47e460a073e4d1fd58ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP status code 에 해당하는 문자열을 리턴한다.  <a href="#ga8d1f0c6fbfac47e460a073e4d1fd58ed"></a><br/></td></tr>
+<tr class="memitem:gab45bfa1572826ecba33b6baa2e7378d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gab45bfa1572826ecba33b6baa2e7378d9">CHttpHeader::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gab45bfa1572826ecba33b6baa2e7378d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 헤더 문자열을 파싱하여 <a class="el" href="class_c_http_header.html" title="SIP 헤더 정보를 저장하는 클래스">CHttpHeader</a> 클래스의 멤버 변수에 저장한다.  <a href="#gab45bfa1572826ecba33b6baa2e7378d9"></a><br/></td></tr>
+<tr class="memitem:ga17bfd743a47aefbb2720f59470dfcdd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga17bfd743a47aefbb2720f59470dfcdd4">CHttpHeader::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga17bfd743a47aefbb2720f59470dfcdd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 메시지에 포함된 문자열을 작성한다.  <a href="#ga17bfd743a47aefbb2720f59470dfcdd4"></a><br/></td></tr>
+<tr class="memitem:gac70b9888c172279661e8ba672e5e3fe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gac70b9888c172279661e8ba672e5e3fe8">CHttpHeader::Set</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:gac70b9888c172279661e8ba672e5e3fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">헤더의 이름과 값을 설정한다.  <a href="#gac70b9888c172279661e8ba672e5e3fe8"></a><br/></td></tr>
+<tr class="memitem:ga081fd4a3b1f78fa1112a38fde29f8d83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga081fd4a3b1f78fa1112a38fde29f8d83">CHttpHeader::Clear</a> ()</td></tr>
+<tr class="memdesc:ga081fd4a3b1f78fa1112a38fde29f8d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga081fd4a3b1f78fa1112a38fde29f8d83"></a><br/></td></tr>
+<tr class="memitem:ga48bb45b5f015b6fe50de58057bf13629"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga48bb45b5f015b6fe50de58057bf13629">CHttpMessage::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga48bb45b5f015b6fe50de58057bf13629"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 메시지를 파싱한다.  <a href="#ga48bb45b5f015b6fe50de58057bf13629"></a><br/></td></tr>
+<tr class="memitem:ga88828440670a5e85b6a94817dc193079"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga88828440670a5e85b6a94817dc193079">CHttpMessage::ParseHeader</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga88828440670a5e85b6a94817dc193079"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 메시지의 헤더를 파싱한다.  <a href="#ga88828440670a5e85b6a94817dc193079"></a><br/></td></tr>
+<tr class="memitem:gad6f396bb44d12cb0a50b41af6e40f8c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gad6f396bb44d12cb0a50b41af6e40f8c5">CHttpMessage::Clear</a> ()</td></tr>
+<tr class="memdesc:gad6f396bb44d12cb0a50b41af6e40f8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 초기화시킨다.  <a href="#gad6f396bb44d12cb0a50b41af6e40f8c5"></a><br/></td></tr>
+<tr class="memitem:ga6db96f79302b593e2d2632bfaf1460cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga6db96f79302b593e2d2632bfaf1460cf">CHttpMessage::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga6db96f79302b593e2d2632bfaf1460cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 메시지 문자열을 생성한다.  <a href="#ga6db96f79302b593e2d2632bfaf1460cf"></a><br/></td></tr>
+<tr class="memitem:gad010bca8eb55344bec6de405b7ae0dd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gad010bca8eb55344bec6de405b7ae0dd9">CHttpMessage::AddHeader</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:gad010bca8eb55344bec6de405b7ae0dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 헤더 자료구조에 이름과 값을 추가한다.  <a href="#gad010bca8eb55344bec6de405b7ae0dd9"></a><br/></td></tr>
+<tr class="memitem:ga74d815317609f0d7d969219567ad6c14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga74d815317609f0d7d969219567ad6c14">CHttpMessage::AddHeader</a> (const char *pszName, int iValue)</td></tr>
+<tr class="memdesc:ga74d815317609f0d7d969219567ad6c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 헤더 자료구조에 이름과 값을 추가한다.  <a href="#ga74d815317609f0d7d969219567ad6c14"></a><br/></td></tr>
+<tr class="memitem:ga8e7bd56ecbb353d0438af832ed32460a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga8e7bd56ecbb353d0438af832ed32460a">CHttpMessage::UpdateHeader</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga8e7bd56ecbb353d0438af832ed32460a"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 헤더 자료구조에서 이름을 검색한 후, 해당 헤더가 존재하면 값을 수정한다.  <a href="#ga8e7bd56ecbb353d0438af832ed32460a"></a><br/></td></tr>
+<tr class="memitem:ga6c764e42fb20e17d5148a1446b8a9fde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga6c764e42fb20e17d5148a1446b8a9fde">CHttpMessage::ReplaceHeader</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga6c764e42fb20e17d5148a1446b8a9fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 헤더 자료구조에서 이름을 검색한 후, 해당 헤더가 존재하면 값을 수정하고 존재하지 않으면 새로 추가한다.  <a href="#ga6c764e42fb20e17d5148a1446b8a9fde"></a><br/></td></tr>
+<tr class="memitem:gae09829d0725268fc684170fffe6ce164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_http_header.html">CHttpHeader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gae09829d0725268fc684170fffe6ce164">CHttpMessage::GetHeader</a> (const char *pszName)</td></tr>
+<tr class="memdesc:gae09829d0725268fc684170fffe6ce164"><td class="mdescLeft">&#160;</td><td class="mdescRight">헤더 리스트를 검색하여서 입력된 이름과 일치하는 헤더를 리턴한다.  <a href="#gae09829d0725268fc684170fffe6ce164"></a><br/></td></tr>
+<tr class="memitem:ga7e0c860ed8dd7a2a370ca4a681433fc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga7e0c860ed8dd7a2a370ca4a681433fc3">CHttpMessage::SetRequest</a> (const char *pszMethod, <a class="el" href="class_c_http_uri.html">CHttpUri</a> *pclsUri, const char *pszUserAgent=NULL)</td></tr>
+<tr class="memdesc:ga7e0c860ed8dd7a2a370ca4a681433fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 요청 메시지에 기본적으로 입력되어야 할 내용을 추가한다.  <a href="#ga7e0c860ed8dd7a2a370ca4a681433fc3"></a><br/></td></tr>
+<tr class="memitem:gacaecfbf8a0e5f2cd36afc7e45aba6795"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gacaecfbf8a0e5f2cd36afc7e45aba6795">CHttpMessage::IsRequest</a> ()</td></tr>
+<tr class="memdesc:gacaecfbf8a0e5f2cd36afc7e45aba6795"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 요청 메시지인지 검사한다.  <a href="#gacaecfbf8a0e5f2cd36afc7e45aba6795"></a><br/></td></tr>
+<tr class="memitem:gaa0ddac6d2d33edc514569cf342e69f15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gaa0ddac6d2d33edc514569cf342e69f15">CHttpMultipart::SetBoundary</a> (const char *pszBoundary)</td></tr>
+<tr class="memdesc:gaa0ddac6d2d33edc514569cf342e69f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">multipart 의 boundary 문자열을 저장한다.  <a href="#gaa0ddac6d2d33edc514569cf342e69f15"></a><br/></td></tr>
+<tr class="memitem:ga5208370506452d4db31c0356d1f0bbef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga5208370506452d4db31c0356d1f0bbef">CHttpMultipart::SetContentType</a> (const char *pszContentType)</td></tr>
+<tr class="memdesc:ga5208370506452d4db31c0356d1f0bbef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content-Type 에서 boundary 문자열을 찾아서 boundary 문자열을 저장한다.  <a href="#ga5208370506452d4db31c0356d1f0bbef"></a><br/></td></tr>
+<tr class="memitem:gadf59d93baea870d5e435e9d2cafda722"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gadf59d93baea870d5e435e9d2cafda722">CHttpMultipart::Clear</a> ()</td></tr>
+<tr class="memdesc:gadf59d93baea870d5e435e9d2cafda722"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 초기화시킨다.  <a href="#gadf59d93baea870d5e435e9d2cafda722"></a><br/></td></tr>
+<tr class="memitem:ga6a831d04b89e737e9f50d0999da1957b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga6a831d04b89e737e9f50d0999da1957b">CHttpMultipart::Parse</a> (const std::string &amp;strText)</td></tr>
+<tr class="memdesc:ga6a831d04b89e737e9f50d0999da1957b"><td class="mdescLeft">&#160;</td><td class="mdescRight">multipart 문자열을 파싱한다.  <a href="#ga6a831d04b89e737e9f50d0999da1957b"></a><br/></td></tr>
+<tr class="memitem:gaafec2f3591ce46e66242ecf8b2b3b744"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gaafec2f3591ce46e66242ecf8b2b3b744">CHttpMultipart::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gaafec2f3591ce46e66242ecf8b2b3b744"><td class="mdescLeft">&#160;</td><td class="mdescRight">multipart 문자열을 파싱한다.  <a href="#gaafec2f3591ce46e66242ecf8b2b3b744"></a><br/></td></tr>
+<tr class="memitem:gaa34c61f4a0a2db8be568e295bbc7d1ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gaa34c61f4a0a2db8be568e295bbc7d1ea">CHttpMultipart::ToString</a> (std::string &amp;strText)</td></tr>
+<tr class="memdesc:gaa34c61f4a0a2db8be568e295bbc7d1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">multipart 문자열을 생성한다.  <a href="#gaa34c61f4a0a2db8be568e295bbc7d1ea"></a><br/></td></tr>
+<tr class="memitem:ga86c91b8dc1ea147d857c6f97af4b832e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga86c91b8dc1ea147d857c6f97af4b832e">CHttpPacket::AddPacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga86c91b8dc1ea147d857c6f97af4b832e"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 프로토콜 기반으로 수신한 패킷을 저장하고 파싱한다.  <a href="#ga86c91b8dc1ea147d857c6f97af4b832e"></a><br/></td></tr>
+<tr class="memitem:ga8a13ba0cb8391839ff45a29a4fc1b75e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga8a13ba0cb8391839ff45a29a4fc1b75e">CHttpPacket::IsCompleted</a> ()</td></tr>
+<tr class="memdesc:ga8a13ba0cb8391839ff45a29a4fc1b75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP body 를 모두 가져왔는지 검사한다.  <a href="#ga8a13ba0cb8391839ff45a29a4fc1b75e"></a><br/></td></tr>
+<tr class="memitem:gab0458200e3d8535df27888690562f6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gab0458200e3d8535df27888690562f6f2">CHttpPacket::ClearMessage</a> ()</td></tr>
+<tr class="memdesc:gab0458200e3d8535df27888690562f6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 메시지 객체를 초기화시킨다.  <a href="#gab0458200e3d8535df27888690562f6f2"></a><br/></td></tr>
+<tr class="memitem:ga3b962e71bb8d9a0cb33ebd3b7290c646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_http_message.html">CHttpMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga3b962e71bb8d9a0cb33ebd3b7290c646">CHttpPacket::GetHttpMessage</a> ()</td></tr>
+<tr class="memdesc:ga3b962e71bb8d9a0cb33ebd3b7290c646"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 메시지 객체를 리턴한다.  <a href="#ga3b962e71bb8d9a0cb33ebd3b7290c646"></a><br/></td></tr>
+<tr class="memitem:gacf9f4c1cdc2de1928c78ee45f267fc1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gacf9f4c1cdc2de1928c78ee45f267fc1f">CHttpParameter::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gacf9f4c1cdc2de1928c78ee45f267fc1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter 문자열을 파싱하여 <a class="el" href="class_c_http_parameter.html" title="parameter 정보를 저장하는 클래스">CHttpParameter</a> 클래스의 멤버 변수에 저장한다.  <a href="#gacf9f4c1cdc2de1928c78ee45f267fc1f"></a><br/></td></tr>
+<tr class="memitem:ga5a05c773c54cdc9e69c55613b21fa44f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga5a05c773c54cdc9e69c55613b21fa44f">CHttpParameter::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga5a05c773c54cdc9e69c55613b21fa44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 메시지에 포함된 문자열을 작성한다.  <a href="#ga5a05c773c54cdc9e69c55613b21fa44f"></a><br/></td></tr>
+<tr class="memitem:ga7c74d13077238c06c2e43fb2fcc5d371"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga7c74d13077238c06c2e43fb2fcc5d371">CHttpParameter::Clear</a> ()</td></tr>
+<tr class="memdesc:ga7c74d13077238c06c2e43fb2fcc5d371"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#ga7c74d13077238c06c2e43fb2fcc5d371"></a><br/></td></tr>
+<tr class="memitem:ga2e1932ae3bb0e4eca19c73a95a030990"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga2e1932ae3bb0e4eca19c73a95a030990">CHttpParameterList::Parse</a> (const char *pszText)</td></tr>
+<tr class="memdesc:ga2e1932ae3bb0e4eca19c73a95a030990"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#ga2e1932ae3bb0e4eca19c73a95a030990"></a><br/></td></tr>
+<tr class="memitem:ga6a3081857eea4621a2628a5218f74c3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga6a3081857eea4621a2628a5218f74c3e">CHttpParameterList::Parse</a> (const std::string &amp;strText)</td></tr>
+<tr class="memdesc:ga6a3081857eea4621a2628a5218f74c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#ga6a3081857eea4621a2628a5218f74c3e"></a><br/></td></tr>
+<tr class="memitem:ga0658de4d9b6d15fef57ad10b036b4208"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga0658de4d9b6d15fef57ad10b036b4208">CHttpParameterList::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga0658de4d9b6d15fef57ad10b036b4208"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#ga0658de4d9b6d15fef57ad10b036b4208"></a><br/></td></tr>
+<tr class="memitem:ga6f7fe1857a8f53add93f88920c2bb99b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga6f7fe1857a8f53add93f88920c2bb99b">CHttpParameterList::ParseUrl</a> (const char *pszText)</td></tr>
+<tr class="memdesc:ga6f7fe1857a8f53add93f88920c2bb99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">URL 문자열에서 parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#ga6f7fe1857a8f53add93f88920c2bb99b"></a><br/></td></tr>
+<tr class="memitem:ga59bd1073abb418c0f2eb2659328ee22a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga59bd1073abb418c0f2eb2659328ee22a">CHttpParameterList::ParseUrl</a> (const std::string &amp;strText)</td></tr>
+<tr class="memdesc:ga59bd1073abb418c0f2eb2659328ee22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">URL 문자열에서 parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#ga59bd1073abb418c0f2eb2659328ee22a"></a><br/></td></tr>
+<tr class="memitem:ga48f8112c8153402e979b44eba4d21631"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga48f8112c8153402e979b44eba4d21631">CHttpParameterList::ParseUrl</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga48f8112c8153402e979b44eba4d21631"><td class="mdescLeft">&#160;</td><td class="mdescRight">URL 문자열에서 parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#ga48f8112c8153402e979b44eba4d21631"></a><br/></td></tr>
+<tr class="memitem:ga007aab93fcdb33e350caaa22f17ebd31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga007aab93fcdb33e350caaa22f17ebd31">CHttpParameterList::ParseOne</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga007aab93fcdb33e350caaa22f17ebd31"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다.  <a href="#ga007aab93fcdb33e350caaa22f17ebd31"></a><br/></td></tr>
+<tr class="memitem:ga2ae7d5b62e4032e0ac4defc534007deb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga2ae7d5b62e4032e0ac4defc534007deb">CHttpParameterList::ToString</a> (char *pszText, int iTextSize)</td></tr>
+<tr class="memdesc:ga2ae7d5b62e4032e0ac4defc534007deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter 리스트 객체를 parameter 리스트 문자열로 제작한다.  <a href="#ga2ae7d5b62e4032e0ac4defc534007deb"></a><br/></td></tr>
+<tr class="memitem:ga4850a8c4a8f737a0f5ef49c40acadd19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga4850a8c4a8f737a0f5ef49c40acadd19">CHttpParameterList::Insert</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga4850a8c4a8f737a0f5ef49c40acadd19"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름과 값을 저장한다.  <a href="#ga4850a8c4a8f737a0f5ef49c40acadd19"></a><br/></td></tr>
+<tr class="memitem:ga14d319e43df53cb2cf755a21be08f3b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga14d319e43df53cb2cf755a21be08f3b2">CHttpParameterList::Update</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:ga14d319e43df53cb2cf755a21be08f3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름에 대한 값을 수정한다.  <a href="#ga14d319e43df53cb2cf755a21be08f3b2"></a><br/></td></tr>
+<tr class="memitem:gaf8d5158f3b9a662abcfc59a8db7b8661"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gaf8d5158f3b9a662abcfc59a8db7b8661">CHttpParameterList::Select</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gaf8d5158f3b9a662abcfc59a8db7b8661"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름을 검색한다.  <a href="#gaf8d5158f3b9a662abcfc59a8db7b8661"></a><br/></td></tr>
+<tr class="memitem:ga67165456c7d2d25c0e4e7bc7ffd62952"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga67165456c7d2d25c0e4e7bc7ffd62952">CHttpParameterList::Select</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga67165456c7d2d25c0e4e7bc7ffd62952"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름을 검색한다.  <a href="#ga67165456c7d2d25c0e4e7bc7ffd62952"></a><br/></td></tr>
+<tr class="memitem:gaaeef04ebfdfffb058cf67c62e46ad68c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gaaeef04ebfdfffb058cf67c62e46ad68c">CHttpParameterList::SelectValue</a> (const char *pszName)</td></tr>
+<tr class="memdesc:gaaeef04ebfdfffb058cf67c62e46ad68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 에서 입력된 이름을 검색한다.  <a href="#gaaeef04ebfdfffb058cf67c62e46ad68c"></a><br/></td></tr>
+<tr class="memitem:ga5c0da5e5820119b86e801197b9a851ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga5c0da5e5820119b86e801197b9a851ff">CHttpParameterList::ClearParam</a> ()</td></tr>
+<tr class="memdesc:ga5c0da5e5820119b86e801197b9a851ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter list 를 삭제한다.  <a href="#ga5c0da5e5820119b86e801197b9a851ff"></a><br/></td></tr>
+<tr class="memitem:gad995d3acfd7dda5e95e42de8b922ffec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#gad995d3acfd7dda5e95e42de8b922ffec">CHttpUri::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gad995d3acfd7dda5e95e42de8b922ffec"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP URI 를 파싱한다.  <a href="#gad995d3acfd7dda5e95e42de8b922ffec"></a><br/></td></tr>
+<tr class="memitem:ga7792343bfdfa0b9514f30aa614227f12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_parser.html#ga7792343bfdfa0b9514f30aa614227f12">CHttpUri::Clear</a> ()</td></tr>
+<tr class="memdesc:ga7792343bfdfa0b9514f30aa614227f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">내부 변수를 초기화시킨다.  <a href="#ga7792343bfdfa0b9514f30aa614227f12"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>HTTP 메시지 파서/생성 라이브러리 </p>
+<h2>열거형 타입 문서화</h2>
+<a class="anchor" id="ga78d13f175f76ce862dfec43111cf7fca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___http_parser.html#ga78d13f175f76ce862dfec43111cf7fca">EHttpPacketStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 프로토콜 파싱 단계 </p>
+<dl><dt><b>열거형 멤버: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="gga78d13f175f76ce862dfec43111cf7fcaa3f4b708b645fa191b81995688cbeefd6"></a>H_HPS_HEADER</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="gga78d13f175f76ce862dfec43111cf7fcaa06e2cd37b6fc279854a0dabc826f0f7e"></a>H_HPS_BODY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="gga78d13f175f76ce862dfec43111cf7fcaa927c7453e867a2bb5a23701ab03944c7"></a>H_HPS_BODY_END</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<h2>함수 문서화</h2>
+<a class="anchor" id="gad010bca8eb55344bec6de405b7ae0dd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpMessage::AddHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 헤더 자료구조에 이름과 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>HTTP 헤더 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>HTTP 헤더 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga74d815317609f0d7d969219567ad6c14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpMessage::AddHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 헤더 자료구조에 이름과 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>HTTP 헤더 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>HTTP 헤더 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga86c91b8dc1ea147d857c6f97af4b832e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpPacket::AddPacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 프로토콜 기반으로 수신한 패킷을 저장하고 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7792343bfdfa0b9514f30aa614227f12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpUri::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>내부 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga081fd4a3b1f78fa1112a38fde29f8d83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpHeader::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gadf59d93baea870d5e435e9d2cafda722"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpMultipart::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>자료구조를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad6f396bb44d12cb0a50b41af6e40f8c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpMessage::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>내부 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga7c74d13077238c06c2e43fb2fcc5d371"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpParameter::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gab0458200e3d8535df27888690562f6f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpPacket::ClearMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 메시지 객체를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga5c0da5e5820119b86e801197b9a851ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpParameterList::ClearParam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 를 삭제한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gae09829d0725268fc684170fffe6ce164"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_http_header.html">CHttpHeader</a> * CHttpMessage::GetHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>헤더 리스트를 검색하여서 입력된 이름과 일치하는 헤더를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>헤더 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>헤더 리스트에 존재하면 헤더 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3b962e71bb8d9a0cb33ebd3b7290c646"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_http_message.html">CHttpMessage</a> * CHttpPacket::GetHttpMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 메시지 객체를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>HTTP 메시지 객체를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8d1f0c6fbfac47e460a073e4d1fd58ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* GetReasonPhrase </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSipCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP status code 에 해당하는 문자열을 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iSipCode</td><td>HTTP status code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>HTTP status code 에 해당하는 문자열을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4850a8c4a8f737a0f5ef49c40acadd19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpParameterList::Insert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름과 값을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>parameter 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8a13ba0cb8391839ff45a29a4fc1b75e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpPacket::IsCompleted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP body 를 모두 가져왔는지 검사한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>HTTP body 를 모두 가져온 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacaecfbf8a0e5f2cd36afc7e45aba6795"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpMessage::IsRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 요청 메시지인지 검사한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>HTTP 요청 메시지이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2e1932ae3bb0e4eca19c73a95a030990"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameterList::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad995d3acfd7dda5e95e42de8b922ffec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpUri::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP URI 를 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTTP URI 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>HTTP URI 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열 개수를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6a3081857eea4621a2628a5218f74c3e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameterList::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>parameter 리스트 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0658de4d9b6d15fef57ad10b036b4208"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameterList::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>parameter 리스트 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab45bfa1572826ecba33b6baa2e7378d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpHeader::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 헤더 문자열을 파싱하여 <a class="el" href="class_c_http_header.html" title="SIP 헤더 정보를 저장하는 클래스">CHttpHeader</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTTP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga48bb45b5f015b6fe50de58057bf13629"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpMessage::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 메시지를 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTTP 메시지 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>HTTP 메시지 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열 개수를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacf9f4c1cdc2de1928c78ee45f267fc1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameter::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parameter 문자열을 파싱하여 <a class="el" href="class_c_http_parameter.html" title="parameter 정보를 저장하는 클래스">CHttpParameter</a> 클래스의 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTTP 헤더의 값을 저장한 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>pszText 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6a831d04b89e737e9f50d0999da1957b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpMultipart::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>multipart 문자열을 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>multipart 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 multipart 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaafec2f3591ce46e66242ecf8b2b3b744"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpMultipart::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>multipart 문자열을 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>multipart 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>multipart 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 multipart 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga88828440670a5e85b6a94817dc193079"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpMessage::ParseHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 메시지의 헤더를 파싱한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTTP 메시지 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>HTTP 메시지 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열 개수를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga007aab93fcdb33e350caaa22f17ebd31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameterList::ParseOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>parameter 리스트 문자열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6f7fe1857a8f53add93f88920c2bb99b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameterList::ParseUrl </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>URL 문자열에서 parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>URL 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga59bd1073abb418c0f2eb2659328ee22a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameterList::ParseUrl </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>URL 문자열에서 parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>URL 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga48f8112c8153402e979b44eba4d21631"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameterList::ParseUrl </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>URL 문자열에서 parameter 리스트 문자열을 파싱하여서 parameter 리스트 객체에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>URL 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>URL 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 문자열의 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6c764e42fb20e17d5148a1446b8a9fde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpMessage::ReplaceHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 헤더 자료구조에서 이름을 검색한 후, 해당 헤더가 존재하면 값을 수정하고 존재하지 않으면 새로 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>HTTP 헤더 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>HTTP 헤더 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf8d5158f3b9a662abcfc59a8db7b8661"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpParameterList::Select </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>parameter 값을 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 이름이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga67165456c7d2d25c0e4e7bc7ffd62952"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpParameterList::Select </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 이름이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaaeef04ebfdfffb058cf67c62e46ad68c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CHttpParameterList::SelectValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 이름이 존재하면 해당 값을 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac70b9888c172279661e8ba672e5e3fe8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpHeader::Set </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>헤더의 이름과 값을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>헤더 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>헤더 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa0ddac6d2d33edc514569cf342e69f15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpMultipart::SetBoundary </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszBoundary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>multipart 의 boundary 문자열을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszBoundary</td><td>multipart 의 boundary 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5208370506452d4db31c0356d1f0bbef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpMultipart::SetContentType </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszContentType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Content-Type 에서 boundary 문자열을 찾아서 boundary 문자열을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszContentType</td><td>Content-Type 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7e0c860ed8dd7a2a370ca4a681433fc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpMessage::SetRequest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_http_uri.html">CHttpUri</a> *&#160;</td>
+          <td class="paramname"><em>pclsUri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserAgent</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 요청 메시지에 기본적으로 입력되어야 할 내용을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszMethod</td><td>HTTP 메소드 </td></tr>
+    <tr><td class="paramname">pclsUri</td><td>HTTP URI </td></tr>
+    <tr><td class="paramname">pszUserAgent</td><td>HTTP User Agent 헤더에 저장될 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga17bfd743a47aefbb2720f59470dfcdd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpHeader::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTTP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2ae7d5b62e4032e0ac4defc534007deb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameterList::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter 리스트 객체를 parameter 리스트 문자열로 제작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>parameter 리스트 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>parameter 리스트 문자열의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 리스트 문자열의 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6db96f79302b593e2d2632bfaf1460cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpMessage::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 메시지 문자열을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTTP 메시지 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>HTTP 메시지 문자열 저장 변수 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 저장된 HTTP 메시지 문자열 길이를 리턴하고 실패하면 -1 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5a05c773c54cdc9e69c55613b21fa44f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpParameter::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 메시지에 포함된 문자열을 작성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTTP 헤더의 값을 저장할 문자열 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>pszText 변수의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 작성한 문자열 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa34c61f4a0a2db8be568e295bbc7d1ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpMultipart::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>multipart 문자열을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>[out] multipart 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>multipart 문자열 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga14d319e43df53cb2cf755a21be08f3b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpParameterList::Update </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parameter list 에서 입력된 이름에 대한 값을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>parameter 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>parameter 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>parameter 이름이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8e7bd56ecbb353d0438af832ed32460a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpMessage::UpdateHeader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 헤더 자료구조에서 이름을 검색한 후, 해당 헤더가 존재하면 값을 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>HTTP 헤더 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>HTTP 헤더 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 17:19:43, 프로젝트명 : C++ HTTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,3270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ HTTP Stack: JsonParser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ HTTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">JsonParser</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>JSON 파서/생성 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_json_array.html">CJsonArray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열을 저장하는 클래스  <a href="class_c_json_array.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_json_bool.html">CJsonBool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON boolean 을 저장하는 클래스  <a href="class_c_json_bool.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_json_int.html">CJsonInt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 정수를 저장하는 클래스  <a href="class_c_json_int.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_json_number.html">CJsonNumber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 숫자를 저장하는 클래스  <a href="class_c_json_number.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_json_object.html">CJsonObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON object 를 저장하는 클래스  <a href="class_c_json_object.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_json_string.html">CJsonString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 문자열을 저장하는 클래스  <a href="class_c_json_string.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_json_type.html">CJsonType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 변수 추상 클래스  <a href="class_c_json_type.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:gad56a39b7dadb461f32a0c8380eb81a01"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gad56a39b7dadb461f32a0c8380eb81a01">CJsonArray::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gad56a39b7dadb461f32a0c8380eb81a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열 문자열 파싱하여서 자료구조에 저장한다.  <a href="#gad56a39b7dadb461f32a0c8380eb81a01"></a><br/></td></tr>
+<tr class="memitem:gaeab047f29dc7ccc1ea622f3a258511b4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaeab047f29dc7ccc1ea622f3a258511b4">CJsonArray::ToString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL, int iDepth=0)</td></tr>
+<tr class="memdesc:gaeab047f29dc7ccc1ea622f3a258511b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON 배열 문자열로 변환한다.  <a href="#gaeab047f29dc7ccc1ea622f3a258511b4"></a><br/></td></tr>
+<tr class="memitem:ga9d947f8cc35d050c844682743478e95e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga9d947f8cc35d050c844682743478e95e">CJsonArray::GetStringLen</a> ()</td></tr>
+<tr class="memdesc:ga9d947f8cc35d050c844682743478e95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToString 메소드로 생성될 문자열 길이를 리턴한다.  <a href="#ga9d947f8cc35d050c844682743478e95e"></a><br/></td></tr>
+<tr class="memitem:ga8d6e4df13607f44ae9851ed23fbdde34"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga8d6e4df13607f44ae9851ed23fbdde34">CJsonArray::Copy</a> ()</td></tr>
+<tr class="memdesc:ga8d6e4df13607f44ae9851ed23fbdde34"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신을 복제한 객체를 생성한다.  <a href="#ga8d6e4df13607f44ae9851ed23fbdde34"></a><br/></td></tr>
+<tr class="memitem:ga1d268967bc300b9642a7b8cdec7e6863"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga1d268967bc300b9642a7b8cdec7e6863">CJsonArray::MakeString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL)</td></tr>
+<tr class="memdesc:ga1d268967bc300b9642a7b8cdec7e6863"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON array 문자열로 변환한다.  <a href="#ga1d268967bc300b9642a7b8cdec7e6863"></a><br/></td></tr>
+<tr class="memitem:ga4fbaffcc6e67d8b864c3659c7c0eeb99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga4fbaffcc6e67d8b864c3659c7c0eeb99">CJsonArray::Clear</a> ()</td></tr>
+<tr class="memdesc:ga4fbaffcc6e67d8b864c3659c7c0eeb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 초기화시킨다.  <a href="#ga4fbaffcc6e67d8b864c3659c7c0eeb99"></a><br/></td></tr>
+<tr class="memitem:ga7d9bc132037f3b0dc55e620bd3874d37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga7d9bc132037f3b0dc55e620bd3874d37">CJsonArray::SelectData</a> (int iIndex, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga7d9bc132037f3b0dc55e620bd3874d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">배열 자료구조에서 Element 인덱스에 해당하는 문자열 값을 검색한다.  <a href="#ga7d9bc132037f3b0dc55e620bd3874d37"></a><br/></td></tr>
+<tr class="memitem:gaced1bc174bd4d49b638fd1995fdd1ad6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaced1bc174bd4d49b638fd1995fdd1ad6">CJsonArray::SelectData</a> (int iIndex, int64_t &amp;iValue)</td></tr>
+<tr class="memdesc:gaced1bc174bd4d49b638fd1995fdd1ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">배열 자료구조에서 Element 인덱스에 해당하는 정수 값을 검색한다.  <a href="#gaced1bc174bd4d49b638fd1995fdd1ad6"></a><br/></td></tr>
+<tr class="memitem:gaee523ed6c9e6dc51e648cd034de208b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaee523ed6c9e6dc51e648cd034de208b8">CJsonArray::SelectData</a> (int iIndex, bool &amp;bValue)</td></tr>
+<tr class="memdesc:gaee523ed6c9e6dc51e648cd034de208b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">배열 자료구조에서 Element 인덱스에 해당하는 boolean 값을 검색한다.  <a href="#gaee523ed6c9e6dc51e648cd034de208b8"></a><br/></td></tr>
+<tr class="memitem:ga240b373241ca57b149d4c400fe72d940"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga240b373241ca57b149d4c400fe72d940">CJsonArray::SelectData</a> (int iIndex, <a class="el" href="class_c_json_object.html">CJsonObject</a> **ppclsObject)</td></tr>
+<tr class="memdesc:ga240b373241ca57b149d4c400fe72d940"><td class="mdescLeft">&#160;</td><td class="mdescRight">배열 자료구조에서 Element 인덱스에 해당하는 object 값을 검색한다.  <a href="#ga240b373241ca57b149d4c400fe72d940"></a><br/></td></tr>
+<tr class="memitem:ga59b55ce5bc91295b46c8c8debd10e8f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga59b55ce5bc91295b46c8c8debd10e8f3">CJsonArray::SelectData</a> (int iIndex, <a class="el" href="class_c_json_array.html">CJsonArray</a> **ppclsArray)</td></tr>
+<tr class="memdesc:ga59b55ce5bc91295b46c8c8debd10e8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">배열 자료구조에서 Element 인덱스에 해당하는 배열 값을 검색한다.  <a href="#ga59b55ce5bc91295b46c8c8debd10e8f3"></a><br/></td></tr>
+<tr class="memitem:ga3e7b15cda94de391f6d96dc506cdab8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga3e7b15cda94de391f6d96dc506cdab8e">CJsonArray::SelectData</a> (int iIndex, <a class="el" href="class_c_json_type.html">CJsonType</a> **ppclsType)</td></tr>
+<tr class="memdesc:ga3e7b15cda94de391f6d96dc506cdab8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">배열 자료구조에서 Element 인덱스에 해당하는 값을 검색한다.  <a href="#ga3e7b15cda94de391f6d96dc506cdab8e"></a><br/></td></tr>
+<tr class="memitem:ga78ca38df9056617a646db70ba892480a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga78ca38df9056617a646db70ba892480a">CJsonArray::InsertData</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga78ca38df9056617a646db70ba892480a"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열에 문자열 Element 값을 추가한다.  <a href="#ga78ca38df9056617a646db70ba892480a"></a><br/></td></tr>
+<tr class="memitem:ga52d5197d765569081a729771338a7a0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga52d5197d765569081a729771338a7a0c">CJsonArray::InsertData</a> (const char *pszValue)</td></tr>
+<tr class="memdesc:ga52d5197d765569081a729771338a7a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열에 문자열 Element 값을 추가한다.  <a href="#ga52d5197d765569081a729771338a7a0c"></a><br/></td></tr>
+<tr class="memitem:ga7f3f66a82478012516d02dcfec7d407e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga7f3f66a82478012516d02dcfec7d407e">CJsonArray::InsertData</a> (int32_t iValue)</td></tr>
+<tr class="memdesc:ga7f3f66a82478012516d02dcfec7d407e"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열에 정수 Element 값을 추가한다.  <a href="#ga7f3f66a82478012516d02dcfec7d407e"></a><br/></td></tr>
+<tr class="memitem:ga0edfd58be1d5afb005e7a7fb8acd949c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga0edfd58be1d5afb005e7a7fb8acd949c">CJsonArray::InsertData</a> (int64_t iValue)</td></tr>
+<tr class="memdesc:ga0edfd58be1d5afb005e7a7fb8acd949c"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열에 정수 Element 값을 추가한다.  <a href="#ga0edfd58be1d5afb005e7a7fb8acd949c"></a><br/></td></tr>
+<tr class="memitem:ga38316552b1b319ea1ee70306ae228baa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga38316552b1b319ea1ee70306ae228baa">CJsonArray::InsertData</a> (bool bValue)</td></tr>
+<tr class="memdesc:ga38316552b1b319ea1ee70306ae228baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열에 boolean Element 값을 추가한다.  <a href="#ga38316552b1b319ea1ee70306ae228baa"></a><br/></td></tr>
+<tr class="memitem:gaf42344baa23a81dbef84189a33a0538f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaf42344baa23a81dbef84189a33a0538f">CJsonArray::InsertData</a> (<a class="el" href="class_c_json_type.html">CJsonType</a> *pclsType)</td></tr>
+<tr class="memdesc:gaf42344baa23a81dbef84189a33a0538f"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열에 Element 값을 추가한다.  <a href="#gaf42344baa23a81dbef84189a33a0538f"></a><br/></td></tr>
+<tr class="memitem:gae7b6327c9b221f9461e909352f895ffe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gae7b6327c9b221f9461e909352f895ffe">CJsonArray::InsertData</a> ()</td></tr>
+<tr class="memdesc:gae7b6327c9b221f9461e909352f895ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열에 null Element 값을 추가한다.  <a href="#gae7b6327c9b221f9461e909352f895ffe"></a><br/></td></tr>
+<tr class="memitem:ga8042d40220f336d5b130e42929cac97e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga8042d40220f336d5b130e42929cac97e">CJsonArray::InsertData</a> (int iIndex, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga8042d40220f336d5b130e42929cac97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열의 지정된 위치에 문자열 Element 를 추가한다.  <a href="#ga8042d40220f336d5b130e42929cac97e"></a><br/></td></tr>
+<tr class="memitem:gab33cb3e44f40498321e3203093fc3f8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gab33cb3e44f40498321e3203093fc3f8a">CJsonArray::InsertData</a> (int iIndex, const char *pszValue)</td></tr>
+<tr class="memdesc:gab33cb3e44f40498321e3203093fc3f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열의 지정된 위치에 문자열 Element 를 추가한다.  <a href="#gab33cb3e44f40498321e3203093fc3f8a"></a><br/></td></tr>
+<tr class="memitem:ga245d7994fdf786cb3361138f3a478db6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga245d7994fdf786cb3361138f3a478db6">CJsonArray::InsertData</a> (int iIndex, int32_t iValue)</td></tr>
+<tr class="memdesc:ga245d7994fdf786cb3361138f3a478db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열의 지정된 위치에 정수 Element 를 추가한다.  <a href="#ga245d7994fdf786cb3361138f3a478db6"></a><br/></td></tr>
+<tr class="memitem:ga07a55b2b32e92fd80154325fd04bcc81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga07a55b2b32e92fd80154325fd04bcc81">CJsonArray::InsertData</a> (int iIndex, int64_t iValue)</td></tr>
+<tr class="memdesc:ga07a55b2b32e92fd80154325fd04bcc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열의 지정된 위치에 정수 Element 를 추가한다.  <a href="#ga07a55b2b32e92fd80154325fd04bcc81"></a><br/></td></tr>
+<tr class="memitem:ga06dd0cbf4d6a0d6d9f09337f6b89398d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga06dd0cbf4d6a0d6d9f09337f6b89398d">CJsonArray::InsertData</a> (int iIndex, bool bValue)</td></tr>
+<tr class="memdesc:ga06dd0cbf4d6a0d6d9f09337f6b89398d"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열의 지정된 위치에 bool Element 를 추가한다.  <a href="#ga06dd0cbf4d6a0d6d9f09337f6b89398d"></a><br/></td></tr>
+<tr class="memitem:gab044c46a6613b822e95be515b7c4e3a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gab044c46a6613b822e95be515b7c4e3a6">CJsonArray::InsertData</a> (int iIndex, <a class="el" href="class_c_json_type.html">CJsonType</a> *pclsType)</td></tr>
+<tr class="memdesc:gab044c46a6613b822e95be515b7c4e3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열의 지정된 위치에 Element 를 추가한다.  <a href="#gab044c46a6613b822e95be515b7c4e3a6"></a><br/></td></tr>
+<tr class="memitem:gae4ccf6dadc4de7ec7179de7ba188cbec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gae4ccf6dadc4de7ec7179de7ba188cbec">CJsonArray::InsertDataNull</a> (int iIndex)</td></tr>
+<tr class="memdesc:gae4ccf6dadc4de7ec7179de7ba188cbec"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열의 지정된 위치에 null Element 를 추가한다.  <a href="#gae4ccf6dadc4de7ec7179de7ba188cbec"></a><br/></td></tr>
+<tr class="memitem:ga3d924f988acea160dca18cc890ac88fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga3d924f988acea160dca18cc890ac88fd">CJsonArray::InsertArray</a> (<a class="el" href="class_c_json_array.html">CJsonArray</a> *pclsArray)</td></tr>
+<tr class="memdesc:ga3d924f988acea160dca18cc890ac88fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">입력한 JSON 배열의 element 들을 추가한다.  <a href="#ga3d924f988acea160dca18cc890ac88fd"></a><br/></td></tr>
+<tr class="memitem:gaf6afbec115c51017c321bfb9ccac6219"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaf6afbec115c51017c321bfb9ccac6219">CJsonArray::DeleteData</a> (int iIndex)</td></tr>
+<tr class="memdesc:gaf6afbec115c51017c321bfb9ccac6219"><td class="mdescLeft">&#160;</td><td class="mdescRight">배열 자료구조에서 Element 인덱스에 해당하는 값을 삭제한다.  <a href="#gaf6afbec115c51017c321bfb9ccac6219"></a><br/></td></tr>
+<tr class="memitem:gab2fcea75525358dcc7ccb5e4b17bc04c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gab2fcea75525358dcc7ccb5e4b17bc04c">CJsonArray::GetCount</a> ()</td></tr>
+<tr class="memdesc:gab2fcea75525358dcc7ccb5e4b17bc04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 배열에 Element 값을 추가한다.  <a href="#gab2fcea75525358dcc7ccb5e4b17bc04c"></a><br/></td></tr>
+<tr class="memitem:ga504334dba7aeeefd48ab91440df42cdc"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga504334dba7aeeefd48ab91440df42cdc">CJsonBool::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga504334dba7aeeefd48ab91440df42cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON boolean 문자열 파싱하여서 자료구조에 저장한다.  <a href="#ga504334dba7aeeefd48ab91440df42cdc"></a><br/></td></tr>
+<tr class="memitem:ga3746744915cd0a849ed633579dafcb8d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga3746744915cd0a849ed633579dafcb8d">CJsonBool::ToString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL, int iDepth=0)</td></tr>
+<tr class="memdesc:ga3746744915cd0a849ed633579dafcb8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON boolean 문자열로 변환한다.  <a href="#ga3746744915cd0a849ed633579dafcb8d"></a><br/></td></tr>
+<tr class="memitem:gaa4e6c0cb4c16d8a49b7cc67a07e031ef"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaa4e6c0cb4c16d8a49b7cc67a07e031ef">CJsonBool::GetStringLen</a> ()</td></tr>
+<tr class="memdesc:gaa4e6c0cb4c16d8a49b7cc67a07e031ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToString 메소드로 생성될 문자열 길이를 리턴한다.  <a href="#gaa4e6c0cb4c16d8a49b7cc67a07e031ef"></a><br/></td></tr>
+<tr class="memitem:ga61b923042c768be91181c5e778f5b366"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga61b923042c768be91181c5e778f5b366">CJsonBool::Copy</a> ()</td></tr>
+<tr class="memdesc:ga61b923042c768be91181c5e778f5b366"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신을 복제한 객체를 생성한다.  <a href="#ga61b923042c768be91181c5e778f5b366"></a><br/></td></tr>
+<tr class="memitem:ga30c4341d61db64298f1e0651a0722bee"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga30c4341d61db64298f1e0651a0722bee">CJsonInt::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga30c4341d61db64298f1e0651a0722bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 정수 문자열 파싱하여서 자료구조에 저장한다.  <a href="#ga30c4341d61db64298f1e0651a0722bee"></a><br/></td></tr>
+<tr class="memitem:gaab316fac79dda50031a3af5e51378b40"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaab316fac79dda50031a3af5e51378b40">CJsonInt::ToString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL, int iDepth=0)</td></tr>
+<tr class="memdesc:gaab316fac79dda50031a3af5e51378b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON 정수 문자열로 변환한다.  <a href="#gaab316fac79dda50031a3af5e51378b40"></a><br/></td></tr>
+<tr class="memitem:ga140198cf513ce51a641deb34d20bdbd8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga140198cf513ce51a641deb34d20bdbd8">CJsonInt::GetStringLen</a> ()</td></tr>
+<tr class="memdesc:ga140198cf513ce51a641deb34d20bdbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToString 메소드로 생성될 문자열 길이를 리턴한다.  <a href="#ga140198cf513ce51a641deb34d20bdbd8"></a><br/></td></tr>
+<tr class="memitem:gaa7cdea8b162001b34cb3a3445608706b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaa7cdea8b162001b34cb3a3445608706b">CJsonInt::Copy</a> ()</td></tr>
+<tr class="memdesc:gaa7cdea8b162001b34cb3a3445608706b"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신을 복제한 객체를 생성한다.  <a href="#gaa7cdea8b162001b34cb3a3445608706b"></a><br/></td></tr>
+<tr class="memitem:ga2a3c606fd44e72a372c81219f8c09414"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga2a3c606fd44e72a372c81219f8c09414">CJsonNull::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga2a3c606fd44e72a372c81219f8c09414"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON null 문자열 파싱하여서 자료구조에 저장한다.  <a href="#ga2a3c606fd44e72a372c81219f8c09414"></a><br/></td></tr>
+<tr class="memitem:gae32e03c7b6d3b36b871fcb76ecf5089c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gae32e03c7b6d3b36b871fcb76ecf5089c">CJsonNull::ToString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL, int iDepth=0)</td></tr>
+<tr class="memdesc:gae32e03c7b6d3b36b871fcb76ecf5089c"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON null 문자열로 변환한다.  <a href="#gae32e03c7b6d3b36b871fcb76ecf5089c"></a><br/></td></tr>
+<tr class="memitem:ga7d537d19ef9fef80ddb5d72470609991"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga7d537d19ef9fef80ddb5d72470609991">CJsonNull::GetStringLen</a> ()</td></tr>
+<tr class="memdesc:ga7d537d19ef9fef80ddb5d72470609991"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToString 메소드로 생성될 문자열 길이를 리턴한다.  <a href="#ga7d537d19ef9fef80ddb5d72470609991"></a><br/></td></tr>
+<tr class="memitem:ga1d281ff9d884df38b2ab2b5b807e3864"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga1d281ff9d884df38b2ab2b5b807e3864">CJsonNull::Copy</a> ()</td></tr>
+<tr class="memdesc:ga1d281ff9d884df38b2ab2b5b807e3864"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신을 복제한 객체를 생성한다.  <a href="#ga1d281ff9d884df38b2ab2b5b807e3864"></a><br/></td></tr>
+<tr class="memitem:ga46a900f9606aad980b7f5d18e9715c1d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga46a900f9606aad980b7f5d18e9715c1d">CJsonNumber::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga46a900f9606aad980b7f5d18e9715c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 숫자 문자열 파싱하여서 자료구조에 저장한다.  <a href="#ga46a900f9606aad980b7f5d18e9715c1d"></a><br/></td></tr>
+<tr class="memitem:gabe013f978fce8bebf6e6a0d4ac8183b9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gabe013f978fce8bebf6e6a0d4ac8183b9">CJsonNumber::ToString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL, int iDepth=0)</td></tr>
+<tr class="memdesc:gabe013f978fce8bebf6e6a0d4ac8183b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON 숫자 문자열로 변환한다.  <a href="#gabe013f978fce8bebf6e6a0d4ac8183b9"></a><br/></td></tr>
+<tr class="memitem:ga8c09cb41fe6e9cb24ad49b95814f9f1e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga8c09cb41fe6e9cb24ad49b95814f9f1e">CJsonNumber::GetStringLen</a> ()</td></tr>
+<tr class="memdesc:ga8c09cb41fe6e9cb24ad49b95814f9f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToString 메소드로 생성될 문자열 길이를 리턴한다.  <a href="#ga8c09cb41fe6e9cb24ad49b95814f9f1e"></a><br/></td></tr>
+<tr class="memitem:ga6e155dffeeab67e7dcc3c866bbcc8f1f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga6e155dffeeab67e7dcc3c866bbcc8f1f">CJsonNumber::Copy</a> ()</td></tr>
+<tr class="memdesc:ga6e155dffeeab67e7dcc3c866bbcc8f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신을 복제한 객체를 생성한다.  <a href="#ga6e155dffeeab67e7dcc3c866bbcc8f1f"></a><br/></td></tr>
+<tr class="memitem:ga19506b4eb3f6185b86a0d1c90bfcbf34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga19506b4eb3f6185b86a0d1c90bfcbf34">CJsonNumber::IsDouble</a> ()</td></tr>
+<tr class="memdesc:ga19506b4eb3f6185b86a0d1c90bfcbf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">double 인지 검사한다.  <a href="#ga19506b4eb3f6185b86a0d1c90bfcbf34"></a><br/></td></tr>
+<tr class="memitem:ga18d9b039727f8b6c10f32dca85f509e4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga18d9b039727f8b6c10f32dca85f509e4">CJsonObject::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga18d9b039727f8b6c10f32dca85f509e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON object 문자열 파싱하여서 자료구조에 저장한다.  <a href="#ga18d9b039727f8b6c10f32dca85f509e4"></a><br/></td></tr>
+<tr class="memitem:ga2356f6ff1d24cdb17e2f08f3d0231c61"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga2356f6ff1d24cdb17e2f08f3d0231c61">CJsonObject::ToString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL, int iDepth=0)</td></tr>
+<tr class="memdesc:ga2356f6ff1d24cdb17e2f08f3d0231c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON object 문자열로 변환한다.  <a href="#ga2356f6ff1d24cdb17e2f08f3d0231c61"></a><br/></td></tr>
+<tr class="memitem:ga4937997b37748ce378397b614b54bb8b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga4937997b37748ce378397b614b54bb8b">CJsonObject::GetStringLen</a> ()</td></tr>
+<tr class="memdesc:ga4937997b37748ce378397b614b54bb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToString 메소드로 new line 없이 생성될 문자열 길이를 리턴한다.  <a href="#ga4937997b37748ce378397b614b54bb8b"></a><br/></td></tr>
+<tr class="memitem:gaef029109f9a52c34449f57ce7ab0174d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaef029109f9a52c34449f57ce7ab0174d">CJsonObject::Copy</a> ()</td></tr>
+<tr class="memdesc:gaef029109f9a52c34449f57ce7ab0174d"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신을 복제한 객체를 생성한다.  <a href="#gaef029109f9a52c34449f57ce7ab0174d"></a><br/></td></tr>
+<tr class="memitem:ga2ceb97cdbaa0b506698bc2a7a8305ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga2ceb97cdbaa0b506698bc2a7a8305ae2">CJsonObject::Parse</a> (std::string &amp;strText)</td></tr>
+<tr class="memdesc:ga2ceb97cdbaa0b506698bc2a7a8305ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON object 문자열 파싱하여서 자료구조에 저장한다.  <a href="#ga2ceb97cdbaa0b506698bc2a7a8305ae2"></a><br/></td></tr>
+<tr class="memitem:ga11d2b025f7ef8f47d529d59be05ec993"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga11d2b025f7ef8f47d529d59be05ec993">CJsonObject::MakeString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL)</td></tr>
+<tr class="memdesc:ga11d2b025f7ef8f47d529d59be05ec993"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON object 문자열로 변환한다.  <a href="#ga11d2b025f7ef8f47d529d59be05ec993"></a><br/></td></tr>
+<tr class="memitem:ga33a354a8077cd22703d3781751c4786a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga33a354a8077cd22703d3781751c4786a">CJsonObject::Clear</a> ()</td></tr>
+<tr class="memdesc:ga33a354a8077cd22703d3781751c4786a"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 초기화시킨다.  <a href="#ga33a354a8077cd22703d3781751c4786a"></a><br/></td></tr>
+<tr class="memitem:gaaa7f4a5ba7483e485ec10ca1561063a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaaa7f4a5ba7483e485ec10ca1561063a5">CJsonObject::SelectStringData</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gaaa7f4a5ba7483e485ec10ca1561063a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름에 해당하는 문자열 값을 검색한다.  <a href="#gaaa7f4a5ba7483e485ec10ca1561063a5"></a><br/></td></tr>
+<tr class="memitem:gafddaf2655baf0593a1ef1bb1769bb178"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gafddaf2655baf0593a1ef1bb1769bb178">CJsonObject::SelectData</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gafddaf2655baf0593a1ef1bb1769bb178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름에 해당하는 문자열 값을 검색한다.  <a href="#gafddaf2655baf0593a1ef1bb1769bb178"></a><br/></td></tr>
+<tr class="memitem:gad9ad7c69c96b782060c668eb5648cdae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gad9ad7c69c96b782060c668eb5648cdae">CJsonObject::SelectData</a> (const char *pszName, int32_t &amp;iValue)</td></tr>
+<tr class="memdesc:gad9ad7c69c96b782060c668eb5648cdae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름에 해당하는 정수 값을 검색한다.  <a href="#gad9ad7c69c96b782060c668eb5648cdae"></a><br/></td></tr>
+<tr class="memitem:ga4e1ac12543cc19cde1861ad42fa22786"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga4e1ac12543cc19cde1861ad42fa22786">CJsonObject::SelectData</a> (const char *pszName, int64_t &amp;iValue)</td></tr>
+<tr class="memdesc:ga4e1ac12543cc19cde1861ad42fa22786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름에 해당하는 정수 값을 검색한다.  <a href="#ga4e1ac12543cc19cde1861ad42fa22786"></a><br/></td></tr>
+<tr class="memitem:ga4991d71918424ab13da49d0c0d3c60aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga4991d71918424ab13da49d0c0d3c60aa">CJsonObject::SelectData</a> (const char *pszName, bool &amp;bValue)</td></tr>
+<tr class="memdesc:ga4991d71918424ab13da49d0c0d3c60aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름에 해당하는 boolean 값을 검색한다.  <a href="#ga4991d71918424ab13da49d0c0d3c60aa"></a><br/></td></tr>
+<tr class="memitem:ga8a28d1dc77f1fdb2a6d0512060ae5447"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga8a28d1dc77f1fdb2a6d0512060ae5447">CJsonObject::SelectData</a> (const char *pszName, <a class="el" href="class_c_json_object.html">CJsonObject</a> **ppclsObject)</td></tr>
+<tr class="memdesc:ga8a28d1dc77f1fdb2a6d0512060ae5447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름에 해당하는 object 값을 검색한다.  <a href="#ga8a28d1dc77f1fdb2a6d0512060ae5447"></a><br/></td></tr>
+<tr class="memitem:ga5256035f56d514cd50ad1488fe9b7ed5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga5256035f56d514cd50ad1488fe9b7ed5">CJsonObject::SelectData</a> (const char *pszName, <a class="el" href="class_c_json_array.html">CJsonArray</a> **ppclsArray)</td></tr>
+<tr class="memdesc:ga5256035f56d514cd50ad1488fe9b7ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름에 해당하는 배열 값을 검색한다.  <a href="#ga5256035f56d514cd50ad1488fe9b7ed5"></a><br/></td></tr>
+<tr class="memitem:gaf38c1a8c9f00e10c6e3dd5cc97e241c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaf38c1a8c9f00e10c6e3dd5cc97e241c2">CJsonObject::SelectData</a> (const char *pszName, <a class="el" href="class_c_json_type.html">CJsonType</a> **ppclsType)</td></tr>
+<tr class="memdesc:gaf38c1a8c9f00e10c6e3dd5cc97e241c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름에 해당하는 값을 검색한다.  <a href="#gaf38c1a8c9f00e10c6e3dd5cc97e241c2"></a><br/></td></tr>
+<tr class="memitem:ga560eef0cf562f7ed009b16bed0908390"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga560eef0cf562f7ed009b16bed0908390">CJsonObject::InsertData</a> (const char *pszName, const std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga560eef0cf562f7ed009b16bed0908390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 문자열 프로퍼티를 추가한다.  <a href="#ga560eef0cf562f7ed009b16bed0908390"></a><br/></td></tr>
+<tr class="memitem:gab9a1d87ae4afd44db1c732ecb713e49d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gab9a1d87ae4afd44db1c732ecb713e49d">CJsonObject::InsertData</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:gab9a1d87ae4afd44db1c732ecb713e49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 문자열 프로퍼티를 추가한다.  <a href="#gab9a1d87ae4afd44db1c732ecb713e49d"></a><br/></td></tr>
+<tr class="memitem:ga2973eae0dad00313c2540f30b5accf8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga2973eae0dad00313c2540f30b5accf8b">CJsonObject::InsertData</a> (const char *pszName, int32_t iValue)</td></tr>
+<tr class="memdesc:ga2973eae0dad00313c2540f30b5accf8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 정수 프로퍼티를 추가한다.  <a href="#ga2973eae0dad00313c2540f30b5accf8b"></a><br/></td></tr>
+<tr class="memitem:ga92d90176bfe1d4ae4cada82787211ec7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga92d90176bfe1d4ae4cada82787211ec7">CJsonObject::InsertData</a> (const char *pszName, int64_t iValue)</td></tr>
+<tr class="memdesc:ga92d90176bfe1d4ae4cada82787211ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 정수 프로퍼티를 추가한다.  <a href="#ga92d90176bfe1d4ae4cada82787211ec7"></a><br/></td></tr>
+<tr class="memitem:ga6c0ae2318aba06c4dd358fd81acb5bb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga6c0ae2318aba06c4dd358fd81acb5bb8">CJsonObject::InsertData</a> (const char *pszName, bool bValue)</td></tr>
+<tr class="memdesc:ga6c0ae2318aba06c4dd358fd81acb5bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 boolean 프로퍼티를 추가한다.  <a href="#ga6c0ae2318aba06c4dd358fd81acb5bb8"></a><br/></td></tr>
+<tr class="memitem:gab52040eb906c4b66866424518591ce49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gab52040eb906c4b66866424518591ce49">CJsonObject::InsertData</a> (const char *pszName, <a class="el" href="class_c_json_type.html">CJsonType</a> *pclsType)</td></tr>
+<tr class="memdesc:gab52040eb906c4b66866424518591ce49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 프로퍼티를 추가한다.  <a href="#gab52040eb906c4b66866424518591ce49"></a><br/></td></tr>
+<tr class="memitem:gaf1c2d7104dc68d8d170eedf2cf120450"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gaf1c2d7104dc68d8d170eedf2cf120450">CJsonObject::InsertData</a> (const char *pszName)</td></tr>
+<tr class="memdesc:gaf1c2d7104dc68d8d170eedf2cf120450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 null 프로퍼티를 추가한다.  <a href="#gaf1c2d7104dc68d8d170eedf2cf120450"></a><br/></td></tr>
+<tr class="memitem:ga381ebfe4c572f4750fb2019339e54108"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga381ebfe4c572f4750fb2019339e54108">CJsonObject::InsertStringData</a> (const char *pszName, int32_t iValue)</td></tr>
+<tr class="memdesc:ga381ebfe4c572f4750fb2019339e54108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 문자열 프로퍼티를 추가한다.  <a href="#ga381ebfe4c572f4750fb2019339e54108"></a><br/></td></tr>
+<tr class="memitem:ga7e228d7ab40882914dcb85ea01d4c0ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga7e228d7ab40882914dcb85ea01d4c0ae">CJsonObject::InsertStringOrNullData</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga7e228d7ab40882914dcb85ea01d4c0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 문자열 프로퍼티 또는 null 프로퍼티를 추가한다.  <a href="#ga7e228d7ab40882914dcb85ea01d4c0ae"></a><br/></td></tr>
+<tr class="memitem:gac60ac8fe36ca5ab04ca3ec7f8b62023f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gac60ac8fe36ca5ab04ca3ec7f8b62023f">CJsonObject::InsertStringOrNullData</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:gac60ac8fe36ca5ab04ca3ec7f8b62023f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 문자열 프로퍼티 또는 null 프로퍼티를 추가한다.  <a href="#gac60ac8fe36ca5ab04ca3ec7f8b62023f"></a><br/></td></tr>
+<tr class="memitem:ga3979d22a87645ea24ecf805352114ed1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga3979d22a87645ea24ecf805352114ed1">CJsonObject::UpdateData</a> (const char *pszName, const std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga3979d22a87645ea24ecf805352114ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 문자열 프로퍼티를 수정한다.  <a href="#ga3979d22a87645ea24ecf805352114ed1"></a><br/></td></tr>
+<tr class="memitem:gad999103730d23d708607d7f0b683bdf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gad999103730d23d708607d7f0b683bdf0">CJsonObject::UpdateData</a> (const char *pszName, const char *pszValue)</td></tr>
+<tr class="memdesc:gad999103730d23d708607d7f0b683bdf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 문자열 프로퍼티를 수정한다.  <a href="#gad999103730d23d708607d7f0b683bdf0"></a><br/></td></tr>
+<tr class="memitem:ga3f9a474b08086d7efeee8503027dbb81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga3f9a474b08086d7efeee8503027dbb81">CJsonObject::UpdateData</a> (const char *pszName, int32_t iValue)</td></tr>
+<tr class="memdesc:ga3f9a474b08086d7efeee8503027dbb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 정수 프로퍼티를 수정한다.  <a href="#ga3f9a474b08086d7efeee8503027dbb81"></a><br/></td></tr>
+<tr class="memitem:ga44d553b3ac91858add715c2233df275c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga44d553b3ac91858add715c2233df275c">CJsonObject::UpdateData</a> (const char *pszName, int64_t iValue)</td></tr>
+<tr class="memdesc:ga44d553b3ac91858add715c2233df275c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 정수 프로퍼티를 수정한다.  <a href="#ga44d553b3ac91858add715c2233df275c"></a><br/></td></tr>
+<tr class="memitem:ga1ba87567768fba83812b557dfcc5ecff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga1ba87567768fba83812b557dfcc5ecff">CJsonObject::UpdateData</a> (const char *pszName, bool bValue)</td></tr>
+<tr class="memdesc:ga1ba87567768fba83812b557dfcc5ecff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 boolean 프로퍼티로 수정한다.  <a href="#ga1ba87567768fba83812b557dfcc5ecff"></a><br/></td></tr>
+<tr class="memitem:ga260ad0507da4afd5c961be0de2d27a7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga260ad0507da4afd5c961be0de2d27a7c">CJsonObject::UpdateData</a> (const char *pszName, <a class="el" href="class_c_json_type.html">CJsonType</a> *pclsType)</td></tr>
+<tr class="memdesc:ga260ad0507da4afd5c961be0de2d27a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 프로퍼티를 수정한다.  <a href="#ga260ad0507da4afd5c961be0de2d27a7c"></a><br/></td></tr>
+<tr class="memitem:ga3ba9f518f891bbd1f14b41e2453f424a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga3ba9f518f891bbd1f14b41e2453f424a">CJsonObject::UpdateData</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga3ba9f518f891bbd1f14b41e2453f424a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에 프로퍼티 이름에 대한 값을 null 로 수정한다.  <a href="#ga3ba9f518f891bbd1f14b41e2453f424a"></a><br/></td></tr>
+<tr class="memitem:ga3baf8fd6c5296ada4a8100e0c8eb9d60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga3baf8fd6c5296ada4a8100e0c8eb9d60">CJsonObject::DeleteData</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga3baf8fd6c5296ada4a8100e0c8eb9d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">프로퍼티를 삭제한다.  <a href="#ga3baf8fd6c5296ada4a8100e0c8eb9d60"></a><br/></td></tr>
+<tr class="memitem:ga09eda5edb89d53397487608650507482"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga09eda5edb89d53397487608650507482">CJsonObject::Exist</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga09eda5edb89d53397487608650507482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object 자료구조에서 프로퍼티 이름이 존재하는지 검색한다.  <a href="#ga09eda5edb89d53397487608650507482"></a><br/></td></tr>
+<tr class="memitem:ga6c1720eb57c7fae438a71c0c41250031"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga6c1720eb57c7fae438a71c0c41250031">CJsonObject::GetJsonType</a> (const char *pszText, int iTextLen, int iPos)</td></tr>
+<tr class="memdesc:ga6c1720eb57c7fae438a71c0c41250031"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 문자열에 대한 <a class="el" href="class_c_json_type.html" title="JSON 변수 추상 클래스">CJsonType</a> 을 생성한다.  <a href="#ga6c1720eb57c7fae438a71c0c41250031"></a><br/></td></tr>
+<tr class="memitem:ga2e36e0d661fe3949ac6c84c74f1da6b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga2e36e0d661fe3949ac6c84c74f1da6b2">CJsonObject::JsonToString</a> (<a class="el" href="class_c_json_type.html">CJsonType</a> *pclsType, std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL, int iDepth=0)</td></tr>
+<tr class="memdesc:ga2e36e0d661fe3949ac6c84c74f1da6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_json_type.html" title="JSON 변수 추상 클래스">CJsonType</a> 을 문자열에 저장한다.  <a href="#ga2e36e0d661fe3949ac6c84c74f1da6b2"></a><br/></td></tr>
+<tr class="memitem:ga860484afff1cb524f7d67033f058b31b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga860484afff1cb524f7d67033f058b31b">CJsonObject::AddTab</a> (std::string &amp;strText, int iDepth)</td></tr>
+<tr class="memdesc:ga860484afff1cb524f7d67033f058b31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">항목 깊이에 적합하게 문자열 앞에 탭 문자를 추가한다.  <a href="#ga860484afff1cb524f7d67033f058b31b"></a><br/></td></tr>
+<tr class="memitem:ga790ca660c335a5b038ad6ef6dafbc388"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga790ca660c335a5b038ad6ef6dafbc388">CJsonString::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:ga790ca660c335a5b038ad6ef6dafbc388"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON 문자열을 파싱하여서 자료구조에 저장한다.  <a href="#ga790ca660c335a5b038ad6ef6dafbc388"></a><br/></td></tr>
+<tr class="memitem:gab866b548ab46fb4057ef4f9e32e3d1b3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#gab866b548ab46fb4057ef4f9e32e3d1b3">CJsonString::ToString</a> (std::string &amp;strText, EJsonNewLine eNewLine=E_JNL_NULL, int iDepth=0)</td></tr>
+<tr class="memdesc:gab866b548ab46fb4057ef4f9e32e3d1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">자료구조를 JSON 문자열로 저장한다.  <a href="#gab866b548ab46fb4057ef4f9e32e3d1b3"></a><br/></td></tr>
+<tr class="memitem:ga996644e02a1146915612da72b738514d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga996644e02a1146915612da72b738514d">CJsonString::GetStringLen</a> ()</td></tr>
+<tr class="memdesc:ga996644e02a1146915612da72b738514d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToString 메소드로 생성될 문자열 길이를 리턴한다.  <a href="#ga996644e02a1146915612da72b738514d"></a><br/></td></tr>
+<tr class="memitem:ga81c6c9b5c8042f960ae290b2b91444e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___json_parser.html#ga81c6c9b5c8042f960ae290b2b91444e3">CJsonString::Copy</a> ()</td></tr>
+<tr class="memdesc:ga81c6c9b5c8042f960ae290b2b91444e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">자신을 복제한 객체를 생성한다.  <a href="#ga81c6c9b5c8042f960ae290b2b91444e3"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>JSON 파서/생성 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga860484afff1cb524f7d67033f058b31b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CJsonObject::AddTab </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>항목 깊이에 적합하게 문자열 앞에 탭 문자를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>문자열 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>하위 항목의 깊이. 맨 위의 항목은 0 이고 그 하위 항목은 1 이다. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4fbaffcc6e67d8b864c3659c7c0eeb99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CJsonArray::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>자료구조를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga33a354a8077cd22703d3781751c4786a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CJsonObject::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>자료구조를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1d281ff9d884df38b2ab2b5b807e3864"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_json_type.html">CJsonType</a> * CJsonNull::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자신을 복제한 객체를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신을 복제한 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a64b21bb00dc6b3de021e5822262ad59f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga61b923042c768be91181c5e778f5b366"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_json_type.html">CJsonType</a> * CJsonBool::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자신을 복제한 객체를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신을 복제한 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a64b21bb00dc6b3de021e5822262ad59f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6e155dffeeab67e7dcc3c866bbcc8f1f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_json_type.html">CJsonType</a> * CJsonNumber::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자신을 복제한 객체를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신을 복제한 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a64b21bb00dc6b3de021e5822262ad59f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga81c6c9b5c8042f960ae290b2b91444e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_json_type.html">CJsonType</a> * CJsonString::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자신을 복제한 객체를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신을 복제한 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a64b21bb00dc6b3de021e5822262ad59f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa7cdea8b162001b34cb3a3445608706b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_json_type.html">CJsonType</a> * CJsonInt::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자신을 복제한 객체를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신을 복제한 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a64b21bb00dc6b3de021e5822262ad59f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8d6e4df13607f44ae9851ed23fbdde34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_json_type.html">CJsonType</a> * CJsonArray::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자신을 복제한 객체를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신을 복제한 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a64b21bb00dc6b3de021e5822262ad59f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaef029109f9a52c34449f57ce7ab0174d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_json_type.html">CJsonType</a> * CJsonObject::Copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자신을 복제한 객체를 생성한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 자신을 복제한 객체를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a64b21bb00dc6b3de021e5822262ad59f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf6afbec115c51017c321bfb9ccac6219"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::DeleteData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>배열 자료구조에서 Element 인덱스에 해당하는 값을 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3baf8fd6c5296ada4a8100e0c8eb9d60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::DeleteData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>프로퍼티를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>프로퍼티 이름이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga09eda5edb89d53397487608650507482"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::Exist </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름이 존재하는지 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>프로퍼티 이름이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab2fcea75525358dcc7ccb5e4b17bc04c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonArray::GetCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열에 Element 값을 추가한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>JSON 배열의 Element 개수를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6c1720eb57c7fae438a71c0c41250031"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_json_type.html">CJsonType</a> * CJsonObject::GetJsonType </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON 문자열에 대한 <a class="el" href="class_c_json_type.html" title="JSON 변수 추상 클래스">CJsonType</a> 을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>JSON 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>JSON 문자열 길이 </td></tr>
+    <tr><td class="paramname">iPos</td><td>JSON 문자열 파싱 위치 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 <a class="el" href="class_c_json_type.html" title="JSON 변수 추상 클래스">CJsonType</a> 객체의 포인터를 리턴하고 실패하면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7d537d19ef9fef80ddb5d72470609991"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonNull::GetStringLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ToString 메소드로 생성될 문자열 길이를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>ToString 메소드로 생성될 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#ad34bf77e96a8a964b3731ef4ab125886">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa4e6c0cb4c16d8a49b7cc67a07e031ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonBool::GetStringLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ToString 메소드로 생성될 문자열 길이를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>ToString 메소드로 생성될 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#ad34bf77e96a8a964b3731ef4ab125886">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga996644e02a1146915612da72b738514d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonString::GetStringLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ToString 메소드로 생성될 문자열 길이를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>ToString 메소드로 생성될 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#ad34bf77e96a8a964b3731ef4ab125886">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8c09cb41fe6e9cb24ad49b95814f9f1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonNumber::GetStringLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ToString 메소드로 생성될 문자열 길이를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>ToString 메소드로 생성될 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#ad34bf77e96a8a964b3731ef4ab125886">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga140198cf513ce51a641deb34d20bdbd8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonInt::GetStringLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ToString 메소드로 생성될 문자열 길이를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>ToString 메소드로 생성될 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#ad34bf77e96a8a964b3731ef4ab125886">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9d947f8cc35d050c844682743478e95e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonArray::GetStringLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ToString 메소드로 생성될 문자열 길이를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>ToString 메소드로 생성될 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#ad34bf77e96a8a964b3731ef4ab125886">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4937997b37748ce378397b614b54bb8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonObject::GetStringLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ToString 메소드로 new line 없이 생성될 문자열 길이를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>ToString 메소드로 new line 없이 생성될 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#ad34bf77e96a8a964b3731ef4ab125886">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3d924f988acea160dca18cc890ac88fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_json_array.html">CJsonArray</a> *&#160;</td>
+          <td class="paramname"><em>pclsArray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>입력한 JSON 배열의 element 들을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsArray</td><td>JSON 배열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga78ca38df9056617a646db70ba892480a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열에 문자열 Element 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga52d5197d765569081a729771338a7a0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열에 문자열 Element 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszValue</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7f3f66a82478012516d02dcfec7d407e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>iValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열에 정수 Element 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iValue</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0edfd58be1d5afb005e7a7fb8acd949c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열에 정수 Element 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iValue</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga38316552b1b319ea1ee70306ae228baa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열에 boolean Element 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bValue</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf42344baa23a81dbef84189a33a0538f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td>
+          <td class="paramname"><em>pclsType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열에 Element 값을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsType</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae7b6327c9b221f9461e909352f895ffe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열에 null Element 값을 추가한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8042d40220f336d5b130e42929cac97e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열의 지정된 위치에 문자열 Element 를 추가한다. </p>
+<p>지정된 위치부터 element 는 한칸씩 뒤로 밀린다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>문자열 Element 를 저장할 인덱스 </td></tr>
+    <tr><td class="paramname">strValue</td><td>문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab33cb3e44f40498321e3203093fc3f8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열의 지정된 위치에 문자열 Element 를 추가한다. </p>
+<p>지정된 위치부터 element 는 한칸씩 뒤로 밀린다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>문자열 Element 를 저장할 인덱스 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga245d7994fdf786cb3361138f3a478db6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열의 지정된 위치에 정수 Element 를 추가한다. </p>
+<p>지정된 위치부터 element 는 한칸씩 뒤로 밀린다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>정수 Element 를 저장할 인덱스 </td></tr>
+    <tr><td class="paramname">iValue</td><td>정수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga07a55b2b32e92fd80154325fd04bcc81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열의 지정된 위치에 정수 Element 를 추가한다. </p>
+<p>지정된 위치부터 element 는 한칸씩 뒤로 밀린다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>정수 Element 를 저장할 인덱스 </td></tr>
+    <tr><td class="paramname">iValue</td><td>정수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga560eef0cf562f7ed009b16bed0908390"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 문자열 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab9a1d87ae4afd44db1c732ecb713e49d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 문자열 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga06dd0cbf4d6a0d6d9f09337f6b89398d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열의 지정된 위치에 bool Element 를 추가한다. </p>
+<p>지정된 위치부터 element 는 한칸씩 뒤로 밀린다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>bool Element 를 저장할 인덱스 </td></tr>
+    <tr><td class="paramname">bValue</td><td>bool </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2973eae0dad00313c2540f30b5accf8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 정수 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab044c46a6613b822e95be515b7c4e3a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td>
+          <td class="paramname"><em>pclsType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열의 지정된 위치에 Element 를 추가한다. </p>
+<p>지정된 위치부터 element 는 한칸씩 뒤로 밀린다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 를 저장할 인덱스 </td></tr>
+    <tr><td class="paramname">pclsType</td><td>Element </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga92d90176bfe1d4ae4cada82787211ec7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 정수 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6c0ae2318aba06c4dd358fd81acb5bb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 boolean 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">bValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab52040eb906c4b66866424518591ce49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td>
+          <td class="paramname"><em>pclsType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">pclsType</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf1c2d7104dc68d8d170eedf2cf120450"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 null 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae4ccf6dadc4de7ec7179de7ba188cbec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::InsertDataNull </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON 배열의 지정된 위치에 null Element 를 추가한다. </p>
+<p>지정된 위치부터 element 는 한칸씩 뒤로 밀린다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 를 저장할 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga381ebfe4c572f4750fb2019339e54108"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertStringData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 문자열 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7e228d7ab40882914dcb85ea01d4c0ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertStringOrNullData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 문자열 프로퍼티 또는 null 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac60ac8fe36ca5ab04ca3ec7f8b62023f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::InsertStringOrNullData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 문자열 프로퍼티 또는 null 프로퍼티를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적으로 저장되면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga19506b4eb3f6185b86a0d1c90bfcbf34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonNumber::IsDouble </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>double 인지 검사한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>double 이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2e36e0d661fe3949ac6c84c74f1da6b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CJsonObject::JsonToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td>
+          <td class="paramname"><em>pclsType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_json_type.html" title="JSON 변수 추상 클래스">CJsonType</a> 을 문자열에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsType</td><td><a class="el" href="class_c_json_type.html" title="JSON 변수 추상 클래스">CJsonType</a> 객체 </td></tr>
+    <tr><td class="paramname">strText</td><td>JSON 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>new line 을 입력하는 방법에 대한 설정값 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>하위 항목의 깊이. 맨 위의 항목은 0 이고 그 하위 항목은 1 이다. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1d268967bc300b9642a7b8cdec7e6863"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonArray::MakeString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON array 문자열로 변환한다. </p>
+<p>본 메소드는 입력된 strText 를 초기화시킨 후, ToString 메소드를 호출한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON array 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>new line 을 입력하는 방법에 대한 설정값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON object 문자열 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga11d2b025f7ef8f47d529d59be05ec993"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonObject::MakeString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON object 문자열로 변환한다. </p>
+<p>본 메소드는 입력된 strText 를 초기화시킨 후, ToString 메소드를 호출한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON object 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>new line 을 입력하는 방법에 대한 설정값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON object 문자열 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2a3c606fd44e72a372c81219f8c09414"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonNull::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON null 문자열 파싱하여서 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>JSON null 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>JSON null 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON null 문자열 파싱에 성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#af9e5599a4059259806545eb14eefc23b">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga46a900f9606aad980b7f5d18e9715c1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonNumber::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON 숫자 문자열 파싱하여서 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>JSON 숫자 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>JSON 숫자 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON 숫자 문자열 파싱에 성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#af9e5599a4059259806545eb14eefc23b">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga790ca660c335a5b038ad6ef6dafbc388"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonString::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON 문자열을 파싱하여서 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>JSON 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>JSON 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON 문자열을 파싱에 성공하면 파싱한 문자열 길이를 리턴하고 그렇지 않으면 -1 을 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#af9e5599a4059259806545eb14eefc23b">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga504334dba7aeeefd48ab91440df42cdc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonBool::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON boolean 문자열 파싱하여서 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>JSON boolean 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>JSON boolean 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON boolean 문자열 파싱에 성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#af9e5599a4059259806545eb14eefc23b">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga30c4341d61db64298f1e0651a0722bee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonInt::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON 정수 문자열 파싱하여서 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>JSON 정수 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>JSON 정수 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON 정수 문자열 파싱에 성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#af9e5599a4059259806545eb14eefc23b">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad56a39b7dadb461f32a0c8380eb81a01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonArray::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON 배열 문자열 파싱하여서 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>JSON 배열 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>JSON 배열 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON 배열 문자열 파싱에 성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#af9e5599a4059259806545eb14eefc23b">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga18d9b039727f8b6c10f32dca85f509e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonObject::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON object 문자열 파싱하여서 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>JSON object 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>JSON object 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON object 문자열 파싱에 성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#af9e5599a4059259806545eb14eefc23b">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2ceb97cdbaa0b506698bc2a7a8305ae2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonObject::Parse </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JSON object 문자열 파싱하여서 자료구조에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON object 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON object 문자열 파싱에 성공하면 파싱한 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7d9bc132037f3b0dc55e620bd3874d37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>배열 자료구조에서 Element 인덱스에 해당하는 문자열 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스 </td></tr>
+    <tr><td class="paramname">strValue</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 문자열 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaced1bc174bd4d49b638fd1995fdd1ad6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>배열 자료구조에서 Element 인덱스에 해당하는 정수 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스 </td></tr>
+    <tr><td class="paramname">iValue</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 정수 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaee523ed6c9e6dc51e648cd034de208b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>배열 자료구조에서 Element 인덱스에 해당하는 boolean 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스 </td></tr>
+    <tr><td class="paramname">bValue</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 boolean 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga240b373241ca57b149d4c400fe72d940"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_object.html">CJsonObject</a> **&#160;</td>
+          <td class="paramname"><em>ppclsObject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>배열 자료구조에서 Element 인덱스에 해당하는 object 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스 </td></tr>
+    <tr><td class="paramname">ppclsObject</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 object 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga59b55ce5bc91295b46c8c8debd10e8f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_array.html">CJsonArray</a> **&#160;</td>
+          <td class="paramname"><em>ppclsArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>배열 자료구조에서 Element 인덱스에 해당하는 배열 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스 </td></tr>
+    <tr><td class="paramname">ppclsArray</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 배열 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3e7b15cda94de391f6d96dc506cdab8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonArray::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_type.html">CJsonType</a> **&#160;</td>
+          <td class="paramname"><em>ppclsType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>배열 자료구조에서 Element 인덱스에 해당하는 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>Element 인덱스 </td></tr>
+    <tr><td class="paramname">ppclsType</td><td>Element 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafddaf2655baf0593a1ef1bb1769bb178"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름에 해당하는 문자열 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 문자열 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad9ad7c69c96b782060c668eb5648cdae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름에 해당하는 정수 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 정수 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4e1ac12543cc19cde1861ad42fa22786"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름에 해당하는 정수 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 정수 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4991d71918424ab13da49d0c0d3c60aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>bValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름에 해당하는 boolean 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">bValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 boolean 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8a28d1dc77f1fdb2a6d0512060ae5447"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_object.html">CJsonObject</a> **&#160;</td>
+          <td class="paramname"><em>ppclsObject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름에 해당하는 object 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">ppclsObject</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 object 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5256035f56d514cd50ad1488fe9b7ed5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_array.html">CJsonArray</a> **&#160;</td>
+          <td class="paramname"><em>ppclsArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름에 해당하는 배열 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">ppclsArray</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 배열 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf38c1a8c9f00e10c6e3dd5cc97e241c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::SelectData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_type.html">CJsonType</a> **&#160;</td>
+          <td class="paramname"><em>ppclsType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름에 해당하는 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">ppclsType</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaaa7f4a5ba7483e485ec10ca1561063a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::SelectStringData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에서 프로퍼티 이름에 해당하는 문자열 값을 검색한다. </p>
+<p>프로퍼티 값이 숫자이면 문자열로 변환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>검색에 성공하고 해당 값이 문자열 타입인 경우 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae32e03c7b6d3b36b871fcb76ecf5089c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonNull::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON null 문자열로 변환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>의미없는 변수 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>의미없는 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON boolean 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a737b52ba12be896dd1f1829b7ba8011f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3746744915cd0a849ed633579dafcb8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonBool::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON boolean 문자열로 변환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>의미없는 변수 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>의미없는 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON boolean 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a737b52ba12be896dd1f1829b7ba8011f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabe013f978fce8bebf6e6a0d4ac8183b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonNumber::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON 숫자 문자열로 변환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>의미없는 변수 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>의미없는 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON 숫자 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a737b52ba12be896dd1f1829b7ba8011f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab866b548ab46fb4057ef4f9e32e3d1b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonString::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON 문자열로 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>의미없는 변수 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>의미없는 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a737b52ba12be896dd1f1829b7ba8011f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaab316fac79dda50031a3af5e51378b40"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonInt::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON 정수 문자열로 변환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>의미없는 변수 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>의미없는 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON 정수 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a737b52ba12be896dd1f1829b7ba8011f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaeab047f29dc7ccc1ea622f3a258511b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonArray::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON 배열 문자열로 변환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON 배열 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>new line 을 입력하는 방법에 대한 설정값 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>하위 항목의 깊이. 맨 위의 항목은 0 이고 그 하위 항목은 1 이다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON 배열 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a737b52ba12be896dd1f1829b7ba8011f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2356f6ff1d24cdb17e2f08f3d0231c61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CJsonObject::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EJsonNewLine&#160;</td>
+          <td class="paramname"><em>eNewLine</em> = <code>E_JNL_NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>자료구조를 JSON object 문자열로 변환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>JSON object 문자열 저장 변수 </td></tr>
+    <tr><td class="paramname">eNewLine</td><td>new line 을 입력하는 방법에 대한 설정값 </td></tr>
+    <tr><td class="paramname">iDepth</td><td>하위 항목의 깊이. 맨 위의 항목은 0 이고 그 하위 항목은 1 이다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>JSON object 문자열 길이를 리턴한다. </dd></dl>
+
+<p><a class="el" href="class_c_json_type.html#a737b52ba12be896dd1f1829b7ba8011f">CJsonType</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3979d22a87645ea24ecf805352114ed1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::UpdateData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 문자열 프로퍼티를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad999103730d23d708607d7f0b683bdf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::UpdateData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 문자열 프로퍼티를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">pszValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3f9a474b08086d7efeee8503027dbb81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::UpdateData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 정수 프로퍼티를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga44d553b3ac91858add715c2233df275c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::UpdateData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 정수 프로퍼티를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공적하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1ba87567768fba83812b557dfcc5ecff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::UpdateData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 boolean 프로퍼티로 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">bValue</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga260ad0507da4afd5c961be0de2d27a7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::UpdateData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_json_type.html">CJsonType</a> *&#160;</td>
+          <td class="paramname"><em>pclsType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 프로퍼티를 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+    <tr><td class="paramname">pclsType</td><td>프로퍼티 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3ba9f518f891bbd1f14b41e2453f424a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CJsonObject::UpdateData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object 자료구조에 프로퍼티 이름에 대한 값을 null 로 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>프로퍼티 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 17:19:43, 프로젝트명 : C++ HTTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

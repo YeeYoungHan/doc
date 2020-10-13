@@ -1,0 +1,1100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ HTTP Stack: HtmlParser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ HTTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#typedef-members">타입정의</a> &#124;
+<a href="#enum-members">열거형 타입</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">HtmlParser</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>HTML 문서 파서/생성 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_html_attribute_value.html">CHtmlAttributeValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTML 애트리뷰트의 값을 저장하는 클래스  <a href="class_c_html_attribute_value.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_html_element.html">CHtmlElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTML element 문자열을 파싱하여서 저장하는 클래스  <a href="class_c_html_element.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
+타입정의</h2></td></tr>
+<tr class="memitem:ga93d9de9f2188ca684bfc7e8770734e17"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+<a class="el" href="class_c_html_attribute_value.html">CHtmlAttributeValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga93d9de9f2188ca684bfc7e8770734e17">HTML_ATTRIBUTE_MAP</a></td></tr>
+<tr class="memdesc:ga93d9de9f2188ca684bfc7e8770734e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTML attribute map.  <a href="#ga93d9de9f2188ca684bfc7e8770734e17"></a><br/></td></tr>
+<tr class="memitem:ga219d3862a7c424ae30ecee0c7fe41159"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga219d3862a7c424ae30ecee0c7fe41159">HTML_CLASS_MAP</a></td></tr>
+<tr class="memdesc:ga219d3862a7c424ae30ecee0c7fe41159"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTML class map.  <a href="#ga219d3862a7c424ae30ecee0c7fe41159"></a><br/></td></tr>
+<tr class="memitem:gaca3efdc098762e6dbdb67016526bed51"><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="class_c_html_element.html">CHtmlElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gaca3efdc098762e6dbdb67016526bed51">HTML_ELEMENT_LIST</a></td></tr>
+<tr class="memdesc:gaca3efdc098762e6dbdb67016526bed51"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_html_element.html" title="HTML element 문자열을 파싱하여서 저장하는 클래스">CHtmlElement</a> 객체 리스트  <a href="#gaca3efdc098762e6dbdb67016526bed51"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+열거형 타입</h2></td></tr>
+<tr class="memitem:ga1b094988b7d2080a7fef76323e2b513c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga1b094988b7d2080a7fef76323e2b513c">EHtmlElementType</a> { <a class="el" href="group___html_parser.html#gga1b094988b7d2080a7fef76323e2b513caba003c16cd485e17d8dce9938d9181ae">E_HET_NULL</a>, 
+<a class="el" href="group___html_parser.html#gga1b094988b7d2080a7fef76323e2b513cac9082f258168a3949679840120ff26c9">E_HET_SCRIPT</a>, 
+<a class="el" href="group___html_parser.html#gga1b094988b7d2080a7fef76323e2b513ca29fa02b4bafb60f79101fe32d385aa2f">E_HET_NOT_CLOSED</a>
+ }</td></tr>
+<tr class="memdesc:ga1b094988b7d2080a7fef76323e2b513c"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTML element 의 종류  <a href="group___html_parser.html#ga1b094988b7d2080a7fef76323e2b513c">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:gaeffaf1a2fdea78004b5f7c090293300b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gaeffaf1a2fdea78004b5f7c090293300b">CHtmlElement::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gaeffaf1a2fdea78004b5f7c090293300b"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTML 문자열을 파싱하여서 멤버 변수에 저장한다.  <a href="#gaeffaf1a2fdea78004b5f7c090293300b"></a><br/></td></tr>
+<tr class="memitem:ga1e27e4ac0b6dba0e5e400c877171965f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga1e27e4ac0b6dba0e5e400c877171965f">CHtmlElement::Parse</a> (std::string &amp;strText)</td></tr>
+<tr class="memdesc:ga1e27e4ac0b6dba0e5e400c877171965f"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML 문자열을 파싱하여서 멤버 변수에 저장한다.  <a href="#ga1e27e4ac0b6dba0e5e400c877171965f"></a><br/></td></tr>
+<tr class="memitem:gaaa3c6ac07212fb3beede069bffbc71e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gaaa3c6ac07212fb3beede069bffbc71e2">CHtmlElement::ToString</a> (char *pszText, int iTextSize, bool bUseTab=false, int iDepth=0)</td></tr>
+<tr class="memdesc:gaaa3c6ac07212fb3beede069bffbc71e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수에 저장된 값을 이용하여서 XML 문자열을 생성한다.  <a href="#gaaa3c6ac07212fb3beede069bffbc71e2"></a><br/></td></tr>
+<tr class="memitem:ga1c6d86a020a3a41d100097379c698faf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga1c6d86a020a3a41d100097379c698faf">CHtmlElement::ToString</a> (std::string &amp;strText, bool bUseTab=false, int iDepth=0)</td></tr>
+<tr class="memdesc:ga1c6d86a020a3a41d100097379c698faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수에 저장된 값을 이용하여서 XML 문자열을 생성한다.  <a href="#ga1c6d86a020a3a41d100097379c698faf"></a><br/></td></tr>
+<tr class="memitem:ga7ba86e84d7636a7f12bc6384fb4435fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga7ba86e84d7636a7f12bc6384fb4435fd">CHtmlElement::GetText</a> (std::string &amp;strText)</td></tr>
+<tr class="memdesc:ga7ba86e84d7636a7f12bc6384fb4435fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG 를 제외한 텍스트만 가져온다.  <a href="#ga7ba86e84d7636a7f12bc6384fb4435fd"></a><br/></td></tr>
+<tr class="memitem:gadc30061c311a2e7dbfc59dbc9a61d2c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gadc30061c311a2e7dbfc59dbc9a61d2c3">CHtmlElement::GetText</a> (std::string &amp;strText, bool(*Allow)(<a class="el" href="class_c_html_element.html">CHtmlElement</a> *pclsElement))</td></tr>
+<tr class="memdesc:gadc30061c311a2e7dbfc59dbc9a61d2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG 를 제외한 텍스트만 가져온다.  <a href="#gadc30061c311a2e7dbfc59dbc9a61d2c3"></a><br/></td></tr>
+<tr class="memitem:gaaf46a770c4bf5cd3291d0c5cd1e8fb24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gaaf46a770c4bf5cd3291d0c5cd1e8fb24">CHtmlElement::Clear</a> ()</td></tr>
+<tr class="memdesc:gaaf46a770c4bf5cd3291d0c5cd1e8fb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">멤버 변수를 초기화시킨다.  <a href="#gaaf46a770c4bf5cd3291d0c5cd1e8fb24"></a><br/></td></tr>
+<tr class="memitem:ga2a8cc5a7126e9a7822613d9e3d6fc228"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga2a8cc5a7126e9a7822613d9e3d6fc228">CHtmlElement::SelectAttribute</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga2a8cc5a7126e9a7822613d9e3d6fc228"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#ga2a8cc5a7126e9a7822613d9e3d6fc228"></a><br/></td></tr>
+<tr class="memitem:ga89dac3c7f42aeabf2a8b75fb0b427dfa"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga89dac3c7f42aeabf2a8b75fb0b427dfa">CHtmlElement::SelectAttributeTrim</a> (const char *pszName)</td></tr>
+<tr class="memdesc:ga89dac3c7f42aeabf2a8b75fb0b427dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#ga89dac3c7f42aeabf2a8b75fb0b427dfa"></a><br/></td></tr>
+<tr class="memitem:gaabecf1269e579ff83a3e14e9da5df4cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gaabecf1269e579ff83a3e14e9da5df4cf">CHtmlElement::SelectAttribute</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gaabecf1269e579ff83a3e14e9da5df4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#gaabecf1269e579ff83a3e14e9da5df4cf"></a><br/></td></tr>
+<tr class="memitem:ga22076059facf99eebd1acd0dea6c320d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga22076059facf99eebd1acd0dea6c320d">CHtmlElement::SelectAttributeTrim</a> (const char *pszName, std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga22076059facf99eebd1acd0dea6c320d"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색한다.  <a href="#ga22076059facf99eebd1acd0dea6c320d"></a><br/></td></tr>
+<tr class="memitem:gaa86b8bd6638b9bcbbadb11ddb8804731"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gaa86b8bd6638b9bcbbadb11ddb8804731">CHtmlElement::SelectAttribute</a> (const char *pszName, int &amp;iValue)</td></tr>
+<tr class="memdesc:gaa86b8bd6638b9bcbbadb11ddb8804731"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트에 해당하는 값을 검색하여 int 변수에 저장한다.  <a href="#gaa86b8bd6638b9bcbbadb11ddb8804731"></a><br/></td></tr>
+<tr class="memitem:gad512ddb681eb1de3f64c282530cff183"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_html_element.html">CHtmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gad512ddb681eb1de3f64c282530cff183">CHtmlElement::SelectElement</a> (const char *pszName, const int iIndex=0)</td></tr>
+<tr class="memdesc:gad512ddb681eb1de3f64c282530cff183"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색한다.  <a href="#gad512ddb681eb1de3f64c282530cff183"></a><br/></td></tr>
+<tr class="memitem:ga0e285feb86472b5ca3841e1849804b1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_html_element.html">CHtmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga0e285feb86472b5ca3841e1849804b1b">CHtmlElement::SelectElement</a> (const int iIndex)</td></tr>
+<tr class="memdesc:ga0e285feb86472b5ca3841e1849804b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색한다.  <a href="#ga0e285feb86472b5ca3841e1849804b1b"></a><br/></td></tr>
+<tr class="memitem:ga075a761b2103d089725e10556ebbf4a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga075a761b2103d089725e10556ebbf4a2">CHtmlElement::SelectElementList</a> (const char *pszName, <a class="el" href="group___html_parser.html#gaca3efdc098762e6dbdb67016526bed51">HTML_ELEMENT_LIST</a> &amp;clsList)</td></tr>
+<tr class="memdesc:ga075a761b2103d089725e10556ebbf4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 Element 리스트에 저장한다.  <a href="#ga075a761b2103d089725e10556ebbf4a2"></a><br/></td></tr>
+<tr class="memitem:ga7313338d8c4efb87e4c7477327ca32c5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga7313338d8c4efb87e4c7477327ca32c5">CHtmlElement::GetElementData</a> (const char *pszName, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga7313338d8c4efb87e4c7477327ca32c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 의 값 문자열의 포인터를 리턴한다.  <a href="#ga7313338d8c4efb87e4c7477327ca32c5"></a><br/></td></tr>
+<tr class="memitem:ga6129d362736ba23caeb53599c7b231b5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga6129d362736ba23caeb53599c7b231b5">CHtmlElement::GetElementDataTrim</a> (const char *pszName, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga6129d362736ba23caeb53599c7b231b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 의 값 문자열의 포인터를 리턴한다.  <a href="#ga6129d362736ba23caeb53599c7b231b5"></a><br/></td></tr>
+<tr class="memitem:ga207091af92c045eea063545edb7dde18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga207091af92c045eea063545edb7dde18">CHtmlElement::SelectElementData</a> (const char *pszName, std::string &amp;strData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga207091af92c045eea063545edb7dde18"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 내용을 저장한다.  <a href="#ga207091af92c045eea063545edb7dde18"></a><br/></td></tr>
+<tr class="memitem:ga4b949992177d8e348d622134b8c0b60c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga4b949992177d8e348d622134b8c0b60c">CHtmlElement::SelectElementTrimData</a> (const char *pszName, std::string &amp;strData, const int iIndex=0)</td></tr>
+<tr class="memdesc:ga4b949992177d8e348d622134b8c0b60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">하위 Element 를 검색하여서 내용을 저장한다.  <a href="#ga4b949992177d8e348d622134b8c0b60c"></a><br/></td></tr>
+<tr class="memitem:gacbf53bb8312ee1b2357567b35521a75d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gacbf53bb8312ee1b2357567b35521a75d">CHtmlElement::GetName</a> ()</td></tr>
+<tr class="memdesc:gacbf53bb8312ee1b2357567b35521a75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element 이름을 리턴한다.  <a href="#gacbf53bb8312ee1b2357567b35521a75d"></a><br/></td></tr>
+<tr class="memitem:ga6c28957c105adaaf52c7dab609578938"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga6c28957c105adaaf52c7dab609578938">CHtmlElement::GetData</a> ()</td></tr>
+<tr class="memdesc:ga6c28957c105adaaf52c7dab609578938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element 내용을 리턴한다.  <a href="#ga6c28957c105adaaf52c7dab609578938"></a><br/></td></tr>
+<tr class="memitem:ga6c86b1b3600089f987f5783cf340de93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga6c86b1b3600089f987f5783cf340de93">CHtmlElement::IsDataEmpty</a> ()</td></tr>
+<tr class="memdesc:ga6c86b1b3600089f987f5783cf340de93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element 내용이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다.  <a href="#ga6c86b1b3600089f987f5783cf340de93"></a><br/></td></tr>
+<tr class="memitem:ga72e5b964e7558b1a063118a7bfb2114e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga72e5b964e7558b1a063118a7bfb2114e">CHtmlElement::IsId</a> (const char *pszId)</td></tr>
+<tr class="memdesc:ga72e5b964e7558b1a063118a7bfb2114e"><td class="mdescLeft">&#160;</td><td class="mdescRight">id 인지 검사한다.  <a href="#ga72e5b964e7558b1a063118a7bfb2114e"></a><br/></td></tr>
+<tr class="memitem:ga198837ce1a3d4fe304a2384c60c69a0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga198837ce1a3d4fe304a2384c60c69a0d">CHtmlElement::IsClass</a> (const char *pszClass)</td></tr>
+<tr class="memdesc:ga198837ce1a3d4fe304a2384c60c69a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">class 인지 검사한다.  <a href="#ga198837ce1a3d4fe304a2384c60c69a0d"></a><br/></td></tr>
+<tr class="memitem:ga66e018ee0f29020bd85a8893a062f080"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga66e018ee0f29020bd85a8893a062f080">CHtmlElement::SetName</a> (const char *pszText, int iNameLen)</td></tr>
+<tr class="memdesc:ga66e018ee0f29020bd85a8893a062f080"><td class="mdescLeft">&#160;</td><td class="mdescRight">TAG 이름을 저장한다.  <a href="#ga66e018ee0f29020bd85a8893a062f080"></a><br/></td></tr>
+<tr class="memitem:gab7ab586e1077b0c5615909ff4ab65f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#gab7ab586e1077b0c5615909ff4ab65f38">CHtmlElement::AddAttribute</a> (std::string &amp;strName, std::string &amp;strValue, char cSep)</td></tr>
+<tr class="memdesc:gab7ab586e1077b0c5615909ff4ab65f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">애트리뷰트를 저장한다.  <a href="#gab7ab586e1077b0c5615909ff4ab65f38"></a><br/></td></tr>
+<tr class="memitem:ga6ce435c3e19cb75f7766b07e69ee1614"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___html_parser.html#ga6ce435c3e19cb75f7766b07e69ee1614">CHtmlElement::AddClass</a> (const char *pszClass, int iClassLen=-1)</td></tr>
+<tr class="memdesc:ga6ce435c3e19cb75f7766b07e69ee1614"><td class="mdescLeft">&#160;</td><td class="mdescRight">class 를 저장한다.  <a href="#ga6ce435c3e19cb75f7766b07e69ee1614"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>HTML 문서 파서/생성 라이브러리 </p>
+<h2>타입정의 문서화</h2>
+<a class="anchor" id="ga93d9de9f2188ca684bfc7e8770734e17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt; std::string, <a class="el" href="class_c_html_attribute_value.html">CHtmlAttributeValue</a> &gt; <a class="el" href="group___html_parser.html#ga93d9de9f2188ca684bfc7e8770734e17">HTML_ATTRIBUTE_MAP</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTML attribute map. </p>
+<p>key 는 attribute 이름이고 value 는 attribute 값이다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga219d3862a7c424ae30ecee0c7fe41159"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt; std::string, char &gt; <a class="el" href="group___html_parser.html#ga219d3862a7c424ae30ecee0c7fe41159">HTML_CLASS_MAP</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTML class map. </p>
+<p>key 는 class 이름이고 value 은 의미가 없다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaca3efdc098762e6dbdb67016526bed51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt; <a class="el" href="class_c_html_element.html">CHtmlElement</a> &gt; <a class="el" href="group___html_parser.html#gaca3efdc098762e6dbdb67016526bed51">HTML_ELEMENT_LIST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_html_element.html" title="HTML element 문자열을 파싱하여서 저장하는 클래스">CHtmlElement</a> 객체 리스트 </p>
+
+</div>
+</div>
+<h2>열거형 타입 문서화</h2>
+<a class="anchor" id="ga1b094988b7d2080a7fef76323e2b513c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___html_parser.html#ga1b094988b7d2080a7fef76323e2b513c">EHtmlElementType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTML element 의 종류 </p>
+<dl><dt><b>열거형 멤버: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="gga1b094988b7d2080a7fef76323e2b513caba003c16cd485e17d8dce9938d9181ae"></a>E_HET_NULL</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="gga1b094988b7d2080a7fef76323e2b513cac9082f258168a3949679840120ff26c9"></a>E_HET_SCRIPT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="gga1b094988b7d2080a7fef76323e2b513ca29fa02b4bafb60f79101fe32d385aa2f"></a>E_HET_NOT_CLOSED</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<h2>함수 문서화</h2>
+<a class="anchor" id="gab7ab586e1077b0c5615909ff4ab65f38"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHtmlElement::AddAttribute </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>cSep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>애트리뷰트를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>애트리뷰트 값 </td></tr>
+    <tr><td class="paramname">cSep</td><td>애티리뷰트 값 구분 문자 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6ce435c3e19cb75f7766b07e69ee1614"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHtmlElement::AddClass </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszClass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iClassLen</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>class 를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszClass</td><td>class 문자열 </td></tr>
+    <tr><td class="paramname">iClassLen</td><td>class 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaaf46a770c4bf5cd3291d0c5cd1e8fb24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHtmlElement::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga6c28957c105adaaf52c7dab609578938"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CHtmlElement::GetData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element 내용을 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>Element 내용을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7313338d8c4efb87e4c7477327ca32c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CHtmlElement::GetElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 의 값 문자열의 포인터를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 이름이 존재하면 해당 Element 의 값 문자열의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6129d362736ba23caeb53599c7b231b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CHtmlElement::GetElementDataTrim </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 의 값 문자열의 포인터를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>하위 Element 이름이 존재하면 해당 Element 의 값 문자열의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacbf53bb8312ee1b2357567b35521a75d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CHtmlElement::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element 이름을 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>Element 이름을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7ba86e84d7636a7f12bc6384fb4435fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHtmlElement::GetText </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TAG 를 제외한 텍스트만 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>[out] TAG 를 제외한 텍스트를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gadc30061c311a2e7dbfc59dbc9a61d2c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHtmlElement::GetText </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(*)(<a class="el" href="class_c_html_element.html">CHtmlElement</a> *pclsElement)&#160;</td>
+          <td class="paramname"><em>Allow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TAG 를 제외한 텍스트만 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>[out] TAG 를 제외한 텍스트를 저장할 변수 </td></tr>
+    <tr><td class="paramname">Allow</td><td>텍스트를 가져올 HTML element 인지 검사하는 함수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga198837ce1a3d4fe304a2384c60c69a0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::IsClass </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszClass</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>class 인지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszClass</td><td>class </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>입력된 class 와 일치하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6c86b1b3600089f987f5783cf340de93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::IsDataEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element 내용이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>Element 내용이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga72e5b964e7558b1a063118a7bfb2114e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::IsId </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>id 인지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszId</td><td>id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>입력된 id 와 일치하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeffaf1a2fdea78004b5f7c090293300b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHtmlElement::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTML 문자열을 파싱하여서 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>HTML 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>HTML 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 HTML 문자열의 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1e27e4ac0b6dba0e5e400c877171965f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHtmlElement::Parse </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML 문자열을 파싱하여서 멤버 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>XML 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 파싱한 XML 문자열의 길이를 리턴하고 그렇지 않으면 -1 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2a8cc5a7126e9a7822613d9e3d6fc228"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CHtmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 애트리뷰트의 값을 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaabecf1269e579ff83a3e14e9da5df4cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa86b8bd6638b9bcbbadb11ddb8804731"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::SelectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색하여 int 변수에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">iValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga89dac3c7f42aeabf2a8b75fb0b427dfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * CHtmlElement::SelectAttributeTrim </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<p>값의 앞, 뒤 공백을 제거한 문자열의 포인터를 리턴한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 애트리뷰트의 값을 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga22076059facf99eebd1acd0dea6c320d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::SelectAttributeTrim </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>애트리뷰트에 해당하는 값을 검색한다. </p>
+<p>검색에 성공하면 값의 왼쪽, 오른쪽 공백을 제거한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>애트리뷰트 이름 </td></tr>
+    <tr><td class="paramname">strValue</td><td>애트리뷰트 값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad512ddb681eb1de3f64c282530cff183"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_html_element.html">CHtmlElement</a> * CHtmlElement::SelectElement </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 하위 Element 객체의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0e285feb86472b5ca3841e1849804b1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_html_element.html">CHtmlElement</a> * CHtmlElement::SelectElement </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 하위 Element 객체의 포인터를 리턴하고 그렇지 않으면 NULL 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga207091af92c045eea063545edb7dde18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::SelectElementData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 내용을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">strData</td><td>하위 Elemnet 의 내용을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga075a761b2103d089725e10556ebbf4a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::SelectElementList </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___html_parser.html#gaca3efdc098762e6dbdb67016526bed51">HTML_ELEMENT_LIST</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 Element 리스트에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">clsList</td><td>하위 Element 를 저장할 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4b949992177d8e348d622134b8c0b60c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHtmlElement::SelectElementTrimData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>하위 Element 를 검색하여서 내용을 저장한다. </p>
+<p>검색에 성공하면 내용의 왼쪽, 오른쪽 공백을 제거한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>하위 Element 이름 </td></tr>
+    <tr><td class="paramname">strData</td><td>하위 Elemnet 의 내용을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iIndex</td><td>하위 Element 인덱스. 0 을 입력하면 첫번째 검색된 하위 Element 를 리턴하고 1 을 입력하면 두번째 검색된 하위 Element 를 리턴한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga66e018ee0f29020bd85a8893a062f080"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHtmlElement::SetName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iNameLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TAG 이름을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>TAG 이름 </td></tr>
+    <tr><td class="paramname">iNameLen</td><td>TAG 이름 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaaa3c6ac07212fb3beede069bffbc71e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHtmlElement::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseTab</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수에 저장된 값을 이용하여서 XML 문자열을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>XML 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">iTextSize</td><td>XML 문자열을 저장할 변수의 크기 </td></tr>
+    <tr><td class="paramname">bUseTab</td><td>TAB 문자를 사용하는가? 하위 element 시작시 TAB 문자를 넣어주고 싶으면 true 를 입력하고 그렇지 않으면 false 를 입력한다. </td></tr>
+    <tr><td class="paramname">iDepth</td><td>XML 하위 element 깊이. 맨 위의 XML element 는 0 이고 그 하위 element 는 1 이다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>생성된 XML 문자열의 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1c6d86a020a3a41d100097379c698faf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHtmlElement::ToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseTab</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDepth</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>멤버 변수에 저장된 값을 이용하여서 XML 문자열을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>XML 문자열을 저장할 변수 </td></tr>
+    <tr><td class="paramname">bUseTab</td><td>TAB 문자를 사용하는가? 하위 element 시작시 TAB 문자를 넣어주고 싶으면 true 를 입력하고 그렇지 않으면 false 를 입력한다. </td></tr>
+    <tr><td class="paramname">iDepth</td><td>XML 하위 element 깊이. 맨 위의 XML element 는 0 이고 그 하위 element 는 1 이다. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 17:19:43, 프로젝트명 : C++ HTTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

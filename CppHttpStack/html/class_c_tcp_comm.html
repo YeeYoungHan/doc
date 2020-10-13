@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ HTTP Stack: CTcpComm 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ HTTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="hierarchy.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-attribs">Public 속성</a> &#124;
+<a href="class_c_tcp_comm-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">CTcpComm 클래스 참조<div class="ingroups"><a class="el" href="group___tcp_stack.html">TcpStack</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TCP 쓰레드에 TCP 세션을 전달할 때에 사용되는 클래스 - m_bUseThreadPipe 가 true 일 때에 사용된다.  
+ <a href="class_c_tcp_comm.html#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a368934d2b774ad96fd548871d48d89dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_comm.html#a368934d2b774ad96fd548871d48d89dc">CTcpComm</a> ()</td></tr>
+<tr class="memitem:a9e3590459cc12616d4ddd38e1ff64504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_comm.html#a9e3590459cc12616d4ddd38e1ff64504">Close</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Public 속성</h2></td></tr>
+<tr class="memitem:acbf3295a2656a676c7dfc00fd939fb80"><td class="memItemLeft" align="right" valign="top">Socket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_comm.html#acbf3295a2656a676c7dfc00fd939fb80">m_hSocket</a></td></tr>
+<tr class="memitem:ae4377d4c5ba79b45c9b8b042c538508f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_comm.html#ae4377d4c5ba79b45c9b8b042c538508f">m_szIp</a> [INET6_ADDRSTRLEN]</td></tr>
+<tr class="memitem:a8e3f8dbe55b6a55cdc29365e71c2b89d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_comm.html#a8e3f8dbe55b6a55cdc29365e71c2b89d">m_iPort</a></td></tr>
+<tr class="memitem:ac8da1283a4a52dfe5006482a7e356b0d"><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_comm.html#ac8da1283a4a52dfe5006482a7e356b0d">m_psttSsl</a></td></tr>
+<tr class="memitem:aa7bf288bae533bed42ef84614229d74c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_comm.html#aa7bf288bae533bed42ef84614229d74c">m_bClient</a></td></tr>
+<tr class="memdesc:aa7bf288bae533bed42ef84614229d74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP client 로 서버에 연결된 경우에 true 이다.  <a href="#aa7bf288bae533bed42ef84614229d74c"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<div class="textblock"><p>TCP 쓰레드에 TCP 세션을 전달할 때에 사용되는 클래스 - m_bUseThreadPipe 가 true 일 때에 사용된다. </p>
+</div><h2>생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="a368934d2b774ad96fd548871d48d89dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTcpComm::CTcpComm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>멤버 함수 문서화</h2>
+<a class="anchor" id="a9e3590459cc12616d4ddd38e1ff64504"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpComm::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>멤버 데이타 문서화</h2>
+<a class="anchor" id="aa7bf288bae533bed42ef84614229d74c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpComm::m_bClient</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP client 로 서버에 연결된 경우에 true 이다. </p>
+
+</div>
+</div>
+<a class="anchor" id="acbf3295a2656a676c7dfc00fd939fb80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Socket CTcpComm::m_hSocket</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e3f8dbe55b6a55cdc29365e71c2b89d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CTcpComm::m_iPort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8da1283a4a52dfe5006482a7e356b0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL* CTcpComm::m_psttSsl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4377d4c5ba79b45c9b8b042c538508f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char CTcpComm::m_szIp[INET6_ADDRSTRLEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 17:19:44, 프로젝트명 : C++ HTTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

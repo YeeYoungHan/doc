@@ -1,0 +1,1089 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ HTTP Stack: HttpStack</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ HTTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">HttpStack</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>HTTP 통신 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_client.html">CHttpClient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 클라이언트 클래스  <a href="class_c_http_client.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_stack_session.html">CHttpStackSession</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 서버의 각 세션 정보를 저장하는 클래스  <a href="class_c_http_stack_session.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_http_stack.html">CHttpStack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 서버 클래스  <a href="class_c_http_stack.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_http_stack_call_back.html">IHttpStackCallBack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 서버 callback 인터페이스  <a href="class_i_http_stack_call_back.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_web_socket_packet_header.html">CWebSocketPacketHeader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSocket 헤더 정보 저장 클래스  <a href="class_c_web_socket_packet_header.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_web_socket_packet.html">CWebSocketPacket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSocket 패킷 파싱 클래스  <a href="class_c_web_socket_packet.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ga8dd804a8d453f153adb7f7268538f408"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga8dd804a8d453f153adb7f7268538f408">IHttpStackCallBack::RecvHttpRequest</a> (<a class="el" href="class_c_http_message.html">CHttpMessage</a> *pclsRequest, <a class="el" href="class_c_http_message.html">CHttpMessage</a> *pclsResponse)=0</td></tr>
+<tr class="memdesc:ga8dd804a8d453f153adb7f7268538f408"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 요청 수신 이벤트 callback.  <a href="#ga8dd804a8d453f153adb7f7268538f408"></a><br/></td></tr>
+<tr class="memitem:gab0a8932c13447512981fda23c3041b39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gab0a8932c13447512981fda23c3041b39">IHttpStackCallBack::WebSocketConnected</a> (const char *pszClientIp, int iClientPort)=0</td></tr>
+<tr class="memdesc:gab0a8932c13447512981fda23c3041b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSocket 클라이언트 TCP 연결 시작 이벤트 callback.  <a href="#gab0a8932c13447512981fda23c3041b39"></a><br/></td></tr>
+<tr class="memitem:gaf3295f7cba73152b27636eb69fc6354c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gaf3295f7cba73152b27636eb69fc6354c">IHttpStackCallBack::WebSocketClosed</a> (const char *pszClientIp, int iClientPort)=0</td></tr>
+<tr class="memdesc:gaf3295f7cba73152b27636eb69fc6354c"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSocket 클라이언트 TCP 연결 종료 이벤트 callback.  <a href="#gaf3295f7cba73152b27636eb69fc6354c"></a><br/></td></tr>
+<tr class="memitem:gabf690ad16f5c2a09506d2c242177a350"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gabf690ad16f5c2a09506d2c242177a350">IHttpStackCallBack::WebSocketData</a> (const char *pszClientIp, int iClientPort, std::string &amp;strData)=0</td></tr>
+<tr class="memdesc:gabf690ad16f5c2a09506d2c242177a350"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSocket 클라이언트 데이터 수신 이벤트 callback.  <a href="#gabf690ad16f5c2a09506d2c242177a350"></a><br/></td></tr>
+<tr class="memitem:ga377b21f1cbfa3585c8771f42cde6af62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga377b21f1cbfa3585c8771f42cde6af62">CHttpClient::DoGet</a> (const char *pszUrl, std::string &amp;strOutputContentType, std::string &amp;strOutputBody)</td></tr>
+<tr class="memdesc:ga377b21f1cbfa3585c8771f42cde6af62"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP GET 명령을 실행한다.  <a href="#ga377b21f1cbfa3585c8771f42cde6af62"></a><br/></td></tr>
+<tr class="memitem:ga0a7c854004b5945d154451d8960059b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga0a7c854004b5945d154451d8960059b4">CHttpClient::DoGet</a> (const char *pszUrl, const char *pszInputContentType, const char *pszInputBody, std::string &amp;strOutputContentType, std::string &amp;strOutputBody)</td></tr>
+<tr class="memdesc:ga0a7c854004b5945d154451d8960059b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP GET 명령을 실행한다.  <a href="#ga0a7c854004b5945d154451d8960059b4"></a><br/></td></tr>
+<tr class="memitem:gaf67a9e6bf4c9ab9e60302108655b1f3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gaf67a9e6bf4c9ab9e60302108655b1f3c">CHttpClient::DoPost</a> (const char *pszUrl, const char *pszInputContentType, const char *pszInputBody, std::string &amp;strOutputContentType, std::string &amp;strOutputBody)</td></tr>
+<tr class="memdesc:gaf67a9e6bf4c9ab9e60302108655b1f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP POST 명령을 실행한다.  <a href="#gaf67a9e6bf4c9ab9e60302108655b1f3c"></a><br/></td></tr>
+<tr class="memitem:ga51b7ce48adf49b7c930db9348ce802fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga51b7ce48adf49b7c930db9348ce802fb">CHttpClient::DoPost</a> (const char *pszUrl, HTTP_HEADER_LIST *pclsHeaderList, const char *pszInputContentType, const char *pszInputBody, int iInputBodyLen, std::string &amp;strOutputContentType, std::string &amp;strOutputBody)</td></tr>
+<tr class="memdesc:ga51b7ce48adf49b7c930db9348ce802fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP POST 명령을 실행한다.  <a href="#ga51b7ce48adf49b7c930db9348ce802fb"></a><br/></td></tr>
+<tr class="memitem:ga10855322b80272ac849a636f0380d2af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga10855322b80272ac849a636f0380d2af">CHttpClient::DoUpload</a> (const char *pszUrl, const char *pszFilePath, const char *pszPostName, POST_NAME_VALUE_MAP &amp;clsPostDataMap, std::string &amp;strOutputContentType, std::string &amp;strOutputBody)</td></tr>
+<tr class="memdesc:ga10855322b80272ac849a636f0380d2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP POST 명령으로 파일 업로드한다.  <a href="#ga10855322b80272ac849a636f0380d2af"></a><br/></td></tr>
+<tr class="memitem:ga7fd32909f6e6ad6c87f6c3e6b31286b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga7fd32909f6e6ad6c87f6c3e6b31286b7">CHttpClient::SetUserAgent</a> (const char *pszUserAgent)</td></tr>
+<tr class="memdesc:ga7fd32909f6e6ad6c87f6c3e6b31286b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">User-Agent 헤더에 저장할 문자열을 설정한다.  <a href="#ga7fd32909f6e6ad6c87f6c3e6b31286b7"></a><br/></td></tr>
+<tr class="memitem:gacd058097319e9caaf8c793a9ffecad3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gacd058097319e9caaf8c793a9ffecad3f">CHttpClient::SetRecvTimeout</a> (int iRecvTimeout)</td></tr>
+<tr class="memdesc:gacd058097319e9caaf8c793a9ffecad3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 응답 메시지 수신 timeout 시간을 설정한다.  <a href="#gacd058097319e9caaf8c793a9ffecad3f"></a><br/></td></tr>
+<tr class="memitem:gad85351aa146150a03f7fcdfa399295ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gad85351aa146150a03f7fcdfa399295ac">CHttpClient::GetStatusCode</a> ()</td></tr>
+<tr class="memdesc:gad85351aa146150a03f7fcdfa399295ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 응답 status code 를 리턴한다.  <a href="#gad85351aa146150a03f7fcdfa399295ac"></a><br/></td></tr>
+<tr class="memitem:gae3d7d01ed555f98cdfd9af8e92807b22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gae3d7d01ed555f98cdfd9af8e92807b22">CHttpClient2::DoGet</a> (const char *pszUrl, std::string &amp;strOutputContentType, std::string &amp;strOutputBody)</td></tr>
+<tr class="memdesc:gae3d7d01ed555f98cdfd9af8e92807b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP GET 명령을 실행한다.  <a href="#gae3d7d01ed555f98cdfd9af8e92807b22"></a><br/></td></tr>
+<tr class="memitem:gac3b9bf85ff39eb9a25b4e0af7a8063ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gac3b9bf85ff39eb9a25b4e0af7a8063ba">CHttpClient2::Close</a> ()</td></tr>
+<tr class="memdesc:gac3b9bf85ff39eb9a25b4e0af7a8063ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">소켓을 종료한다.  <a href="#gac3b9bf85ff39eb9a25b4e0af7a8063ba"></a><br/></td></tr>
+<tr class="memitem:ga31ea8aa68b02788d9dc5ecf95b3c25fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga31ea8aa68b02788d9dc5ecf95b3c25fa">CHttpClient2::SetRecvTimeout</a> (int iRecvTimeout)</td></tr>
+<tr class="memdesc:ga31ea8aa68b02788d9dc5ecf95b3c25fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 응답 메시지 수신 timeout 시간을 설정한다.  <a href="#ga31ea8aa68b02788d9dc5ecf95b3c25fa"></a><br/></td></tr>
+<tr class="memitem:gafde7e71885076f72add25b5b575e17bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gafde7e71885076f72add25b5b575e17bd">CHttpClient2::GetStatusCode</a> ()</td></tr>
+<tr class="memdesc:gafde7e71885076f72add25b5b575e17bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 응답 status code 를 리턴한다.  <a href="#gafde7e71885076f72add25b5b575e17bd"></a><br/></td></tr>
+<tr class="memitem:ga0ab79111373c7456963b75ad25f72a9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga0ab79111373c7456963b75ad25f72a9b">CHttpStack::Start</a> (<a class="el" href="class_c_tcp_stack_setup.html">CTcpStackSetup</a> *pclsSetup, <a class="el" href="class_i_http_stack_call_back.html">IHttpStackCallBack</a> *pclsCallBack)</td></tr>
+<tr class="memdesc:ga0ab79111373c7456963b75ad25f72a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 서버를 시작한다.  <a href="#ga0ab79111373c7456963b75ad25f72a9b"></a><br/></td></tr>
+<tr class="memitem:gab320ff6d59d6273f799308e345e1e3f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gab320ff6d59d6273f799308e345e1e3f1">CHttpStack::Stop</a> ()</td></tr>
+<tr class="memitem:ga1f53b1e6e470a600fcbeffc11f173b77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga1f53b1e6e470a600fcbeffc11f173b77">CHttpStack::SendWebSocketPacket</a> (const char *pszClientIp, int iClientPort, const char *pszData, int iDataLen)</td></tr>
+<tr class="memdesc:ga1f53b1e6e470a600fcbeffc11f173b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSocket 클라이언트로 데이터를 전송한다.  <a href="#ga1f53b1e6e470a600fcbeffc11f173b77"></a><br/></td></tr>
+<tr class="memitem:ga25de2f5d4e82d07c9e343623ac6265a4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga25de2f5d4e82d07c9e343623ac6265a4">CHttpStack::Release</a> ()</td></tr>
+<tr class="memdesc:ga25de2f5d4e82d07c9e343623ac6265a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">openssl 알고리즘에 할당된 메모리를 제거한다.  <a href="#ga25de2f5d4e82d07c9e343623ac6265a4"></a><br/></td></tr>
+<tr class="memitem:gacf52c8eca629966d7567a21c53bef2bb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gacf52c8eca629966d7567a21c53bef2bb">CHttpStack::InComingConnected</a> (<a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo)</td></tr>
+<tr class="memdesc:gacf52c8eca629966d7567a21c53bef2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 클라이언트가 연결 이벤트 핸들러  <a href="#gacf52c8eca629966d7567a21c53bef2bb"></a><br/></td></tr>
+<tr class="memitem:gaba83d2969caa1dac0579759e13d846e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gaba83d2969caa1dac0579759e13d846e9">CHttpStack::SessionClosed</a> (<a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo)</td></tr>
+<tr class="memdesc:gaba83d2969caa1dac0579759e13d846e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 클라이언트 세션이 종료 이벤트 핸들러  <a href="#gaba83d2969caa1dac0579759e13d846e9"></a><br/></td></tr>
+<tr class="memitem:ga7a8ac086ce3e6bf4edabd4a88d141522"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga7a8ac086ce3e6bf4edabd4a88d141522">CHttpStack::RecvPacket</a> (char *pszPacket, int iPacketLen, <a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo)</td></tr>
+<tr class="memdesc:ga7a8ac086ce3e6bf4edabd4a88d141522"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 패킷 수신 이벤트 핸들러  <a href="#ga7a8ac086ce3e6bf4edabd4a88d141522"></a><br/></td></tr>
+<tr class="memitem:ga70d6af18567192ba4b624a1cca29394f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#ga70d6af18567192ba4b624a1cca29394f">CWebSocketPacket::AddPacket</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga70d6af18567192ba4b624a1cca29394f"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSocket 패킷을 저장한다.  <a href="#ga70d6af18567192ba4b624a1cca29394f"></a><br/></td></tr>
+<tr class="memitem:gab7145804b9c9949390461eff7f048e19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___http_stack.html#gab7145804b9c9949390461eff7f048e19">CWebSocketPacket::GetData</a> (<a class="el" href="class_c_web_socket_packet_header.html">CWebSocketPacketHeader</a> &amp;clsHeader, std::string &amp;strData)</td></tr>
+<tr class="memdesc:gab7145804b9c9949390461eff7f048e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebSocket 수신 데이터를 가져온다.  <a href="#gab7145804b9c9949390461eff7f048e19"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>HTTP 통신 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga70d6af18567192ba4b624a1cca29394f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWebSocketPacket::AddPacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebSocket 패킷을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac3b9bf85ff39eb9a25b4e0af7a8063ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpClient2::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소켓을 종료한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gae3d7d01ed555f98cdfd9af8e92807b22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpClient2::DoGet </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP GET 명령을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUrl</td><td>HTTP URL (예:http://www.naver.com) </td></tr>
+    <tr><td class="paramname">strOutputContentType</td><td>수신 Content-Type </td></tr>
+    <tr><td class="paramname">strOutputBody</td><td>수신 body </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga377b21f1cbfa3585c8771f42cde6af62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpClient::DoGet </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP GET 명령을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUrl</td><td>HTTP URL (예:http://www.naver.com) </td></tr>
+    <tr><td class="paramname">strOutputContentType</td><td>수신 Content-Type </td></tr>
+    <tr><td class="paramname">strOutputBody</td><td>수신 body </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0a7c854004b5945d154451d8960059b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpClient::DoGet </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszInputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszInputBody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP GET 명령을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUrl</td><td>HTTP URL (예:http://wsf.cdyne.com/WeatherWS/Weather.asmx) </td></tr>
+    <tr><td class="paramname">pszInputContentType</td><td>전송 Content-Type </td></tr>
+    <tr><td class="paramname">pszInputBody</td><td>전송 body </td></tr>
+    <tr><td class="paramname">strOutputContentType</td><td>수신 Content-Type </td></tr>
+    <tr><td class="paramname">strOutputBody</td><td>수신 body </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf67a9e6bf4c9ab9e60302108655b1f3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpClient::DoPost </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszInputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszInputBody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP POST 명령을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUrl</td><td>HTTP URL (예:http://wsf.cdyne.com/WeatherWS/Weather.asmx) </td></tr>
+    <tr><td class="paramname">pszInputContentType</td><td>전송 Content-Type </td></tr>
+    <tr><td class="paramname">pszInputBody</td><td>전송 body </td></tr>
+    <tr><td class="paramname">strOutputContentType</td><td>수신 Content-Type </td></tr>
+    <tr><td class="paramname">strOutputBody</td><td>수신 body </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga51b7ce48adf49b7c930db9348ce802fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpClient::DoPost </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HTTP_HEADER_LIST *&#160;</td>
+          <td class="paramname"><em>pclsHeaderList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszInputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszInputBody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iInputBodyLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP POST 명령을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUrl</td><td>HTTP URL (예:http://wsf.cdyne.com/WeatherWS/Weather.asmx) </td></tr>
+    <tr><td class="paramname">pclsHeaderList</td><td>전송 헤더에 포함될 헤더 항목 리스트 </td></tr>
+    <tr><td class="paramname">pszInputContentType</td><td>전송 Content-Type </td></tr>
+    <tr><td class="paramname">pszInputBody</td><td>전송 body </td></tr>
+    <tr><td class="paramname">iInputBodyLen</td><td>전송 body 길이 </td></tr>
+    <tr><td class="paramname">strOutputContentType</td><td>수신 Content-Type </td></tr>
+    <tr><td class="paramname">strOutputBody</td><td>수신 body </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga10855322b80272ac849a636f0380d2af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpClient::DoUpload </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPostName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">POST_NAME_VALUE_MAP &amp;&#160;</td>
+          <td class="paramname"><em>clsPostDataMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputContentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strOutputBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP POST 명령으로 파일 업로드한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUrl</td><td>HTTP URL (예:http://wsf.cdyne.com/WeatherWS/Weather.asmx) </td></tr>
+    <tr><td class="paramname">pszFilePath</td><td>업로드할 파일 경로 ( full path ) </td></tr>
+    <tr><td class="paramname">pszPostName</td><td>업로드 파일에 대한 POST 인자(name) </td></tr>
+    <tr><td class="paramname">clsPostDataMap</td><td>POST 데이터 </td></tr>
+    <tr><td class="paramname">strOutputContentType</td><td>수신 Content-Type </td></tr>
+    <tr><td class="paramname">strOutputBody</td><td>수신 body </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab7145804b9c9949390461eff7f048e19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWebSocketPacket::GetData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_web_socket_packet_header.html">CWebSocketPacketHeader</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebSocket 수신 데이터를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsHeader</td><td>WebSocket 헤더 정보 저장 객체 </td></tr>
+    <tr><td class="paramname">strData</td><td>WebSocket 수신 데이터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>WebSocket 수신 데이터가 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafde7e71885076f72add25b5b575e17bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpClient2::GetStatusCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 응답 status code 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>HTTP 응답 status code 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad85351aa146150a03f7fcdfa399295ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CHttpClient::GetStatusCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 응답 status code 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>HTTP 응답 status code 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacf52c8eca629966d7567a21c53bef2bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpStack::InComingConnected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>HTTP 클라이언트가 연결 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSessionInfo</td><td>세션 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>HTTP 클라이언트 연결을 허용하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___tcp_stack.html#gad1b4e8659b796149c516f9707cb7787c">ITcpStackCallBack</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8dd804a8d453f153adb7f7268538f408"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IHttpStackCallBack::RecvHttpRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_http_message.html">CHttpMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_http_message.html">CHttpMessage</a> *&#160;</td>
+          <td class="paramname"><em>pclsResponse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>HTTP 요청 수신 이벤트 callback. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsRequest</td><td>HTTP 요청 메시지 </td></tr>
+    <tr><td class="paramname">pclsResponse</td><td>HTTP 응답 메시지 - 응용에서 저장한다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>응용에서 HTTP 응답 메시지를 정상적으로 생성하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7a8ac086ce3e6bf4edabd4a88d141522"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpStack::RecvPacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TCP 패킷 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>수신 패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>수신 패킷 길이 </td></tr>
+    <tr><td class="paramname">pclsSessionInfo</td><td>세션 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>TCP 세션을 유지하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___tcp_stack.html#gae9efac6d6ccbead8c5b32ec0b49f5c07">ITcpStackCallBack</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga25de2f5d4e82d07c9e343623ac6265a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpStack::Release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>openssl 알고리즘에 할당된 메모리를 제거한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1f53b1e6e470a600fcbeffc11f173b77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpStack::SendWebSocketPacket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszClientIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iClientPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebSocket 클라이언트로 데이터를 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszClientIp</td><td>WebSocket 클라이언트 IP 주소 </td></tr>
+    <tr><td class="paramname">iClientPort</td><td>WebSocket 클라이언트 포트 번호 </td></tr>
+    <tr><td class="paramname">pszData</td><td>WebSocket 으로 전송할 payload 데이터 </td></tr>
+    <tr><td class="paramname">iDataLen</td><td>WebSocket 으로 전송할 payload 데이터 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaba83d2969caa1dac0579759e13d846e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpStack::SessionClosed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>HTTP 클라이언트 세션이 종료 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSessionInfo</td><td>세션 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___tcp_stack.html#ga85c903d1022a199b0c42c9b54f513040">ITcpStackCallBack</a>를 구현.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga31ea8aa68b02788d9dc5ecf95b3c25fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpClient2::SetRecvTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iRecvTimeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 응답 메시지 수신 timeout 시간을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iRecvTimeout</td><td>HTTP 응답 메시지 수신 timeout 시간 (초단위) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gacd058097319e9caaf8c793a9ffecad3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpClient::SetRecvTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iRecvTimeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 응답 메시지 수신 timeout 시간을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iRecvTimeout</td><td>HTTP 응답 메시지 수신 timeout 시간 (초단위) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7fd32909f6e6ad6c87f6c3e6b31286b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CHttpClient::SetUserAgent </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserAgent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User-Agent 헤더에 저장할 문자열을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszUserAgent</td><td>User-Agent 헤더에 저장할 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0ab79111373c7456963b75ad25f72a9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpStack::Start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_stack_setup.html">CTcpStackSetup</a> *&#160;</td>
+          <td class="paramname"><em>pclsSetup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_http_stack_call_back.html">IHttpStackCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 서버를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSetup</td><td>설정 객체 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>callback 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab320ff6d59d6273f799308e345e1e3f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CHttpStack::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf3295f7cba73152b27636eb69fc6354c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IHttpStackCallBack::WebSocketClosed </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszClientIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iClientPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebSocket 클라이언트 TCP 연결 종료 이벤트 callback. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszClientIp</td><td>WebSocket 클라이언트 IP 주소 </td></tr>
+    <tr><td class="paramname">iClientPort</td><td>WebSocket 클라이언트 포트 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gab0a8932c13447512981fda23c3041b39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IHttpStackCallBack::WebSocketConnected </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszClientIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iClientPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebSocket 클라이언트 TCP 연결 시작 이벤트 callback. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszClientIp</td><td>WebSocket 클라이언트 IP 주소 </td></tr>
+    <tr><td class="paramname">iClientPort</td><td>WebSocket 클라이언트 포트 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gabf690ad16f5c2a09506d2c242177a350"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IHttpStackCallBack::WebSocketData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszClientIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iClientPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebSocket 클라이언트 데이터 수신 이벤트 callback. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszClientIp</td><td>WebSocket 클라이언트 IP 주소 </td></tr>
+    <tr><td class="paramname">iClientPort</td><td>WebSocket 클라이언트 포트 번호 </td></tr>
+    <tr><td class="paramname">strData</td><td>WebSocket 클라이언트가 전송한 데이터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>WebSocket 클라이언트 연결을 유지하려면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 17:19:43, 프로젝트명 : C++ HTTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

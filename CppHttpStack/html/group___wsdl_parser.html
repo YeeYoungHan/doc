@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ HTTP Stack: WsdlParser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ HTTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#enum-members">열거형 타입</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">WsdlParser</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>WSDL 파서 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_soap_arg.html">CSoapArg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOAP 메소드 인자 정의 클래스  <a href="class_c_soap_arg.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_soap_class.html">CSoapClass</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOAP 서비스를 저장하는 클래스  <a href="class_c_soap_class.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_soap_method.html">CSoapMethod</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOAP 메소드 정의 클래스  <a href="class_c_soap_method.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_wsdl_message.html">CWsdlMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WSDL 메시지 저장 클래스  <a href="class_c_wsdl_message.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+열거형 타입</h2></td></tr>
+<tr class="memitem:ga1884dd00969cc4b1c505644c1d93965d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#ga1884dd00969cc4b1c505644c1d93965d">ESoapArgType</a> { <a class="el" href="group___wsdl_parser.html#gga1884dd00969cc4b1c505644c1d93965dac6a193e76dfa92db82c0d76f423f9851">E_SAT_NULL</a> =  0, 
+<a class="el" href="group___wsdl_parser.html#gga1884dd00969cc4b1c505644c1d93965da53b3283f39f3d077447ac1235c5e83df">E_SAT_STRING</a>, 
+<a class="el" href="group___wsdl_parser.html#gga1884dd00969cc4b1c505644c1d93965da3f393d36658ef426a5b00e1a140a12f6">E_SAT_INT</a>
+ }</td></tr>
+<tr class="memdesc:ga1884dd00969cc4b1c505644c1d93965d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOAP 메소드 인자 타입  <a href="group___wsdl_parser.html#ga1884dd00969cc4b1c505644c1d93965d">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:ga278a7af61fafb425a892c0be6105f943"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#ga278a7af61fafb425a892c0be6105f943">CSoapArg::SetType</a> (const char *pszType)</td></tr>
+<tr class="memdesc:ga278a7af61fafb425a892c0be6105f943"><td class="mdescLeft">&#160;</td><td class="mdescRight">인자 타입 문자열로 타입을 설정한다.  <a href="#ga278a7af61fafb425a892c0be6105f943"></a><br/></td></tr>
+<tr class="memitem:gac8137c40ee164cb528f0a55420d38b30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#gac8137c40ee164cb528f0a55420d38b30">CSoapArg::GetCode</a> (std::string &amp;strCode, bool bInput)</td></tr>
+<tr class="memdesc:gac8137c40ee164cb528f0a55420d38b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">소스 코드의 함수 인자 생성에 사용할 문자열을 생성한다.  <a href="#gac8137c40ee164cb528f0a55420d38b30"></a><br/></td></tr>
+<tr class="memitem:gacebd2bd78092e015c05302d13b89926a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#gacebd2bd78092e015c05302d13b89926a">CSoapArg::GetVariable</a> (std::string &amp;strCode, bool bInput)</td></tr>
+<tr class="memdesc:gacebd2bd78092e015c05302d13b89926a"><td class="mdescLeft">&#160;</td><td class="mdescRight">소스 코드 생성에 사용할 변수 이름을 생성한다.  <a href="#gacebd2bd78092e015c05302d13b89926a"></a><br/></td></tr>
+<tr class="memitem:gaa0e4c67d7f26b9fe00ee24894e3f4f7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#gaa0e4c67d7f26b9fe00ee24894e3f4f7f">CSoapClass::MakeSource</a> (const char *pszFolder)</td></tr>
+<tr class="memdesc:gaa0e4c67d7f26b9fe00ee24894e3f4f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOAP 클라이언트 소스 코드를 생성한다.  <a href="#gaa0e4c67d7f26b9fe00ee24894e3f4f7f"></a><br/></td></tr>
+<tr class="memitem:gab22f0cc902fb93b6126490794306268a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#gab22f0cc902fb93b6126490794306268a">CSoapMethod::GetPrototypeCode</a> (const char *pszClassName, std::string &amp;strCode)</td></tr>
+<tr class="memdesc:gab22f0cc902fb93b6126490794306268a"><td class="mdescLeft">&#160;</td><td class="mdescRight">헤더 파일과 소스 파일에 저장할 메소드 선언문을 생성한다.  <a href="#gab22f0cc902fb93b6126490794306268a"></a><br/></td></tr>
+<tr class="memitem:ga1e92595eed63976381082e65e1885039"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#ga1e92595eed63976381082e65e1885039">CSoapMethod::GetCode</a> (const char *pszClassName, <a class="el" href="class_c_soap_class.html">CSoapClass</a> *pclsSoap, std::string &amp;strCode)</td></tr>
+<tr class="memdesc:ga1e92595eed63976381082e65e1885039"><td class="mdescLeft">&#160;</td><td class="mdescRight">소스 파일에 메소드 소스 코드를 저장한다.  <a href="#ga1e92595eed63976381082e65e1885039"></a><br/></td></tr>
+<tr class="memitem:gaa9c622ff289a124e0812cd756d386ac3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#gaa9c622ff289a124e0812cd756d386ac3">CWsdlMessage::Parse</a> (const char *pszText, int iTextLen)</td></tr>
+<tr class="memdesc:gaa9c622ff289a124e0812cd756d386ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">WSDL 문자열을 파싱하여서 SOAP 클래스 및 메소드를 저장한다.  <a href="#gaa9c622ff289a124e0812cd756d386ac3"></a><br/></td></tr>
+<tr class="memitem:ga472581609ef830b45a0fb05e97d2daee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#ga472581609ef830b45a0fb05e97d2daee">CWsdlMessage::Parse</a> (std::string &amp;strText)</td></tr>
+<tr class="memdesc:ga472581609ef830b45a0fb05e97d2daee"><td class="mdescLeft">&#160;</td><td class="mdescRight">WSDL 문자열을 파싱하여서 SOAP 클래스 및 메소드를 저장한다.  <a href="#ga472581609ef830b45a0fb05e97d2daee"></a><br/></td></tr>
+<tr class="memitem:ga4153535da1af4eb6a14f6bc2d2b6f97a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#ga4153535da1af4eb6a14f6bc2d2b6f97a">CWsdlMessage::ParseFile</a> (const char *pszFileName)</td></tr>
+<tr class="memdesc:ga4153535da1af4eb6a14f6bc2d2b6f97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WSDL 파일을 읽어서 SOAP 클래스 및 메소드를 저장한다.  <a href="#ga4153535da1af4eb6a14f6bc2d2b6f97a"></a><br/></td></tr>
+<tr class="memitem:ga038533af3e297aef4f3377e457ad83df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_soap_class.html">CSoapClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___wsdl_parser.html#ga038533af3e297aef4f3377e457ad83df">CWsdlMessage::GetSoap</a> ()</td></tr>
+<tr class="memdesc:ga038533af3e297aef4f3377e457ad83df"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOAP 클래스를 리턴한다.  <a href="#ga038533af3e297aef4f3377e457ad83df"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>WSDL 파서 라이브러리 </p>
+<h2>열거형 타입 문서화</h2>
+<a class="anchor" id="ga1884dd00969cc4b1c505644c1d93965d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___wsdl_parser.html#ga1884dd00969cc4b1c505644c1d93965d">ESoapArgType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SOAP 메소드 인자 타입 </p>
+<dl><dt><b>열거형 멤버: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="gga1884dd00969cc4b1c505644c1d93965dac6a193e76dfa92db82c0d76f423f9851"></a>E_SAT_NULL</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="gga1884dd00969cc4b1c505644c1d93965da53b3283f39f3d077447ac1235c5e83df"></a>E_SAT_STRING</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="gga1884dd00969cc4b1c505644c1d93965da3f393d36658ef426a5b00e1a140a12f6"></a>E_SAT_INT</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga1e92595eed63976381082e65e1885039"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSoapMethod::GetCode </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszClassName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_soap_class.html">CSoapClass</a> *&#160;</td>
+          <td class="paramname"><em>pclsSoap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소스 파일에 메소드 소스 코드를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszClassName</td><td>클래스 이름 </td></tr>
+    <tr><td class="paramname">pclsSoap</td><td>메소드를 포함한 SoapClass 객체 </td></tr>
+    <tr><td class="paramname">strCode</td><td>소스 코드 출력용 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac8137c40ee164cb528f0a55420d38b30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSoapArg::GetCode </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bInput</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소스 코드의 함수 인자 생성에 사용할 문자열을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strCode</td><td>변수 이름을 저장할 변수 </td></tr>
+    <tr><td class="paramname">bInput</td><td>입력 변수인가? </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 을 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab22f0cc902fb93b6126490794306268a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSoapMethod::GetPrototypeCode </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszClassName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>헤더 파일과 소스 파일에 저장할 메소드 선언문을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszClassName</td><td>클래스 이름 </td></tr>
+    <tr><td class="paramname">strCode</td><td>소스 코드 출력용 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga038533af3e297aef4f3377e457ad83df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_soap_class.html">CSoapClass</a> * CWsdlMessage::GetSoap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SOAP 클래스를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>SOAP 클래스를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacebd2bd78092e015c05302d13b89926a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSoapArg::GetVariable </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bInput</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소스 코드 생성에 사용할 변수 이름을 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strCode</td><td>변수 이름을 저장할 변수 </td></tr>
+    <tr><td class="paramname">bInput</td><td>입력 변수인가? </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 을 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa0e4c67d7f26b9fe00ee24894e3f4f7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSoapClass::MakeSource </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFolder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SOAP 클라이언트 소스 코드를 생성한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFolder</td><td>소스 파일을 저장할 폴더 경로 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa9c622ff289a124e0812cd756d386ac3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWsdlMessage::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTextLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WSDL 문자열을 파싱하여서 SOAP 클래스 및 메소드를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszText</td><td>WSDL 문자열 </td></tr>
+    <tr><td class="paramname">iTextLen</td><td>WSDL 문자열 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga472581609ef830b45a0fb05e97d2daee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWsdlMessage::Parse </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WSDL 문자열을 파싱하여서 SOAP 클래스 및 메소드를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strText</td><td>WSDL 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4153535da1af4eb6a14f6bc2d2b6f97a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWsdlMessage::ParseFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WSDL 파일을 읽어서 SOAP 클래스 및 메소드를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszFileName</td><td>WSDL 파일 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga278a7af61fafb425a892c0be6105f943"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CSoapArg::SetType </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>인자 타입 문자열로 타입을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszType</td><td>인자 타입 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 을 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 17:19:43, 프로젝트명 : C++ HTTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

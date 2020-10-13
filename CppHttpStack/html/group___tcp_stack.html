@@ -1,0 +1,2609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ HTTP Stack: TcpStack</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ HTTP Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">TcpStack</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TCP 통신 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_client_index.html">CTcpClientIndex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 쓰레드 정보  <a href="class_c_tcp_client_index.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_client_info.html">CTcpClientInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 클라이언트 정보  <a href="class_c_tcp_client_info.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_client_map.html">CTcpClientMap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 클라이언트로 연결하여서 TCP 패킷을 전송하는 클래스  <a href="class_c_tcp_client_map.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_client_arg.html">CTcpClientArg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 클라이언트 쓰레드 실행 인자  <a href="class_c_tcp_client_arg.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_tcp_session_app.html">ITcpSessionApp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션별로 응용에서 사용할 변수를 위한 인터페이스  <a href="class_i_tcp_session_app.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 쓰레드 별로 관리하는 TCP 세션 정보  <a href="class_c_tcp_session_info.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_list.html">CTcpSessionList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 쓰레드 별로 관리하는 TCP 세션 정보를 저장하는 클래스 - m_bUseThreadPipe 가 true 일 때에 사용된다.  <a href="class_c_tcp_session_list.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_session_map.html">CTcpSessionMap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 저장하는 클래스 - m_bUseThreadPipe 가 false 일 때에 사용되는 클래스  <a href="class_c_tcp_session_map.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_stack.html">CTcpStack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP listen / connect 및 수신/전송 클래스  <a href="class_c_tcp_stack.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_tcp_stack.html" title="TCP listen / connect 및 수신/전송 클래스">CTcpStack</a> 을 사용하는 응용 callback 인터페이스  <a href="class_i_tcp_stack_call_back.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_stack_setup.html">CTcpStackSetup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP stack 설정  <a href="class_c_tcp_stack_setup.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_comm.html">CTcpComm</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 쓰레드에 TCP 세션을 전달할 때에 사용되는 클래스 - m_bUseThreadPipe 가 true 일 때에 사용된다.  <a href="class_c_tcp_comm.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_thread_info.html">CTcpThreadInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">쓰레드 리스트에 포함되는 하나의 쓰레드 정보 저장 클래스  <a href="class_c_tcp_thread_info.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tcp_thread_list.html">CTcpThreadList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">쓰레드 리스트 자료구조  <a href="class_c_tcp_thread_list.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:gaa24a5038d994026e4e60244e45021d87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaa24a5038d994026e4e60244e45021d87">SetupFileLog</a> (<a class="el" href="class_c_file_log.html">CFileLog</a> &amp;clsFileLog, <a class="el" href="class_c_xml_element.html">CXmlElement</a> &amp;clsElement)</td></tr>
+<tr class="memdesc:gaa24a5038d994026e4e60244e45021d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xml element 의 설정값들로 <a class="el" href="class_c_file_log.html" title="파일 로그 저장 클래스">CFileLog</a> 를 시작한다.  <a href="#gaa24a5038d994026e4e60244e45021d87"></a><br/></td></tr>
+<tr class="memitem:ga4d2ba364b9fd87f8a38764afb7b4a3b2"><td class="memItemLeft" align="right" valign="top">THREAD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga4d2ba364b9fd87f8a38764afb7b4a3b2">TcpClientThread</a> (LPVOID lpParameter)</td></tr>
+<tr class="memdesc:ga4d2ba364b9fd87f8a38764afb7b4a3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 연결 Thread.  <a href="#ga4d2ba364b9fd87f8a38764afb7b4a3b2"></a><br/></td></tr>
+<tr class="memitem:ga1c9074ac12baca9a02203560e008e270"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga1c9074ac12baca9a02203560e008e270">StartTcpClientThread</a> (const char *pszIp, int iPort, <a class="el" href="class_c_tcp_stack.html">CTcpStack</a> *pclsStack)</td></tr>
+<tr class="memdesc:ga1c9074ac12baca9a02203560e008e270"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 연결 Thread 를 시작한다.  <a href="#ga1c9074ac12baca9a02203560e008e270"></a><br/></td></tr>
+<tr class="memitem:gae1b6f3cf4efb5446a888d8dfced66850"><td class="memItemLeft" align="right" valign="top">THREAD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gae1b6f3cf4efb5446a888d8dfced66850">TcpListenThread</a> (LPVOID lpParameter)</td></tr>
+<tr class="memdesc:gae1b6f3cf4efb5446a888d8dfced66850"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 서버 쓰레드  <a href="#gae1b6f3cf4efb5446a888d8dfced66850"></a><br/></td></tr>
+<tr class="memitem:ga518804a1ab170ed00f70a3bb7a626199"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga518804a1ab170ed00f70a3bb7a626199">IsTcpListenThreadRun</a> ()</td></tr>
+<tr class="memdesc:ga518804a1ab170ed00f70a3bb7a626199"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP listen 쓰레드가 실행중인가?  <a href="#ga518804a1ab170ed00f70a3bb7a626199"></a><br/></td></tr>
+<tr class="memitem:gac1a5c0d77f60e106dcb9b0ac12ed2dc0"><td class="memItemLeft" align="right" valign="top">THREAD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gac1a5c0d77f60e106dcb9b0ac12ed2dc0">TcpNoPipeThread</a> (LPVOID lpParameter)</td></tr>
+<tr class="memdesc:gac1a5c0d77f60e106dcb9b0ac12ed2dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">pipe 를 사용하지 않는 TCP 세션 쓰레드 함수 - m_bUseThreadPipe 가 false 일 때에 사용된다.  <a href="#gac1a5c0d77f60e106dcb9b0ac12ed2dc0"></a><br/></td></tr>
+<tr class="memitem:gaff066c8f46a9b2bba3bdae967ccfa2a9"><td class="memItemLeft" align="right" valign="top">THREAD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaff066c8f46a9b2bba3bdae967ccfa2a9">TcpPipeThread</a> (LPVOID lpParameter)</td></tr>
+<tr class="memdesc:gaff066c8f46a9b2bba3bdae967ccfa2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션을 위한 쓰레드 함수  <a href="#gaff066c8f46a9b2bba3bdae967ccfa2a9"></a><br/></td></tr>
+<tr class="memitem:gad1b4e8659b796149c516f9707cb7787c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gad1b4e8659b796149c516f9707cb7787c">ITcpStackCallBack::InComingConnected</a> (<a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo)=0</td></tr>
+<tr class="memdesc:gad1b4e8659b796149c516f9707cb7787c"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 클라이언트가 연결 이벤트 핸들러  <a href="#gad1b4e8659b796149c516f9707cb7787c"></a><br/></td></tr>
+<tr class="memitem:ga85c903d1022a199b0c42c9b54f513040"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga85c903d1022a199b0c42c9b54f513040">ITcpStackCallBack::SessionClosed</a> (<a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo)=0</td></tr>
+<tr class="memdesc:ga85c903d1022a199b0c42c9b54f513040"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 클라이언트 세션이 종료 이벤트 핸들러  <a href="#ga85c903d1022a199b0c42c9b54f513040"></a><br/></td></tr>
+<tr class="memitem:gae9efac6d6ccbead8c5b32ec0b49f5c07"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gae9efac6d6ccbead8c5b32ec0b49f5c07">ITcpStackCallBack::RecvPacket</a> (char *pszPacket, int iPacketLen, <a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo)=0</td></tr>
+<tr class="memdesc:gae9efac6d6ccbead8c5b32ec0b49f5c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 패킷 수신 이벤트 핸들러  <a href="#gae9efac6d6ccbead8c5b32ec0b49f5c07"></a><br/></td></tr>
+<tr class="memitem:gab4645fb633669a5eb871eb71a6ca9030"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gab4645fb633669a5eb871eb71a6ca9030">ITcpStackCallBack::IsSendAll</a> (<a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo)</td></tr>
+<tr class="memdesc:gab4645fb633669a5eb871eb71a6ca9030"><td class="mdescLeft">&#160;</td><td class="mdescRight">SendAll 로 전송해도 되는 세션인지 검사한다.  <a href="#gab4645fb633669a5eb871eb71a6ca9030"></a><br/></td></tr>
+<tr class="memitem:ga3633e0a7b2c8f794a7270d327a5b5ac6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga3633e0a7b2c8f794a7270d327a5b5ac6">ITcpStackCallBack::AfterSendAllPerSession</a> (<a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo, const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga3633e0a7b2c8f794a7270d327a5b5ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SendAll 로 전송할 때에 세션당 Send 함수 호출후, 호출되는 이벤트 핸들러  <a href="#ga3633e0a7b2c8f794a7270d327a5b5ac6"></a><br/></td></tr>
+<tr class="memitem:ga377b53d83fabe88aae045c27dad8ad1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga377b53d83fabe88aae045c27dad8ad1c">SSLServerStart</a> (const char *szCertFile)</td></tr>
+<tr class="memdesc:ga377b53d83fabe88aae045c27dad8ad1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 서버 라이브러리를 시작한다.  <a href="#ga377b53d83fabe88aae045c27dad8ad1c"></a><br/></td></tr>
+<tr class="memitem:ga244021d85147830e847e4ab4aa0ed2d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga244021d85147830e847e4ab4aa0ed2d7">SSLServerStop</a> ()</td></tr>
+<tr class="memdesc:ga244021d85147830e847e4ab4aa0ed2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 서버 라이브러리를 종료한다.  <a href="#ga244021d85147830e847e4ab4aa0ed2d7"></a><br/></td></tr>
+<tr class="memitem:ga54d758f6e18ae22c6ba1df309412bb85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga54d758f6e18ae22c6ba1df309412bb85">SSLClientStart</a> ()</td></tr>
+<tr class="memdesc:ga54d758f6e18ae22c6ba1df309412bb85"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 클라이언트 라이브러리를 시작한다.  <a href="#ga54d758f6e18ae22c6ba1df309412bb85"></a><br/></td></tr>
+<tr class="memitem:ga46fe1e058ed50a8e18987dbdb4bbf33e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga46fe1e058ed50a8e18987dbdb4bbf33e">SSLClientStop</a> ()</td></tr>
+<tr class="memdesc:ga46fe1e058ed50a8e18987dbdb4bbf33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 클라이언트 라이브러리를 종료한다.  <a href="#ga46fe1e058ed50a8e18987dbdb4bbf33e"></a><br/></td></tr>
+<tr class="memitem:ga7557dcb4879472cfe38b5254537650a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga7557dcb4879472cfe38b5254537650a6">SSLFinal</a> ()</td></tr>
+<tr class="memdesc:ga7557dcb4879472cfe38b5254537650a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">프로세스가 종료될 때에 최종적으로 실행하여서 openssl 메모리 누수를 출력하지 않는다.  <a href="#ga7557dcb4879472cfe38b5254537650a6"></a><br/></td></tr>
+<tr class="memitem:ga3b7922769a82c881c8cf9756b0fbfd6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga3b7922769a82c881c8cf9756b0fbfd6c">SSLAccept</a> (Socket iFd, SSL **ppsttSsl, bool bCheckClientCert, int iVerifyDepth, int iAcceptTimeout)</td></tr>
+<tr class="memdesc:ga3b7922769a82c881c8cf9756b0fbfd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">클라이언트 SSL 접속 요청을 허용한다.  <a href="#ga3b7922769a82c881c8cf9756b0fbfd6c"></a><br/></td></tr>
+<tr class="memitem:gaa45ab9b3dd0102bf1be4fd0fc377028a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaa45ab9b3dd0102bf1be4fd0fc377028a">SSLSend</a> (SSL *ssl, const char *szBuf, int iBufLen)</td></tr>
+<tr class="memdesc:gaa45ab9b3dd0102bf1be4fd0fc377028a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 프로토콜로 패킷을 전송한다.  <a href="#gaa45ab9b3dd0102bf1be4fd0fc377028a"></a><br/></td></tr>
+<tr class="memitem:ga3bb0323a1b8aa058d0e7285fa86f1d72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga3bb0323a1b8aa058d0e7285fa86f1d72">SSLRecv</a> (SSL *ssl, char *szBuf, int iBufLen)</td></tr>
+<tr class="memdesc:ga3bb0323a1b8aa058d0e7285fa86f1d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 프로토콜로 수신된 패킷을 읽는다.  <a href="#ga3bb0323a1b8aa058d0e7285fa86f1d72"></a><br/></td></tr>
+<tr class="memitem:ga8b094272deed3b94defeb0f4dc3ab77f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga8b094272deed3b94defeb0f4dc3ab77f">SSLClose</a> (SSL *ssl)</td></tr>
+<tr class="memdesc:ga8b094272deed3b94defeb0f4dc3ab77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 세션을 종료한다.  <a href="#ga8b094272deed3b94defeb0f4dc3ab77f"></a><br/></td></tr>
+<tr class="memitem:ga671b4e844012c08cda8058c24d504679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga671b4e844012c08cda8058c24d504679">SSLPrintLogServerCipherList</a> ()</td></tr>
+<tr class="memdesc:ga671b4e844012c08cda8058c24d504679"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 서버에서 사용되는 cipher list 를 로그로 출력한다.  <a href="#ga671b4e844012c08cda8058c24d504679"></a><br/></td></tr>
+<tr class="memitem:ga9459d99b576c0d457eaabbf0419f8573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga9459d99b576c0d457eaabbf0419f8573">SSLPrintLogClientCipherList</a> ()</td></tr>
+<tr class="memdesc:ga9459d99b576c0d457eaabbf0419f8573"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL 클라이언트에서 사용되는 cipher list 를 로그로 출력한다.  <a href="#ga9459d99b576c0d457eaabbf0419f8573"></a><br/></td></tr>
+<tr class="memitem:ga134e3dbac998e450e4e5b0ac46c46b82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga134e3dbac998e450e4e5b0ac46c46b82">CTcpClientMap::Create</a> (<a class="el" href="class_c_tcp_stack.html">CTcpStack</a> *pclsStack)</td></tr>
+<tr class="memdesc:ga134e3dbac998e450e4e5b0ac46c46b82"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_c_tcp_stack.html" title="TCP listen / connect 및 수신/전송 클래스">CTcpStack</a> 객체를 설정한다.  <a href="#ga134e3dbac998e450e4e5b0ac46c46b82"></a><br/></td></tr>
+<tr class="memitem:gabb73d541c0b02ab76606c61c41d027db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gabb73d541c0b02ab76606c61c41d027db">CTcpClientMap::Send</a> (const char *pszIp, int iPort, const char *pszPacket, int iPacketLen, bool bConnectIfNoSession)</td></tr>
+<tr class="memdesc:gabb73d541c0b02ab76606c61c41d027db"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 서버에 연결하여서 TCP 패킷을 전송한다.  <a href="#gabb73d541c0b02ab76606c61c41d027db"></a><br/></td></tr>
+<tr class="memitem:ga6acd890e3b739fa4d0ef16dab438f1df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga6acd890e3b739fa4d0ef16dab438f1df">CTcpClientMap::Delete</a> (const char *pszIp, int iPort)</td></tr>
+<tr class="memdesc:ga6acd890e3b739fa4d0ef16dab438f1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 연결 정보를 삭제한다.  <a href="#ga6acd890e3b739fa4d0ef16dab438f1df"></a><br/></td></tr>
+<tr class="memitem:gae05b5fe03b6b130a289907bd2f33e237"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gae05b5fe03b6b130a289907bd2f33e237">CTcpClientMap::DeleteSendPacketList</a> (const char *pszIp, int iPort, SEND_PACKET_LIST &amp;clsList)</td></tr>
+<tr class="memdesc:gae05b5fe03b6b130a289907bd2f33e237"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 연결 후, 전송할 패킷 리스트를 삭제한다.  <a href="#gae05b5fe03b6b130a289907bd2f33e237"></a><br/></td></tr>
+<tr class="memitem:ga80aff07708c9ed060e259733c7c40189"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga80aff07708c9ed060e259733c7c40189">CTcpClientMap::SetConnected</a> (const char *pszIp, int iPort, int iThreadIndex, int iSessionIndex)</td></tr>
+<tr class="memdesc:ga80aff07708c9ed060e259733c7c40189"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 연결됨으로 설정한다.  <a href="#ga80aff07708c9ed060e259733c7c40189"></a><br/></td></tr>
+<tr class="memitem:ga6e7ad94b611c930af0a96f96f18fde4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga6e7ad94b611c930af0a96f96f18fde4f">CTcpClientMap::Insert</a> (const char *pszIp, int iPort, int iThreadIndex, int iSessionIndex)</td></tr>
+<tr class="memdesc:ga6e7ad94b611c930af0a96f96f18fde4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 연결을 저장한다.  <a href="#ga6e7ad94b611c930af0a96f96f18fde4f"></a><br/></td></tr>
+<tr class="memitem:gab7f8d0839a3a78e0c1f65bbd5e833314"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gab7f8d0839a3a78e0c1f65bbd5e833314">CTcpSessionInfo::Send</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:gab7f8d0839a3a78e0c1f65bbd5e833314"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 패킷을 전송한다.  <a href="#gab7f8d0839a3a78e0c1f65bbd5e833314"></a><br/></td></tr>
+<tr class="memitem:gae7b77a092d6789a0299ca61912a21343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gae7b77a092d6789a0299ca61912a21343">CTcpSessionInfo::Log</a> (const char *pszPacket, int iPacketLen, bool bSend)</td></tr>
+<tr class="memdesc:gae7b77a092d6789a0299ca61912a21343"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 전송/수신에 대한 로그를 출력한다.  <a href="#gae7b77a092d6789a0299ca61912a21343"></a><br/></td></tr>
+<tr class="memitem:ga5fa7652bd0d0ecfb44514cfa5e045b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga5fa7652bd0d0ecfb44514cfa5e045b0c">CTcpSessionInfo::Clear</a> ()</td></tr>
+<tr class="memdesc:ga5fa7652bd0d0ecfb44514cfa5e045b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">세션 정보를 초기화시킨다.  <a href="#ga5fa7652bd0d0ecfb44514cfa5e045b0c"></a><br/></td></tr>
+<tr class="memitem:ga9e4fcd1c41b7e68467f5d9475554acdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga9e4fcd1c41b7e68467f5d9475554acdb">CTcpSessionList::Init</a> (int iThreadIndex, int iPollFdMax)</td></tr>
+<tr class="memdesc:ga9e4fcd1c41b7e68467f5d9475554acdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 초기화시킨다.  <a href="#ga9e4fcd1c41b7e68467f5d9475554acdb"></a><br/></td></tr>
+<tr class="memitem:ga3931936db883c45edbc05930f96f9dcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga3931936db883c45edbc05930f96f9dcd">CTcpSessionList::Insert</a> (Socket hSocket)</td></tr>
+<tr class="memdesc:ga3931936db883c45edbc05930f96f9dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 소켓을 추가한다.  <a href="#ga3931936db883c45edbc05930f96f9dcd"></a><br/></td></tr>
+<tr class="memitem:ga4fbfbf269de0263ffbb5ec8f1b3b50ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga4fbfbf269de0263ffbb5ec8f1b3b50ca">CTcpSessionList::Insert</a> (<a class="el" href="class_c_tcp_comm.html">CTcpComm</a> &amp;clsTcpComm)</td></tr>
+<tr class="memdesc:ga4fbfbf269de0263ffbb5ec8f1b3b50ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 추가한다.  <a href="#ga4fbfbf269de0263ffbb5ec8f1b3b50ca"></a><br/></td></tr>
+<tr class="memitem:ga355d4ea42de2785bcc70ede4bde1efe5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga355d4ea42de2785bcc70ede4bde1efe5">CTcpSessionList::Delete</a> (int iIndex)</td></tr>
+<tr class="memdesc:ga355d4ea42de2785bcc70ede4bde1efe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 삭제한다.  <a href="#ga355d4ea42de2785bcc70ede4bde1efe5"></a><br/></td></tr>
+<tr class="memitem:ga0d943caf4790eb6b5198f09fde581a48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga0d943caf4790eb6b5198f09fde581a48">CTcpSessionList::DeleteAll</a> ()</td></tr>
+<tr class="memdesc:ga0d943caf4790eb6b5198f09fde581a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 TCP 세션 정보를 삭제한다.  <a href="#ga0d943caf4790eb6b5198f09fde581a48"></a><br/></td></tr>
+<tr class="memitem:ga40f9ac8ae709676eab1d0a215607540a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga40f9ac8ae709676eab1d0a215607540a">CTcpSessionList::DeleteTimeout</a> (int iTimeout, int iNoPacketTimeout, void(*BeforeDelete)(<a class="el" href="class_c_tcp_session_list.html">CTcpSessionList</a> *pclsSessionList, int iIndex, void *pclsArg), void *pclsArg)</td></tr>
+<tr class="memdesc:ga40f9ac8ae709676eab1d0a215607540a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 수신 timeout 이 발생한 TCP 세션을 종료시킨다.  <a href="#ga40f9ac8ae709676eab1d0a215607540a"></a><br/></td></tr>
+<tr class="memitem:gab93d83c0e7133ca3afb1f6ea2baee443"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gab93d83c0e7133ca3afb1f6ea2baee443">CTcpSessionList::Send</a> (int iIndex, const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:gab93d83c0e7133ca3afb1f6ea2baee443"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 세션에 패킷을 전송한다.  <a href="#gab93d83c0e7133ca3afb1f6ea2baee443"></a><br/></td></tr>
+<tr class="memitem:ga98b375597df79ba082cc40a79f4f54a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga98b375597df79ba082cc40a79f4f54a8">CTcpSessionList::SendAll</a> (const char *pszPacket, int iPacketLen, <a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *pclsCallBack)</td></tr>
+<tr class="memdesc:ga98b375597df79ba082cc40a79f4f54a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 세션에 패킷을 전송한다.  <a href="#ga98b375597df79ba082cc40a79f4f54a8"></a><br/></td></tr>
+<tr class="memitem:gaac5dec8d3c66b3e558fc9d926115fcf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaac5dec8d3c66b3e558fc9d926115fcf7">CTcpSessionList::SendAllExcept</a> (const char *pszPacket, int iPacketLen, <a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *pclsCallBack, int iThreadIndex, int iSessionIndex)</td></tr>
+<tr class="memdesc:gaac5dec8d3c66b3e558fc9d926115fcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 세션에 패킷을 전송한다.  <a href="#gaac5dec8d3c66b3e558fc9d926115fcf7"></a><br/></td></tr>
+<tr class="memitem:ga8f259fbeac30a3c5c4418f7f031310b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga8f259fbeac30a3c5c4418f7f031310b1">CTcpSessionMap::Insert</a> (const char *pszIp, int iPort, <a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *pclsSessionInfo)</td></tr>
+<tr class="memdesc:ga8f259fbeac30a3c5c4418f7f031310b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 저장한다.  <a href="#ga8f259fbeac30a3c5c4418f7f031310b1"></a><br/></td></tr>
+<tr class="memitem:gaef619d850ecea91ce760f603f3178ac0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaef619d850ecea91ce760f603f3178ac0">CTcpSessionMap::Delete</a> (const char *pszIp, int iPort)</td></tr>
+<tr class="memdesc:gaef619d850ecea91ce760f603f3178ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 세션 정보를 삭제한다.  <a href="#gaef619d850ecea91ce760f603f3178ac0"></a><br/></td></tr>
+<tr class="memitem:gad08b22caa0cb031d5ec6647ea5fe1c48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gad08b22caa0cb031d5ec6647ea5fe1c48">CTcpSessionMap::GetCount</a> ()</td></tr>
+<tr class="memdesc:gad08b22caa0cb031d5ec6647ea5fe1c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">세션 개수를 리턴한다.  <a href="#gad08b22caa0cb031d5ec6647ea5fe1c48"></a><br/></td></tr>
+<tr class="memitem:ga333a08bf6407277a0b2e48721286baa1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga333a08bf6407277a0b2e48721286baa1">CTcpSessionMap::Send</a> (const char *pszIp, int iPort, const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga333a08bf6407277a0b2e48721286baa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 세션에 TCP 패킷을 전송한다.  <a href="#ga333a08bf6407277a0b2e48721286baa1"></a><br/></td></tr>
+<tr class="memitem:ga521fb62913c86a966b973a61f7439226"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga521fb62913c86a966b973a61f7439226">CTcpSessionMap::Send</a> (int iThreadIndex, const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga521fb62913c86a966b973a61f7439226"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 세션에 TCP 패킷을 전송한다.  <a href="#ga521fb62913c86a966b973a61f7439226"></a><br/></td></tr>
+<tr class="memitem:gab3b510be1f16b05ec27a8e0c963309a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gab3b510be1f16b05ec27a8e0c963309a2">CTcpSessionMap::SendAll</a> (const char *pszPacket, int iPacketLen, <a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *pclsCallBack)</td></tr>
+<tr class="memdesc:gab3b510be1f16b05ec27a8e0c963309a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 세션에 TCP 패킷을 전송한다.  <a href="#gab3b510be1f16b05ec27a8e0c963309a2"></a><br/></td></tr>
+<tr class="memitem:ga55a76fbf7cd0b66ceb277360119c21b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga55a76fbf7cd0b66ceb277360119c21b4">CTcpSessionMap::SendAllExcept</a> (const char *pszPacket, int iPacketLen, <a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *pclsCallBack, int iThreadIndex, int iSessionIndex)</td></tr>
+<tr class="memdesc:ga55a76fbf7cd0b66ceb277360119c21b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 세션을 제외한 모든 세션에 TCP 패킷을 전송한다.  <a href="#ga55a76fbf7cd0b66ceb277360119c21b4"></a><br/></td></tr>
+<tr class="memitem:gaeb03af95355c9f076decd424d7246d6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaeb03af95355c9f076decd424d7246d6e">CTcpStack::Start</a> (<a class="el" href="class_c_tcp_stack_setup.html">CTcpStackSetup</a> *pclsSetup, <a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *pclsCallBack)</td></tr>
+<tr class="memdesc:gaeb03af95355c9f076decd424d7246d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP stack 을 시작한다.  <a href="#gaeb03af95355c9f076decd424d7246d6e"></a><br/></td></tr>
+<tr class="memitem:gae3d148b0f205b98b24a49c9db268072b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gae3d148b0f205b98b24a49c9db268072b">CTcpStack::Stop</a> ()</td></tr>
+<tr class="memdesc:gae3d148b0f205b98b24a49c9db268072b"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP stack 을 중지한다.  <a href="#gae3d148b0f205b98b24a49c9db268072b"></a><br/></td></tr>
+<tr class="memitem:gaff04fea297557ffbdee11286083d0a29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaff04fea297557ffbdee11286083d0a29">CTcpStack::Send</a> (const char *pszIp, int iPort, const char *pszPacket, int iPacketLen, bool bConnectIfNoSession)</td></tr>
+<tr class="memdesc:gaff04fea297557ffbdee11286083d0a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 세션에 TCP 패킷을 전송한다.  <a href="#gaff04fea297557ffbdee11286083d0a29"></a><br/></td></tr>
+<tr class="memitem:gaf2a11ee0aede96486c4e7ae0179a3827"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaf2a11ee0aede96486c4e7ae0179a3827">CTcpStack::Send</a> (int iThreadIndex, int iSessionIndex, const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:gaf2a11ee0aede96486c4e7ae0179a3827"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 세션에 TCP 패킷을 전송한다.  <a href="#gaf2a11ee0aede96486c4e7ae0179a3827"></a><br/></td></tr>
+<tr class="memitem:ga982dbfd735bd5f3b281d512a2853dcf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga982dbfd735bd5f3b281d512a2853dcf0">CTcpStack::SendAll</a> (const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:ga982dbfd735bd5f3b281d512a2853dcf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 세션에 TCP 패킷을 전송한다.  <a href="#ga982dbfd735bd5f3b281d512a2853dcf0"></a><br/></td></tr>
+<tr class="memitem:gabf9628df45247e38d0575ba06af834a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gabf9628df45247e38d0575ba06af834a6">CTcpStack::SendAllExcept</a> (const char *pszPacket, int iPacketLen, int iThreadIndex, int iSessionIndex)</td></tr>
+<tr class="memdesc:gabf9628df45247e38d0575ba06af834a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 세션을 제외한 모든 세션에 TCP 패킷을 전송한다.  <a href="#gabf9628df45247e38d0575ba06af834a6"></a><br/></td></tr>
+<tr class="memitem:ga8546cb2c8349281f7f12f028f3b3b2cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga8546cb2c8349281f7f12f028f3b3b2cf">CTcpStackSetup::Parse</a> (<a class="el" href="class_c_xml_element.html">CXmlElement</a> &amp;clsXml)</td></tr>
+<tr class="memdesc:ga8546cb2c8349281f7f12f028f3b3b2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">XML element 에서 TCP stack 설정 사항을 가져온다.  <a href="#ga8546cb2c8349281f7f12f028f3b3b2cf"></a><br/></td></tr>
+<tr class="memitem:gaf620f1ff16b7878e94f6a3d0b8ac74d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaf620f1ff16b7878e94f6a3d0b8ac74d1">CTcpThreadInfo::Close</a> ()</td></tr>
+<tr class="memdesc:gaf620f1ff16b7878e94f6a3d0b8ac74d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">소켓을 종료한다.  <a href="#gaf620f1ff16b7878e94f6a3d0b8ac74d1"></a><br/></td></tr>
+<tr class="memitem:ga14da947d824b9246f577fffd922c4b28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga14da947d824b9246f577fffd922c4b28">CTcpThreadList::Create</a> (<a class="el" href="class_c_tcp_stack.html">CTcpStack</a> *pclsStack)</td></tr>
+<tr class="memdesc:ga14da947d824b9246f577fffd922c4b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">쓰레드 리스트를 시작한다.  <a href="#ga14da947d824b9246f577fffd922c4b28"></a><br/></td></tr>
+<tr class="memitem:ga435f9d5112f5119ae3000e90cf04bc38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga435f9d5112f5119ae3000e90cf04bc38">CTcpThreadList::Destroy</a> ()</td></tr>
+<tr class="memdesc:ga435f9d5112f5119ae3000e90cf04bc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">쓰레드 리스트를 종료한다.  <a href="#ga435f9d5112f5119ae3000e90cf04bc38"></a><br/></td></tr>
+<tr class="memitem:gae21fd366eb4cc1d4e8d0567c116d44e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gae21fd366eb4cc1d4e8d0567c116d44e4">CTcpThreadList::SendCommand</a> (const char *pszData, int iDataLen)</td></tr>
+<tr class="memdesc:gae21fd366eb4cc1d4e8d0567c116d44e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">쓰레드에 명령을 전송한다.  <a href="#gae21fd366eb4cc1d4e8d0567c116d44e4"></a><br/></td></tr>
+<tr class="memitem:gab6f1d2fb01b65a3edf604030a70052a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gab6f1d2fb01b65a3edf604030a70052a4">CTcpThreadList::SendCommand</a> (const char *pszData, int iDataLen, int iThreadIndex)</td></tr>
+<tr class="memdesc:gab6f1d2fb01b65a3edf604030a70052a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">지정된 쓰레드 번호의 쓰레드로 명령을 전송한다.  <a href="#gab6f1d2fb01b65a3edf604030a70052a4"></a><br/></td></tr>
+<tr class="memitem:gafcce7e2a40284d1229b84ce4a8c385c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gafcce7e2a40284d1229b84ce4a8c385c9">CTcpThreadList::SendCommandAll</a> (const char *pszData, int iDataLen)</td></tr>
+<tr class="memdesc:gafcce7e2a40284d1229b84ce4a8c385c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 쓰레드에 명령을 전달한다.  <a href="#gafcce7e2a40284d1229b84ce4a8c385c9"></a><br/></td></tr>
+<tr class="memitem:gaa3cd9db1a83a5f6d0d45fda5412a0d2d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaa3cd9db1a83a5f6d0d45fda5412a0d2d">CTcpThreadList::RecvCommand</a> (Socket hSocket, char *pszData, int iDataSize)</td></tr>
+<tr class="memdesc:gaa3cd9db1a83a5f6d0d45fda5412a0d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">명령을 수신한다.  <a href="#gaa3cd9db1a83a5f6d0d45fda5412a0d2d"></a><br/></td></tr>
+<tr class="memitem:gaf4d6e01451bee9b35f041c156d0a47d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gaf4d6e01451bee9b35f041c156d0a47d2">CTcpThreadList::Send</a> (int iThreadIndex, int iSessionIndex, const char *pszPacket, int iPacketLen)</td></tr>
+<tr class="memdesc:gaf4d6e01451bee9b35f041c156d0a47d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 세션에 TCP 패킷을 전송한다.  <a href="#gaf4d6e01451bee9b35f041c156d0a47d2"></a><br/></td></tr>
+<tr class="memitem:ga5960b075984dfb3ada1d048a1e69f154"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga5960b075984dfb3ada1d048a1e69f154">CTcpThreadList::SendAll</a> (const char *pszPacket, int iPacketLen, <a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *pclsCallBack)</td></tr>
+<tr class="memdesc:ga5960b075984dfb3ada1d048a1e69f154"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 세션에 TCP 패킷을 전송한다.  <a href="#ga5960b075984dfb3ada1d048a1e69f154"></a><br/></td></tr>
+<tr class="memitem:gab899820fa557f842021276ae33b6bd7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gab899820fa557f842021276ae33b6bd7c">CTcpThreadList::SendAllExcept</a> (const char *pszPacket, int iPacketLen, <a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *pclsCallBack, int iThreadIndex, int iSessionIndex)</td></tr>
+<tr class="memdesc:gab899820fa557f842021276ae33b6bd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">모든 세션에 TCP 패킷을 전송한다.  <a href="#gab899820fa557f842021276ae33b6bd7c"></a><br/></td></tr>
+<tr class="memitem:gad35ebbf2289e3919f09f1fadc8a9f509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gad35ebbf2289e3919f09f1fadc8a9f509">CTcpThreadList::DeleteNoUseThread</a> ()</td></tr>
+<tr class="memdesc:gad35ebbf2289e3919f09f1fadc8a9f509"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP 클라이언트와 연결되지 않은 쓰레드를 삭제한다.  <a href="#gad35ebbf2289e3919f09f1fadc8a9f509"></a><br/></td></tr>
+<tr class="memitem:ga35b006c47090f0f640dfe20ac18b0116"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#ga35b006c47090f0f640dfe20ac18b0116">CTcpThreadList::DeleteThread</a> (int iThreadIndex)</td></tr>
+<tr class="memdesc:ga35b006c47090f0f640dfe20ac18b0116"><td class="mdescLeft">&#160;</td><td class="mdescRight">쓰레드 정보를 삭제한다.  <a href="#ga35b006c47090f0f640dfe20ac18b0116"></a><br/></td></tr>
+<tr class="memitem:gae4cc01b9d808f1b3127be64b55d6a883"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___tcp_stack.html#gae4cc01b9d808f1b3127be64b55d6a883">CTcpThreadList::GetString</a> (<a class="el" href="class_c_monitor_string.html">CMonitorString</a> &amp;strBuf)</td></tr>
+<tr class="memdesc:gae4cc01b9d808f1b3127be64b55d6a883"><td class="mdescLeft">&#160;</td><td class="mdescRight">쓰레드 정보를 하나의 문자열에 저장한다.  <a href="#gae4cc01b9d808f1b3127be64b55d6a883"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>TCP 통신 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga3633e0a7b2c8f794a7270d327a5b5ac6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ITcpStackCallBack::AfterSendAllPerSession </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SendAll 로 전송할 때에 세션당 Send 함수 호출후, 호출되는 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSessionInfo</td><td>세션 정보 </td></tr>
+    <tr><td class="paramname">pszPacket</td><td>전송한 패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>전송 패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5fa7652bd0d0ecfb44514cfa5e045b0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpSessionInfo::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>세션 정보를 초기화시킨다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaf620f1ff16b7878e94f6a3d0b8ac74d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpThreadInfo::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>소켓을 종료한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga134e3dbac998e450e4e5b0ac46c46b82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpClientMap::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_stack.html">CTcpStack</a> *&#160;</td>
+          <td class="paramname"><em>pclsStack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_tcp_stack.html" title="TCP listen / connect 및 수신/전송 클래스">CTcpStack</a> 객체를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsStack</td><td><a class="el" href="class_c_tcp_stack.html" title="TCP listen / connect 및 수신/전송 클래스">CTcpStack</a> 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga14da947d824b9246f577fffd922c4b28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpThreadList::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_stack.html">CTcpStack</a> *&#160;</td>
+          <td class="paramname"><em>pclsStack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>쓰레드 리스트를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsStack</td><td><a class="el" href="class_c_tcp_stack.html" title="TCP listen / connect 및 수신/전송 클래스">CTcpStack</a> 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaef619d850ecea91ce760f603f3178ac0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionMap::Delete </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 세션 정보를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>클라이언트 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>클라이언트 포트 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6acd890e3b739fa4d0ef16dab438f1df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpClientMap::Delete </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 연결 정보를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>TCP 서버 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>TCP 서버 포트 번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga355d4ea42de2785bcc70ede4bde1efe5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionList::Delete </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 세션 정보를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>TCP 세션 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0d943caf4790eb6b5198f09fde581a48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpSessionList::DeleteAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 TCP 세션 정보를 삭제한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad35ebbf2289e3919f09f1fadc8a9f509"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpThreadList::DeleteNoUseThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 클라이언트와 연결되지 않은 쓰레드를 삭제한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gae05b5fe03b6b130a289907bd2f33e237"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpClientMap::DeleteSendPacketList </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SEND_PACKET_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 연결 후, 전송할 패킷 리스트를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>TCP 서버 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>TCP 서버 포트 번호 </td></tr>
+    <tr><td class="paramname">clsList</td><td>TCP 연결 후, 전송할 패킷 리스트 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga35b006c47090f0f640dfe20ac18b0116"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpThreadList::DeleteThread </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>쓰레드 정보를 삭제한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadIndex</td><td>쓰레드 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 성공하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga40f9ac8ae709676eab1d0a215607540a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpSessionList::DeleteTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iTimeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iNoPacketTimeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="class_c_tcp_session_list.html">CTcpSessionList</a> *pclsSessionList, int iIndex, void *pclsArg)&#160;</td>
+          <td class="paramname"><em>BeforeDelete</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pclsArg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 수신 timeout 이 발생한 TCP 세션을 종료시킨다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iTimeout</td><td>TCP 수신 timeout 시간 (초단위) </td></tr>
+    <tr><td class="paramname">iNoPacketTimeout</td><td>TCP 연결 후, 패킷이 수신되지 않은 경우의 timeout 시간 (초단위) </td></tr>
+    <tr><td class="paramname">BeforeDelete</td><td>삭제하기 전에 호출하는 callback 함수 </td></tr>
+    <tr><td class="paramname">pclsArg</td><td>응용 프로그램 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga435f9d5112f5119ae3000e90cf04bc38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpThreadList::Destroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>쓰레드 리스트를 종료한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad08b22caa0cb031d5ec6647ea5fe1c48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CTcpSessionMap::GetCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>세션 개수를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>세션 개수를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae4cc01b9d808f1b3127be64b55d6a883"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpThreadList::GetString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_monitor_string.html">CMonitorString</a> &amp;&#160;</td>
+          <td class="paramname"><em>strBuf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>쓰레드 정보를 하나의 문자열에 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strBuf</td><td>쓰레드 정보를 저장할 문자열 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gad1b4e8659b796149c516f9707cb7787c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ITcpStackCallBack::InComingConnected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TCP 클라이언트가 연결 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSessionInfo</td><td>세션 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>TCP 클라이언트 연결을 허용하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___http_stack.html#gacf52c8eca629966d7567a21c53bef2bb">CHttpStack</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9e4fcd1c41b7e68467f5d9475554acdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionList::Init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPollFdMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 세션 정보를 초기화시킨다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadIndex</td><td>thread index </td></tr>
+    <tr><td class="paramname">iPollFdMax</td><td>TCP 세션 개수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8f259fbeac30a3c5c4418f7f031310b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionMap::Insert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 세션 정보를 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>클라이언트 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>클라이언트 포트 번호 </td></tr>
+    <tr><td class="paramname">pclsSessionInfo</td><td>TCP 세션 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6e7ad94b611c930af0a96f96f18fde4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpClientMap::Insert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSessionIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 연결을 저장한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>TCP 서버 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>TCP 서버 포트 번호 </td></tr>
+    <tr><td class="paramname">iThreadIndex</td><td>TCP 쓰레드 번호 </td></tr>
+    <tr><td class="paramname">iSessionIndex</td><td>TCP 세션 번호 ( TCP 쓰레드 내의 세션 번호 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3931936db883c45edbc05930f96f9dcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionList::Insert </td>
+          <td>(</td>
+          <td class="paramtype">Socket&#160;</td>
+          <td class="paramname"><em>hSocket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 소켓을 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hSocket</td><td>TCP 소켓 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4fbfbf269de0263ffbb5ec8f1b3b50ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CTcpSessionList::Insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_comm.html">CTcpComm</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsTcpComm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 세션 정보를 추가한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsTcpComm</td><td>TCP 세션 정보 저장 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab4645fb633669a5eb871eb71a6ca9030"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ITcpStackCallBack::IsSendAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SendAll 로 전송해도 되는 세션인지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSessionInfo</td><td>세션 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SendAll 로 전송해도 되는 세션이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga518804a1ab170ed00f70a3bb7a626199"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsTcpListenThreadRun </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP listen 쓰레드가 실행중인가? </p>
+<dl class="section return"><dt>반환값</dt><dd>TCP listen 쓰레드가 실행중이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae7b77a092d6789a0299ca61912a21343"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpSessionInfo::Log </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 전송/수신에 대한 로그를 출력한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">bSend</td><td>전송 여부 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8546cb2c8349281f7f12f028f3b3b2cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpStackSetup::Parse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_xml_element.html">CXmlElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsXml</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XML element 에서 TCP stack 설정 사항을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsXml</td><td>XML element </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa3cd9db1a83a5f6d0d45fda5412a0d2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CTcpThreadList::RecvCommand </td>
+          <td>(</td>
+          <td class="paramtype">Socket&#160;</td>
+          <td class="paramname"><em>hSocket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDataSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>명령을 수신한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hSocket</td><td>pipe 수신 핸들 </td></tr>
+    <tr><td class="paramname">pszData</td><td>명령 저장 변수 </td></tr>
+    <tr><td class="paramname">iDataSize</td><td>pszData 변수 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>수신한 길이를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae9efac6d6ccbead8c5b32ec0b49f5c07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ITcpStackCallBack::RecvPacket </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TCP 패킷 수신 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>수신 패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>수신 패킷 길이 </td></tr>
+    <tr><td class="paramname">pclsSessionInfo</td><td>세션 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>TCP 세션을 유지하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+<p><a class="el" href="group___http_stack.html#ga7a8ac086ce3e6bf4edabd4a88d141522">CHttpStack</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga333a08bf6407277a0b2e48721286baa1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionMap::Send </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>특정 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>포트 번호 </td></tr>
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga521fb62913c86a966b973a61f7439226"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionMap::Send </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>특정 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadIndex</td><td>TCP 쓰레드 번호 </td></tr>
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaff04fea297557ffbdee11286083d0a29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpStack::Send </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bConnectIfNoSession</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>특정 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>포트 번호 </td></tr>
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">bConnectIfNoSession</td><td>TCP 세션이 존재하지 않으면 새로운 TCP 세션을 연결한 후, 패킷을 전송하는가? </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf2a11ee0aede96486c4e7ae0179a3827"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpStack::Send </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSessionIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>특정 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadIndex</td><td>TCP 쓰레드 번호 </td></tr>
+    <tr><td class="paramname">iSessionIndex</td><td>TCP 세션 번호 </td></tr>
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab7f8d0839a3a78e0c1f65bbd5e833314"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionInfo::Send </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabb73d541c0b02ab76606c61c41d027db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpClientMap::Send </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bConnectIfNoSession</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 서버에 연결하여서 TCP 패킷을 전송한다. </p>
+<p>이미 연결된 TCP 서버에는 TCP 패킷만 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>TCP 서버 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>TCP 서버 포트 번호 </td></tr>
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">bConnectIfNoSession</td><td>TCP 세션이 존재하지 않으면 새로운 TCP 세션을 연결한 후, 패킷을 전송하는가? </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab93d83c0e7133ca3afb1f6ea2baee443"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionList::Send </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>특정 세션에 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>세션 인덱스 </td></tr>
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf4d6e01451bee9b35f041c156d0a47d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpThreadList::Send </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSessionIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>특정 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadIndex</td><td>TCP 쓰레드 번호 </td></tr>
+    <tr><td class="paramname">iSessionIndex</td><td>TCP 세션 번호 </td></tr>
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab3b510be1f16b05ec27a8e0c963309a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionMap::SendAll </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>세션별로 전송 유무를 결정하는 callback 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga982dbfd735bd5f3b281d512a2853dcf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpStack::SendAll </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga98b375597df79ba082cc40a79f4f54a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionList::SendAll </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 세션에 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>세션별로 전송 유무를 결정하는 callback 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5960b075984dfb3ada1d048a1e69f154"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpThreadList::SendAll </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>세션별로 전송 유무를 결정하는 callback 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga55a76fbf7cd0b66ceb277360119c21b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionMap::SendAllExcept </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSessionIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>특정 세션을 제외한 모든 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>세션별로 전송 유무를 결정하는 callback 객체 </td></tr>
+    <tr><td class="paramname">iThreadIndex</td><td>전송하지 않을 세션의 쓰레드 인덱스 </td></tr>
+    <tr><td class="paramname">iSessionIndex</td><td>전송하지 않을 세션 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabf9628df45247e38d0575ba06af834a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpStack::SendAllExcept </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSessionIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>특정 세션을 제외한 모든 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">iThreadIndex</td><td>전송하지 않을 세션의 쓰레드 인덱스 </td></tr>
+    <tr><td class="paramname">iSessionIndex</td><td>전송하지 않을 세션 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaac5dec8d3c66b3e558fc9d926115fcf7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpSessionList::SendAllExcept </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSessionIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 세션에 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>세션별로 전송 유무를 결정하는 callback 객체 </td></tr>
+    <tr><td class="paramname">iThreadIndex</td><td>전송하지 않을 세션의 쓰레드 인덱스 </td></tr>
+    <tr><td class="paramname">iSessionIndex</td><td>전송하지 않을 세션 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab899820fa557f842021276ae33b6bd7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpThreadList::SendAllExcept </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPacketLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSessionIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 세션에 TCP 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszPacket</td><td>패킷 </td></tr>
+    <tr><td class="paramname">iPacketLen</td><td>패킷 길이 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>세션별로 전송 유무를 결정하는 callback 객체 </td></tr>
+    <tr><td class="paramname">iThreadIndex</td><td>전송하지 않을 세션의 쓰레드 인덱스 </td></tr>
+    <tr><td class="paramname">iSessionIndex</td><td>전송하지 않을 세션 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae21fd366eb4cc1d4e8d0567c116d44e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpThreadList::SendCommand </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>쓰레드에 명령을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszData</td><td>명령 </td></tr>
+    <tr><td class="paramname">iDataLen</td><td>pszData 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab6f1d2fb01b65a3edf604030a70052a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpThreadList::SendCommand </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>지정된 쓰레드 번호의 쓰레드로 명령을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszData</td><td>명령 </td></tr>
+    <tr><td class="paramname">iDataLen</td><td>pszData 길이 </td></tr>
+    <tr><td class="paramname">iThreadIndex</td><td>쓰레드 인덱스 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafcce7e2a40284d1229b84ce4a8c385c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTcpThreadList::SendCommandAll </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>모든 쓰레드에 명령을 전달한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszData</td><td>명령 </td></tr>
+    <tr><td class="paramname">iDataLen</td><td>pszData 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga85c903d1022a199b0c42c9b54f513040"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ITcpStackCallBack::SessionClosed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_session_info.html">CTcpSessionInfo</a> *&#160;</td>
+          <td class="paramname"><em>pclsSessionInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TCP 클라이언트 세션이 종료 이벤트 핸들러 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSessionInfo</td><td>세션 정보 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="group___http_stack.html#gaba83d2969caa1dac0579759e13d846e9">CHttpStack</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga80aff07708c9ed060e259733c7c40189"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpClientMap::SetConnected </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSessionIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 연결됨으로 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>TCP 서버 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>TCP 서버 포트 번호 </td></tr>
+    <tr><td class="paramname">iThreadIndex</td><td>TCP 쓰레드 번호 </td></tr>
+    <tr><td class="paramname">iSessionIndex</td><td>TCP 세션 번호 ( TCP 쓰레드 내의 세션 번호 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa24a5038d994026e4e60244e45021d87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SetupFileLog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_file_log.html">CFileLog</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsFileLog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_xml_element.html">CXmlElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsElement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Xml element 의 설정값들로 <a class="el" href="class_c_file_log.html" title="파일 로그 저장 클래스">CFileLog</a> 를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsFileLog</td><td><a class="el" href="class_c_file_log.html" title="파일 로그 저장 클래스">CFileLog</a> 객체 </td></tr>
+    <tr><td class="paramname">clsElement</td><td>Xml elment </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3b7922769a82c881c8cf9756b0fbfd6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SSLAccept </td>
+          <td>(</td>
+          <td class="paramtype">Socket&#160;</td>
+          <td class="paramname"><em>iFd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SSL **&#160;</td>
+          <td class="paramname"><em>ppsttSsl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bCheckClientCert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iVerifyDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iAcceptTimeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>클라이언트 SSL 접속 요청을 허용한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iFd</td><td>클라이언트 TCP 소켓 핸들 </td></tr>
+    <tr><td class="paramname">ppsttSsl</td><td>SSL 구조체 </td></tr>
+    <tr><td class="paramname">bCheckClientCert</td><td>클라이언트 인증서를 확인할 것인가? </td></tr>
+    <tr><td class="paramname">iVerifyDepth</td><td>the maximum depth for the certificate chain verification that shall be allowed for ssl </td></tr>
+    <tr><td class="paramname">iAcceptTimeout</td><td>SSL 접속 요청 처리 최대 시간 ( ms 단위 ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga54d758f6e18ae22c6ba1df309412bb85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SSLClientStart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 클라이언트 라이브러리를 시작한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga46fe1e058ed50a8e18987dbdb4bbf33e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SSLClientStop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 클라이언트 라이브러리를 종료한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8b094272deed3b94defeb0f4dc3ab77f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SSLClose </td>
+          <td>(</td>
+          <td class="paramtype">SSL *&#160;</td>
+          <td class="paramname"><em>ssl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 세션을 종료한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ssl</td><td>SSL 구조체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7557dcb4879472cfe38b5254537650a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SSLFinal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>프로세스가 종료될 때에 최종적으로 실행하여서 openssl 메모리 누수를 출력하지 않는다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9459d99b576c0d457eaabbf0419f8573"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SSLPrintLogClientCipherList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 클라이언트에서 사용되는 cipher list 를 로그로 출력한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga671b4e844012c08cda8058c24d504679"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SSLPrintLogServerCipherList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 서버에서 사용되는 cipher list 를 로그로 출력한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga3bb0323a1b8aa058d0e7285fa86f1d72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SSLRecv </td>
+          <td>(</td>
+          <td class="paramtype">SSL *&#160;</td>
+          <td class="paramname"><em>ssl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>szBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iBufLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 프로토콜로 수신된 패킷을 읽는다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ssl</td><td>SSL 구조체 </td></tr>
+    <tr><td class="paramname">szBuf</td><td>수신 패킷 저장 버퍼 </td></tr>
+    <tr><td class="paramname">iBufLen</td><td>수신 패킷 저장 버퍼 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 양수를 리턴하고 실패하면 0 또는 음수를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa45ab9b3dd0102bf1be4fd0fc377028a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SSLSend </td>
+          <td>(</td>
+          <td class="paramtype">SSL *&#160;</td>
+          <td class="paramname"><em>ssl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iBufLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 프로토콜로 패킷을 전송한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ssl</td><td>SSL 구조체 </td></tr>
+    <tr><td class="paramname">szBuf</td><td>전송 패킷 </td></tr>
+    <tr><td class="paramname">iBufLen</td><td>전송 패킷 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>전송 패킷 크기를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga377b53d83fabe88aae045c27dad8ad1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SSLServerStart </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szCertFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 서버 라이브러리를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szCertFile</td><td>서버 인증서 및 개인키 파일 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga244021d85147830e847e4ab4aa0ed2d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SSLServerStop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SSL 서버 라이브러리를 종료한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeb03af95355c9f076decd424d7246d6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpStack::Start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_stack_setup.html">CTcpStackSetup</a> *&#160;</td>
+          <td class="paramname"><em>pclsSetup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_tcp_stack_call_back.html">ITcpStackCallBack</a> *&#160;</td>
+          <td class="paramname"><em>pclsCallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP stack 을 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsSetup</td><td>TCP stack 설정 </td></tr>
+    <tr><td class="paramname">pclsCallBack</td><td>TCP stack callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1c9074ac12baca9a02203560e008e270"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StartTcpClientThread </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszIp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_tcp_stack.html">CTcpStack</a> *&#160;</td>
+          <td class="paramname"><em>pclsStack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 연결 Thread 를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszIp</td><td>TCP 서버 IP 주소 </td></tr>
+    <tr><td class="paramname">iPort</td><td>TCP 서버 포트 번호 </td></tr>
+    <tr><td class="paramname">pclsStack</td><td>TCP stack </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae3d148b0f205b98b24a49c9db268072b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CTcpStack::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP stack 을 중지한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4d2ba364b9fd87f8a38764afb7b4a3b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_API TcpClientThread </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 연결 Thread. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpParameter</td><td><a class="el" href="class_c_tcp_client_arg.html" title="TCP 클라이언트 쓰레드 실행 인자">CTcpClientArg</a> 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae1b6f3cf4efb5446a888d8dfced66850"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_API TcpListenThread </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 서버 쓰레드 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpParameter</td><td><a class="el" href="class_c_tcp_stack.html" title="TCP listen / connect 및 수신/전송 클래스">CTcpStack</a> 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac1a5c0d77f60e106dcb9b0ac12ed2dc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_API TcpNoPipeThread </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pipe 를 사용하지 않는 TCP 세션 쓰레드 함수 - m_bUseThreadPipe 가 false 일 때에 사용된다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpParameter</td><td>CThreadListEntry 객체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaff066c8f46a9b2bba3bdae967ccfa2a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_API TcpPipeThread </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TCP 세션을 위한 쓰레드 함수 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpParameter</td><td>CThreadListEntry 객체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 화 10월 13 2020 17:19:43, 프로젝트명 : C++ HTTP Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

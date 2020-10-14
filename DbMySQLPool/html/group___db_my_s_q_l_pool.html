@@ -1,0 +1,1920 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ MySQL DB pool Stack: DbMySQLPool</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ MySQL DB pool Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">DbMySQLPool</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>MySQL DB pool 라이브러리  
+<a href="#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL DB 연결 관리 및 쿼리 실행 클래스  <a href="class_c_db_my_s_q_l_connection.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_db_my_s_q_l_pool.html">CDbMySQLPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL DB connection pool 관리 클래스  <a href="class_c_db_my_s_q_l_pool.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_db_my_s_q_l_queue.html">CDbMySQLQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL 문을 저장하는 큐 자료구조  <a href="class_c_db_my_s_q_l_queue.html#details">더 자세히 ...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_db_my_s_q_l_thread_arg.html">CDbMySQLThreadArg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL 연동 쓰레드 인자 저장 클래스  <a href="class_c_db_my_s_q_l_thread_arg.html#details">더 자세히 ...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:gac8ce3f39c0014a23739c9022b256ca78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gac8ce3f39c0014a23739c9022b256ca78">DbCheckSqlInjection</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gac8ce3f39c0014a23739c9022b256ca78"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL injection 공격 문자열이 포함되어 있는지 검사한다.  <a href="#gac8ce3f39c0014a23739c9022b256ca78"></a><br/></td></tr>
+<tr class="memitem:gaa73dd17f31943e7b9cef4b79e3284608"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaa73dd17f31943e7b9cef4b79e3284608">DbCheckSqlInjectionNotSlash</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gaa73dd17f31943e7b9cef4b79e3284608"><td class="mdescLeft">&#160;</td><td class="mdescRight">/ 를 제외한 SQL injection 공격 문자열이 포함되어 있는지 검사한다.  <a href="#gaa73dd17f31943e7b9cef4b79e3284608"></a><br/></td></tr>
+<tr class="memitem:gafdd34a30ec32654a4363ae82a87bd73c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gafdd34a30ec32654a4363ae82a87bd73c">DbCheckSqlInjectionNotSpace</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:gafdd34a30ec32654a4363ae82a87bd73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">공백을 제외한 SQL injection 공격 문자열이 포함되어 있는지 검사한다.  <a href="#gafdd34a30ec32654a4363ae82a87bd73c"></a><br/></td></tr>
+<tr class="memitem:ga00ce37a5d9b875c3b416b4a40305ce68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga00ce37a5d9b875c3b416b4a40305ce68">DbCheckSqlInjectionNotMinus</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga00ce37a5d9b875c3b416b4a40305ce68"><td class="mdescLeft">&#160;</td><td class="mdescRight">'-' 를 제외한 SQL injection 공격 문자열이 포함되어 있는지 검사한다.  <a href="#ga00ce37a5d9b875c3b416b4a40305ce68"></a><br/></td></tr>
+<tr class="memitem:ga82adabecd4d96e9459b9b8b9d4fa45f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga82adabecd4d96e9459b9b8b9d4fa45f3">DbReplaceSqlInjectionNotSpace</a> (std::string &amp;strValue)</td></tr>
+<tr class="memdesc:ga82adabecd4d96e9459b9b8b9d4fa45f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">공백을 제외한 SQL injection 공격 문자열이 존재하면 공백으로 수정한다.  <a href="#ga82adabecd4d96e9459b9b8b9d4fa45f3"></a><br/></td></tr>
+<tr class="memitem:ga05764aa08167c2270fff40b0cab04640"><td class="memItemLeft" align="right" valign="top">THREAD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga05764aa08167c2270fff40b0cab04640">DbMySQLThread</a> (LPVOID lpParameter)</td></tr>
+<tr class="memdesc:ga05764aa08167c2270fff40b0cab04640"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL 연동 쓰레드  <a href="#ga05764aa08167c2270fff40b0cab04640"></a><br/></td></tr>
+<tr class="memitem:ga27448b0ecbbbf4b85f1129230cd58c27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga27448b0ecbbbf4b85f1129230cd58c27">StartDbMySQLThread</a> (int iThreadCount, <a class="el" href="class_c_db_my_s_q_l_queue.html">CDbMySQLQueue</a> *pclsSqlQueue, const char *pszHost, const char *pszUserId, const char *pszPassWord, const char *pszDbName, int iPort, const char *pszCharacterSet)</td></tr>
+<tr class="memdesc:ga27448b0ecbbbf4b85f1129230cd58c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL 연동 쓰레드들을 시작한다.  <a href="#ga27448b0ecbbbf4b85f1129230cd58c27"></a><br/></td></tr>
+<tr class="memitem:ga22e394c6868be2a98706b3a61ab47c79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga22e394c6868be2a98706b3a61ab47c79">StartDbMySQLThread</a> (<a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a> *pclsDbConn, <a class="el" href="class_c_db_my_s_q_l_queue.html">CDbMySQLQueue</a> *pclsSqlQueue)</td></tr>
+<tr class="memdesc:ga22e394c6868be2a98706b3a61ab47c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL 연동 쓰레드를 시작한다.  <a href="#ga22e394c6868be2a98706b3a61ab47c79"></a><br/></td></tr>
+<tr class="memitem:ga1d41926cbe54ff1dfe3f7b20da5e2469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga1d41926cbe54ff1dfe3f7b20da5e2469">StopDbMySQLThread</a> ()</td></tr>
+<tr class="memdesc:ga1d41926cbe54ff1dfe3f7b20da5e2469"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL 연동 쓰레드에 중지 명령을 전송한다.  <a href="#ga1d41926cbe54ff1dfe3f7b20da5e2469"></a><br/></td></tr>
+<tr class="memitem:gaed1f42e31e6fd0af2230b353196cb83d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaed1f42e31e6fd0af2230b353196cb83d">IsDbMySQLThreadRun</a> ()</td></tr>
+<tr class="memdesc:gaed1f42e31e6fd0af2230b353196cb83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL 연동 쓰레드가 실행 중인지 검사한다.  <a href="#gaed1f42e31e6fd0af2230b353196cb83d"></a><br/></td></tr>
+<tr class="memitem:ga576a213e52eda7d12729efe81ade0cb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga576a213e52eda7d12729efe81ade0cb7">CDbMySQLConnection::Connect</a> (const char *pszHost, const char *pszUserId, const char *pszPassWord, const char *pszDbName, int iPort, const char *pszCharacterSet=NULL)</td></tr>
+<tr class="memdesc:ga576a213e52eda7d12729efe81ade0cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB 에 연결한다.  <a href="#ga576a213e52eda7d12729efe81ade0cb7"></a><br/></td></tr>
+<tr class="memitem:gad36c4bf9bc62b61cdc6600ecf5c87dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gad36c4bf9bc62b61cdc6600ecf5c87dc1">CDbMySQLConnection::Close</a> ()</td></tr>
+<tr class="memdesc:gad36c4bf9bc62b61cdc6600ecf5c87dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB 연결 종료한다.  <a href="#gad36c4bf9bc62b61cdc6600ecf5c87dc1"></a><br/></td></tr>
+<tr class="memitem:gae752238b9001d7edfe8fe4eff34d9f8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gae752238b9001d7edfe8fe4eff34d9f8f">CDbMySQLConnection::Execute</a> (const char *pszSQL)</td></tr>
+<tr class="memdesc:gae752238b9001d7edfe8fe4eff34d9f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">INSERT / UPDATE / DELETE SQL 문을 실행한다.  <a href="#gae752238b9001d7edfe8fe4eff34d9f8f"></a><br/></td></tr>
+<tr class="memitem:ga8e3585c2fb2f0c03ed323c7c37aa0c43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga8e3585c2fb2f0c03ed323c7c37aa0c43">CDbMySQLConnection::Insert</a> (const char *pszSQL, uint64_t *piId)</td></tr>
+<tr class="memdesc:ga8e3585c2fb2f0c03ed323c7c37aa0c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">INSERT 문의 실행한다.  <a href="#ga8e3585c2fb2f0c03ed323c7c37aa0c43"></a><br/></td></tr>
+<tr class="memitem:ga1b90d7388ca99740f00340000bca502f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga1b90d7388ca99740f00340000bca502f">CDbMySQLConnection::Query</a> (const char *pszSQL, void *pclsData, bool(*FetchRow)(void *, MYSQL_ROW &amp;sttRow))</td></tr>
+<tr class="memdesc:ga1b90d7388ca99740f00340000bca502f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT 문을 실행한다.  <a href="#ga1b90d7388ca99740f00340000bca502f"></a><br/></td></tr>
+<tr class="memitem:ga856083129ecf017b1a2c6b3693ef01e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga856083129ecf017b1a2c6b3693ef01e6">CDbMySQLConnection::QueryOne</a> (const char *pszSQL, int &amp;iData)</td></tr>
+<tr class="memdesc:ga856083129ecf017b1a2c6b3693ef01e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#ga856083129ecf017b1a2c6b3693ef01e6"></a><br/></td></tr>
+<tr class="memitem:ga9051a1c73783ea3fcd9b1ecb18cb8ed4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga9051a1c73783ea3fcd9b1ecb18cb8ed4">CDbMySQLConnection::QueryOne</a> (const char *pszSQL, uint8_t &amp;cData)</td></tr>
+<tr class="memdesc:ga9051a1c73783ea3fcd9b1ecb18cb8ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#ga9051a1c73783ea3fcd9b1ecb18cb8ed4"></a><br/></td></tr>
+<tr class="memitem:ga3649323c2f12178dd38f2acf2a07c504"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga3649323c2f12178dd38f2acf2a07c504">CDbMySQLConnection::QueryOne</a> (const char *pszSQL, uint32_t &amp;iData)</td></tr>
+<tr class="memdesc:ga3649323c2f12178dd38f2acf2a07c504"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#ga3649323c2f12178dd38f2acf2a07c504"></a><br/></td></tr>
+<tr class="memitem:gad1d1d20128a38aa528c18cc12aba8b1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gad1d1d20128a38aa528c18cc12aba8b1a">CDbMySQLConnection::QueryOne</a> (const char *pszSQL, uint64_t &amp;iData)</td></tr>
+<tr class="memdesc:gad1d1d20128a38aa528c18cc12aba8b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#gad1d1d20128a38aa528c18cc12aba8b1a"></a><br/></td></tr>
+<tr class="memitem:ga6bdd0c0add707c05d717d34ed1855e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga6bdd0c0add707c05d717d34ed1855e0d">CDbMySQLConnection::QueryOne</a> (const char *pszSQL, int64_t &amp;iData)</td></tr>
+<tr class="memdesc:ga6bdd0c0add707c05d717d34ed1855e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#ga6bdd0c0add707c05d717d34ed1855e0d"></a><br/></td></tr>
+<tr class="memitem:gafd5eac35a978265cf8842c60f0ecee2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gafd5eac35a978265cf8842c60f0ecee2a">CDbMySQLConnection::QueryOne</a> (const char *pszSQL, std::string &amp;strData)</td></tr>
+<tr class="memdesc:gafd5eac35a978265cf8842c60f0ecee2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">한 개의 row, column 을 가져오는 SQL 문을 실행한다.  <a href="#gafd5eac35a978265cf8842c60f0ecee2a"></a><br/></td></tr>
+<tr class="memitem:gaa2ab5abbb274ec71a0e822d6981ab404"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaa2ab5abbb274ec71a0e822d6981ab404">CDbMySQLConnection::QueryOne</a> (const char *pszSQL, const char *pszArg, std::string &amp;strData, int iDataSize)</td></tr>
+<tr class="memdesc:gaa2ab5abbb274ec71a0e822d6981ab404"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT password(?) 와 같은 SQL 문을 실행한 결과를 가져온다.  <a href="#gaa2ab5abbb274ec71a0e822d6981ab404"></a><br/></td></tr>
+<tr class="memitem:ga2b3d717eac6be5eda36417b671692e6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga2b3d717eac6be5eda36417b671692e6b">CDbMySQLConnection::Prepare</a> (const char *pszSQL)</td></tr>
+<tr class="memdesc:ga2b3d717eac6be5eda36417b671692e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepareStmt 를 시작한다.  <a href="#ga2b3d717eac6be5eda36417b671692e6b"></a><br/></td></tr>
+<tr class="memitem:ga1cb132fc51e3449938f14cc86ba82780"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga1cb132fc51e3449938f14cc86ba82780">CDbMySQLConnection::Bind</a> (int iIndex, const char *pszVal)</td></tr>
+<tr class="memdesc:ga1cb132fc51e3449938f14cc86ba82780"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepareStmt 로 bind 할 변수를 설정한다.  <a href="#ga1cb132fc51e3449938f14cc86ba82780"></a><br/></td></tr>
+<tr class="memitem:gab82629969be7e0d9cc9533a6354e9e42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gab82629969be7e0d9cc9533a6354e9e42">CDbMySQLConnection::PrepareExecute</a> (uint64_t *piId=NULL)</td></tr>
+<tr class="memdesc:gab82629969be7e0d9cc9533a6354e9e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepareStmt 를 실행한다.  <a href="#gab82629969be7e0d9cc9533a6354e9e42"></a><br/></td></tr>
+<tr class="memitem:ga353b552f1c0edaa992b9e290dff8298b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga353b552f1c0edaa992b9e290dff8298b">CDbMySQLConnection::PrepareClose</a> ()</td></tr>
+<tr class="memdesc:ga353b552f1c0edaa992b9e290dff8298b"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepareStmt 를 종료한다.  <a href="#ga353b552f1c0edaa992b9e290dff8298b"></a><br/></td></tr>
+<tr class="memitem:gaee0985dacb84d38b50b020e4cd5bc0fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaee0985dacb84d38b50b020e4cd5bc0fd">CDbMySQLConnection::Execute</a> (const char *pszSQL, int iArgCount,...)</td></tr>
+<tr class="memdesc:gaee0985dacb84d38b50b020e4cd5bc0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepare statement 로 SQL INSERT, UPDATE, DELETE 명령을 수행한다.  <a href="#gaee0985dacb84d38b50b020e4cd5bc0fd"></a><br/></td></tr>
+<tr class="memitem:gafd68f8dde2757b3ec2530f78677f5984"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gafd68f8dde2757b3ec2530f78677f5984">CDbMySQLConnection::Execute</a> (const char *pszSQL, STRING_LIST &amp;clsArgList)</td></tr>
+<tr class="memdesc:gafd68f8dde2757b3ec2530f78677f5984"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepare statement 로 SQL INSERT, UPDATE, DELETE 명령을 수행한다.  <a href="#gafd68f8dde2757b3ec2530f78677f5984"></a><br/></td></tr>
+<tr class="memitem:gac5d12b7859f5004ad297535ed8886d19"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gac5d12b7859f5004ad297535ed8886d19">CDbMySQLConnection::GetAffectedRow</a> ()</td></tr>
+<tr class="memdesc:gac5d12b7859f5004ad297535ed8886d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">It returns the number of rows changed, deleted, or inserted by the last statement if it was an UPDATE, DELETE, or INSERT.  <a href="#gac5d12b7859f5004ad297535ed8886d19"></a><br/></td></tr>
+<tr class="memitem:ga90a1f78b1cdc635de93541a91825a143"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga90a1f78b1cdc635de93541a91825a143">CDbMySQLConnection::GetError</a> ()</td></tr>
+<tr class="memdesc:ga90a1f78b1cdc635de93541a91825a143"><td class="mdescLeft">&#160;</td><td class="mdescRight">mysql_errno 를 리턴한다.  <a href="#ga90a1f78b1cdc635de93541a91825a143"></a><br/></td></tr>
+<tr class="memitem:ga37386d7c9302738686cb785c94b04ccb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga37386d7c9302738686cb785c94b04ccb">CDbMySQLConnection::IsExistTable</a> (const char *pszTableName)</td></tr>
+<tr class="memdesc:ga37386d7c9302738686cb785c94b04ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">테이블이 존재하는지 검사한다.  <a href="#ga37386d7c9302738686cb785c94b04ccb"></a><br/></td></tr>
+<tr class="memitem:ga8ca856914e8e0556b909e770d9a996af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga8ca856914e8e0556b909e770d9a996af">CDbMySQLConnection::SetReadTimeout</a> (int iSecond)</td></tr>
+<tr class="memdesc:ga8ca856914e8e0556b909e770d9a996af"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL read timeout 시간을 설정한다.  <a href="#ga8ca856914e8e0556b909e770d9a996af"></a><br/></td></tr>
+<tr class="memitem:gaf8386e9ea8760331fc71c02de0d01cf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaf8386e9ea8760331fc71c02de0d01cf8">CDbMySQLConnection::SetWriteTimeout</a> (int iSecond)</td></tr>
+<tr class="memdesc:gaf8386e9ea8760331fc71c02de0d01cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL write timeout 시간을 설정한다.  <a href="#gaf8386e9ea8760331fc71c02de0d01cf8"></a><br/></td></tr>
+<tr class="memitem:ga729111589ffe05ef6629fb76f3cbe187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga729111589ffe05ef6629fb76f3cbe187">CDbMySQLConnection::SetLogLevel</a> (<a class="el" href="group___sip_platform.html#ga9a0ef42e6257d28e352db4f384cbc6c7">EnumLogLevel</a> eLogLevel)</td></tr>
+<tr class="memdesc:ga729111589ffe05ef6629fb76f3cbe187"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL 로그 레벨을 설정한다.  <a href="#ga729111589ffe05ef6629fb76f3cbe187"></a><br/></td></tr>
+<tr class="memitem:gac304153bf8410d16ee8028eb6a0a2259"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gac304153bf8410d16ee8028eb6a0a2259">CDbMySQLConnection::Final</a> ()</td></tr>
+<tr class="memdesc:gac304153bf8410d16ee8028eb6a0a2259"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL 라이브러리 사용을 종료할 때에 호출하여서 메모리를 해제한다.  <a href="#gac304153bf8410d16ee8028eb6a0a2259"></a><br/></td></tr>
+<tr class="memitem:ga59370edb9367cfe29b848693613b24f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga59370edb9367cfe29b848693613b24f3">CDbMySQLPool::Create</a> (int iPoolCount, const char *pszHost, const char *pszUserId, const char *pszPassWord, const char *pszDbName, int iPort, const char *pszCharacterSet=NULL)</td></tr>
+<tr class="memdesc:ga59370edb9367cfe29b848693613b24f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB 에 연결한다.  <a href="#ga59370edb9367cfe29b848693613b24f3"></a><br/></td></tr>
+<tr class="memitem:ga6725cff93346022ec717dc05cc86dc9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga6725cff93346022ec717dc05cc86dc9d">CDbMySQLPool::Destroy</a> ()</td></tr>
+<tr class="memdesc:ga6725cff93346022ec717dc05cc86dc9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB pool 에 포함된 DB 연결을 해제하고 리소스를 정리한다.  <a href="#ga6725cff93346022ec717dc05cc86dc9d"></a><br/></td></tr>
+<tr class="memitem:ga06df6a7cfc529125fa386ad78484e0dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga06df6a7cfc529125fa386ad78484e0dc">CDbMySQLPool::Select</a> (<a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a> **ppclsDbConn, bool bStandByUntilAvailable=true)</td></tr>
+<tr class="memdesc:ga06df6a7cfc529125fa386ad78484e0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB pool 에서 DB 연결 객체를 가져온다.  <a href="#ga06df6a7cfc529125fa386ad78484e0dc"></a><br/></td></tr>
+<tr class="memitem:ga195a53376b756592839152f2dd33120c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga195a53376b756592839152f2dd33120c">CDbMySQLPool::Release</a> (<a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a> *pclsDbConn)</td></tr>
+<tr class="memdesc:ga195a53376b756592839152f2dd33120c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB 연결 객체를 DB pool 에 반환한다.  <a href="#ga195a53376b756592839152f2dd33120c"></a><br/></td></tr>
+<tr class="memitem:gaad9c73ff2c6f2d2e3990c3c4f1e3331e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaad9c73ff2c6f2d2e3990c3c4f1e3331e">CDbMySQLPool::Execute</a> (const char *pszSQL)</td></tr>
+<tr class="memdesc:gaad9c73ff2c6f2d2e3990c3c4f1e3331e"><td class="mdescLeft">&#160;</td><td class="mdescRight">INSERT / UPDATE / DELETE SQL 문을 실행한다.  <a href="#gaad9c73ff2c6f2d2e3990c3c4f1e3331e"></a><br/></td></tr>
+<tr class="memitem:gaac9e2f5a8e20e7ae526039cf7c6baf03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaac9e2f5a8e20e7ae526039cf7c6baf03">CDbMySQLPool::Insert</a> (const char *pszSQL, uint64_t *piId)</td></tr>
+<tr class="memdesc:gaac9e2f5a8e20e7ae526039cf7c6baf03"><td class="mdescLeft">&#160;</td><td class="mdescRight">INSERT 문의 실행한다.  <a href="#gaac9e2f5a8e20e7ae526039cf7c6baf03"></a><br/></td></tr>
+<tr class="memitem:ga555e40f1863dbd42458ac9a5e62e68fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga555e40f1863dbd42458ac9a5e62e68fb">CDbMySQLPool::Query</a> (const char *pszSQL, void *pclsData, bool(*FetchRow)(void *, MYSQL_ROW &amp;sttRow))</td></tr>
+<tr class="memdesc:ga555e40f1863dbd42458ac9a5e62e68fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT 문을 실행한다.  <a href="#ga555e40f1863dbd42458ac9a5e62e68fb"></a><br/></td></tr>
+<tr class="memitem:gae494b2151f96179cc4ba5b4074fe264e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gae494b2151f96179cc4ba5b4074fe264e">CDbMySQLPool::QueryOne</a> (const char *pszSQL, int &amp;iData)</td></tr>
+<tr class="memdesc:gae494b2151f96179cc4ba5b4074fe264e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#gae494b2151f96179cc4ba5b4074fe264e"></a><br/></td></tr>
+<tr class="memitem:gafbfada942800529ff07bd5fb823ff9fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gafbfada942800529ff07bd5fb823ff9fb">CDbMySQLPool::QueryOne</a> (const char *pszSQL, uint32_t &amp;iData)</td></tr>
+<tr class="memdesc:gafbfada942800529ff07bd5fb823ff9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#gafbfada942800529ff07bd5fb823ff9fb"></a><br/></td></tr>
+<tr class="memitem:ga0c0417ea365ab9dbbbd6e663cecfe428"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga0c0417ea365ab9dbbbd6e663cecfe428">CDbMySQLPool::QueryOne</a> (const char *pszSQL, uint64_t &amp;iData)</td></tr>
+<tr class="memdesc:ga0c0417ea365ab9dbbbd6e663cecfe428"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#ga0c0417ea365ab9dbbbd6e663cecfe428"></a><br/></td></tr>
+<tr class="memitem:gae8350c36f2ab71ca01e7294f187cdfbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gae8350c36f2ab71ca01e7294f187cdfbc">CDbMySQLPool::QueryOne</a> (const char *pszSQL, int64_t &amp;iData)</td></tr>
+<tr class="memdesc:gae8350c36f2ab71ca01e7294f187cdfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#gae8350c36f2ab71ca01e7294f187cdfbc"></a><br/></td></tr>
+<tr class="memitem:gafe007f74d7c645391cb561cac4df3386"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gafe007f74d7c645391cb561cac4df3386">CDbMySQLPool::QueryOne</a> (const char *pszSQL, std::string &amp;strData)</td></tr>
+<tr class="memdesc:gafe007f74d7c645391cb561cac4df3386"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT string 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="#gafe007f74d7c645391cb561cac4df3386"></a><br/></td></tr>
+<tr class="memitem:ga81340ff837bc8b6b06b0f6df3e7b59c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga81340ff837bc8b6b06b0f6df3e7b59c9">CDbMySQLPool::SetReadTimeout</a> (int iSecond)</td></tr>
+<tr class="memdesc:ga81340ff837bc8b6b06b0f6df3e7b59c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL read timeout 시간을 설정한다.  <a href="#ga81340ff837bc8b6b06b0f6df3e7b59c9"></a><br/></td></tr>
+<tr class="memitem:ga55e80a6f514a00784fb1ec36acf36e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga55e80a6f514a00784fb1ec36acf36e1e">CDbMySQLPool::SetWriteTimeout</a> (int iSecond)</td></tr>
+<tr class="memdesc:ga55e80a6f514a00784fb1ec36acf36e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL write timeout 시간을 설정한다.  <a href="#ga55e80a6f514a00784fb1ec36acf36e1e"></a><br/></td></tr>
+<tr class="memitem:ga42e1d78f14aa817122a304bee60f4bc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga42e1d78f14aa817122a304bee60f4bc8">CDbMySQLQueue::Insert</a> (const char *pszSQL)</td></tr>
+<tr class="memdesc:ga42e1d78f14aa817122a304bee60f4bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">큐에 SQL 문자열을 입력한다.  <a href="#ga42e1d78f14aa817122a304bee60f4bc8"></a><br/></td></tr>
+<tr class="memitem:ga91275f1b10030c33004a665df45c40f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga91275f1b10030c33004a665df45c40f4">CDbMySQLQueue::Insert</a> (const char *pszSQL, int iArgCount,...)</td></tr>
+<tr class="memdesc:ga91275f1b10030c33004a665df45c40f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">큐에 동적 SQL 문자열을 입력한다.  <a href="#ga91275f1b10030c33004a665df45c40f4"></a><br/></td></tr>
+<tr class="memitem:gaffb17cb29f8ee1e2d1dac23c8187840a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaffb17cb29f8ee1e2d1dac23c8187840a">CDbMySQLQueue::Select</a> (<a class="el" href="class_c_db_my_s_q_l_queue_data.html">CDbMySQLQueueData</a> &amp;clsData, bool bWait=true)</td></tr>
+<tr class="memdesc:gaffb17cb29f8ee1e2d1dac23c8187840a"><td class="mdescLeft">&#160;</td><td class="mdescRight">큐에서 SQL 문자열을 가져온다.  <a href="#gaffb17cb29f8ee1e2d1dac23c8187840a"></a><br/></td></tr>
+<tr class="memitem:ga902a354920fac01a896b34af7a74d8a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga902a354920fac01a896b34af7a74d8a0">CDbMySQLQueue::GetSize</a> ()</td></tr>
+<tr class="memdesc:ga902a354920fac01a896b34af7a74d8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">큐에 저장된 SQL 문자열의 개수를 리턴한다.  <a href="#ga902a354920fac01a896b34af7a74d8a0"></a><br/></td></tr>
+<tr class="memitem:ga322cd6e29d9a2f436c7a0be399462d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga322cd6e29d9a2f436c7a0be399462d2f">CDbMySQLQueue::Signal</a> ()</td></tr>
+<tr class="memdesc:ga322cd6e29d9a2f436c7a0be399462d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">큐에 SQL 문자열이 존재할 때까지 대기하는 쓰레드에게 이벤트를 전송한다.  <a href="#ga322cd6e29d9a2f436c7a0be399462d2f"></a><br/></td></tr>
+<tr class="memitem:gaa20922538242a4d3d6bc6837debfb282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaa20922538242a4d3d6bc6837debfb282">CDbMySQLQueue::SetMaxSize</a> (int iMaxSize)</td></tr>
+<tr class="memdesc:gaa20922538242a4d3d6bc6837debfb282"><td class="mdescLeft">&#160;</td><td class="mdescRight">큐에 저장할 수 있는 SQL 문자열의 최대 개수를 설정한다.  <a href="#gaa20922538242a4d3d6bc6837debfb282"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<p>MySQL DB pool 라이브러리 </p>
+<h2>함수 문서화</h2>
+<a class="anchor" id="ga1cb132fc51e3449938f14cc86ba82780"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::Bind </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prepareStmt 로 bind 할 변수를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>bind 변수 인덱스 </td></tr>
+    <tr><td class="paramname">pszVal</td><td>값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad36c4bf9bc62b61cdc6600ecf5c87dc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLConnection::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DB 연결 종료한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga576a213e52eda7d12729efe81ade0cb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::Connect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszHost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszDbName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCharacterSet</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DB 에 연결한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszHost</td><td>MySQL 호스트 이름 or IP 주소 </td></tr>
+    <tr><td class="paramname">pszUserId</td><td>MySQL 접속 아이디 </td></tr>
+    <tr><td class="paramname">pszPassWord</td><td>MySQL 접속 아이디의 비밀번호 </td></tr>
+    <tr><td class="paramname">pszDbName</td><td>MySQL 접속 데이터베이스 이름 </td></tr>
+    <tr><td class="paramname">iPort</td><td>MySQL 접속 포트 번호 </td></tr>
+    <tr><td class="paramname">pszCharacterSet</td><td>character set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga59370edb9367cfe29b848693613b24f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::Create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPoolCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszHost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszDbName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCharacterSet</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DB 에 연결한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iPoolCount</td><td>DB pool 에 포함될 DB 연결 개수 </td></tr>
+    <tr><td class="paramname">pszHost</td><td>MySQL 호스트 이름 or IP 주소 </td></tr>
+    <tr><td class="paramname">pszUserId</td><td>MySQL 접속 아이디 </td></tr>
+    <tr><td class="paramname">pszPassWord</td><td>MySQL 접속 아이디의 비밀번호 </td></tr>
+    <tr><td class="paramname">pszDbName</td><td>MySQL 접속 데이터베이스 이름 </td></tr>
+    <tr><td class="paramname">iPort</td><td>MySQL 접속 포트 번호 </td></tr>
+    <tr><td class="paramname">pszCharacterSet</td><td>character set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac8ce3f39c0014a23739c9022b256ca78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DbCheckSqlInjection </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SQL injection 공격 문자열이 포함되어 있는지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>검사 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SQL injection 공격 문자열이 포함되어 있으면 false 를 리턴하고 그렇지 않으면 true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga00ce37a5d9b875c3b416b4a40305ce68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DbCheckSqlInjectionNotMinus </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>'-' 를 제외한 SQL injection 공격 문자열이 포함되어 있는지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>검사 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SQL injection 공격 문자열이 포함되어 있으면 false 를 리턴하고 그렇지 않으면 true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa73dd17f31943e7b9cef4b79e3284608"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DbCheckSqlInjectionNotSlash </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>/ 를 제외한 SQL injection 공격 문자열이 포함되어 있는지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>검사 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SQL injection 공격 문자열이 포함되어 있으면 false 를 리턴하고 그렇지 않으면 true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafdd34a30ec32654a4363ae82a87bd73c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DbCheckSqlInjectionNotSpace </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>공백을 제외한 SQL injection 공격 문자열이 포함되어 있는지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>검사 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SQL injection 공격 문자열이 포함되어 있으면 false 를 리턴하고 그렇지 않으면 true 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga05764aa08167c2270fff40b0cab04640"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">THREAD_API DbMySQLThread </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL 연동 쓰레드 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpParameter</td><td><a class="el" href="class_c_db_my_s_q_l_thread_arg.html" title="MySQL 연동 쓰레드 인자 저장 클래스">CDbMySQLThreadArg</a> 객체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0 을 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga82adabecd4d96e9459b9b8b9d4fa45f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DbReplaceSqlInjectionNotSpace </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>공백을 제외한 SQL injection 공격 문자열이 존재하면 공백으로 수정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strValue</td><td>검사 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6725cff93346022ec717dc05cc86dc9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLPool::Destroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DB pool 에 포함된 DB 연결을 해제하고 리소스를 정리한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gae752238b9001d7edfe8fe4eff34d9f8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::Execute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INSERT / UPDATE / DELETE SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaee0985dacb84d38b50b020e4cd5bc0fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::Execute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iArgCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prepare statement 로 SQL INSERT, UPDATE, DELETE 명령을 수행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>동적 SQL 문 </td></tr>
+    <tr><td class="paramname">iArgCount</td><td>Bind 인자 개수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafd68f8dde2757b3ec2530f78677f5984"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::Execute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">STRING_LIST &amp;&#160;</td>
+          <td class="paramname"><em>clsArgList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prepare statement 로 SQL INSERT, UPDATE, DELETE 명령을 수행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>동적 SQL 문 </td></tr>
+    <tr><td class="paramname">clsArgList</td><td>Bind 인자 리스트 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaad9c73ff2c6f2d2e3990c3c4f1e3331e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::Execute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INSERT / UPDATE / DELETE SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac304153bf8410d16ee8028eb6a0a2259"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLConnection::Final </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>MySQL 라이브러리 사용을 종료할 때에 호출하여서 메모리를 해제한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac5d12b7859f5004ad297535ed8886d19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t CDbMySQLConnection::GetAffectedRow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It returns the number of rows changed, deleted, or inserted by the last statement if it was an UPDATE, DELETE, or INSERT. </p>
+<dl class="section return"><dt>반환값</dt><dd>An integer greater than zero indicates the number of rows affected or retrieved. Zero indicates that no records were updated for an UPDATE statement, no rows matched the WHERE clause in the query or that no query has yet been executed. -1 indicates that the query returned an error </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga90a1f78b1cdc635de93541a91825a143"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CDbMySQLConnection::GetError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mysql_errno 를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>mysql_errno 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga902a354920fac01a896b34af7a74d8a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CDbMySQLQueue::GetSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>큐에 저장된 SQL 문자열의 개수를 리턴한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>큐에 저장된 SQL 문자열의 개수를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga42e1d78f14aa817122a304bee60f4bc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLQueue::Insert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>큐에 SQL 문자열을 입력한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문자열 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga91275f1b10030c33004a665df45c40f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLQueue::Insert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iArgCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>큐에 동적 SQL 문자열을 입력한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문자열 </td></tr>
+    <tr><td class="paramname">iArgCount</td><td>인자 개수 </td></tr>
+    <tr><td class="paramname">...</td><td>인자 리스트 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8e3585c2fb2f0c03ed323c7c37aa0c43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::Insert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>piId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INSERT 문의 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">piId</td><td>AUTO_INCREMENT 로 생성된 정수 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaac9e2f5a8e20e7ae526039cf7c6baf03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::Insert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>piId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INSERT 문의 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">piId</td><td>AUTO_INCREMENT 로 생성된 정수 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaed1f42e31e6fd0af2230b353196cb83d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsDbMySQLThreadRun </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL 연동 쓰레드가 실행 중인지 검사한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>MySQL 연동 쓰레드가 실행중이면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga37386d7c9302738686cb785c94b04ccb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::IsExistTable </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTableName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>테이블이 존재하는지 검사한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszTableName</td><td>테이블 이름 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>테이블이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2b3d717eac6be5eda36417b671692e6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::Prepare </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prepareStmt 를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga353b552f1c0edaa992b9e290dff8298b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::PrepareClose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prepareStmt 를 종료한다. </p>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab82629969be7e0d9cc9533a6354e9e42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::PrepareExecute </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>piId</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prepareStmt 를 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">piId</td><td>AUTO_INCREMENT 로 생성된 정수 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1b90d7388ca99740f00340000bca502f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::Query </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pclsData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(*)(void *, MYSQL_ROW &amp;sttRow)&#160;</td>
+          <td class="paramname"><em>FetchRow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">pclsData</td><td>응용 프로그램 변수 </td></tr>
+    <tr><td class="paramname">FetchRow</td><td>1개의 Row 마다 실행되는 함수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga555e40f1863dbd42458ac9a5e62e68fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::Query </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pclsData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(*)(void *, MYSQL_ROW &amp;sttRow)&#160;</td>
+          <td class="paramname"><em>FetchRow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">pclsData</td><td>응용 프로그램 변수 </td></tr>
+    <tr><td class="paramname">FetchRow</td><td>1개의 Row 마다 실행되는 함수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga856083129ecf017b1a2c6b3693ef01e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">iData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9051a1c73783ea3fcd9b1ecb18cb8ed4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>cData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">cData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3649323c2f12178dd38f2acf2a07c504"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">iData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad1d1d20128a38aa528c18cc12aba8b1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">iData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6bdd0c0add707c05d717d34ed1855e0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">iData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafd5eac35a978265cf8842c60f0ecee2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>한 개의 row, column 을 가져오는 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">strData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa2ab5abbb274ec71a0e822d6981ab404"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLConnection::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszArg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iDataSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT password(?) 와 같은 SQL 문을 실행한 결과를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">pszArg</td><td>bind 할 문자열 </td></tr>
+    <tr><td class="paramname">strData</td><td>결과를 저장할 변수 </td></tr>
+    <tr><td class="paramname">iDataSize</td><td>결과 문자열의 최대 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae494b2151f96179cc4ba5b4074fe264e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">iData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafbfada942800529ff07bd5fb823ff9fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">iData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0c0417ea365ab9dbbbd6e663cecfe428"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">iData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae8350c36f2ab71ca01e7294f187cdfbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t &amp;&#160;</td>
+          <td class="paramname"><em>iData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">iData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafe007f74d7c645391cb561cac4df3386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::QueryOne </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszSQL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>strData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SELECT string 와 같은 1개의 row, column 인 SQL 문을 실행한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszSQL</td><td>SQL 문 </td></tr>
+    <tr><td class="paramname">strData</td><td>검색 결과 저장 변수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga195a53376b756592839152f2dd33120c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLPool::Release </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a> *&#160;</td>
+          <td class="paramname"><em>pclsDbConn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DB 연결 객체를 DB pool 에 반환한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsDbConn</td><td>DB 연결 객체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaffb17cb29f8ee1e2d1dac23c8187840a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLQueue::Select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_db_my_s_q_l_queue_data.html">CDbMySQLQueueData</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bWait</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>큐에서 SQL 문자열을 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clsData</td><td>SQL 문자열 등을 저장 변수 </td></tr>
+    <tr><td class="paramname">bWait</td><td>SQL 문자열이 존재할 때까지 대기하는가? </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>SQL 문자열이 존재하면 true 를 리턴하고 그렇지 않으면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga06df6a7cfc529125fa386ad78484e0dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CDbMySQLPool::Select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a> **&#160;</td>
+          <td class="paramname"><em>ppclsDbConn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bStandByUntilAvailable</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DB pool 에서 DB 연결 객체를 가져온다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ppclsDbConn</td><td>DB 연결 객체의 포인터 </td></tr>
+    <tr><td class="paramname">bStandByUntilAvailable</td><td>사용할 수 있는 DB 연결 객체가 존재할 때까지 대기하면 true 이고 그렇지 않으면 false. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga729111589ffe05ef6629fb76f3cbe187"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLConnection::SetLogLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___sip_platform.html#ga9a0ef42e6257d28e352db4f384cbc6c7">EnumLogLevel</a>&#160;</td>
+          <td class="paramname"><em>eLogLevel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SQL 로그 레벨을 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eLogLevel</td><td>SQL 로그 레벨 ( LOG_SQL, LOG_SQL1, LOG_SQL2, LOG_SQL3 중에서 1개를 입력한다. ) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa20922538242a4d3d6bc6837debfb282"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLQueue::SetMaxSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iMaxSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>큐에 저장할 수 있는 SQL 문자열의 최대 개수를 설정한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iMaxSize</td><td>큐에 저장할 수 있는 SQL 문자열의 최대 개수 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga81340ff837bc8b6b06b0f6df3e7b59c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLPool::SetReadTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSecond</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL read timeout 시간을 설정한다. </p>
+<p>본 메소드는 Connect() 메소드를 호출하기 전에 호출해야 유효하다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iSecond</td><td>MySQL read timeout 시간 (초단위) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8ca856914e8e0556b909e770d9a996af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLConnection::SetReadTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSecond</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL read timeout 시간을 설정한다. </p>
+<p>본 메소드는 Connect() 메소드를 호출하기 전에 호출해야 유효하다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iSecond</td><td>MySQL read timeout 시간 (초단위) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga55e80a6f514a00784fb1ec36acf36e1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLPool::SetWriteTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSecond</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL write timeout 시간을 설정한다. </p>
+<p>본 메소드는 Connect() 메소드를 호출하기 전에 호출해야 유효하다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iSecond</td><td>MySQL write timeout 시간 (초단위) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf8386e9ea8760331fc71c02de0d01cf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLConnection::SetWriteTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSecond</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL write timeout 시간을 설정한다. </p>
+<p>본 메소드는 Connect() 메소드를 호출하기 전에 호출해야 유효하다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iSecond</td><td>MySQL write timeout 시간 (초단위) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga322cd6e29d9a2f436c7a0be399462d2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CDbMySQLQueue::Signal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>큐에 SQL 문자열이 존재할 때까지 대기하는 쓰레드에게 이벤트를 전송한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga27448b0ecbbbf4b85f1129230cd58c27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StartDbMySQLThread </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iThreadCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_db_my_s_q_l_queue.html">CDbMySQLQueue</a> *&#160;</td>
+          <td class="paramname"><em>pclsSqlQueue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszHost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszUserId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszPassWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszDbName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCharacterSet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL 연동 쓰레드들을 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iThreadCount</td><td>MySQL 연동 쓰레드 개수 </td></tr>
+    <tr><td class="paramname">pclsSqlQueue</td><td>SQL 문자열 큐 </td></tr>
+    <tr><td class="paramname">pszHost</td><td>MySQL 호스트 이름 or IP 주소 </td></tr>
+    <tr><td class="paramname">pszUserId</td><td>MySQL 접속 아이디 </td></tr>
+    <tr><td class="paramname">pszPassWord</td><td>MySQL 접속 아이디의 비밀번호 </td></tr>
+    <tr><td class="paramname">pszDbName</td><td>MySQL 접속 데이터베이스 이름 </td></tr>
+    <tr><td class="paramname">iPort</td><td>MySQL 접속 포트 번호 </td></tr>
+    <tr><td class="paramname">pszCharacterSet</td><td>character set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga22e394c6868be2a98706b3a61ab47c79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StartDbMySQLThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a> *&#160;</td>
+          <td class="paramname"><em>pclsDbConn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_db_my_s_q_l_queue.html">CDbMySQLQueue</a> *&#160;</td>
+          <td class="paramname"><em>pclsSqlQueue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL 연동 쓰레드를 시작한다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclsDbConn</td><td>MySQL DB 연결 객체 </td></tr>
+    <tr><td class="paramname">pclsSqlQueue</td><td>SQL 문자열 큐 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>성공하면 true 를 리턴하고 실패하면 false 를 리턴한다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1d41926cbe54ff1dfe3f7b20da5e2469"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StopDbMySQLThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MySQL 연동 쓰레드에 중지 명령을 전송한다. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 수 10월 14 2020 10:38:18, 프로젝트명 : C++ MySQL DB pool Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

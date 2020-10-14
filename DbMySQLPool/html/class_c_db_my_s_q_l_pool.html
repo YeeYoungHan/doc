@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>C++ MySQL DB pool Stack: CDbMySQLPool 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">C++ MySQL DB pool Stack
+   &#160;<span id="projectnumber">0.10</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="hierarchy.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="class_c_db_my_s_q_l_pool-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">CDbMySQLPool 클래스 참조<div class="ingroups"><a class="el" href="group___db_my_s_q_l_pool.html">DbMySQLPool</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>MySQL DB connection pool 관리 클래스  
+ <a href="class_c_db_my_s_q_l_pool.html#details">더 자세히 ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a775cb0913e1acf337fbea24afcb81c57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_db_my_s_q_l_pool.html#a775cb0913e1acf337fbea24afcb81c57">CDbMySQLPool</a> ()</td></tr>
+<tr class="memitem:a66f8e6d0720ffbfa013e187727a77c1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_db_my_s_q_l_pool.html#a66f8e6d0720ffbfa013e187727a77c1b">~CDbMySQLPool</a> ()</td></tr>
+<tr class="memitem:ga59370edb9367cfe29b848693613b24f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga59370edb9367cfe29b848693613b24f3">Create</a> (int iPoolCount, const char *pszHost, const char *pszUserId, const char *pszPassWord, const char *pszDbName, int iPort, const char *pszCharacterSet=NULL)</td></tr>
+<tr class="memdesc:ga59370edb9367cfe29b848693613b24f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB 에 연결한다.  <a href="group___db_my_s_q_l_pool.html#ga59370edb9367cfe29b848693613b24f3"></a><br/></td></tr>
+<tr class="memitem:ga6725cff93346022ec717dc05cc86dc9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga6725cff93346022ec717dc05cc86dc9d">Destroy</a> ()</td></tr>
+<tr class="memdesc:ga6725cff93346022ec717dc05cc86dc9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB pool 에 포함된 DB 연결을 해제하고 리소스를 정리한다.  <a href="group___db_my_s_q_l_pool.html#ga6725cff93346022ec717dc05cc86dc9d"></a><br/></td></tr>
+<tr class="memitem:ga06df6a7cfc529125fa386ad78484e0dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga06df6a7cfc529125fa386ad78484e0dc">Select</a> (<a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a> **ppclsDbConn, bool bStandByUntilAvailable=true)</td></tr>
+<tr class="memdesc:ga06df6a7cfc529125fa386ad78484e0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB pool 에서 DB 연결 객체를 가져온다.  <a href="group___db_my_s_q_l_pool.html#ga06df6a7cfc529125fa386ad78484e0dc"></a><br/></td></tr>
+<tr class="memitem:ga195a53376b756592839152f2dd33120c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga195a53376b756592839152f2dd33120c">Release</a> (<a class="el" href="class_c_db_my_s_q_l_connection.html">CDbMySQLConnection</a> *pclsDbConn)</td></tr>
+<tr class="memdesc:ga195a53376b756592839152f2dd33120c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DB 연결 객체를 DB pool 에 반환한다.  <a href="group___db_my_s_q_l_pool.html#ga195a53376b756592839152f2dd33120c"></a><br/></td></tr>
+<tr class="memitem:gaad9c73ff2c6f2d2e3990c3c4f1e3331e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaad9c73ff2c6f2d2e3990c3c4f1e3331e">Execute</a> (const char *pszSQL)</td></tr>
+<tr class="memdesc:gaad9c73ff2c6f2d2e3990c3c4f1e3331e"><td class="mdescLeft">&#160;</td><td class="mdescRight">INSERT / UPDATE / DELETE SQL 문을 실행한다.  <a href="group___db_my_s_q_l_pool.html#gaad9c73ff2c6f2d2e3990c3c4f1e3331e"></a><br/></td></tr>
+<tr class="memitem:gaac9e2f5a8e20e7ae526039cf7c6baf03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gaac9e2f5a8e20e7ae526039cf7c6baf03">Insert</a> (const char *pszSQL, uint64_t *piId)</td></tr>
+<tr class="memdesc:gaac9e2f5a8e20e7ae526039cf7c6baf03"><td class="mdescLeft">&#160;</td><td class="mdescRight">INSERT 문의 실행한다.  <a href="group___db_my_s_q_l_pool.html#gaac9e2f5a8e20e7ae526039cf7c6baf03"></a><br/></td></tr>
+<tr class="memitem:ga555e40f1863dbd42458ac9a5e62e68fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga555e40f1863dbd42458ac9a5e62e68fb">Query</a> (const char *pszSQL, void *pclsData, bool(*FetchRow)(void *, MYSQL_ROW &amp;sttRow))</td></tr>
+<tr class="memdesc:ga555e40f1863dbd42458ac9a5e62e68fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT 문을 실행한다.  <a href="group___db_my_s_q_l_pool.html#ga555e40f1863dbd42458ac9a5e62e68fb"></a><br/></td></tr>
+<tr class="memitem:gae494b2151f96179cc4ba5b4074fe264e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gae494b2151f96179cc4ba5b4074fe264e">QueryOne</a> (const char *pszSQL, int &amp;iData)</td></tr>
+<tr class="memdesc:gae494b2151f96179cc4ba5b4074fe264e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="group___db_my_s_q_l_pool.html#gae494b2151f96179cc4ba5b4074fe264e"></a><br/></td></tr>
+<tr class="memitem:gafbfada942800529ff07bd5fb823ff9fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gafbfada942800529ff07bd5fb823ff9fb">QueryOne</a> (const char *pszSQL, uint32_t &amp;iData)</td></tr>
+<tr class="memdesc:gafbfada942800529ff07bd5fb823ff9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="group___db_my_s_q_l_pool.html#gafbfada942800529ff07bd5fb823ff9fb"></a><br/></td></tr>
+<tr class="memitem:ga0c0417ea365ab9dbbbd6e663cecfe428"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga0c0417ea365ab9dbbbd6e663cecfe428">QueryOne</a> (const char *pszSQL, uint64_t &amp;iData)</td></tr>
+<tr class="memdesc:ga0c0417ea365ab9dbbbd6e663cecfe428"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="group___db_my_s_q_l_pool.html#ga0c0417ea365ab9dbbbd6e663cecfe428"></a><br/></td></tr>
+<tr class="memitem:gae8350c36f2ab71ca01e7294f187cdfbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gae8350c36f2ab71ca01e7294f187cdfbc">QueryOne</a> (const char *pszSQL, int64_t &amp;iData)</td></tr>
+<tr class="memdesc:gae8350c36f2ab71ca01e7294f187cdfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT count(*) 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="group___db_my_s_q_l_pool.html#gae8350c36f2ab71ca01e7294f187cdfbc"></a><br/></td></tr>
+<tr class="memitem:gafe007f74d7c645391cb561cac4df3386"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#gafe007f74d7c645391cb561cac4df3386">QueryOne</a> (const char *pszSQL, std::string &amp;strData)</td></tr>
+<tr class="memdesc:gafe007f74d7c645391cb561cac4df3386"><td class="mdescLeft">&#160;</td><td class="mdescRight">SELECT string 와 같은 1개의 row, column 인 SQL 문을 실행한다.  <a href="group___db_my_s_q_l_pool.html#gafe007f74d7c645391cb561cac4df3386"></a><br/></td></tr>
+<tr class="memitem:ga81340ff837bc8b6b06b0f6df3e7b59c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga81340ff837bc8b6b06b0f6df3e7b59c9">SetReadTimeout</a> (int iSecond)</td></tr>
+<tr class="memdesc:ga81340ff837bc8b6b06b0f6df3e7b59c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL read timeout 시간을 설정한다.  <a href="group___db_my_s_q_l_pool.html#ga81340ff837bc8b6b06b0f6df3e7b59c9"></a><br/></td></tr>
+<tr class="memitem:ga55e80a6f514a00784fb1ec36acf36e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___db_my_s_q_l_pool.html#ga55e80a6f514a00784fb1ec36acf36e1e">SetWriteTimeout</a> (int iSecond)</td></tr>
+<tr class="memdesc:ga55e80a6f514a00784fb1ec36acf36e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">MySQL write timeout 시간을 설정한다.  <a href="group___db_my_s_q_l_pool.html#ga55e80a6f514a00784fb1ec36acf36e1e"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>상세한 설명</h2>
+<div class="textblock"><p>MySQL DB connection pool 관리 클래스 </p>
+</div><h2>생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="a775cb0913e1acf337fbea24afcb81c57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CDbMySQLPool::CDbMySQLPool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66f8e6d0720ffbfa013e187727a77c1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CDbMySQLPool::~CDbMySQLPool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 수 10월 14 2020 10:38:18, 프로젝트명 : C++ MySQL DB pool Stack, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>
